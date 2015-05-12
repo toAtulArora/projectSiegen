@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,13 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -60,17 +68,85 @@
 \begin_body
 
 \begin_layout Title
-Progress Summary
+projectSiegen | Summary
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-Monday 
+\begin_layout Section
+May 7-12
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Subsection
+Impressions
+\end_layout
 
+\begin_layout Itemize
+I started with reading about Modular Variables from `Dynamical quantum non-local
+ity', a perspective paper from Nature Physics.
+ The paper basically talks about how modular variables capture the essence
+ of a quantum state in a way that no other variable we've considered so
+ far does.
+ It relates this to non-locality in quantum mechanics.
+ This non-locality however is not the one usually considered in the context
+ of say the singlet state.
+ The point they make is that this non-locality arises from the equations
+ of motion (Heisenberg picture), which are non-local themselves (since operators
+ are involved).
+ I found the paper is simple, subtle and interesting.
+\end_layout
+
+\begin_layout Itemize
+Next I started reading a paper titled `Quantum interference experiments,
+ modular variables and weak measurements' from IOP Science.
+ This I was told is an elaboration of the perspective paper.
+ However, I didn't complete this for I hadn't frozen the topic yet.
+\end_layout
+
+\begin_layout Itemize
+I talked to a person named `Roope' at the group and his work came across
+ as rather fascinating.
+ I was impressed by his work; it is related to `measurement equivalent of
+ mixed state'.
+ You make a certain kind of measurment with a certain classical probability.
+ With this type of measruement operators, he was able to show that for compatibl
+ity, commutation is not the best criterion.
+ Of course compatability means that the two measurement can be done simultaneous
+ly without affecting each other.
+ He gave a good example from his paper `Joint Measureablity of Generalized
+ Measruements Implies Classicality', PRL to illustrate the points.
+ His main result was unification of the concept of steering with that of
+ his test of joint measurement, viz.
+ compatibility.
+\end_layout
+
+\begin_layout Itemize
+Modular variables are discussed quite neatly in the book by Aharonov et.
+ al., titled `Quantm Paradoxes: Quantum Theory for the Perplexed'.
+ I read the first few pages, which are a delight to read (about how paradoxes
+ help, classification of paradoxes etc.).
+ I read the main chapter related to modular variables.
+ I still have some small doubts which I'll clarify soon.
+ Other than that, I have a good basic idea of the concept.
+\end_layout
+
+\begin_layout Itemize
+I talked to `Costentino' who basically told me that his work revolves around
+ looking at Bells inequalities in more complicated systems.
+ I didn't find that particularly attractive.
+ I also talked to `Nicolai' and he told me he works on finding interesting
+ states.
+ The kind of states he/they look for are such that the sub systems (partially
+ traced) are separable but the entire state is `genuinely entangled' (this
+ is the region of state space excluding separable and after tracing entangled
+ states).
+ He talked about witnesses and an algorithm to find an optimal witness and
+ an optimal state correspondingly, recursively, starting from a random initial
+ state matrix.
+ This was ok, but again, not very appealing to me.
+ And last person for the (that) day, I talked to `Marius' and he told me
+ about how he studies bell's inequalities in decaying particles, and his
+ system of choice was Kions.
+ Again, it maybe non trivial and hard, but didn't come accross as worth
+ pursuing.
 \end_layout
 
 \end_body

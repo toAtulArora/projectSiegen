@@ -18,5 +18,8 @@
 * Tuesday (May 12)
   * Talked to Costentino
   * Talked to Nicolai
+  * Read about Bohm's formulation of QM and thought of some possible interesting problems
+  * Talked to Marius
+  * Figured the contextuality business and was dissappointed
   
   
