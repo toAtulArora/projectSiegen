@@ -72,7 +72,7 @@ projectSiegen | Summary
 \end_layout
 
 \begin_layout Section
-May 7-12
+May 7-13
 \end_layout
 
 \begin_layout Subsection
@@ -129,7 +129,128 @@ Modular variables are discussed quite neatly in the book by Aharonov et.
 \end_layout
 
 \begin_layout Itemize
+I talked to `Costentino' who basically told me that his work revolves around
+ looking at Bells inequalities in more complicated systems.
+ I didn't find that particularly attractive.
+ I also talked to `Nicolai' and he told me he works on finding interesting
+ states.
+ The kind of states he/they look for are such that the sub systems (partially
+ traced) are separable but the entire state is `genuinely entangled' (this
+ is the region of state space excluding separable and after tracing entangled
+ states).
+ He talked about witnesses and an algorithm to find an optimal witness and
+ an optimal state correspondingly, recursively, starting from a random initial
+ state matrix.
+ This was ok, but again, not very appealing to me.
+ And last person for the (that) day, I talked to `Marius' and he told me
+ about how he studies bell's inequalities in decaying particles, and his
+ system of choice was Kions.
+ Again, it maybe non trivial and hard, but didn't come accross as worth
+ pursuing.
+\end_layout
 
+\begin_layout Itemize
+Discussed various topics with Roope including
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How contextuality is expected from usual understanding of QM, but it is
+ essential to characterize the quantum feature of the system (later Dr.
+ Guehne explained how in Bell's case, local hidden variable is the assumption,
+ whereas here, the assumption is non-contextuality [since we're talking
+ about only one system])
+\end_layout
+
+\begin_layout Itemize
+Discussed how one can exponentiate an unbounded operator.
+ He seemed to have some big mathematical machinary, but I am still not convinced
+ that it is necessary.
+\end_layout
+
+\begin_layout Itemize
+I wasn't able to understand how to prove (especially after the new definition
+ of exponentiation) 
+\begin_inset Formula $[e^{A},e^{B}]=0\implies[A,B]=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Maria: She works on hypergraph states.
+ The idea is to represent quantum states as graphs.
+ One can show the limits of usual graphs of this form.
+ The limit is that one can represent say the GHZ state, but not a related
+ less entagled state (forgot the name).
+ She had made a lot of new progress in barely 3 months.
+ She found states which maximally violate the bell inequality in 3 qubits,
+ which weren't known earlier.
+ She was able to even derive conditions on probablities of certain outcomes
+ which consequently rule out various local hidden variable models.
+ In the course of doing this, she'd made various conjectures and proven
+ them, by looking at patterns in certain calculations.
+ I found her work rather interesting and impressive, given that she did
+ it all in barely 3 months (and that she is/was a computer science student),
+ but not something I'd pursue.
+\end_layout
+
+\begin_layout Itemize
+Frank: He started with explaining various usual quantum optics subtopics,
+ such as action of a beam splitter in terms of creation anhilation operators,
+ how its action is similar to that of CNOT, how it can easily convert superposit
+ion to entanglement, how a coherent state would pass through it etc.
+ Then he mentioned what's called a P distribution, (stands for P something
+ and Sudarshan distribution) which is given for a state 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as 
+\begin_inset Formula $P_{\rho}(\alpha)$
+\end_inset
+
+, with 
+\begin_inset Formula $\alpha\in C$
+\end_inset
+
+, and s.t.
+ 
+\begin_inset Formula $\rho=\int P_{\rho}(\alpha)\left|\alpha\right\rangle \left\langle \alpha\right|$
+\end_inset
+
+.
+ This he said is more useful in characterizing quantum properties.
+ Then he discussed how like in the one qubit case, we have a bloch sphere,
+ we can construct similar objects with more qubits also.
+ Then he talked about relating 
+\begin_inset Formula $\left|\alpha\right\rangle =D(\alpha)\left|0\right\rangle $
+\end_inset
+
+ with creating states from the extremum state, like 
+\begin_inset Formula $\left|j,j\right\rangle $
+\end_inset
+
+ by applying similarly constructed 
+\begin_inset Formula $D$
+\end_inset
+
+ equivalents, except in this case with 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $a,\, a^{\dagger}$
+\end_inset
+
+.
+ He claimed that the states in the orbit of this group (group of transformations
+), don't span the full space.
+ He said that mixed states so produced can then be mapped to entangled state
+ like was done with the beam splitter.
+ The details he said are involving.
+ This also looked interesting, but again, not the direction in which I'd
+ like to work at the moment.
 \end_layout
 
 \end_body

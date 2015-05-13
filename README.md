@@ -22,4 +22,14 @@
   * Talked to Marius
   * Figured the contextuality business and was dissappointed
   
-  
+* Wednesday (May 13)
+  * Discussed the following with Roope
+    * Contextuality issue and related non local hidden variables
+    * Exponentiating an unbounded operator issue
+    * Concluding commutation relations from exponentiated commutations
+    * Implementation of Causality in QM
+  * Read about relation of Aharnov Bohm effect and non locality
+  * Talked to Maria and Frank
+  * Read more about gauge theories and the Aharnov Bohm Effect
+  * Had a short discussion with Prof. Guehne about contextuality
+    
