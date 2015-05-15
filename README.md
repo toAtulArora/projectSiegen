@@ -32,4 +32,11 @@
   * Talked to Maria and Frank
   * Read more about gauge theories and the Aharnov Bohm Effect
   * Had a short discussion with Prof. Guehne about contextuality
+
+* Thursday (May 14) [off]
+
+* Friday (May 15)
+  * Read chapter 5 like one should
+  * Discussed various things with Ali (given in the summary document)
+  * Tried to think of new ideas to find peculiar features of non locality
     

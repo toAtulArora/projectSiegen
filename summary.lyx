@@ -258,5 +258,78 @@ ion to entanglement, how a coherent state would pass through it etc.
  like to work at the moment.
 \end_layout
 
+\begin_layout Subsection
+Return of Ali
+\end_layout
+
+\begin_layout Itemize
+Read chapter five with a microscope, the way I usually read.
+ I came accross various difficulties consequently.
+ One of them was the fact that they seem to have shown that if we assume
+ a periodic potential and apply perturbation, then the angle of diffraction
+ must correspond to that of a maxima.
+ Else the probability of an electron having any other momenta vanishes.
+ Spent a lot of time reading the first section properly, but it isn't quite
+ worth it, it seemed.
+\end_layout
+
+\begin_layout Itemize
+Ali had returned and I sat and explained to him what it is that I had read
+ in the days he wasn't here.
+ He said he'll be away next week again for another conference.
+ In any case, I explained to him the theme of chapter 4.
+ It had to do with the Aharonov Bohm effect; this relates the gauge freedom
+ in 
+\begin_inset Formula $(V,\vec{A})$
+\end_inset
+
+ with that of 
+\begin_inset Formula $\psi$
+\end_inset
+
+ to be overall gauge invariant.
+ This consequently shows up as a phase in an interference experiment.
+ The important thing again is that the interaction is non-local (the EM
+ field is zero where the electrons are present).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Next I tried to explain to him the details as given the book, but it was
+ soon concluded that it is not a very good idea to continue in that direction
+\end_layout
+
+\begin_layout Itemize
+He then described his work on exploiting the relation of the form 
+\begin_inset Formula $D(x)D(p)=e^{i\text{some phase}}D(x+ip)$
+\end_inset
+
+ to get non local effects.
+ He talked about how plotting wigner functions help visualize the interference
+ patterns etc.
+ and then went on to talk about doing bell type tests on these.
+ He has written Phys Rev papers on these topics.
+\end_layout
+
+\begin_layout Itemize
+Finally, he showed me some work that he had started working on, but hadn't
+ completed which he feels is new and can be a good project for me to extend/esta
+blish.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Finally, I was convinced that to understand various settings, I must be
+ able to visualize, which requires MATLAB.
+ Unfortunately or fortunately, MATLAB wasn't available on the computer and
+ neither was Marius
+\end_layout
+
+\begin_layout Itemize
+Then I thought of some ideas related to observing nonlocal effects etc.
+ No good though.
+\end_layout
+
 \end_body
 \end_document
