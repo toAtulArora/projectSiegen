@@ -34,6 +34,8 @@
   * Had a short discussion with Prof. Guehne about contextuality
 
 * Thursday (May 14) [off]
+  * Read about causality from Aharnovs book
+  * Read the historical development of QM from Weinberg's book on QM (the guy I think also discusses contrained systems (Dirac's thing))
 
 * Friday (May 15)
   * Read chapter 5 like one should
