@@ -1,0 +1,483 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Self Critique: Test for dynamical non-locality
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Abstract
+Quantum corelations are non local and yet can't be used to send non local
+ signals.
+ Local hidden variable theories were ruled out as possible theories to explain
+ the correlations.
+ Tests such as Bell's, CHSH etc.
+ have been key to this.
+ However, these tests are not sensitive to another type of non locality.
+ This enters quantum mechanics through the dynamics.
+ Here we attempt to construct such tests which relax the local realism assumptio
+ns and probe the aforesaid kind of non locality.
+\end_layout
+
+\begin_layout Section
+Preliminary Thoughts
+\end_layout
+
+\begin_layout Standard
+What I have therefore come to believe is that I must not attempt to do the
+ usual impossible, such as action at a distance or equivalently, signalling
+ faster than speed of light.
+ I must therefore come up with a situation which I know is impossible classicall
+y, yet is not a violation of action at a distance.
+ Examples of such cases are already known, such as quantum correlations
+ (bell's inequality), non-commutativity of operators leading to contextuality
+ etc.
+ So perhaps then the question then is to formulate the basis for a new test
+ in quantum mechanics.
+ One that tests something of the aforesaid variety.
+ So the question then changes from non locality to that of non classicality.
+ One such feature which exists is the Aharnov Bohm effect.
+ The close relation between a gauge field and the wavefunction.
+ However, I already know that the effect that is observed shouldn't happen
+ in the first place.
+ Still if one insists on thinking about it further, one can investigate
+ exactly what it is that this Aharnov Bohm effect is doing, which we were
+ not able to accomplish using usual unitary operators.
+ Could these infact be something we haven't looked at earlier and be usable
+ in quantum computation in some non-trivial way? Well, after some thought
+ the following became clear.
+ What is interesting in the Aharnov Bohm effect is not that 
+\begin_inset Formula $\psi\to\psi_{1}+e^{i\phi}\psi_{2}$
+\end_inset
+
+ (because the analogous can be done on qubits using unitaries).
+ It is the fact that this effect is happening due to a field which is never
+ in contact with the particle.
+ Therefore in my opinion, we have various tests for type 1 non locality,
+ which arises from the structure of the Hilbert space (such as states like
+ 
+\begin_inset Formula $\left|\psi\right\rangle =\frac{1}{\sqrt{2}}\left(\left|00\right\rangle +\left|11\right\rangle \right)$
+\end_inset
+
+).
+ These include quantum correlation and contextuality etc.
+ However, one must investigate how to test for type 2 non locality, viz.
+ non locality in the dynamics of quantum mechanics.
+ An explicit example of this, is the time evolution of the displacement
+ operator (Heisenberg picture).
+\end_layout
+
+\begin_layout Standard
+So in an attempt to create a test for type 2 non locality, I must start
+ with thinking about the assumptions on which to base the test.
+ The tests I have seen so far, seem to be based on certain classical assumptions
+ about locality and realism.
+ They then derive under those assumptions, certain relations between measurable
+ quantities.
+ These then they show, according to quantum mechanics must be violated under
+ certain situations.
+ Ofcourse, then experiments are done and victorious emerges our quantum
+ theory.
+ I could think about various more basic questions, but at the moment, I
+ must restrict myself to the easiest (relatively readily solvable) I can
+ formulate.
+ Recall that I had thought about paradoxes in QM if you apply STR and reverse
+ sequence of events because simultaneity we'd just learnt was relative.
+ Then there were issues with randomness and how it must be thought of as
+ a local phenomenon and so on.
+\end_layout
+
+\begin_layout Standard
+Let me therefore attempt to list down some of the assumptions.
+ This is already getting tricky.
+ Let's start naive.
+ (call these set B)
+\end_layout
+
+\begin_layout Enumerate
+All measurables of the system have a well defined value prior to measurement
+ 
+\end_layout
+
+\begin_layout Enumerate
+All interactions are local (even if there're hidden variables) [so far these
+ are the same as those assumed by Bell] 
+\end_layout
+
+\begin_layout Standard
+NB1: From usual observations themselves we know that 1 doesn't hold.
+ The failure of Bell test then implies 2 must be false.
+ 
+\end_layout
+
+\begin_layout Standard
+NB2: The weaker the assumption, stronger will be the repercussions of its
+ violation 
+\end_layout
+
+\begin_layout Standard
+In addition to these I assume
+\end_layout
+
+\begin_layout Enumerate
+Related to evolution of the system: The measurables are a function of time
+ and of the hidden variable, which itself maybe assumed to be time dependent.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Idea: At most there're local hidden variables that are allowed to evolve
+ with time 
+\end_layout
+
+\begin_layout Enumerate
+Idea: Assume nothing about the cause of the dynamics.
+ Just assume some time dependence 
+\end_layout
+
+\begin_layout Enumerate
+Idea: Then show that Aharnov Bohm shows type 2 non locality 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Stage 2 will be to come up with a neater set of assumptions, that don't
+ assume the Bell conditions, but still assume something that can only happen
+ in the quantum case.
+ My guess would be to not assume B1 and B2.
+ This will suddenly become hard.
+ But I think that is the point.
+ I must be able to show that it was possible for there to be a theory which
+ has the quantum correlations that QM shows (type 1 non locality) and yet
+ its dynamical equations are local, unlike those of QM (type 2).
+\end_layout
+
+\begin_layout Standard
+It would then be sensible to say that QM has features which not restricted
+ to type 1 non locality, but also has type 2.
+ One approach could be to attempt constructing a theory with the Hilbert
+ space structure, but with strictly local time evolution.
+ Then I can look at the weakest assumption I must make to do this and on
+ those grounds, make a prediction.
+ Then find a QM example that violates it.
+\end_layout
+
+\begin_layout Section
+Rethinking
+\end_layout
+
+\begin_layout Subsection
+Assumptions of the Test
+\end_layout
+
+\begin_layout Standard
+What do I really wish to show.
+ I want to show that there exists another type of non locality, namely dynamic
+ non locality.
+ Let's analyse the following
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Claim: If I start with (all or some of) the assumptions of Bell, then I
+ would have proved nothing.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Justfctn: Since QM already violates Bell inequality, therefore it means
+ that atleast one of the assumptions in B must be false.
+ If my test is based on those assumptions, then it would not be reasonable
+ to assume that QM will necessarily pass it.
+ Further, if my objective is to show a feature in addition to quantum correlatio
+ns, then my assumptions mustn't rule out the latter, from the start.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Against: One can however un assume the Bell result.
+ In that case, this new test will be another way of ruling out non local
+ theories.
+ It is similar in spirit with the Non-contextuality result.
+ It's independent of Bell's results, and yet rules out assumption B1 of
+ Bell's.
+ [this last line is actually not correct.
+ The non-contextuality means again one of the assumptions is false.
+ Not necessarily both]
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: 
+\emph on
+If my test is based on (all or some of) those assumptions, then it would
+ not be reasonable to assume that QM will necessarily satisfy it.
+
+\emph default
+ A violation therefore will not clarify the cause; whether it is based on
+ quantum correlations or on non local dynamics.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Infact: It seems that if I can construct a test based on only the assumptions
+ of 
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Contextuality and 2.
+ Locality of interaction, 
+\begin_inset Newline newline
+\end_inset
+
+but not assume predefined state of all measurables, then perhaps one can
+ conclude more about precisely which assumption is violated by QM.
+\end_layout
+
+\begin_layout Subsection
+Shades of Non Locality
+\end_layout
+
+\begin_layout Standard
+[I'm hungry, but will write the idea quickly] Bell had to assume locality
+ in his theory because he had considered two particles.
+ In the non-contextuality thing, kroker shpecker (TODO: fix the names) have
+ only one system, therefore they didn't have to assume locality.
+ It appears to me, that I must go another step in this direction.
+ I must assume a single particle/system, and assume locality of some sort
+ within that framework.
+ This will be interesting because it is in stark contrast with bell type
+ locality.
+ 
+\end_layout
+
+\begin_layout Standard
+The point really is that non locality now is not about two different particles.
+ I want to see the non locality that exists for a single particle itself.
+\end_layout
+
+\begin_layout Section
+Criticism
+\end_layout
+
+\begin_layout Standard
+There is essentially nothing that has been shown.
+ All of these are trivial consequences of the axioms of quantum mechanics.
+ Note that this doesn't hold for Bell's work.
+ Bell at that time concluded a debate about local realism.
+ What is the point of doing all of this in today's context?
+\end_layout
+
+\begin_layout Section
+Understanding Ali's work
+\end_layout
+
+\begin_layout Subsection
+First Attempt
+\end_layout
+
+\begin_layout Standard
+With the density matrix picture in the back of our minds, we construct a
+ more general framework.
+ This must be able to easily incorporate a wider set of theories with only
+ one constraint; interactions between particles is local.
+ Explicitly then, we assume
+\end_layout
+
+\begin_layout Itemize
+Space like separated particles can have no instantaneous effect on each
+ other
+\end_layout
+
+\begin_layout Standard
+NB: We have assumed nothing about all measurables being simultaneously well
+ defined.
+\end_layout
+
+\begin_layout Standard
+Now one must be careful.
+ We define the following:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda$
+\end_inset
+
+ represents the `state of the system'.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This may include inaccessible hidden variables.
+ For the case of QM, we'll let 
+\begin_inset Formula $\lambda=(q,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is the set that contains all possible states of the system; 
+\begin_inset Formula $\lambda\in\Lambda$
+\end_inset
+
+ by definition
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mu(\lambda,t)$
+\end_inset
+
+ is a function generated by the theory, that contains information about
+ all that can be predicted about the system
+\begin_inset Newline newline
+\end_inset
+
+This function must satisfy the following
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Normalisation: 
+\begin_inset Formula $\mu(\lambda,t)=\int\mu(\lambda,t)d\lambda=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\strikeout on
+Non-negativity: 
+\begin_inset Formula $\mu(\lambda,t)>0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+With these, one can (not mathematically strictly perhaps) take 
+\begin_inset Formula $\mu$
+\end_inset
+
+ to be a probability density 
+\end_layout
+
+\begin_layout Enumerate
+For two systems 
+\begin_inset Formula $1,\,2$
+\end_inset
+
+, we define 
+\begin_inset Formula $P_{12}(t)\equiv\int\mu_{1}(\lambda,t)\mu_{2}(\lambda,t)d\lambda$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mu$
+\end_inset
+
+ in general therefore should be s.t.
+\begin_inset Formula 
+\[
+0\le P_{12}\le1
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $\mu$
+\end_inset
+
+ that the theory allows.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
