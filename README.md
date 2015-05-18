@@ -41,4 +41,16 @@
   * Read chapter 5 like one should
   * Discussed various things with Ali (given in the summary document)
   * Tried to think of new ideas to find peculiar features of non locality
+
+* Saturday | Sunday (May 16, 17)
+  * Life essentials
+  * Thought about non local dynamics and how to construct a test for it
+  * Started writing the thoughts systematically (but somehow, they seem to be worthless now)
+
+* Monday (May 18)
+  * Otfried's class
+  * Contextuality assumption is not equivalent to determinism | clarified
+  * Talked to Zanna about Quantum Metrology
+  * Starting reading this old paper again
+  * MATLAB was installed by Marius
     

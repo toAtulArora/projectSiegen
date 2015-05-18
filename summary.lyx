@@ -72,7 +72,7 @@ projectSiegen | Summary
 \end_layout
 
 \begin_layout Section
-May 7-13
+May 7-13 [week 0 and 1]
 \end_layout
 
 \begin_layout Subsection
@@ -329,6 +329,188 @@ Finally, I was convinced that to understand various settings, I must be
 \begin_layout Itemize
 Then I thought of some ideas related to observing nonlocal effects etc.
  No good though.
+\end_layout
+
+\begin_layout Section
+May 18 - 23 [week 2]
+\end_layout
+
+\begin_layout Subsection
+Monday | Multiple Clarifications and Ambiguities
+\end_layout
+
+\begin_layout Itemize
+The contextuality assumption is not equivalent to the assumption of determinism
+ [this clarification was due to Otfried]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The idea is that there can be deterministic contextuality.
+ My claim was that if this is so, then it must violate causality.
+ The counter was based on an explicit construction.
+ The idea was simply that the contextuality can be based on the past and
+ doesn't have to rely on the future.
+ 
+\end_layout
+
+\begin_layout Itemize
+Let's quickly understand this.
+ Assume the following matrix of observables, such that along a column all
+ observables can be measured simultanesouly.
+ Similarly, along the row all observables can be measured simultanesouly.
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+A & B & C\\
+a & b & c\\
+\alpha & \beta & \gamma
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+My argument was that if the assignment is deterministic and contextual,
+ then say 
+\begin_inset Formula $A$
+\end_inset
+
+ has a value depending on the context.
+ However, say I just measure 
+\begin_inset Formula $A$
+\end_inset
+
+ and nothing else at the moment.
+ Since the value of 
+\begin_inset Formula $A$
+\end_inset
+
+ had to depend on the context, which I haven't picked yet, therefore it
+ is equivalently the statement that the value of 
+\begin_inset Formula $A$
+\end_inset
+
+ depended on a future event.
+ Which is in clear violation of causality.
+\end_layout
+
+\begin_layout Itemize
+This is countered by constructing an explicit example.
+ I say that say I picked 
+\begin_inset Formula $B$
+\end_inset
+
+ next.
+ Eventually I pick 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Now the values of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ will depend on the fact that 
+\begin_inset Formula $A$
+\end_inset
+
+ had been chosen to start with.
+ The context is created by the past, not the future.
+ Apprently something called Mealy machines can be constructed which use
+ memory of the kind, which measurement was made and violate the inequality
+ set by assuming non-contextuality
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Conclusion: Non contextuality is a stronger condition than determinism,
+ which is violated.
+ Which means that we still haven't ruled out deterministic contextual theories.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The claim that there're no observables that measure the phase in the expression
+ 
+\begin_inset Formula 
+\[
+\left|\psi\right\rangle =\left|\psi_{1}\right\rangle +e^{i\phi}\left|\psi_{2}\right\rangle 
+\]
+
+\end_inset
+
+subjected to 
+\begin_inset Formula $\left\langle \psi_{1}\right|\left|\psi_{2}\right\rangle =0$
+\end_inset
+
+ was challenged by the following [this was due to Zanna]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One could take each of these through a fibre optic and measure its phase
+ wrt another reference laser and find the phase difference OR one could
+ shine a third light 
+\begin_inset Formula $\left|\psi_{3}\right\rangle $
+\end_inset
+
+ and look at the interference it produces.
+ 
+\begin_inset Formula $\left|\psi_{3}\right\rangle $
+\end_inset
+
+ is assumed to s.t.
+ 
+\begin_inset Formula $\left\langle \psi_{i}\right|\left|\psi_{3}\right\rangle \neq0$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\{1,2\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+This is a serious issue because it had been proven that no moment of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+ can be dependent on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and therefore (ignoring for the moment infinite series etc.) 
+\begin_inset Formula $\phi$
+\end_inset
+
+ should not be observable.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I further realized a crisis in the understanding of the word 
+\emph on
+non local dynamics
+\emph default
+.
+ I initiated reading (fortunately or unfortunately) the paper titled `Quantum
+ interference experiments, modular variables and weak measruements'.
+ It does seem to have more detail, although I am not certain how relevant
+ and how precise.
 \end_layout
 
 \end_body
