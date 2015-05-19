@@ -3,9 +3,13 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{braket}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -513,5 +517,163 @@ non local dynamics
  and how precise.
 \end_layout
 
+\begin_layout Itemize
+Other than this, I talked to Zanna and she told me she works on something
+ called Quantum Metrology.
+ This is built on the idea that under a Hamiltonian, an entangled state
+ evolves a lot faster and therefore is a lot more sensitive to the external
+ environment.
+ Consequently, this can be used to amplify detection! The catch is that
+ these entangled states are also highly sensitive to noise because of the
+ same reason.
+ One work around is that you have say 
+\begin_inset Formula $2n$
+\end_inset
+
+ qubits and let 
+\begin_inset Formula $n$
+\end_inset
+
+ of them evolve under the Hamiltonian whose properties you want to measure
+ (could be a magnetic field say for instance), viz.
+ 
+\begin_inset Formula $H+H_{\text{nosie}}$
+\end_inset
+
+ and let the other 
+\begin_inset Formula $n$
+\end_inset
+
+ evolve (without the magnetic field), viz.
+ under 
+\begin_inset Formula $H_{\text{noise}}$
+\end_inset
+
+.
+ You can then subtract the results (not being precise but that's the idea)
+ and get a neater signal.
+\end_layout
+
+\begin_layout Subsection
+Tuesday
+\end_layout
+
+\begin_layout Itemize
+Objective was to plot the wigner function for various possible states.
+ To this end, I read (like one should) sections 
+\begin_inset Formula $3.5,\,3.6,\,3.7$
+\end_inset
+
+ and glanced through 
+\begin_inset Formula $3.8$
+\end_inset
+
+ from Gerry and Knight.
+ I covered topics such as
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\int\left|\alpha\right\rangle \left\langle \alpha\right|d^{2}\alpha=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\hat{F}=\frac{1}{\pi^{2}}\int d^{2}\beta\int d^{2}\alpha e^{-1/2(\left|\beta\right|^{2}+\left|\alpha\right|^{2})}.F(\beta^{*},\alpha)\left|\beta\right\rangle \left\langle \alpha\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+P-distribution, Q-distribution, Wigner distribution etc.
+ and various things related to their derivations which aren't worth typing
+ incomplete
+\end_layout
+
+\begin_layout Itemize
+Glanced through the idea of why and how all these distributions are related
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I attempted getting an expression for the wigner function for the state
+ 
+\begin_inset Formula $\left|\alpha\right\rangle $
+\end_inset
+
+ and what I finally obtained, didn't seem to be real.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This I realized while attempting to plot the wigner function using MATLAB.
+ Here's the code for it.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{plotWigner1/command}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I found that plotting these and other distributions has been made rather
+ simple
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://qutip.googlecode.com/svn/doc/2.0.0/html/examples/basic/ex-10.html
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename wignerQuTiP.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+where their state was 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\alpha\right\rangle -\left|-\alpha\right\rangle $
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha=2+i2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

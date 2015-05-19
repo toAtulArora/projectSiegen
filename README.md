@@ -54,3 +54,6 @@
   * Starting reading this old paper again
   * MATLAB was installed by Marius
     
+* Tuesday (May 19)
+  * Read various sections from Knight (related to distributions etc.)
+  * Tried plotting them on MATLAB. Ran into some issues

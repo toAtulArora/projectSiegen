@@ -1,0 +1,53 @@
+%-- 05/19/2015 03:14:58 PM --%
+a=linspace(1+i,100+i,100)
+clear
+lambda=linspace(-100+i,100+i,1000);
+alpha=5+0i
+f=e^(-0.5*( lambda*conj(lambda) + conj(lambda)*alpha + 3*conj(alpha)*lambda))
+f=exp(-0.5*( lambda*conj(lambda) + conj(lambda)*alpha + 3*conj(alpha)*lambda))
+a=linspace(-1,1,100)
+b=0.5*a
+b=exp(a)
+b=exp(0.5*a)
+f=exp(lambda)
+f=exp((-0.5)*( lambda*conj(lambda) + conj(lambda)*alpha + 3*conj(alpha)*lambda))
+f=exp((-0.5)*(lambda*conj(lambda)))
+f=exp(lambda*conj(lambda)))
+f=exp(lambda*conj(lambda))
+b=f*f
+b=f.*f
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha + 3*conj(alpha).*lambda))
+lambda=linspace(-10+i,10+i,1000);
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha + 3*conj(alpha).*lambda))
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda))
+w=fft(f)
+plot(w)
+plot3(mod(w),real(w),imag(w))
+plot3(abs(w),real(w),imag(w))
+plot3(abs(w),real(lambda),imag(lambda))
+plot3(real(w),real(lambda),imag(lambda))
+plot3(im(w),real(lambda),imag(lambda))
+plot3(imag(w),real(lambda),imag(lambda))
+w=fft(f)
+plot3(imag(w),real(lambda),imag(lambda))
+plot3(1,real(lambda),imag(lambda))
+plot3(ones(1000),real(lambda),imag(lambda))
+plot(real(lambda),imag(lambda))
+x=linspace(-10,10,1000)
+y=linspace(-10i,10i,1000)
+r_d=linspace(-10,10,1000);
+x=repmat(r_d,1000);
+x=repmat(r_d,1000,1);
+y=repmat(r_d',1,1000);
+real(lambda)=x
+lambda=x
+lambda=x+iy
+lambda=x+i*y
+lambda=x+i*y;
+lambdaMat=x+i*y;
+lambda=reshape(lambdaMat,1,1000000)
+lambda=reshape(lambdaMat,1,1000000);
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda))
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda));
+w=fft(f)
+commandhistory
