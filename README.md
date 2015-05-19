@@ -1,4 +1,8 @@
 # projectSiegen
+[Project Summary](summary.pdf)
+
+![Wigner function for superposition of coherent states (taken from QuTiP)](wignerQuTiP.png)
+
 
 * Thursday (May 7) 
   * Landed in Germany
