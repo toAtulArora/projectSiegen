@@ -848,11 +848,7 @@ lstinputlisting{plotWigner1/plotWignerForCoherent.m}
 
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-However, numerically 
+ However, numerically 
 \begin_inset Formula $W$
 \end_inset
 
