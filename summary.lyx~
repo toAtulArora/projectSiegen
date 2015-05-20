@@ -588,7 +588,13 @@ Objective was to plot the wigner function for various possible states.
 \end_layout
 
 \begin_layout Itemize
-and various other things which aren't worth typing incomplete
+P-distribution, Q-distribution, Wigner distribution etc.
+ and various things related to their derivations which aren't worth typing
+ incomplete
+\end_layout
+
+\begin_layout Itemize
+Glanced through the idea of why and how all these distributions are related
 \end_layout
 
 \end_deeper
@@ -666,6 +672,239 @@ where their state was
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday
+\end_layout
+
+\begin_layout Itemize
+Continued fine reading of chapter 5 from Aharnov's book.
+ It has started to make some sense finally.
+ Although I am still not clear about the doubts from last time, the new
+ sections (with the modifications such as 
+\begin_inset Formula $e^{i\hat{p}L/\hbar}$
+\end_inset
+
+ as opposed to 
+\begin_inset Formula $e^{ipL/\hbar}$
+\end_inset
+
+) have started making sense.
+ I also seem to have found a flaw in one of the calculations, where it is
+ shown that 
+\begin_inset Formula $e^{ipL/\hbar}f(x)=f(x+L)$
+\end_inset
+
+ and so on.
+ The important point I learnt this time however, was the following statement:
+ 
+\begin_inset Formula $p_{mod}$
+\end_inset
+
+ (defined always with 
+\begin_inset Formula $e^{i\hat{p}L/\hbar}$
+\end_inset
+
+ at the back of the mind) is completely uncertain iff (if and only if) 
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0\,\forall\, n\in\mathcal{N}$
+\end_inset
+
+.
+ If one thinks of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ as a number, and the expectation as these numbers occurring with classical
+ probabilities, then one can easily prove this.
+ In any case, if taken as a definition also (because it is rather sensible:
+ it is possible that 
+\begin_inset Formula $\left\langle \hat{p}\right\rangle \neq0$
+\end_inset
+
+ but 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang british
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $p_{mod}=0$
+\end_inset
+
+) then one can show quite easily that detecting the particle at one hole,
+ leads to loss of information about the modular variable! This is at the
+ very least now makes some sense in doing.
+\begin_inset Newline newline
+\end_inset
+
+In my CT I thought about how it is possible for 
+\begin_inset Formula $p_{mod}$
+\end_inset
+
+ to evolve with time, viz.
+ 
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle $
+\end_inset
+
+ to evolve with time, but when looked at in the Schrodinger picture, since
+ the wavefunction 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ doesn't change (assume the potential to be locally constant), then how
+ will 
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle $
+\end_inset
+
+ evolve?
+\end_layout
+
+\begin_layout Itemize
+Next I tried plotting the wigner function for the state 
+\begin_inset Formula $\rho=\left|\alpha\right\rangle \left\langle \alpha\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I used the method where 
+\begin_inset Formula $W(\gamma)=\frac{1}{\left(2\pi\hbar\right)^{2}}\int d^{2}\lambda e^{\left(\lambda\gamma^{*}-\gamma\lambda^{*}\right)/2}\text{tr}\left(\rho D(\lambda)\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+I converted this to two fourier transforms as 
+\begin_inset Formula $W(\gamma_{1}-i\gamma_{2})=\frac{1}{\left(2\pi\hbar\right)^{2}}\int d\lambda_{1}d\lambda_{2}e^{i\left(\lambda_{2}\gamma_{1}+\lambda_{1}\gamma_{2}\right)}\text{tr}\left(\rho D(\lambda)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+I proved that analytically, 
+\begin_inset Formula $W$
+\end_inset
+
+ must be real in general.
+\end_layout
+
+\begin_layout Itemize
+I evaluated analytically the expression for 
+\begin_inset Formula $\text{tr}\left(\rho D(\lambda)\right)$
+\end_inset
+
+ for the given coherent state
+\end_layout
+
+\begin_layout Itemize
+I attempted plotting using this script
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{plotWigner1/plotWignerForCoherent.m}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+However, numerically 
+\begin_inset Formula $W$
+\end_inset
+
+ was not evaluating to be even close to real
+\end_layout
+
+\begin_layout Itemize
+I then calculated the trace for 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\alpha\right\rangle +\left|\beta\right\rangle $
+\end_inset
+
+ and attempted plotting again with an improved script, still the results
+ weren't correct.
+ I didn't get the kind of interference I am expected to
+\end_layout
+
+\begin_layout Itemize
+I proved analytically that 
+\begin_inset Formula $W$
+\end_inset
+
+ for the coherent state case must be real explicitly.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Some results I used to cross check my answers:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fourier transform of shifted guassian: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.thefouriertransform.com/applications/gaussian.php
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Analytic expression for 
+\begin_inset Formula $W$
+\end_inset
+
+ for cat states: 
 \end_layout
 
 \end_deeper

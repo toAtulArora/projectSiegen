@@ -1,0 +1,17 @@
+r_d=linspace(-10,10,1000);
+x=repmat(r_d,1000);
+x=repmat(r_d,1000,1);
+y=repmat(r_d',1,1000);
+lambda=x+i*y;
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda))
+w=fft2(f)
+plot3(w)
+
+
+
+lambdaMat=x+i*y;
+lambda=reshape(lambdaMat,1,1000000)
+lambda=reshape(lambdaMat,1,1000000);
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda))
+f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda));
+w=fft(f)
