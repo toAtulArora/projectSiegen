@@ -1,0 +1,14 @@
+max=100;
+half=max/2;
+par=4.0;
+xMax=16;
+alpha=par+par*1i;
+beta=-par-par*1i;
+r_d=linspace(-xMax,xMax,max);
+x=repmat(r_d,max);
+x=repmat(r_d,max,1);
+y=repmat(r_d',1,max);
+lambda=x+1i*y;
+
+f=lambda.*lambda
+contourf(abs(f),10);
