@@ -1,6 +1,6 @@
 max=100;
 half=max/2;
-par=4.0;
+par=2.0;
 xMax=16;
 alpha=par+par*1i;
 beta=-par-par*1i;
@@ -18,27 +18,29 @@ f3=exp(-0.5*(abs(alpha).^2) -0.5*(abs(beta + lambda).^2) - conj(alpha).*(lambda+
 f4=exp(-0.5*(abs(beta).^2) -0.5*(abs(beta + lambda).^2) - conj(beta).*(lambda+beta));
 
 % 
- f=f1+f2+f3+f4;
+%f=f1;
+f=f1+f2+f3+f4;
 % f=f1+f2+f3+f4;
 
 
 % f=exp(-0.5*(abs(alpha).^2) -0.5*(abs(alpha + lambda).^2) - conj(alpha).*(lambda+alpha));
 subplot(2,2,1)
-contourf(abs(f),10);
+contourf(real(f),10);
 title('abs(f=tr($\rho D(\lambda )$))','interpreter','latex')
 subplot(2,2,2)
-%contourf(angle(f),10);
+contourf(imag(f),10);
 %title('angle(f=tr($\rho D(\lambda )$))','interpreter','latex')
 
-w=fft2(f);
+%w=fft2(f);
+w=fftshift(f);
 subplot(2,2,3)
 %this half business is to fix the order..to get negative frequencies also..
 %the -1 business is because according to my formula, the second axis must
 %be negative
-contourf(abs(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
+contourf(real(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
 title('abs(W=fourierTransform(f))','interpreter','latex')
 subplot(2,2,4)
-%contourf(angle(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
+contourf(imag(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
 %title('angle(W=fourierTransform(f))','interpreter','latex')
 
 % contourf(angle(w(1:100,1:100)),10)
