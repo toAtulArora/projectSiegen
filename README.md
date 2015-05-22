@@ -61,3 +61,23 @@
 * Tuesday (May 19)
   * Read various sections from Knight (related to distributions etc.)
   * Tried plotting them on MATLAB. Ran into some issues
+  * Tried thinking about new ideas
+
+* Wednesday (May 20)
+  * Aharnov's book, chapter 5 | in progress
+  * Plotting the wigner function for coherent state | didn't work
+  * Tried thinkin about new ideas
+
+* Thursday (May 21)
+  * Group Meeting
+  * Seminar
+  * Tried thinking about something new
+  * Chapter 5, Aharnov's
+  * Fixing FFT issue
+  * Colloqium
+
+* Friday (May 22)
+  * Roope's lectures + exercise
+  * Again tried fixing the FFT issue
+  * Done reading chapter 5 Aharnov (have some difficulties I must discuss with Otfried)
+

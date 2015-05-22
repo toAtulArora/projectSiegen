@@ -675,6 +675,46 @@ where their state was
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Tried thinking about some new things.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Is there a Quantum Optics explanation for Heygon's principle?
+\end_layout
+
+\begin_layout Itemize
+How is splitting of a single photon different from splitting of light (say
+ a thermal or coherent) -- [I think this just follows from the beamsplitter's
+ operator]
+\end_layout
+
+\begin_layout Itemize
+Wavefunctions of 2 neutral particles; how do they explain something like
+ rigid body collisions? -- [I think most rigid body phenomena known are
+ microscopically based on EM interactions, so..]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In electron interference experiments, we don't quite put repulsion do we?
+ -- [I think we usually discuss single particle experiments, where it is
+ kind of unnecessary]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Can we in Quantum Optics, measure the overall phase of a wavefunction by
+ using a reference light? If yes, well, then aren't we taught that we can't?
+\end_layout
+
+\begin_layout Itemize
+BQ: (Bigger Questions) How/Why does suddenly the interpretation of the wavefunct
+ion break when we switch to relativistic hamiltonians?
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Wednesday
 \end_layout
@@ -848,11 +888,7 @@ lstinputlisting{plotWigner1/plotWignerForCoherent.m}
 
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-However, numerically 
+ However, numerically 
 \begin_inset Formula $W$
 \end_inset
 
@@ -910,8 +946,301 @@ Analytic expression for
 \end_deeper
 \begin_layout Itemize
 Tried thinking about some new things.
- [TODO: Complete this]
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Generalize the beam splitter to splitting into 3 beams and then n beams
+\end_layout
+
+\begin_layout Itemize
+Quantum mechanical collision b/w particles
+\end_layout
+
+\begin_layout Itemize
+Ideas about conservation laws in quantum mechanics
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\psi$
+\end_inset
+
+ doesn't change over time (schrodinger picture ofcourse), no observable
+ of the system should change with time 
+\emph on
+however
+\emph default
+ here (double slit, modular variables, heisenberg picture), 
+\begin_inset Formula $e^{i\hat{p}L/\hbar}$
+\end_inset
+
+ seems to change with time! Figure out exactly why
+\end_layout
+
+\begin_layout Itemize
+In Quantum Optics, see how interference of 2 is different from that of 1
+ [this is perhaps just the beam splitter with 
+\begin_inset Formula $\left|2\right\rangle $
+\end_inset
+
+ instead of 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Itemize
+Entanglement between particles + Field Theory (Quantum Optics) equivalent
+ to 1 particle delocalized?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday
+\end_layout
+
+\begin_layout Itemize
+Group Meeting
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Zanna presented one paper which was titled `Non Locality with Ultra Cold
+ Atoms in a Lattice', 1505.02902.
+ This was an experimental paper that discussed an algorithm to initialize
+ states and perform measurements to show that there was indeed entanglement
+ with generalization of Bells inequality to multiple particles
+\end_layout
+
+\begin_layout Itemize
+The next paper she wanted to discuss had already been presented earlier,
+ therefore she omitted it (she was away then)
+\end_layout
+
+\begin_layout Itemize
+Finally, she made a remark about the third paper titled `Hate and Love',
+ 1505.04326 which is related to physics somehow.
+\end_layout
+
+\begin_layout Itemize
+Dr.
+ Otfreid got a cake for everyone (his Birthday :)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continued Reading chapter 5 from Aharnov's book [look at your own notes
+ for full details]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+was able to derive most of the commutation relations etc.
+\end_layout
+
+\begin_layout Itemize
+wasn't able to understand conservation of modular momentum among certain
+ other things
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tried thinking about new ideas while was `forced' to attend this seminar
+ on quantum fourier transform.
+ The one new thing I learnt was that it still hasn't been implemented on
+ a large enough system
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tried proving that the equation of motion (heisenberg picture) of 
+\begin_inset Formula $x^{m}p^{k}$
+\end_inset
+
+ will always be local.
+ Then again got into trouble wondering what it is that the exponential does
+ to make it non local?
+\end_layout
+
+\begin_layout Itemize
+Idea was to either find other non local equations or prove that exponential
+ and its linear combinations are the only ones
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fixing the FFT
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Things weren't functioning so went to the 1D case to test with known analytic
+ results.
+ The fourier transform of a real guassian was returning numerically a gaussian
+ with imaginary part
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The issue was ofcourse the labelling.
+ The system was not assuming the origin to be in the centre.
+\end_layout
+
+\begin_layout Itemize
+Fixed this by explicitly moving things in an array etc.
+\end_layout
+
+\begin_layout Itemize
+After more struggle, found that there're functions by the name fftshift
+ and ifftshift to do just that (except that I thought they do the fft and
+ the shift)
+\end_layout
+
+\begin_layout Itemize
+Since a gaussian was supposed to return a gaussian (and I had part of the
+ translation code still there), got fooled into believing that the shift
+ map is indeed the right fourier transform
+\end_layout
+
+\begin_layout Itemize
+Spent some time with putting this in the coherent state code (which also
+ seemed to work for obvious reasons) and then finally for the cat state
+ which had to fail ofcourse.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Went home and beat my head over it, until I figured my mistake.
+ You're supposed to do fftshift(fft(ifftshift(f))) to get the right result.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Apparently I had to do fft2 because its 2d
+\end_layout
+
+\begin_layout Itemize
+That also didn't fix it
+\end_layout
+
+\begin_layout Itemize
+The only thing I suspected could go wrong, was the 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Had this final talk by a person from MPI to attend.
+ That also didn't help much.
+ There were some interesting things, but nothing quite related to my field
+ of work.
+\end_layout
+
+\begin_layout Subsection
+Friday
+\end_layout
+
+\begin_layout Itemize
+Roope's lecture (2 + 1.5 hours)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He talked about how by simply assuming the usual about 
+\begin_inset Formula $\rho$
+\end_inset
+
+ and about measurements being linear convex, one can arrive at the 
+\begin_inset Formula $p(x|E,\rho)=\text{tr}(\hat{E}_{x}\rho)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+He also had an exercise session for the problems ofcourse.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tried fixing the FFT issue
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It was the same problem, so I attempted to do the following
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Plot better graphs (figured how to do 3d graphs) to check whether the imaginary
+ part was indeed small compared to the real part
+\end_layout
+
+\begin_layout Itemize
+Implemented a function to calculate the inner product 
+\begin_inset Formula $\left\langle \alpha|\beta\right\rangle $
+\end_inset
+
+ (had some minor issues with matlab)
+\end_layout
+
+\begin_layout Itemize
+Attempted a reformulation of the result of the inner product (that also
+ didn't help)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Have decided to leave it for now, until Ali returns (he'd be able to help)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 5 | Aharnov
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basically figured today exactly how the knowledge of 
+\begin_inset Formula $p_{mod}$
+\end_inset
+
+ destroys certainty in 
+\begin_inset Formula $N_{p}$
+\end_inset
+
+, resulting in the old 
+\begin_inset Formula $L\sin\theta=(N+\text{fraction})\lambda$
+\end_inset
+
+, which predicts the same pattern on the screen.
+\end_layout
+
+\begin_layout Itemize
+This took a little longer than I had expected, but I figured it in the end.
+ Only issue however is the first claim that says if I know transverse 
+\begin_inset Formula $x_{mod}$
+\end_inset
+
+ because the particle passes through the screen.
+ Not quite clear why.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Summarizing etc.
+ for yesterday also (didn't have the time then because of the colliqium
+ and seminar)
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

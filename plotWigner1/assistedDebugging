@@ -1,0 +1,8 @@
+In the plotWignerForCat,
+currently, what's happening:
+	   1. for a mixed coherent state, I get what looks like the right result as W (except some imaginary part too, that's expected because even in a gaussian, it gives some small imaginary part)
+	      * Is the imaginary part indeed small? Figure it out
+	      - Yes it is about 5, real is about 60 | however, the output doesn't look like a gaussian now :(
+	      - With a 3d plot, again it is confirmed that the guassians do seem to appear
+	   2. for schrodinger cat state, I get
+	      * 
