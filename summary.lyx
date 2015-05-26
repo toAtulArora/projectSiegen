@@ -336,7 +336,7 @@ Then I thought of some ideas related to observing nonlocal effects etc.
 \end_layout
 
 \begin_layout Section
-May 18 - 23 [week 2]
+May 18 - 22 [week 2]
 \end_layout
 
 \begin_layout Subsection
@@ -1239,6 +1239,344 @@ Misc
 Summarizing etc.
  for yesterday also (didn't have the time then because of the colliqium
  and seminar and group meet)
+\end_layout
+
+\end_deeper
+\begin_layout Section
+May 23, 24 [Weekend]
+\end_layout
+
+\begin_layout Itemize
+Nothing much academically relevant
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Thought of a possible issue with the code (fft and ifft) but that wasn't
+ a problem, as I had suspected based on analytic grounds
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Found the Aldi store, cooked, cleaned etc.
+\end_layout
+
+\begin_layout Section
+May 25-29 [Week 3]
+\end_layout
+
+\begin_layout Subsection
+Monday, May 25
+\end_layout
+
+\begin_layout Itemize
+Essentially spent time reading the NJP paper by Aharnov et al
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It starts by building on the idea of what changes when we do a which way
+ measurement (WWM), in the context of a double slit experiment
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Talks about debates over momentum changes before and after, claims some
+ results about how to measure them and so on
+\end_layout
+
+\begin_layout Itemize
+Discusses basic strategies of measurement, the moments and the fourier transform
+ approach, justifies how the latter is better
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Talks about modular variables (this is essentially the same as that in the
+ book) except that he discusses 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How the parity operator may be used to yield the value of the local phase
+\end_layout
+
+\begin_layout Itemize
+Explains conservation of modular momentum slightly better than it is done
+ in the book (basically using the Heisenberg picture and time evolution
+ etc.)
+\end_layout
+
+\begin_layout Itemize
+Explains the consequence of a WWM on the modular variable
+\end_layout
+
+\begin_layout Itemize
+Justifies why it is impossible to measure these non local interactions
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discusses how indeed the non local effect may be observed using weak measurement
+s
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+<This I didn't read completely, however I read about weak measurements from
+ this link [http://quanta.ws/ojs/index.php/quanta/article/view/14] till page
+ 5 or so>
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Weak measurements are based on the idea that the quantum system is coupled
+ to a measurement device, which is itself quantum mechanical.
+\end_layout
+
+\begin_layout Itemize
+The usual projective measurements are done on the measurement device (which
+ is quantum) after letting it interact with the quantum system
+\end_layout
+
+\begin_layout Itemize
+The outcomes then are used to determine properties of the quantum system,
+ with disturbance which can be made arbitrarily small
+\end_layout
+
+\begin_layout Itemize
+Then there're more advanced methods where you pre and post select etc.
+ which I haven't fully read about
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Apparently, weak values have interpretation which is not yet fully accepted
+ and I was advised not to pursue this just yet.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Tuesday, May 26
+\end_layout
+
+\begin_layout Itemize
+Roope's Lecture(s)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Roope today discussed how to generalize evolution of states, following a
+ similar minimalistic assumption approach
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He defined Channels and Operations (based on whether they preserve the trace
+ or decrease it) as maps from 
+\begin_inset Formula $S(\mathcal{H})\to T(\mathcal{H})^{+}$
+\end_inset
+
+ (meaning from the space of 
+\begin_inset Formula $\rho$
+\end_inset
+
+s to that where the trace can be 
+\begin_inset Formula $\le1$
+\end_inset
+
+ but must be 
+\begin_inset Formula $\ge0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+He put various constraints on the map and added an extra assumption about
+ complete positivity
+\end_layout
+
+\begin_layout Itemize
+He then discussed the Schrodinger and Heisenberg picture in the context
+ of these operators.
+ The statement is basically that we consider 
+\begin_inset Formula $T^{*}=\mathcal{L}$
+\end_inset
+
+, where 
+\begin_inset Formula $T^{*}$
+\end_inset
+
+ is the dual space of 
+\begin_inset Formula $S$
+\end_inset
+
+ (in finite dimensions, apparently they're same).
+ Then 
+\begin_inset Formula $\forall\, N:T\to T,\,\exists\, N^{*}:\mathcal{L}\to\mathcal{L}$
+\end_inset
+
+ which is defined by 
+\begin_inset Formula $tr[N(T)E]=tr[TN^{*}(E)]$
+\end_inset
+
+.
+ Afterwards, during the exercise session, he derived various results using
+ just this statement
+\end_layout
+
+\begin_layout Itemize
+Then he went on to describe Steinspring's dialation thm, which is essentially
+ a statement about how to characterise the most general `evolution' of a
+ quantum system, in terms of a unitary.
+ The claim is that for a given channel 
+\begin_inset Formula $\epsilon:T\to T$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\,(\mathcal{H}_{E},\xi,U):\epsilon(\rho)=tr_{E}(U(\rho\otimes\xi)U^{\dagger})$
+\end_inset
+
+ which is saying that the channel is just a unitary evolution of the state
+ in a larger space, which is later traced out.
+\end_layout
+
+\begin_layout Itemize
+Finally, he went on to talking about the Kraus Decomposition, which characterize
+s a channel by giving an explicit decomposition.
+ [I'm skipping the details now]
+\end_layout
+
+\begin_layout Itemize
+And in the end, he described a way for testing/characterising Completely
+ Positive maps.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Exercises
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There're various things he did (TODO: complete this section)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussions with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Decided to discuss the Aharnov material tomorrow
+\end_layout
+
+\begin_layout Itemize
+I talked to him about the old issues, which I thought I had clarified, but
+ I hadn't indeed.
+ He clarified in specific that you can't infact measure the overall phase,
+ even with another quantum particle (I need to do some calculations to be
+ absolutely certain though)
+\end_layout
+
+\begin_layout Itemize
+While explaining the calculations of the procedure for finding the wigner
+ function using fourier transform, the error in calculation popped out.
+\end_layout
+
+\begin_layout Itemize
+Talked about how an ambitious but worthy problem is to come up with a test
+ that can probe dynamical non locality, as opposed to non locality caused
+ by quantum correlations
+\end_layout
+
+\begin_layout Itemize
+Decided that the small achievable goals should involve implementing various
+ situations and various tests and see how dynamical non locality violates
+ these inequalities etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Plotting Wigner function
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This finally worked today
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename plotWigner1.2/mixed.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This is for the mixed state 
+\begin_inset Formula $\rho=\left|\alpha\right\rangle \left\langle \alpha\right|+\left|-\alpha\right\rangle \left\langle -\alpha\right|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename plotWigner1.2/cohPar=3.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+And this is for the superposition state 
+\begin_inset Formula $\rho=\left|\psi\right\rangle \left\langle \psi\right|$
+\end_inset
+
+ with 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\alpha\right\rangle +\left|-\alpha\right\rangle $
+\end_inset
+
+ (with the normalization messed up though)
+\end_layout
+
+\begin_layout Itemize
+The issue was essentially that I had messed up one step.
+ I failed to put the extra phase when I evaluated 
+\begin_inset Formula $D(\lambda)\left|\alpha\right\rangle \neq\left|\lambda+\alpha\right\rangle $
+\end_inset
+
+.
+ There's a phase which I had missed.
+\end_layout
+
+\begin_layout Itemize
+Here's the working code
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{plotWigner1.2/wigner.m}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_deeper
