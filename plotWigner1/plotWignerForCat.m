@@ -1,30 +1,37 @@
-max=100;
+max=200;
 half=max/2;
+
 root2=sqrt(2.0);
-par=5.0;
-xMax=16;
-phase=-1;%exp(5i);
-alpha=par %+par*1i;
-beta=-par %-par*1i;
+
+par=10.0;
+xMax=50;
+%phase=-1;%exp(5i);
+alpha=par; %+par*1i;
+beta=-par; %-par*1i;
 r_d=linspace(-xMax,xMax,max);
 %x=repmat(r_d,max);
 x=repmat(r_d,max,1);
 y=repmat(r_d',1,max);
 lambda=x+1i*y;
+
+function out=dPhase(alpha,beta)
+  out=exp(1i*imag(alpha.*beta));
+end
+
 % f=exp(-0.5*( lambda.*conj(lambda) + conj(lambda).*alpha - conj(alpha).*lambda));
 % f=exp(-abs(lambda - alpha).^2);
 function out = cohIn(alpha,beta)
   %out=exp(-0.5*(abs(alpha).^2)-0.5*(abs(beta).^2) + conj(alpha).*(beta));
-  out=exp(-0.5*(abs(alpha-beta).^2) + i*(imag(conj(beta).*alpha)));
+  out=exp(-0.5*(abs(alpha.-beta).^2) + i*(imag(conj(beta).*alpha)));
 end
 
 %alias(cohIn(alpha,beta) = exp(-0.5*(abs(alpha).^2)-0.5*(abs(beta).^2) + conj(alpha).*(beta)));
 
 
-f1=cohIn(alpha,alpha.+lambda);
-f2=cohIn(beta,alpha.+lambda).*phase;
-f3=cohIn(alpha,beta.+lambda).*conj(phase);
-f4=cohIn(beta,beta.+lambda);
+f1=cohIn(alpha,alpha.+lambda).*dPhase(alpha,lambda);
+f2=cohIn(beta,alpha.+lambda).*phase.*dPhase(alpha,lambda);
+f3=cohIn(alpha,beta.+lambda).*conj(phase).*dPhase(beta,lambda);
+f4=cohIn(beta,beta.+lambda).*dPhase(beta,lambda);
 
 % 
 %f=f1;
@@ -45,7 +52,7 @@ surfc(real(lambda),imag(lambda),imag(f));
 %w=fft2(f);
 %w=fftshift(f);
 %w = fftshift(fft2(ifftshift(f)));
-w = fftshift(ifft2(ifftshift(f)));
+w = fftshift(fft2(ifftshift(f)));
 %w=fftshift(ifft(fft(fftshift(ifftshift(f).').').').');
 %w = fftshift(fft(ifft(f).')'));
 %w = fft(ifftshift(f));
@@ -57,15 +64,15 @@ subplot(2,2,3)
 %the -1 business is because according to my formula, the second axis must
 %be negative
 %contourf(real(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
-%contourf(real(w),10)
-surfc(real(lambda),imag(lambda),real(w))
+contourf(real(w),10)
+%surfc(real(lambda),imag(lambda),real(w))
 
 %title('abs(W=fourierTransform(f))','interpreter','latex')
 subplot(2,2,4)
 %hold on
 %contourf(imag(w([half:max 1:half],[half:-1:1 max:-1:half ])),10)
-%contourf(imag(w),10)
-surfc(real(lambda),imag(lambda),imag(w))
+contourf(imag(w),10)
+%surfc(real(lambda),imag(lambda),imag(w))
 
 %title('angle(W=fourierTransform(f))','interpreter','latex')
 
