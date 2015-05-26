@@ -45,7 +45,9 @@ surfc(real(lambda),imag(lambda),imag(f));
 %w=fft2(f);
 %w=fftshift(f);
 %w = fftshift(fft2(ifftshift(f)));
-w = fftshift(fft2(ifftshift(f)));
+w = fftshift(ifft2(ifftshift(f)));
+%w=fftshift(ifft(fft(fftshift(ifftshift(f).').').').');
+%w = fftshift(fft(ifft(f).')'));
 %w = fft(ifftshift(f));
 
 
