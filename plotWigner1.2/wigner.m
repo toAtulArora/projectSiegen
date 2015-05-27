@@ -27,12 +27,11 @@ function wigner()
     
     figure
     subplot(2,2,1)
-    contourf(real(w),20)    
+    contourf(real(w),40,'EdgeColor','none','LineStyle','none');    
     title('real(W=ft[tr($\rho D(\lambda )$)])','interpreter','latex')
     subplot(2,2,2)
-    contourf(imag(w),20)
+    contourf(imag(w),40,'EdgeColor','none','LineStyle','none');
     title('imag(W=ft[tr($\rho D(\lambda )$)])','interpreter','latex')
-
 
 
 
