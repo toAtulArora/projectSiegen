@@ -1,26 +1,25 @@
 function wigner()
 
-% TO COMPARE TWO PLOTS
-%     figure
-%     colormap jet;
-%     plotWigner([2.0 0]);
+% TO COMPARE TWO PLOTS    
+    colormap jet;
+    plotWigner([2.0 0]);
     
 %     figure
 %     colormap jet;
 %     plotWigner([2.0 pi]);
     
-    for j=1:0.5:10
-        %plotWigner([alpha phi])
-        
-        plotWigner([j*0.5 0]) 
-        %plotWigner([3.0 j*pi/5.0])
-        drawnow
-        
-        %w=waitforbuttonpress
-        %if w==0 %button click
-        %    j=j+1
-        %end
-    end
+%     for j=1:0.5:10
+%         %plotWigner([alpha phi])
+%         
+%         plotWigner([j*0.5 0]) 
+%         %plotWigner([3.0 j*pi/5.0])
+%         drawnow
+%         
+%         %w=waitforbuttonpress
+%         %if w==0 %button click
+%         %    j=j+1
+%         %end
+%     end
 end
 function f=trRhoD(lambda,param)
     par=param(1);
@@ -69,23 +68,23 @@ function plotWigner(param)
 
     w = fftshift(fft2(ifftshift(f)));
     
-%     subplot(2,2,1)
+    subplot(2,2,1)
     contourf(real(w),40,'EdgeColor','none','LineStyle','none');    
-%     title(['real(W=ft[tr($\rho D(\lambda )$)]), $\phi=$' num2str(param(2)) ' $abs(\alpha)=$' num2str(param(1))],'interpreter','latex')
-% 
-%     subplot(2,2,2)
-%     contourf(imag(w),40,'EdgeColor','none','LineStyle','none');
-%     title('imag(W=ft[tr($\rho D(\lambda )$)])','interpreter','latex')
-% 
-% 
-% 
-%     subplot(2,2,3)
-%     surfc(real(lambda),imag(lambda),real(w),'EdgeColor','none','LineStyle','none','FaceLighting','phong');
-%     title('real(W)','interpreter','latex')    
-% 
-%     subplot(2,2,4)
-%     surfc(real(lambda),imag(lambda),imag(w),'EdgeColor','none','LineStyle','none','FaceLighting','phong');
-%     title('imag(W)','interpreter','latex')    
-% 
+    title(['real(W=ft[tr($\rho D(\lambda )$)]), $\phi=$' num2str(param(2)) ' $abs(\alpha)=$' num2str(param(1))],'interpreter','latex')
+
+    subplot(2,2,2)
+    contourf(imag(w),40,'EdgeColor','none','LineStyle','none');
+    title('imag(W=ft[tr($\rho D(\lambda )$)])','interpreter','latex')
+
+
+
+    subplot(2,2,3)
+    surfc(real(lambda),imag(lambda),real(w),'EdgeColor','none','LineStyle','none','FaceLighting','phong');
+    title('real(W)','interpreter','latex')    
+
+    subplot(2,2,4)
+    surfc(real(lambda),imag(lambda),imag(w),'EdgeColor','none','LineStyle','none','FaceLighting','phong');
+    title('imag(W)','interpreter','latex')    
+
 
 end

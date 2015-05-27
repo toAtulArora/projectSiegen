@@ -1564,8 +1564,370 @@ The issue was essentially that I had messed up one step.
 
 \begin_layout Itemize
 Here's the working code
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{plotWigner1.2/wigner.m}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Wednesday, May 27
+\end_layout
+
+\begin_layout Itemize
+Improving yesterday's code
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Implemented animations to see the effect of adding a phase 
+\begin_inset Formula $\phi$
+\end_inset
+
+ as 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\alpha\right\rangle +e^{i\phi}\left|-\alpha\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The maxima and minima must swap when we put 
+\begin_inset Formula $\phi=\pi$
+\end_inset
+
+ and this was verified
+\end_layout
+
+\begin_layout Itemize
+Doing the animations required some more streamlining of the code
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Analytically, the imaginary part should be zero (of the Wigner function,
+ which is a result in our implementation, we get after fft).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This was not working well.
+ The imaginary part was about 
+\begin_inset Formula $\frac{1}{10}^{\text{th}}$
+\end_inset
+
+ of the real part, which is not good at all.
+ Worse still, increasing the resolution had seemingly no effect.
+\end_layout
+
+\begin_layout Itemize
+This was fixed by realizing that FT for a real symmetric function should
+ be real.
+ Now even for my 1D Gaussian, this was not working well.
+ Which meant that the gird wasn't aligned well.
+ Putting the number of cells from 
+\begin_inset Formula $n$
+\end_inset
+
+ (say) to 
+\begin_inset Formula $n+1$
+\end_inset
+
+ fixed the issue! The imaginary part wouldn't go beyond 
+\begin_inset Formula $10^{-14}$
+\end_inset
+
+, while the real part was of the order 
+\begin_inset Formula $10^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Here's the output
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename plotWigner1.3/imagFixed.png
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I'm not putting the code this time.
+ Its there in the directory.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Talking to Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Building on post discussion with Otfried, the idea was to understand better
+ why while the moments are phase independent, how 
+\begin_inset Formula $\left\langle e^{\frac{i\hat{p}L}{\hbar}}\right\rangle $
+\end_inset
+
+ was phase dependent (phase similar to the one in the previous context,
+ further assuming that 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ are not overlapping, if 
+\begin_inset Formula $\psi=\psi_{1}+e^{i\phi}\psi_{2}$
+\end_inset
+
+).
+ The idea basically is that, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the assumption, as stated above forces us to consider non analytic functions
+ only, viz.
+ 
+\begin_inset Formula $f(x)\ne\sum\frac{f^{n}(0)x^{n}}{n!}$
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Essentially you're saying that you can't find a convergent sequence for
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ around some point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $\nexists\, a_{n}\, s.t.\, f(x)=a_{0}+a_{1}(x-x_{0})+a_{2}(x-x_{0})^{2}+\dots$
+\end_inset
+
+ which essentially means that the taylor expansion doesn't exist for 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Easiest example is 
+\begin_inset Formula $1/x$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+since 
+\begin_inset Formula $\psi(x)$
+\end_inset
+
+ is non analytic, 
+\begin_inset Formula $\psi(x+x_{0})$
+\end_inset
+
+ is also non analytic.
+\end_layout
+
+\begin_layout Itemize
+From the definition of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ as the generator of infinitesimal translations, we have 
+\begin_inset Formula $(1-\frac{i\hat{p}\delta L}{\hbar})\psi(x)=\psi(x+\delta L)$
+\end_inset
+
+.
+ If I put 
+\begin_inset Formula $\delta L=L/N$
+\end_inset
+
+, and apply this operation 
+\begin_inset Formula $N$
+\end_inset
+
+ times, s.t.
+ 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+, then I can write 
+\begin_inset Formula $(1-\frac{i\hat{p}L}{\hbar N})^{N}\psi(x)=e^{\frac{i\hat{p}L}{\hbar}}\psi(x+L)$
+\end_inset
+
+.
+ For this, I didn't have to assume that 
+\begin_inset Formula $\psi(x)$
+\end_inset
+
+ is analytic.
+ Call this definition 1.
+ (TODO: Prove this)
+\end_layout
+
+\begin_layout Itemize
+If I assume 
+\begin_inset Formula $\psi(x)$
+\end_inset
+
+ is analytic, I can write 
+\begin_inset Formula $e^{\frac{i\hat{p}L}{\hbar}}\psi(x)=\left[1+\frac{i\hat{p}L}{\hbar}+\frac{1}{2!}\left(\frac{i\hat{p}L}{\hbar}\right)^{2}+\dots\right]\psi(x)=\frac{i}{\hbar}\sum\frac{\psi^{n}(x)L^{n}}{n!}=\psi(x+L)$
+\end_inset
+
+, which is perfectly valid.
+ However, since 
+\begin_inset Formula $\psi(x)$
+\end_inset
+
+ is not analytic, 
+\begin_inset Formula $\psi(x+L)\ne\frac{i}{\hbar}\sum\frac{\psi^{n}(x)L^{n}}{n!}$
+\end_inset
+
+.
+ Yet, by definition 1, the RHS can be obtained even for non analytic functions.
+ I call this definition 2: 
+\begin_inset Formula $e^{\frac{i\hat{p}L}{\hbar}}=\left[1+\frac{i\hat{p}L}{\hbar}+\frac{1}{2!}\left(\frac{i\hat{p}L}{\hbar}\right)^{2}+\dots\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Conclusion: Since 
+\begin_inset Newline newline
+\end_inset
+
+(a) the action of 
+\begin_inset Formula $e^{\frac{i\hat{p}L}{\hbar}}$
+\end_inset
+
+ by definition 1 holds for non analytic functions and
+\begin_inset Newline newline
+\end_inset
+
+(b) an operator is defined by it's action on its domain, 
+\begin_inset Newline newline
+\end_inset
+
+it is safe to conclude that when extended to the domain of non analytic
+ functions, 
+\begin_inset Formula $e^{\frac{i\hat{p}L}{\hbar}}\ne\left[1+\frac{i\hat{p}L}{\hbar}+\frac{1}{2!}\left(\frac{i\hat{p}L}{\hbar}\right)^{2}+\dots\right]$
+\end_inset
+
+, viz.
+ definition 2 doesn't always hold.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+He suggested I read the paper by Aharnov on using modular variables in the
+ Aharnov Bohm effect to explain when it happens
+\end_layout
+
+\begin_layout Itemize
+Some of the ideas that came up include
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figuring out how a guassian state (analytic) produces results different
+ from non analytic states using the numerics, for expectation values of
+ the displacement operator
+\end_layout
+
+\begin_layout Itemize
+Device a way of seeing the effect of non local potential change in the interfere
+nce pattern, perhaps using the simulation somehow
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+On Friday, I have to discuss both the papers by Aharnov and the material
+ from the book with him.
+ I have to review my doubts about Ali's own manuscript about testing non
+ locality
+\end_layout
+
+\begin_layout Itemize
+The general direction of the project must be to device simpler questions
+ such as the following, and in the process, come up with more intuition
+ to answer the basic question, what exactly is the definition of non locality
+ and how can one come up with a test which responds to dynamical non locality
+ but not to quantum correlation type non locality.
+ The contextuality idea is particularly encouraging.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+identifying what all inequalities are violated by say a single particle
+ state with this non locality thing, which were earlier only used to study
+ entanglement
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Reading the second Aharnov paper on identifying when exactly does the AB
+ effect takes place
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Revised electrodynamics partly from CTF, Landau.
+ This was to understand the difference between the two momenta (I get confused
+ otherwise)
+\end_layout
+
+\begin_layout Itemize
+Revised how the Hamiltonian and 
+\begin_inset Formula $\dot{x},\,\dot{P}$
+\end_inset
+
+ for a particle interacting with the EM field is written in QM (from Sakurai)
+\end_layout
+
+\begin_layout Itemize
+I have some doubts regarding them (such as the definition of 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
