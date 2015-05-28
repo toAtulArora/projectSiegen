@@ -1920,10 +1920,189 @@ Revised how the Hamiltonian and
 \end_layout
 
 \begin_layout Itemize
-I have some doubts regarding them (such as the definition of 
+I have some doubts regarding them (such as quantization of EM fields and
+ their relation/analogy with the modular momentum etc.
+ | will perhaps have to read Knight, but I'm not sure if it discusses this)
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Subsection
+Thursday, May 28
+\end_layout
+
+\begin_layout Itemize
+Group meeting in the morning
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Couldn't understand too much.
+ Costentino discussed two papers.
+ First was about another way of proving the KS theorem.
+ The other was more fancy and related to a specific model of quantum computation.
+ In this model, they were attempting to find out what exactly it is that
+ gives this method its power (characterizing the states).
+ One said it is contextuality, the other negativity of the Wigner distribution.
+ Infact the definition of Wigner distribution for the discrete case is not
+ simple and universal.
+ It had something to do with CSS and magic states as well.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Resumed reading the paper by Aharnov
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The initial parts were almost the same, but he has skipped a lot of details
+\end_layout
+
+\begin_layout Itemize
+The section where he defines 
+\begin_inset Formula $O(0)=\cos\left[1/\hbar p_{x}(0)L+2k_{0}x(0)\right]$
+\end_inset
+
+, I wasn't able to understand the reason for this definition.
+ Moreover, I couldn't understand why he had then defined 
+\begin_inset Formula $\left\langle O(t)\right\rangle \equiv\frac{1}{2}\cos\alpha$
+\end_inset
+
+ while according to me it should be a consequence
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In this section, I couldn't understand how this relates to signalling interferen
+ce
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Next he discusses the AB effect and uses a funny gauge to describe the magnetic
+ flux.
+ He obtains some results in that picture.
+ [I am not sure about exactly how he writes the expression for the phase].
+ Then he goes on to talk about the same thing in Coulomb gauge, with the
+ calculations given at the end in the appendix.
+ I was able to follow it after some struggle upto the point where he finds
+ the phases.
+ Thereafter, when he evaluates the expectation values of 
+\begin_inset Formula $e^{imv_{y}L}$
+\end_inset
+
+, I am unable to understand exactly how he's working it out.
+ I spent quite some time on figuring it.
+ I couldn't figure the proof of this statement either: 
+\begin_inset Formula $e^{i\left(\vec{p}-\frac{e}{c}\vec{A}\right).\vec{L}}=e^{i\frac{e}{c}\int_{r+L}^{r}A.dl}e^{i\vec{p}.\vec{L}}$
+\end_inset
+
+ (I know I left some vector signs) which is apparently used somewhere.
+ I also suspect that they haven't, atleast on the face of it, used the right
+ displacement operator.
+ They should use 
+\begin_inset Formula $p-\frac{e}{c}A=P$
+\end_inset
+
+ instead of 
+\begin_inset Formula $p=\Pi=mv$
+\end_inset
+
+.
+ This is because as I had figured yesterday, 
+\begin_inset Formula $P$
+\end_inset
+
+ is the generator of translations, not 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+I skipped the final section that discusses angular velocity distribution
+\end_layout
+
+\begin_layout Itemize
+In any case, I have an overall idea of what is being done.
+ I must now begin thinking out of the box.
+ I have enough information about the state of the art in this area.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+To read the Aharnov paper, I had to look at chapter 4 of his book
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read from the printed copy and made in notes comments
+\end_layout
+
+\begin_layout Itemize
+Some statements such as multivaluedness of the scalar function 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ and subtlties about where it can be assumed single valued need to be looked
+ at, if there's time
+\end_layout
+
+\begin_layout Itemize
+It took a few hours but it wasn't too hard to understand
+\end_layout
+
+\begin_layout Itemize
+Left section 4.5 onwards since it wasn't relevant for the paper
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Also, while eating, I started looking at the `50 years of the AB effect'
+ seminar series on youtube.
+ One of them had this paper explained, as I had found even before starting
+ reading this.
+ The explanations may not be easy enough to understand from the seminar,
+ but with some pictures and talking, you get the idea
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I will continue watching these as they give ideas
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Idea thinking time
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Couldn't do much.
+ I thought you could somehow use the AB effect or it's modification to detect
+ objects without touching them (like the interference experiment)
+\end_layout
+
+\begin_layout Itemize
+I liked the idea of assuming contextuality and locality
+\end_layout
+
+\begin_layout Itemize
+I figured there're two directions to think now.
+ One is the tests direction and the other is this, thinking of experimental
+ setups with no classical analogues, which show some novel quantum feature.
+\end_layout
+
+\begin_layout Itemize
+I realized that even when EM fields are absent, 
+\begin_inset Formula $\phi=0,\, A=0$
+\end_inset
+
+ we continue to have 
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 
