@@ -2100,13 +2100,246 @@ I realized that even when EM fields are absent,
 \begin_inset Formula $\phi=0,\, A=0$
 \end_inset
 
- we continue to have 
+ we continue to have the gauge freedom in the wavefunction.
+ Was thinking if this can be somehow used to detect neutral particles at
+ a distance
+\end_layout
+
+\begin_layout Itemize
+I also thought how radiation is explained classically as a particle accelerating
+ (say going in circles).
+ I was wondering if we can answer questions like two lumps of a particle
+ rotating, with the hope to understand why having angular momentum is not
+ enough to radiate (eg.
+ atoms etc.).
+\end_layout
+
+\begin_layout Itemize
+I was also thinking if we can make two particles talk by this gauge freedom,
+ instead of one particle.
+ Perhaps we can see if there's an analogous AB effect with photons interacting
+ with atoms, so maybe then we can detect atoms with AB like effect, without
+ touching them.
+ That'll be insane! :)
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Friday, May 29
+\end_layout
+
 \begin_layout Standard
+Today I was working all day, but I didn't write much, I couldn't come up
+ with anything new (not even worthy ideas) and yet, as I said, I was working.
+\end_layout
+
+\begin_layout Itemize
+AB effect for Photons: I had this idea yesterday and today I started looking
+ for prior work on the field.
+ Here's what I found.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I realized that I had read some discussion on AB effect in Ryder.
+ This wasn't although directly related to what I was looking for, but was
+ interesting nonethless.
+ This is because he introduces some interesting mathematics to describe
+ the topology of the space, that is attributed to the effect.
+\end_layout
+
+\begin_layout Itemize
+One paper (phys rev) which was rather old, and this had this insane idea
+ of using a solenoid inside the feynman diagram for photon photon scattering.
+\end_layout
+
+\begin_layout Itemize
+There was one that I found first, which had some effective gauge potential
+ generated in some specific setup.
+ This was a nature paper.
+\end_layout
+
+\begin_layout Itemize
+Then I found auxiliary papers like
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No signalling in AB effect (something I was thinking is worth proving),
+ again PRL | this is a barely 2 page paper!
+\end_layout
+
+\begin_layout Itemize
+Some new non local effect (it said AB is not needed for showing that type
+ of non locality)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[after Roope's lecture etc.] I realized that in the whole scheme of AB, we
+ used gauge invariance with classical EM fields and quantized particles,
+ fermions.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I then started wondering how must one think of potentials, when I am talking
+ about photons themselves.
+ To that end I looked at Knight and found that in the atom field interaction,
+ they choose a specific gauge and then proceed.
+ So that's useless for me
+\end_layout
+
+\begin_layout Itemize
+I started wondering about other things such as what must the experimental
+ setup be to even investigate the effect
+\end_layout
+
+\begin_layout Itemize
+I settled eventually with the conclusion that I must somehow first see the
+ effect of gauge freedom on the atom field interaction and then proceed
+ from there somehow
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Then there was Roope's lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We had already discussed that given a state 
+\begin_inset Formula $\rho$
+\end_inset
+
+ we had found that we can evolve them through channels or operations and
+ then the classical probability of a measurement can be obtained by using
+ POVMs as described last time.
+\end_layout
+
+\begin_layout Itemize
+Today the aim was to obtain the state of the system after all of this has
+ happened.
+ To that end, he defined a further generalization: The measurement Model,
+ and later defined something called Instrument.
+ 
+\end_layout
+
+\begin_layout Itemize
+The details are there in the notes, but I couldn't quite keep up today.
+\end_layout
+
+\begin_layout Itemize
+It may be mentioned here that the instrument part is much like the von-neumann
+ measurement, because in this, they consider the measurement operator also
+ as quantum.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Bewildering Ideas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Now as it turns out, the issues I had associated with relativity, order
+ swapping and measurments etc., were infact discussed in Aharnov's book.
+\end_layout
+
+\begin_layout Itemize
+Aharnov's book had also considered some kind of quantum fluxons, which were
+ basically created to make the solenoids exist in superpositions etc.
+ which was again similar to what I was trying to do
+\end_layout
+
+\begin_layout Itemize
+I watched this seminar (according to what I'd decided yesterday) titled
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Phase Factors, Gauge Theories and Strings
+\begin_inset Quotes erd
+\end_inset
+
+ and in this, the person systematically discussed the origin of potentials
+ and gauges and their physicality.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The most interesting aspect was Maxwell's justification for introducing
+ the 
+\begin_inset Formula $A$
+\end_inset
+
+ field.
+ He was unhappy by the 
+\emph on
+non-locality
+\emph default
+ of the faraday induction law.
+ To make this effect local, he introduced 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ And so this non locality (if 
+\begin_inset Formula $A$
+\end_inset
+
+ is not accepted as physical) goes back all the way to classical electrodynamics.
+ This makes it harder to understand the precise meaning of non-locality
+ in quantum mechanics.
+\end_layout
+
+\begin_layout Itemize
+There was also this interesting aspect about how Dirac had predicted that
+ the electromagnetic charge must be quantized, if there exist magnetic monopoles
+ that we can't detect.
+ Infact AB is a non-trivial example of where Dirac's approach proves 
+\begin_inset Formula $A$
+\end_inset
+
+ field has physical significance and observable effect.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussing with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+AB effect for Bell Test: Ali suggested we do a double AB effect with entangled
+ states and look at the correlation.
+ He said this is a new result because in continuous variables, you're doing
+ something you do with unitaries and spins.
+ The math is nearly the same but the physical situations vastly different.
+ Plus he said he hasn't quite seen it before.
+ A little search on the net seems to support his claim.
+\end_layout
+
+\begin_layout Itemize
+He said this could be added to his paper/note as a physical example for
+ non locality etc.
+ and that we should build on this.
+\end_layout
+
+\begin_layout Itemize
+I started explaining the Aharnov paper (one in Journal of Physics) and finished
+ till section 2.1 in about an hour.
+ He seemed to have liked it.
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
