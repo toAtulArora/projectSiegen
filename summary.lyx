@@ -1242,7 +1242,7 @@ Summarizing etc.
 \end_layout
 
 \end_deeper
-\begin_layout Section
+\begin_layout Subsection
 May 23, 24 [Weekend]
 \end_layout
 
@@ -2315,7 +2315,11 @@ Discussing with Ali
 
 \begin_deeper
 \begin_layout Itemize
-AB effect for Bell Test: Ali suggested we do a double AB effect with entangled
+[
+\emph on
+possibly new
+\emph default
+] AB effect for Bell Test: Ali suggested we do a double AB effect with entangled
  states and look at the correlation.
  He said this is a new result because in continuous variables, you're doing
  something you do with unitaries and spins.
@@ -2378,7 +2382,7 @@ Can there be shades of symmetrization? Identical particles which are almost
 \end_layout
 
 \begin_layout Itemize
-[repeating?] EM field by electron localized with 
+[repeating?] EM field by electron localized with angular momentum 
 \begin_inset Formula $L$
 \end_inset
 
@@ -2387,6 +2391,197 @@ Can there be shades of symmetrization? Identical particles which are almost
 \end_inset
 
 .
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+[Weekend]
+\end_layout
+
+\begin_layout Standard
+Nothing to show for this time.
+ It was a strange weekend.
+\end_layout
+
+\begin_layout Section
+June 1-5 [Week 4]
+\end_layout
+
+\begin_layout Subsection
+Monday, June 1
+\end_layout
+
+\begin_layout Itemize
+Chapter 4 notes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This is from Aharnov's book.
+ I started writing the full notes, and realized that only the kinematic
+ momentum 
+\begin_inset Formula $\pi=p=P-\frac{e}{c}A$
+\end_inset
+
+ is infact gauge invariant because 
+\begin_inset Formula 
+\[
+\int\psi^{*}\pi\psi=\int\psi^{*}(P-\frac{e}{c}A)\psi=\int\psi'^{*}(P-\frac{e}{c}A')\psi'
+\]
+
+\end_inset
+
+ infact, now that I think of it, it is essentially just 
+\begin_inset Formula $d_{\mu}\psi\to D_{\mu}\psi$
+\end_inset
+
+ so that when 
+\begin_inset Formula $A\to A'$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\to\psi'$
+\end_inset
+
+, we have 
+\begin_inset Formula $D_{\mu}\psi\to e^{i\lambda}D_{\mu}\psi$
+\end_inset
+
+.
+ This in turn ensures that 
+\begin_inset Formula 
+\[
+\int\psi^{*}D_{\mu}\psi\to\int\psi'^{*}D'_{\mu}\psi'=\int e^{-i\lambda}\psi^{*}e^{i\lambda}D_{\mu}\psi=\int\psi^{*}D_{\mu}\psi
+\]
+
+\end_inset
+
+So that means that 
+\begin_inset Formula $D_{\mu}$
+\end_inset
+
+ corresponds to the kinematic momentum (even in QFT, man I'm an idiot, didn't
+ see it then) .
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ however is not gauge invariant.
+\end_layout
+
+\begin_layout Itemize
+I also had some doubts about how Newton's law wasn't holding.
+ The electron is pulling/pushing the plates together, but there's no force
+ being applied on it.
+ I mean if I consider this situation classically also, no double slit, just
+ an electron passing by a capacitor, mustn't Newton's law hold?
+\end_layout
+
+\begin_layout Itemize
+It's not complete yet, the next section I still have to write.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Resumed presenting the paper to Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Today's session was particularly interesting.
+ First, I have to learn about assumptions behind the Bell test more carefully.
+ 
+\end_layout
+
+\begin_layout Itemize
+There's a striking similarity between modular momentum and bloch vector
+ formalism, brolloigne zone etc.
+ from condensed matter physics
+\end_layout
+
+\begin_layout Itemize
+Doubts indeed
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The statement that the probability changes but the moments don't, is self
+ contradicting and needs to be understood well
+\end_layout
+
+\begin_layout Itemize
+How is it that even upon free evolution, at no time does any expectation
+ depend on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ (or 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ whatever the relative phase is called) in the double slit.
+ In fact this seems to contradict what happens physically.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ali suggested that in the general repeating case, the eigenvalue of the
+ displacement operator has (for an 
+\begin_inset Formula $N$
+\end_inset
+
+ lumps wavefunction), the value 
+\begin_inset Formula $\propto\frac{N-1}{N}$
+\end_inset
+
+, as opposed to 
+\begin_inset Formula $\propto\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+possibly new
+\emph default
+] The most important interesting thing we did today, we came up with a situation
+ where changing the potential like a step function (non-differentiability
+ is at the place where the wave function vanishes) plaussibly should cause
+ a change in interference pattern, something you would not expect classically
+ at all.
+ So this might be an interesting way to test non locality of equations of
+ motion.
+ However, now that I think of it, I am slightly sceptical about whether
+ the simulation will pick it.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ideas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Use the modular variable picture in the Bell state + AB effect setting
+\end_layout
+
+\begin_layout Itemize
+Cantor set and diffraction [http://arxiv.org/pdf/physics/9802007.pdf]
+\end_layout
+
+\begin_layout Itemize
+How to think of one particle state as really, a two particle state say 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle $
+\end_inset
+
+, then I can always write this as 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle \otimes\left|0\right\rangle +\left|0\right\rangle \otimes\left|\psi_{2}\right\rangle $
+\end_inset
+
+ and then this is essentially like a Bell state!
 \end_layout
 
 \end_deeper
