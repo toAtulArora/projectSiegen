@@ -1,0 +1,795 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand*{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Generalized Aharnov Bohm Effect in Photons
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+It is common to attribute the Aharonov Bohm (AB) effect to the Gauge and
+ Local Phase coupling of the EM field and the wavefunction.
+ The effect is peculiar because there's no force being applied on the system
+ (no EM field), yet there is an observable change (in the interference pattern).
+ To show this effect for photons, we can no longer use the field as classical
+ and the particle as quantum; it is however unnecessary to construct a complete
+ field theoretic description with gauge interactions.
+ We show (almost trivially) that even for arbitrary potentials, which apparently
+ have nothing to do with gauge transformations, such an effect can be observed.
+ In particular we demonstrate that for a photon in the cat state, we can
+ obtain observable changes, without application of any force.
+ The underlying mechanism is shown to be identical to that of the electric
+ AB effect.
+\end_layout
+
+\begin_layout Subsection*
+Organization of the document
+\end_layout
+
+\begin_layout Standard
+I'll first describe the relation of gauges and local phase.
+ I'll then relate this to the electric AB effect and explain the change
+ in the interference pattern.
+ Finally, I'll describe how the same effect can be understood rather trivially
+ in terms of a step potential.
+ I will describe next the difficulty with constructing an experiment to
+ observe the same effect in photons.
+ Finally, I'll describe how one such possible setup.
+\end_layout
+
+\begin_layout Section
+Gauge and Local Phase
+\end_layout
+
+\begin_layout Standard
+Here we review how from the Hamiltonian of a particle interacting with EM
+ fields, it becomes necessary to couple to the gauge freedom of the potentials
+ and the local phase of the wavefunction.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall: In quantum mechanics, the transformation 
+\begin_inset Formula $\psi\to e^{i\lambda}\psi$
+\end_inset
+
+ has no observable effect, given 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is constant.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This follows because expectation of no observable depends on 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: If however
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Notation: 
+\begin_inset Formula $x^{\mu}=(t,\mathbf{x})^{\mu},\,\mu\in\{0,1,2,3\},\, i\in\{1,2,3\},\,\partial^{i}\equiv\partial/\partial x_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\lambda=\lambda(x)$
+\end_inset
+
+ (called local), then manifestly, quantities like 
+\begin_inset Formula $\left\langle p^{i}\right\rangle =\left\langle -i\hbar\partial^{i}\right\rangle $
+\end_inset
+
+ depend on 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: Indeed, as will be shown, when we introduce electromagnetic interactions
+, then the generator of translations, 
+\begin_inset Formula $P^{i}=-i\hbar\partial^{i}$
+\end_inset
+
+ becomes a gauge dependent quantity and shouldn't be observable (if our
+ theory is correct).
+ The kinematic momentum however, an observable by experience, 
+\begin_inset Formula $p^{i}=\pi^{i}\equiv m\partial_{0}x^{i}$
+\end_inset
+
+, is gauge invariant; will be proved.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+W
+\begin_inset space ~
+\end_inset
+
+Concl: Global phase yields an equivalent description
+\begin_inset Newline newline
+\end_inset
+
+Local phase yields an inequivalent description
+\end_layout
+
+\begin_layout Standard
+Let us see how this conclusion is not accurate.
+ The flaw in the logic will be pointed out in the end.
+ For the moment, let us introduce electromagnetic interactions and analyse.
+ We start with deriving the Hamiltonian for the EM case, from the Lagrangian.
+ This is done to avoid any confusion with various definitions of the momentum.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall
+\begin_inset space ~
+\end_inset
+
+1: 
+\begin_inset Formula $F^{\mu\nu}=\left[\begin{array}{cccc}
+0 & -E_{x} & -E_{y} & -E_{z}\\
+ & 0 & -B_{z} & B_{y}\\
+ &  & 0 & -B_{x}\\
+ &  &  & 0
+\end{array}\right]$
+\end_inset
+
+; 
+\begin_inset Formula $F^{\mu\nu}=\partial^{[\mu}A^{\nu]}$
+\end_inset
+
+; 
+\begin_inset Formula $A^{\mu}=(V,\mathbf{A})^{\mu}$
+\end_inset
+
+; 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is the vector potential for 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ is the scalar potential for 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Clearly, 
+\begin_inset Formula $F^{\mu\nu}$
+\end_inset
+
+ is invariant under 
+\begin_inset Formula $A^{\mu}\to A^{\mu}+\partial^{\mu}\lambda$
+\end_inset
+
+, where 
+\begin_inset Formula $\lambda=\lambda(x^{\mu})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall
+\begin_inset space ~
+\end_inset
+
+2: 
+\begin_inset Formula $A^{\mu}$
+\end_inset
+
+ is required for the Lagrangian/Hamiltonian
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Units are s.t.
+ 
+\begin_inset Formula $c=1$
+\end_inset
+
+ (for simplicity)
+\end_layout
+
+\end_inset
+
+ formalism to get as the EOM, Lorentz force equation: 
+\begin_inset Formula $\mathbf{F}=q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The following is the required Lagrangian: 
+\begin_inset Formula 
+\[
+S=\int-mds-eA_{\mu}ds^{\mu}
+\]
+
+\end_inset
+
+The momentum we quantize, is one that generates infinitesimal translations,
+ which is this.
+ 
+\begin_inset Formula 
+\[
+\frac{\partial S}{\partial x}=\frac{\partial L}{\partial v}=P=p+eA
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p^{\mu}=(E,\mathbf{p})$
+\end_inset
+
+ for the particle (obtained by considering 
+\begin_inset Formula $S=\int-mds$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: 
+\begin_inset Formula 
+\[
+\mathbf{p}=\frac{m\mathbf{v}}{\sqrt{1-\mathbf{v}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall: In the Hamiltonian picture, we have coordinates, 
+\begin_inset Formula $x_{i},P_{i}$
+\end_inset
+
+.
+ Further, 
+\begin_inset Formula 
+\begin{eqnarray*}
+x_{i} & \to & x_{i}+\epsilon\partial g/\partial P^{i}\\
+P_{i} & \to & P_{i}+\epsilon\partial g/\partial x^{i}
+\end{eqnarray*}
+
+\end_inset
+
+so if we want 
+\begin_inset Formula $x_{i}\to x_{i}+\epsilon$
+\end_inset
+
+ but 
+\begin_inset Formula $P$
+\end_inset
+
+ to be invariant (from definition of generator of infinitesimal translations),
+ we must have 
+\begin_inset Formula $g=P_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall
+\begin_inset space ~
+\end_inset
+
+2: 
+\begin_inset Formula $H=v.P-L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: The relativistic Hamiltonian is then 
+\begin_inset Formula 
+\[
+H=v.P-L=\frac{m}{\sqrt{1-\mathbf{v}^{2}}}+eV
+\]
+
+\end_inset
+
+Combining the expression for 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \sqrt{m^{2}+(\mathbf{P}-e\mathbf{A})^{2}}+eV\\
+ & \approx & \frac{1}{2m}\left(\mathbf{P}-e\mathbf{A}\right)^{2}+eV
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we can go from classical mechanics to quantum mechanics.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: In QM, 
+\begin_inset Formula $A=A(\hat{\mathbf{x}})$
+\end_inset
+
+, the Hamiltonian is symmetrized in 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Impose: 
+\begin_inset Formula $[P_{i},x_{j}]=-i\hbar\delta_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Recall: 
+\begin_inset Formula $i\hbar\partial_{0}\psi=\hat{H}\psi$
+\end_inset
+
+ so that 
+\begin_inset Formula 
+\[
+i\hbar\partial_{0}\psi=\left[\frac{1}{2m}\left(-i\hbar\mathbf{\nabla}-e\mathbf{A}\right)^{2}+eV\right]\psi
+\]
+
+\end_inset
+
+where we've used the fact that 
+\begin_inset Formula $P$
+\end_inset
+
+ is the generator of infinitesimal translations.
+\end_layout
+
+\begin_layout Standard
+Now with this, we are ready to investigate the repercussions of gauge transforma
+tions.
+ Gauge transformations must yield equivalent situations.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Assume: Gauge transformation is defined as 
+\begin_inset Formula $A^{\mu}\to A'^{\mu}=A^{\mu}+\partial^{\mu}\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\to\psi'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: We must have 
+\begin_inset Formula $i\hbar\partial_{0}\psi=\hat{H}\psi$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $i\hbar\partial_{0}\psi'=\hat{H}'\psi'$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang british
+ which is guaranteed for 
+\begin_inset Formula $\psi'=e^{ie\lambda/\hbar}\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB
+\begin_inset space ~
+\end_inset
+
+2: 
+\begin_inset Formula $\partial_{0}\left\langle \mathbf{x}\right\rangle =\frac{i}{\hbar}\left\langle [H,\mathbf{x}]\right\rangle =\frac{1}{m}\left\langle \psi\right|(\mathbf{P}-e\mathbf{A})\left|\psi\right\rangle =\frac{1}{m}\left\langle \mathbf{p}\right\rangle $
+\end_inset
+
+ is gauge invariant.
+ This follows from noting 
+\begin_inset Formula $\mathbf{p'}e^{i\lambda(x)}\psi=e^{i\lambda(x)}\mathbf{p}\psi$
+\end_inset
+
+ holds, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\implies\psi'^{*}\mathbf{p'}\psi'=\psi^{*}\mathbf{p}\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: The flaw in the argument from which we made the wrong conclusion
+ was this.
+ Gauge dependence in the Hamiltonian wasn't considered; this resulted in
+ ambiguity of gauge dependence of observables.
+ Indeed if the Hamiltonian is gauge independent, then the conclusion must
+ hold.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark
+\begin_inset space ~
+\end_inset
+
+2: In this sense, it is known that quantum mechanics has a closer relation
+ to the potentials.
+ They can't be despensed.
+ The following discussion will conclusively show that the potential is indeed
+ physical as opposed to being a tool for calculational simplicity, as in
+ classical electrodynamics.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark
+\begin_inset space ~
+\end_inset
+
+3: One final remark is in order.
+ To preserve the principle of locality (viz.
+ forces can be mediated by fields only where they are present, i.e.
+ fields (not particles) can't act at a distance) , one must introduce 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Else in Faraday's Law of induction, we must accept that the changing magnetic
+ field, acts at a distance.
+ This was Maxwell's point and he therefore regarded 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ as more physical than 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Electric AB Effect
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: A capacitor is placed between the double slits as shown in figure
+ 1.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename photonABeffect1.png
+	lyxscale 30
+	width 4cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Electric AB effect setup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The battery is connected only when the electron is close to one of the plates
+ of the capacitors
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This is done to avoid the complications caused due to fringing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: Outside the capacitor, 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ is zero
+\begin_inset Newline newline
+\end_inset
+
+The plates have a charge
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+where 
+\begin_inset Formula $C$
+\end_inset
+
+ is capacitance and 
+\begin_inset Formula $V$
+\end_inset
+
+ is the voltage applied
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\pm CV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Working: (a) When the particle, say electron, passes, say slit one (chosen
+ to be the + plate), because of Coulombic interaction, the plates are pushed
+ apart.
+\begin_inset Newline newline
+\end_inset
+
+(b) Similarly for slit two, the plates are pulled together.
+\begin_inset Newline newline
+\end_inset
+
+(c) Since the 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ field is zero where the electron is present, therefore it feels no force.
+\begin_inset Newline newline
+\end_inset
+
+(d) Hence we can find which slit the electron passed through, 
+\emph on
+without influencing 
+\emph default
+the electron.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Issue: Newton's third law?
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Paradox: It is known that knowing which way the electron went (viz.
+ which slit it passed through) must result in disappearance of the interference.
+ In this case then, however it was shown that the electron is not influenced,
+ therefore putting a capacitor can't have any effect on the interference
+ pattern.
+ We have arrived at a contradiction with the predictions of Quantum Mechanics
+ (which is accurate).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Aim: Here we content ourselves by showing that the electron is influenced
+ by the 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ field and the conclusion that 
+\begin_inset Formula $\mathbf{E}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ `no observable effect' is wrong.
+ 
+\end_layout
+
+\begin_layout Section
+Electric AB Effect simplified
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: 
+\end_layout
+
+\end_body
+\end_document

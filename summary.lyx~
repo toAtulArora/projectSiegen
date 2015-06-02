@@ -16,7 +16,7 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_default_family default
+\font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -2394,8 +2394,13 @@ Can there be shades of symmetrization? Identical particles which are almost
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Subsection
+[Weekend]
+\end_layout
 
+\begin_layout Standard
+Nothing to show for this time.
+ It was a strange weekend.
 \end_layout
 
 \begin_layout Section
@@ -2577,6 +2582,100 @@ How to think of one particle state as really, a two particle state say
 \end_inset
 
  and then this is essentially like a Bell state!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Walking back
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured analytically what the phase must be, quite naturally
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 2
+\end_layout
+
+\begin_layout Itemize
+Documentation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fixing the readme
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Updated for the past week
+\end_layout
+
+\begin_layout Itemize
+Added an image from the wigner function plot
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[
+\emph on
+possibly new continued
+\emph default
+] In addition to the following: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+Hey! Where are you mate? I hope everything's good.
+ While walking back yesterday I figured the action of the step potential.
+ It is completely trivial.
+ And yes, it'll yield a state with that phase difference you said.
+ Besides, I realized that this is pretty much what happens in the electric
+ AB effect.
+ This aspect actually can be explained even without invoking the gauge argument
+ it seems.
+\end_layout
+
+\begin_layout Itemize
+Let me know when you return.
+ We should discuss this.
+\end_layout
+
+\begin_layout Itemize
+Sincerely -- Atul
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I realized that this means that our situation is infact an AB effect for
+ photons! Which is certainly something interesting because it has apparently
+ nothing to do with gauges.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ideas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Like in the case of Schrodinger picture, everything extractable about the
+ system, is encoded in the wavefunction 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Similarly, can there be an observable in the Heisenberg picture, s.t.
+ this operator and the initial state contain everything extractable about
+ the system? [iThink: This is plagued with the non-analyticity issues]
 \end_layout
 
 \end_deeper
