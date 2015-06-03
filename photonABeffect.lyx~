@@ -75,7 +75,7 @@
 \begin_body
 
 \begin_layout Title
-Generalized Aharnov Bohm Effect in Photons
+Dishonest Aharnov Bohm Effect in Photons
 \end_layout
 
 \begin_layout Section
@@ -326,7 +326,7 @@ Units are s.t.
 The following is the required Lagrangian: 
 \begin_inset Formula 
 \[
-S=\int-mds-eA_{\mu}ds^{\mu}
+S=\int-mds-eA_{\mu}dx^{\mu}
 \]
 
 \end_inset
@@ -1155,7 +1155,7 @@ Towards the photon AB effect
 \end_layout
 
 \begin_layout Standard
-
+For the photon version of AB effect, we consider a physical situation
 \end_layout
 
 \begin_layout Labeling

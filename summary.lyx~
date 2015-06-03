@@ -2736,13 +2736,13 @@ How exactly for a photon, will we add the step like potential? I can think
 \begin_deeper
 \begin_layout Itemize
 So the energy is basically 
-\begin_inset Formula $H=E^{2}+B^{2}$
+\begin_inset Formula $H\propto E^{2}+B^{2}$
 \end_inset
 
 , can't do anything to that.
  However, we know if we introduce charges, we'll have in the action, in
  addition to 
-\begin_inset Formula $S=\int-mdx^{\mu}dx_{\mu}-F^{\mu\nu}F_{\mu\nu}d^{4}x-eA^{\mu}dx_{\mu}$
+\begin_inset Formula $S=\int-m\sqrt{dx^{\mu}dx_{\mu}}-F^{\mu\nu}F_{\mu\nu}d^{4}x-eA^{\mu}dx_{\mu}$
 \end_inset
 
 .
@@ -2777,12 +2777,143 @@ Another interesting direction: The splitting of one particle into two doesn't
 
 \end_deeper
 \begin_layout Itemize
+Discussion with Ali and its consequences
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So Ali described methods to both create a schrodinger cat state and an entangled
+ cat state 
+\begin_inset Formula $\left|\psi\right\rangle \sim\left|\alpha\right\rangle \left|-\alpha\right\rangle +\left|\alpha\right\rangle \left|-\alpha\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename IMG_20150603_161717.jpg
+	lyxscale 10
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+It was almost trivial to see how an atom can be used to create the phase
+ we wanted.
+ The issue is however that this is not an effect of adding a step potential
+ to the photons.
+ The effect is similar to adding a step potential.
+ So this is not a genuine AB effect setup.
+\end_layout
+
+\begin_layout Itemize
+To construct a setup where this emerges, it was concluded that since from
+ 
+\begin_inset Formula $L=F^{2}$
+\end_inset
+
+, we get 
+\begin_inset Formula $H\propto E^{2}+B^{2}$
+\end_inset
+
+, which has no freedom whatsoever, therefore we must include interactions.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For the fermion in classical field, we use 
+\begin_inset Formula $H=\frac{1}{2m}(P-eA)^{2}+eV$
+\end_inset
+
+ which arises from 
+\begin_inset Formula $L_{p}+L_{fp}$
+\end_inset
+
+, we must have analogously therefore, 
+\begin_inset Formula $L_{f}+L_{fp}$
+\end_inset
+
+ to obtain the kind of 
+\begin_inset Formula $H$
+\end_inset
+
+ that we really need.
+ 
+\end_layout
+
+\begin_layout Itemize
+This can be justified further by arguments such as `given the field configuratio
+n, find the motion of the particle' requires us keep the 
+\begin_inset Formula $L_{f}$
+\end_inset
+
+ fixed, therefore it doesn't contribute to the dynamics.
+ Similarly, we must `keep the charges and currents fixed, and find field
+ equations'.
+ 
+\end_layout
+
+\begin_layout Itemize
+However, one must realize that 
+\begin_inset Formula $H=p.v-L$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ must include even parts that're not varied.
+ This I have to figure out.
+\end_layout
+
+\begin_layout Itemize
+Assuming though that 
+\begin_inset Formula $L_{f}+L_{fp}$
+\end_inset
+
+ are enough, I must obtain the relevant 
+\begin_inset Formula $P$
+\end_inset
+
+ and relevant 
+\begin_inset Formula $H$
+\end_inset
+
+ and see what kind of charge configuration I can use to construct a step
+ like potential.
+ So this has two steps
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Construct 
+\begin_inset Formula $H$
+\end_inset
+
+ and find the appropriate charge distribution | one intuitive possibility
+ is to use two cavities and place a capacitor in between them
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
 Misc
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Goto the bank to get cash for the rent.
+Goto the bank to get cash for the rent | the bank got shut :(
 \end_layout
 
 \end_deeper
