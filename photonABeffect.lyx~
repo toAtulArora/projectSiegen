@@ -82,6 +82,10 @@ Generalized Aharnov Bohm Effect in Photons
 Introduction
 \end_layout
 
+\begin_layout Subsection*
+Abstract
+\end_layout
+
 \begin_layout Standard
 It is common to attribute the Aharonov Bohm (AB) effect to the Gauge and
  Local Phase coupling of the EM field and the wavefunction.
@@ -787,6 +791,237 @@ Electric AB Effect simplified
 \end_layout
 
 \begin_layout Standard
+To understand the underlying principle, let us begin with the simplest situation
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: 
+\begin_inset Formula $\hat{H}=\hat{H}_{0}+\phi$
+\end_inset
+
+, where 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a real constant
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: 
+\begin_inset Formula $\left|\psi(t)\right\rangle =e^{i\phi t}\left(e^{i\hat{H}_{0}t}\left|\psi\right\rangle \right)=e^{i\phi t}\left|\psi_{0}(t)\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $\left|\psi_{0}(t)\right\rangle $
+\end_inset
+
+ is implicitly defined, 
+\begin_inset Formula $\Phi(t)=\phi t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: In classical mechanics, adding a constant to the Hamiltonian leads
+ to no difference in the physical situation it describes.
+ In quantum mechanics, evidently, this appears in the evolved state as an
+ overall phase.
+ It must therefore be unobservable by the same arguments used for 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ in the previous sections.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that even though 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ is a function of time, it doesn't depend on position.
+ Therefore no observable constructed using 
+\begin_inset Formula $\hat{x},\,\hat{p}$
+\end_inset
+
+ can capture this.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: (a) 
+\begin_inset Formula $\hat{H}=\hat{H}_{0}+\tilde{\phi}(x)$
+\end_inset
+
+, where 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ is now a step function; 
+\begin_inset Formula $\tilde{\phi}(x)\equiv\phi H(x)=\begin{cases}
+\phi & x>0\\
+\frac{\phi}{2} & x=0\\
+0 & x<0
+\end{cases}$
+\end_inset
+
+, with 
+\begin_inset Formula $\phi\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(b) 
+\begin_inset Formula $\psi_{R}$
+\end_inset
+
+ is s.t.
+ 
+\begin_inset Formula $\forall\, x<0\,\psi_{R}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(c) 
+\begin_inset Formula $\psi_{L}$
+\end_inset
+
+ is s.t.
+ 
+\begin_inset Formula $\forall\, x>0,\,\psi_{L}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(d) 
+\begin_inset Formula $\left|\psi\right\rangle =\frac{1}{\sqrt{2}}\left(\left|\psi_{L}\right\rangle +\left|\psi_{R}\right\rangle \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: This is a generalization of the situation where a particle is on
+ the right side in the real line.
+ In this domain the potential 
+\begin_inset Formula $\phi(x)$
+\end_inset
+
+ is again a constant and mustn't affect the classical dynamics.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: Similarly, we have 
+\begin_inset Formula $\left|\psi_{R}(t)\right\rangle =e^{i\Phi}\left|\psi_{R0}(t)\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\psi_{L}(t)\right\rangle =\left|\psi_{L0}(t)\right\rangle $
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\[
+\left|\psi(t)\right\rangle =\frac{1}{\sqrt{2}}\left(\left|\psi_{L0}(t)\right\rangle +e^{i\Phi}\left|\psi_{R0}(t)\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: Consider classically, two particles, one on either side of the origin
+ (along the real line), and they are under some potential.
+ If one adds to this potential, 
+\begin_inset Formula $\tilde{\phi}(x)$
+\end_inset
+
+, no change in the dynamics is expected.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark
+\begin_inset space ~
+\end_inset
+
+2: Quantum Mechanically, if one particle is in a superposition as described,
+ then there is an observable effect of adding 
+\begin_inset Formula $\tilde{\phi}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark_3: We were not required to investigate the gauge properties to arrive
+ at this conclusion; we didn't have to assume electro-magnetic interaction
+\end_layout
+
+\begin_layout Standard
+So far, we have not taken any specific physical situation.
+ However, if we are able to show that the electric AB effect is essentially
+ described by this very situation, then we would've explained the AB effect
+ without stressing on the gauge freedom.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: 
+\begin_inset Formula $\hat{H}=\frac{\hat{p}^{2}}{2m}+V_{0}$
+\end_inset
+
+, where 
+\begin_inset Formula $V_{0}$
+\end_inset
+
+ is a real constant
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\psi\propto e^{ikx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: 
+\begin_inset Formula $\hat{H}\left|\psi\right\rangle =(\frac{k^{2}}{2m}+V_{0})\left|\psi\right\rangle \implies\left|\psi(t)\right\rangle =e^{i(\frac{k^{2}}{2m}+V_{0})t}\left|\psi\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
