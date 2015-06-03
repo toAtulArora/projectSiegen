@@ -237,7 +237,21 @@ Recall
 \begin_inset Formula $F^{\mu\nu}=\partial^{[\mu}A^{\nu]}$
 \end_inset
 
-; 
+;
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Notation: 
+\begin_inset Formula $A^{[\mu}B^{\nu]}\equiv A^{\mu}B^{\nu}-A^{\nu}B^{\mu}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $A^{\mu}=(V,\mathbf{A})^{\mu}$
 \end_inset
 
@@ -786,6 +800,11 @@ Aim: Here we content ourselves by showing that the electron is influenced
  
 \end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Todo: <Complete this section>
+\end_layout
+
 \begin_layout Section
 Electric AB Effect simplified
 \end_layout
@@ -888,7 +907,7 @@ Consider: (a)
 
  is s.t.
  
-\begin_inset Formula $\forall\, x<0\,\psi_{R}=0$
+\begin_inset Formula $\forall\, x<0,\,\psi_{R}=0$
 \end_inset
 
 
@@ -949,8 +968,12 @@ NB: Similarly, we have
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Remark: Consider classically, two particles, one on either side of the origin
- (along the real line), and they are under some potential.
+Remark: Consider classically, 
+\emph on
+two
+\emph default
+ particles, one on either side of the origin (along the real line), and
+ they are under some potential.
  If one adds to this potential, 
 \begin_inset Formula $\tilde{\phi}(x)$
 \end_inset
@@ -964,9 +987,23 @@ Remark
 \begin_inset space ~
 \end_inset
 
-2: Quantum Mechanically, if one particle is in a superposition as described,
- then there is an observable effect of adding 
+2: Quantum Mechanically, if 
+\emph on
+one
+\emph default
+ particle is in a superposition as described, then there is an observable
+ effect of adding 
 \begin_inset Formula $\tilde{\phi}(x)$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The quantum version for 2 particles will be explored later.
+\end_layout
+
 \end_inset
 
 
@@ -974,15 +1011,151 @@ Remark
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Remark_3: We were not required to investigate the gauge properties to arrive
- at this conclusion; we didn't have to assume electro-magnetic interaction
+Remark
+\begin_inset space ~
+\end_inset
+
+3: We were not required to investigate the gauge properties to arrive at
+ this conclusion; we didn't have to assume electro-magnetic interaction
 \end_layout
 
 \begin_layout Standard
-So far, we have not taken any specific physical situation.
- However, if we are able to show that the electric AB effect is essentially
- described by this very situation, then we would've explained the AB effect
- without stressing on the gauge freedom.
+So far, we have not assumed any specific physical situation.
+ We have merely restricted the admissible physical situations.
+ However, if we are able to show that the electric AB effect is admissible,
+ then we would've explained the AB effect without stressing on the gauge
+ freedom.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Consider: The electric AB setup.
+\begin_inset Newline newline
+\end_inset
+
+(a) The screen with the double slit is defined to be the XY plane, s.t.
+ the slits are along the Y axis and the Z axis is the direction of propagation
+ incident particles
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+on an average that is
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+(c) At 
+\begin_inset Formula $t=0$
+\end_inset
+
+, the capacitor has charge when the particles emerge from the double slits
+ 
+\begin_inset Newline newline
+\end_inset
+
+(d) Assume time = 
+\begin_inset Formula $t$
+\end_inset
+
+ to be (small) s.t.
+ the particle hasn't left the zero 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ region.
+\begin_inset Newline newline
+\end_inset
+
+(e) Distance between the capacitor plates is negligible compared to the
+ distance between the slits
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: (a) The capacitor effectively creates, along the X axis, a step potential
+ independent of time (in the chosen time domain)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+upto an overall constant, but this doesn't affect the dynamics as has been
+ discussed.
+ Recall the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ discussion
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+(b) The wavefunction at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $\left|\psi\right\rangle =\frac{1}{\sqrt{2}}\left(\left|\psi_{L}\right\rangle +\left|\psi_{R}\right\rangle \right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Therefore this setup is admissible.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: For cases where the potential 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ has dependence of the form 
+\begin_inset Formula $\phi=\phi(t)$
+\end_inset
+
+, one can readily generalize the result to 
+\begin_inset Formula 
+\[
+\left|\psi(t)\right\rangle =\frac{1}{\sqrt{2}}\left(\left|\psi_{L0}(t)\right\rangle +e^{i\int_{0}^{t}\phi(t')dt'}\left|\psi_{R0}(t)\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: Now relaxing the condition (d), we get the same result as that obtained
+ using the gauge arguments.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark
+\begin_inset space ~
+\end_inset
+
+C: The advantage of this method is that it can be applied to more general
+ situations than electro-magnetic interactions.
+\end_layout
+
+\begin_layout Section
+Towards the photon AB effect
+\end_layout
+
+\begin_layout Standard
+For the photon version of AB effect, we consider a physical situation
 \end_layout
 
 \begin_layout Labeling

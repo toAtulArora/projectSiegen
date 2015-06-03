@@ -2684,6 +2684,107 @@ Like in the case of Schrodinger picture, everything extractable about the
  the system? [iThink: This is plagued with the non-analyticity issues]
 \end_layout
 
+\begin_layout Itemize
+Was wondering if the rest mass energy in the hamiltonian can be measured
+ by a method like this.
+ It requires superposition of particles with different masses.
+ The only thing that comes to mind, is the W bosons.
+ Apparently I'd also thought of asking Marius because he seemed to work
+ on particles that live in superpositions, but his kayons decay model didn't
+ quite fit (from what I could gather).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 3
+\end_layout
+
+\begin_layout Itemize
+Documenting/Thinking/Notes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Working on the Photon AB effect documentation
+\end_layout
+
+\begin_layout Itemize
+Although the idea is pretty simple, creating a step potential experimentally
+ is sounding harder than I thought.
+\end_layout
+
+\begin_layout Itemize
+[not started yet] Working on the notes for section 4.5
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ideas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seminar: The Long Road to the Higgs Boson - and Beyond | https://www.youtube.com/w
+atch?v=nU42nLyVuHI&list=PLg7f-TkW11iWmYJ5F5WeNEmAphM_QpW9r
+\end_layout
+
+\begin_layout Itemize
+How exactly for a photon, will we add the step like potential? I can think
+ of two approaches
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So the energy is basically 
+\begin_inset Formula $H\propto E^{2}+B^{2}$
+\end_inset
+
+, can't do anything to that.
+ However, we know if we introduce charges, we'll have in the action, in
+ addition to 
+\begin_inset Formula $S=\int-mdx^{\mu}dx_{\mu}-F^{\mu\nu}F_{\mu\nu}d^{4}x-eA^{\mu}dx_{\mu}$
+\end_inset
+
+.
+ So perhaps the same old capacitor can be used.
+ Question is where and how? Since the where requires understanding of how
+ the cat state is created, it brings us to
+\end_layout
+
+\begin_layout Itemize
+The next idea (which) is then to first understand how to create cat states
+ (for that also, naively I would need freedom to make arbitrary potentials)
+ and then to exploit that method to implement a step potential.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Another interesting direction: The splitting of one particle into two doesn't
+ seem to produce the same results afterall! If you consider 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle \otimes\left|0\right\rangle +\left|0\right\rangle \otimes\left|\psi_{2}\right\rangle $
+\end_inset
+
+ instead of 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle $
+\end_inset
+
+, and apply the step potential, then (assuming you apply the step potential
+ to the vacuum also) the results are different.
+ If you insist on the representation being accurate, you must supress the
+ evolution of the vacuum.
+ But what's the reason?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Goto the bank to get cash for the rent.
+\end_layout
+
 \end_deeper
 \end_body
 \end_document
