@@ -2595,6 +2595,16 @@ Figured analytically what the phase must be, quite naturally
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Tuesday, June 2
 \end_layout
@@ -2692,6 +2702,16 @@ Was wondering if the rest mass energy in the hamiltonian can be measured
  Apparently I'd also thought of asking Marius because he seemed to work
  on particles that live in superpositions, but his kayons decay model didn't
  quite fit (from what I could gather).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
 \end_layout
 
 \end_deeper
@@ -2909,12 +2929,267 @@ If the intuitive possibility has merit (and this was anyway motivated by
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-Misc
+Misc/health
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Goto the bank to get cash for the rent | the bank got shut :(
+\end_layout
+
+\begin_layout Itemize
+Gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday, June 4 [Officially off in Germany]
+\end_layout
+
+\begin_layout Itemize
+Social Protocols
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, June 5
+\end_layout
+
+\begin_layout Itemize
+Ideas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seminars: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There was one on neutrino oscillations and geometric phase relation
+\end_layout
+
+\begin_layout Itemize
+QFT related some specific solutions in special geometries etc.
+\end_layout
+
+\begin_layout Itemize
+AB effect in coherent states of electrons
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Convinced that instead of `quantize fermion and not the field', I have to
+ `quantize the field, not the fermion' with the very important difficulty:
+ To quantize the EM field, one must fix the gauge.
+ Thereafter, how would I adjust the potential? So this I think by itself
+ can consume a month easily.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+And come to think of it, this way
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Usual AB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reverse AB
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q: 
+\begin_inset Formula $e^{i\phi}$
+\end_inset
+
+, C: 
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q: 
+\begin_inset Formula $e^{i\phi},V$
+\end_inset
+
+, C:?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gauge not fixed for quantization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gauge is fixed for quantization
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So he emailed
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A review article on how to create the schrodiner cat states
+\end_layout
+
+\begin_layout Itemize
+A PRL that talks about a new entanglement test using modular variables (yes
+ and I couldn't come up with it) | plus it looks like I'll have to spend
+ some time reading it
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Presented the remainder of the NJP paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pre-discussion remark about `Finding the right variables for the bell test'
+ seemed to be interesting.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I figured that somehow non locality must arise from non analytic functions
+ (such as the step potential etc.) because otherwise they would have usual
+ classical effects
+\end_layout
+
+\begin_layout Itemize
+If we're talking about dynamic non locality, it must be the property of
+ the time evolution operator
+\end_layout
+
+\begin_layout Itemize
+The test for non locality must admit two different states, related by time
+ evolution (so it might as well be taken to be two different systems and
+ linked to the bell test somehow)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Not much came out of the discussion today: He wants me to look at
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+interference/wigner function for states with superposition of non analytic
+ functions
+\end_layout
+
+\begin_layout Itemize
+two particle wigner function and then plot 
+\begin_inset Formula $W(x_{1},x_{2})$
+\end_inset
+
+ by fixing the value of 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+come up with the precise way of figuring how to do a bell test with continuous
+ variables using the AB setup etc.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Reading/Notes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Completed the notes for chapter 4 from Aharnov's book
+\end_layout
+
+\begin_layout Itemize
+Making notes for the PRL paper on when the AB effect happens, investigated
+ using modular variables
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Had a headache in the morning
 \end_layout
 
 \end_deeper
