@@ -2404,7 +2404,7 @@ Nothing to show for this time.
 \end_layout
 
 \begin_layout Section
-June 1-5 [Week 4]
+June 1-7 [Week 4]
 \end_layout
 
 \begin_layout Subsection
@@ -3192,6 +3192,224 @@ Health
 Had a headache in the morning
 \end_layout
 
+\end_deeper
+\begin_layout Subsection
+June 6, 7 [Weekend]
+\end_layout
+
+\begin_layout Itemize
+Health/Gym appointment with the instructor
+\end_layout
+
+\begin_layout Itemize
+Routine grocery shopping, cleaning etc.
+\end_layout
+
+\begin_layout Itemize
+Academic
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read the photon-phonon paper (to figure what effective gauge potential they
+ constructed), it was interesting, but in another sense, not as novel as
+ I was thinking it was.
+ 
+\end_layout
+
+\begin_layout Itemize
+Took a glance at the entanglement paper (based on modular variables) and
+ it had some things which I couldn't understand.
+ Implication, I'd have to fine read it.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 8-15 [Week 5]
+\end_layout
+
+\begin_layout Subsection
+Monday, June 8
+\end_layout
+
+\begin_layout Itemize
+Ottfried's lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It was about Bell inequalities (continued)
+\end_layout
+
+\begin_layout Itemize
+The picture is a lot more clear now.
+ I think although that there's more to be said
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Working on interesting things
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[
+\emph on
+possibly new
+\emph default
+] Aim: Get a better understanding of Modular Variables
+\begin_inset Newline newline
+\end_inset
+
+Understand why observing a modular variable is different from observing
+ the full variable and taking its modular part, viz.
+ How modular variables affect the state of the system.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sub aim & progress: Worked out the action of a modular variable on an arbitrary
+ state; viz.
+ precisely defined 
+\begin_inset Formula $\hat{p}\text{mod}L/\hbar$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Figured a possible alternate definition (intuitively) | TODO: check consistency
+\end_layout
+
+\begin_layout Itemize
+Sub aim: Dissolve the doubt about 
+\begin_inset Formula $[p_{\text{mod}},x_{\text{mod}}]=0$
+\end_inset
+
+ and 
+\begin_inset Formula $[D(\lambda),D(\beta)]\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sub aim: (a) Plot simultaneous eigenstates of 
+\begin_inset Formula $x_{\text{mod}}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{\text{mod}}$
+\end_inset
+
+.
+ (b) Are modular 
+\begin_inset Formula $x,\, p$
+\end_inset
+
+ complete? Prove or disprove it.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sub aim: Verify construction: (a) Figure out why must 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ come in the picture? (b) Why is 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $1/L$
+\end_inset
+
+ the scaling for the conjugate variables necessary?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[
+\emph on
+possibly new
+\emph default
+] Aim: Understand the relation between 
+\begin_inset Formula $L,\,\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{x},\, p_{\text{mod}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sub aim: Figure the relation between the simplest 
+\begin_inset Formula $L$
+\end_inset
+
+ case (spin 1/2) and the double slit
+\begin_inset Newline newline
+\end_inset
+
+Progress: Made some.
+ I ran into issues with unexpected things such as, analogue of interference
+ pattern, 
+\begin_inset Formula $V(x)$
+\end_inset
+
+, and so far, the time evolution of the displacement (angular rotation)
+ seems to be local! So although looks trivial, but might have something
+ deeper.
+\end_layout
+
+\begin_layout Itemize
+TODO: figure rest of the sub aims
+\end_layout
+
+\begin_layout Itemize
+What is the coulomb potential equivalent for spin 1/2?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[
+\emph on
+possibly new continued
+\emph default
+] Aim: AB effect for photons | inspired by photon phonon ab effect
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Progress: Was able to construct an extremely simple setup (essentially double
+ slit with a glass slab!) to claim that this is a valid effective version
+ of the electric AB effect, much like the Nature paper on photon phonon
+ is effectively a magnetic AB effect.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminars
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.youtube.com/watch?v=RGbpvKahbSY | Got the basic idea about Bohm
+ mechanics (tried writing the first equation myself and got quite close
+ [its actually quite obvious a step])
+\end_layout
+
+\begin_layout Itemize
+https://www.youtube.com/watch?v=ZCLMb6HYyjs&list=PLOy5dvWSc5d5mGF4hr0D3j4G0AZFTkVv
+s&index=3 | Learnt more about Bell's perspective (seems more refined than
+ Aharonov's)
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
