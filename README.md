@@ -142,4 +142,34 @@ Week 4
 
 * Tuesday (June 2)
   * Misc maintainence tasks
+  * Realized a possible unification of AB effect with photon cat states
+  * Worked on documenting the basics of the photon AB effect as an article
 
+* Wednesday (June 3)
+  * Continued to work on documenting the photon AB effect and thought about how to implement it
+  * Discussed with Ali (various ideas/methods came up)
+
+* Thursday (June 4) [officially off in Germany]
+  * Health + Social protocols
+
+* Friday (June 5)
+  * Thought of a quantization scheme that might produce the photon AB in lab
+  * New relavent papers looked at (Ali sent)
+  * Discussed the NJP paper by Aharnov with Ali
+  * Decided how to proceed with small achievable goals
+
+* Saturday Sunday (June 6, 7) [Weekend]
+  * Read the photon-phonon paper (nature)
+  * Glanced through the modular variable based entanglement paper
+
+
+Week 5
+--
+
+* Monday (June 8)
+  * Ottfried's lecture (EPR and Bell)
+  * Various possibly new things: Modular variables in finite dimension systems, Deriving some properties of Modular variables, Electric AB effect for photon inspired by Photon Phonon AB effect (Nature)
+  * Seminars: Basics of Bohm mechanics, Bell's perspectives
+
+* Tuesday (June 9)
+  * <under construction>
