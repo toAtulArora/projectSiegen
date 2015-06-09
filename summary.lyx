@@ -3325,7 +3325,12 @@ Sub aim: Verify construction: (a) Figure out why must
 \begin_inset Formula $1/L$
 \end_inset
 
- the scaling for the conjugate variables necessary?
+ the scaling for the conjugate variables necessary? [LATER: You need 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ because of dimensionality.
+ You need conjugate scaling for commutation to work]
 \end_layout
 
 \end_deeper
@@ -3410,6 +3415,100 @@ s&index=3 | Learnt more about Bell's perspective (seems more refined than
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 9
+\end_layout
+
+\begin_layout Itemize
+Health/Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Emails | Ensuring the GRE decision is correct :(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Spent most of the day trying to systematically derive the eigenkets of modular
+ momentum and modular position.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I had some dimensionalities wrong, which I didn't care for initially, but
+ they were fatal
+\end_layout
+
+\begin_layout Itemize
+I couldn't find the co-effecients I'd set out to find; eventually looked
+ at the paper and they had derived these eigenkets
+\end_layout
+
+\begin_layout Itemize
+Of the two eigenkets they'd given, one of them didn't work for me.
+ I was able to fix it, but don't know why the original won't work.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Some ideas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Is it possible to construct say for a 
+\begin_inset Formula $q,p$
+\end_inset
+
+ system, a set of operators 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ with 
+\begin_inset Formula $i\in\{1,2,\dots n\}$
+\end_inset
+
+ where they commute and 
+\begin_inset Formula $n>2$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+It seems that asking for more (or general) information disturbs the system
+ less.
+ So in an interference experiment, can I ask which all slits the particle
+ went through? Instead of asking precisely which slit it went through? For
+ instance in the usual interferometer.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminars
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.youtube.com/watch?v=jKGuGptafvo&index=4&list=PLOy5dvWSc5d5mGF4hr0D3j4G
+0AZFTkVvs| This is insane.
+ It asks where the photon was, after it has been detected.
+ The answer is spooky.
+\end_layout
+
+\begin_layout Itemize
+https://www.youtube.com/watch?v=zQ8Bm33o0uI&index=6&list=PLOy5dvWSc5d5mGF4hr0D3j4G
+0AZFTkVvs | This is about twisters.
+ Is mathematically too sophisticated to understand in a short time.
+\end_layout
+
+\begin_layout Itemize
+https://www.youtube.com/watch?v=w8x8tyOaxQk&list=PLOy5dvWSc5d5mGF4hr0D3j4G0AZFTkVv
+s&index=7 | This I just started
+\end_layout
+
 \end_deeper
 \end_body
 \end_document

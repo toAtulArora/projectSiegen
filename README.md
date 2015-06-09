@@ -172,4 +172,5 @@ Week 5
   * Seminars: Basics of Bohm mechanics, Bell's perspectives
 
 * Tuesday (June 9)
-  * <under construction>
+  * Worked on finding the eigenkets of pmod and xmod
+  * Seminars: Multiworld (where the photon's been), Twisters, Twin Bell
