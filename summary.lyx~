@@ -3429,6 +3429,10 @@ Health/Misc
 Emails | Ensuring the GRE decision is correct :(
 \end_layout
 
+\begin_layout Itemize
+Gym
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Spent most of the day trying to systematically derive the eigenkets of modular
@@ -3482,7 +3486,7 @@ It seems that asking for more (or general) information disturbs the system
  less.
  So in an interference experiment, can I ask which all slits the particle
  went through? Instead of asking precisely which slit it went through? For
- instance in the double slit.
+ instance in the usual interferometer.
 \end_layout
 
 \end_deeper
@@ -3507,6 +3511,200 @@ https://www.youtube.com/watch?v=zQ8Bm33o0uI&index=6&list=PLOy5dvWSc5d5mGF4hr0D3j
 \begin_layout Itemize
 https://www.youtube.com/watch?v=w8x8tyOaxQk&list=PLOy5dvWSc5d5mGF4hr0D3j4G0AZFTkVv
 s&index=7 | This I just started
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 10
+\end_layout
+
+\begin_layout Itemize
+Eigenket
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Derived the result using a slightly different approach.
+ Instead of requiring both eigenkets to be equal, I constructed the ket
+ to be an eigenket of modular momentum and then demanded it is an eigenket
+ for modular position, to fix the coefficients.
+ This did it.
+ The result is 
+\begin_inset Formula $\left|\bar{x},\bar{p}\right\rangle =\sum_{n}e^{in\bar{x}\left(\frac{2\pi}{L}\right)}\left|\bar{p}+\frac{nh}{L}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Analogously one can start with 
+\begin_inset Formula $\left|\bar{x}+nL\right\rangle $
+\end_inset
+
+ and obtain an expression.
+\end_layout
+
+\begin_layout Itemize
+To prove they are the same, I took the fourier transform of these as 
+\begin_inset Formula $\int e^{i\bar{p}x}dx$
+\end_inset
+
+ in the position space and upto constant scaling factors, the result was
+ 
+\begin_inset Formula $e^{\frac{i\bar{p}\bar{x}}{\hbar}}$
+\end_inset
+
+ which proves nothing I just realized.
+ I must do this for an arbitrary 
+\begin_inset Formula $p$
+\end_inset
+
+ and not for 
+\begin_inset Formula $\bar{p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+I also wrote a small matlab code [projectSiegen/simplerPlots]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Need to fix the x axis after fft: http://stackoverflow.com/questions/13397393/uni
+t-of-fftdft-x-axis, http://stackoverflow.com/questions/4364823/how-do-i-obtain-th
+e-frequencies-of-each-value-in-a-fft/4371627#4371627
+\end_layout
+
+\begin_layout Itemize
+The output/plot is here
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename simplerPlots/eigen.pdf
+	width 10cm
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+where first we have the position representation of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\left|\bar{x},\bar{p}\right\rangle $
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang british
+ and in the second plot, its fft (scaling in the second plot is wrong).
+ One can see how the distribution is peaked in both the 
+\begin_inset Formula $x$
+\end_inset
+
+ and the 
+\begin_inset Formula $p$
+\end_inset
+
+ representation, thereby manifestly allowing for simultaneous sharp values
+ of 
+\begin_inset Formula $x_{mod}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{mod}$
+\end_inset
+
+.
+ For this plot, I used 
+\begin_inset Formula $\bar{x}=0.7,\,\bar{p}=10,\, L=1.0,\, h=2\pi,\, n_{max}=10$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Still to be done:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Equivalence
+\end_layout
+
+\begin_layout Itemize
+Action of the modular variable on arbitrary kets, equivalence with the guessed
+ result
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Seminar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.youtube.com/watch?v=w8x8tyOaxQk | I just cleared a misconception:
+ In Bell's theorem, the only assumption apparently is 
+\emph on
+locality
+\emph default
+ and determinism or pre-defined values of the observables follows as a consequen
+ce.
+ The only assumption is locality! He showed that even Nielson has this wrong.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pushing the qubit analogy with the continuous case will probably not help
+ all that much | you have no idea what you're trying to find or answer
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym + purchases
 \end_layout
 
 \end_deeper
