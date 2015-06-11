@@ -3693,6 +3693,17 @@ Pushing the qubit analogy with the continuous case will probably not help
  all that much | you have no idea what you're trying to find or answer
 \end_layout
 
+\begin_layout Itemize
+Defined a seemingly doable and interesting problem as that of constructing
+ a bell test for continuous variables, using the ability to add phases
+\end_layout
+
+\begin_layout Itemize
+He also told me about how in his paper, he'd linked the displacement operator
+ in certain dimensions to the pauli matrices.
+ That was certainly interesting.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Misc
@@ -3701,6 +3712,148 @@ Misc
 \begin_deeper
 \begin_layout Itemize
 Gym + purchases
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday, June 11
+\end_layout
+
+\begin_layout Itemize
+Misc/health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No gym, overslept (forgot to put the phone off of silent)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.youtube.com/watch?v=Xm93utUP7YE&list=PLOy5dvWSc5d5mGF4hr0D3j4G0AZFTkVv
+s&index=8 | hilarious, and has gotten me to start liking Bohmian mechanics.
+ Together with yesterday's seminar (that suggested that the consequence
+ of Bell's prediction is that locality is violated), it seems like the way
+ to go.
+ While on the other hand, it is almost like Newton saying how can gravity
+ act at a distance and Einstein coming up with a mechanism.
+ Perhaps the times are similar.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continuous variable bell test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So basically in the bell test, there're Alice's measurements, which are
+ along 
+\begin_inset Formula $z,\, x$
+\end_inset
+
+ and then there're Bob's measurements which are along 
+\begin_inset Formula $z',\, x'$
+\end_inset
+
+.
+ The state is 
+\begin_inset Formula $01-10$
+\end_inset
+
+ normalized, and then the result is that the inequality is violated.
+\end_layout
+
+\begin_layout Itemize
+I wanted to convert this into a setting where only one particular observable
+ is measured, say 
+\begin_inset Formula $z$
+\end_inset
+
+ (I'm obviously talking about spins, so 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+).
+ The question then was if I could find suitable unitaries such that the
+ effectively, when I calculate the expectations, I get the same answer.
+ The answer I found is yes (rather trivially if thought of geomtrically).
+ 
+\end_layout
+
+\begin_layout Itemize
+Next I asked if I could make those unitaries act like essentially only adjusting
+ the phases of the state.
+ I figured that can also be done.
+ Instead of measuring 
+\begin_inset Formula $z$
+\end_inset
+
+ and using 
+\begin_inset Formula $e^{i\sigma_{y}\theta/2}$
+\end_inset
+
+ (with various 
+\begin_inset Formula $\theta$
+\end_inset
+
+ yielding essentially various measurement settings) I could measure along
+ say 
+\begin_inset Formula $y$
+\end_inset
+
+ and apply 
+\begin_inset Formula $e^{i\sigma_{z}\theta/2}$
+\end_inset
+
+.
+ This way then, the working of the unitary is infact just the phase shift
+ I can happily do with my continuous variable.
+\end_layout
+
+\begin_layout Itemize
+Why this was useless? Well, it is deceptively close.
+ It is not actually that simple, because now the simple phase shifts happen
+ if the state is written in the 
+\begin_inset Formula $z$
+\end_inset
+
+ basis, however I am measuring along the 
+\begin_inset Formula $y$
+\end_inset
+
+ basis.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Mathematica
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Learnt how to use it.
+ [watched 2 video tutorials, ~1 hour each | the tool is really good]
+\end_layout
+
+\begin_layout Itemize
+Wrote the code to find these stupid expectations quickly (it is not pasting
+ :( )
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Graphics
+	filename mathematica.png
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
