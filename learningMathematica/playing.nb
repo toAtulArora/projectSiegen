@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14099,        364]
-NotebookOptionsPosition[     13280,        335]
-NotebookOutlinePosition[     13617,        350]
-CellTagsIndexPosition[     13574,        347]
+NotebookDataLength[     14149,        366]
+NotebookOptionsPosition[     13330,        337]
+NotebookOutlinePosition[     13667,        352]
+CellTagsIndexPosition[     13624,        349]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -96,21 +96,22 @@ Cell[BoxData[{
   "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{"newState", " ", "=", "state"}], " ", ";", " ", 
-   RowBox[{"(*", 
-    RowBox[{"/.", " ", "dispRuleP"}], "*)"}], "\[IndentingNewLine]", 
-   RowBox[{"Expand", "[", " ", 
-    RowBox[{
-     RowBox[{"(", 
-      StyleBox[
-       RowBox[{"state", " ", "/.", " ", "conjRule"}], "Input"], 
-      StyleBox[")", "Input"]}], " ", "newState"}], "]"}]}], 
+   RowBox[{"newState", " ", "=", "state"}], " ", ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"/.", " ", "dispRuleP"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Expand", "[", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     StyleBox[
+      RowBox[{"state", " ", "/.", " ", "conjRule"}], "Input"], 
+     StyleBox[")", "Input"]}], " ", "newState"}], "]"}], 
   " "}], "\[IndentingNewLine]", 
  RowBox[{"%", " ", "/.", " ", "normRule"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"%", " ", "/.", " ", "orthRule"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{"Print", "[", "\"\<And the expectation for displacing p is\>\"", 
+ RowBox[{"Print", "[", "\"\<And the expectation for modular x is\>\"", 
   "]"}], "\[IndentingNewLine]", 
  RowBox[{"newState", " ", "=", 
   RowBox[{"state", "/.", " ", "dispRuleP"}]}], "\[IndentingNewLine]", 
@@ -138,7 +139,8 @@ Cell[BoxData[{
   3.643042352137032*^9}, {3.643042714791868*^9, 3.6430427421965857`*^9}, {
   3.6430427755039673`*^9, 3.643042794938334*^9}, {3.643042851177051*^9, 
   3.6430429606957808`*^9}, {3.6430430217566547`*^9, 3.643043108669414*^9}, {
-  3.6430432370640306`*^9, 3.643043331800048*^9}}],
+  3.6430432370640306`*^9, 3.643043331800048*^9}, {3.643098544055697*^9, 
+  3.643098556663219*^9}}],
 
 Cell[BoxData["\<\"Initial state:\"\>"], "Print",
  CellChangeTimes->{{3.6430430602288523`*^9, 3.643043097056679*^9}, 
@@ -352,20 +354,20 @@ Notebook[{
 Cell[558, 20, 172, 3, 32, "Input"],
 Cell[733, 25, 92, 1, 32, "Input"],
 Cell[CellGroupData[{
-Cell[850, 30, 4087, 110, 592, "Input"],
-Cell[4940, 142, 190, 2, 23, "Print"],
-Cell[5133, 146, 836, 17, 57, "Output"],
-Cell[5972, 165, 208, 2, 23, "Print"],
-Cell[6183, 169, 1145, 26, 53, "Output"],
-Cell[7331, 197, 1027, 22, 49, "Output"],
-Cell[8361, 221, 665, 10, 32, "Output"],
-Cell[9029, 233, 213, 2, 23, "Print"],
-Cell[9245, 237, 836, 17, 57, "Output"],
-Cell[10084, 256, 1200, 29, 49, "Output"],
-Cell[11287, 287, 1133, 27, 52, "Output"],
-Cell[12423, 316, 747, 13, 52, "Output"]
+Cell[850, 30, 4137, 112, 592, "Input"],
+Cell[4990, 144, 190, 2, 23, "Print"],
+Cell[5183, 148, 836, 17, 57, "Output"],
+Cell[6022, 167, 208, 2, 23, "Print"],
+Cell[6233, 171, 1145, 26, 53, "Output"],
+Cell[7381, 199, 1027, 22, 49, "Output"],
+Cell[8411, 223, 665, 10, 32, "Output"],
+Cell[9079, 235, 213, 2, 23, "Print"],
+Cell[9295, 239, 836, 17, 57, "Output"],
+Cell[10134, 258, 1200, 29, 49, "Output"],
+Cell[11337, 289, 1133, 27, 52, "Output"],
+Cell[12473, 318, 747, 13, 52, "Output"]
 }, Open  ]],
-Cell[13185, 332, 91, 1, 32, "Input"]
+Cell[13235, 334, 91, 1, 32, "Input"]
 }
 ]
 *)
