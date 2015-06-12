@@ -1,4 +1,4 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -22,6 +22,7 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -248,7 +249,7 @@ ion to entanglement, how a coherent state would pass through it etc.
 \end_inset
 
  instead of 
-\begin_inset Formula $a,\,a^{\dagger}$
+\begin_inset Formula $a,\, a^{\dagger}$
 \end_inset
 
 .
@@ -747,7 +748,7 @@ Continued fine reading of chapter 5 from Aharnov's book.
 \end_inset
 
  at the back of the mind) is completely uncertain iff (if and only if) 
-\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0\,\forall\,n\in\mathcal{N}$
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0\,\forall\, n\in\mathcal{N}$
 \end_inset
 
 .
@@ -1414,7 +1415,7 @@ He then discussed the Schrodinger and Heisenberg picture in the context
 
  (in finite dimensions, apparently they're same).
  Then 
-\begin_inset Formula $\forall\,N:T\to T,\,\exists\,N^{*}:\mathcal{L}\to\mathcal{L}$
+\begin_inset Formula $\forall\, N:T\to T,\,\exists\, N^{*}:\mathcal{L}\to\mathcal{L}$
 \end_inset
 
  which is defined by 
@@ -1728,7 +1729,7 @@ Essentially you're saying that you can't find a convergent sequence for
 
 , viz.
  
-\begin_inset Formula $\nexists\,a_{n}\,s.t.\,f(x)=a_{0}+a_{1}(x-x_{0})+a_{2}(x-x_{0})^{2}+\dots$
+\begin_inset Formula $\nexists\, a_{n}\, s.t.\, f(x)=a_{0}+a_{1}(x-x_{0})+a_{2}(x-x_{0})^{2}+\dots$
 \end_inset
 
  which essentially means that the taylor expansion doesn't exist for 
@@ -2096,7 +2097,7 @@ I figured there're two directions to think now.
 
 \begin_layout Itemize
 I realized that even when EM fields are absent, 
-\begin_inset Formula $\phi=0,\,A=0$
+\begin_inset Formula $\phi=0,\, A=0$
 \end_inset
 
  we continue to have the gauge freedom in the wavefunction.
@@ -3004,8 +3005,8 @@ And come to think of it, this way
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3304,7 +3305,7 @@ Sub aim: (a) Plot simultaneous eigenstates of
 
 .
  (b) Are modular 
-\begin_inset Formula $x,\,p$
+\begin_inset Formula $x,\, p$
 \end_inset
 
  complete? Prove or disprove it.
@@ -3343,7 +3344,7 @@ possibly new
 \end_inset
 
  and 
-\begin_inset Formula $N_{x},\,p_{\text{mod}}$
+\begin_inset Formula $N_{x},\, p_{\text{mod}}$
 \end_inset
 
 
@@ -3642,7 +3643,7 @@ where first we have the position representation of
 
 .
  For this plot, I used 
-\begin_inset Formula $\bar{x}=0.7,\,\bar{p}=10,\,L=1.0,\,h=2\pi,\,n_{max}=10$
+\begin_inset Formula $\bar{x}=0.7,\,\bar{p}=10,\, L=1.0,\, h=2\pi,\, n_{max}=10$
 \end_inset
 
 .
@@ -3753,11 +3754,11 @@ Continuous variable bell test
 \begin_layout Itemize
 So basically in the bell test, there're Alice's measurements, which are
  along 
-\begin_inset Formula $z,\,x$
+\begin_inset Formula $z,\, x$
 \end_inset
 
  and then there're Bob's measurements which are along 
-\begin_inset Formula $z',\,x'$
+\begin_inset Formula $z',\, x'$
 \end_inset
 
 .
@@ -3855,7 +3856,49 @@ Wrote the code to find these stupid expectations quickly (it is not pasting
 
 \end_layout
 
+\end_deeper
+\begin_layout Subsection
+Friday
+\end_layout
+
 \begin_layout Itemize
+Mathematica Alternatives [was up till 5 or so, figuring this]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tried to get mathics to work first and then looked at other options
+\end_layout
+
+\begin_layout Itemize
+Then tried installing sage etc.
+\end_layout
+
+\begin_layout Itemize
+Tried converting the mathematica code to Sage [took the longest, and worked
+ the worst | there's no simple way I could find for indexing symbolic variables]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+And for some reason, it would always show 
+\begin_inset Formula $1/\sqrt{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $\sqrt{2}/2$
+\end_inset
+
+ which is plain annoying | this also I couldn't figure how to fix
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Finally, tried to convert the Mathematica code to Mathics and although the
+ code compiles, the result is not correct
+\begin_inset Newline newline
+\end_inset
+
 Print["intial state:"] 
 \begin_inset Newline newline
 \end_inset
@@ -3904,13 +3947,103 @@ newState = state Expand[ (state /.
 Print["And the expectation for displacing p is"]
 \end_layout
 
+\begin_layout Itemize
+This had helped | http://ask.sagemath.org/question/8181/implicitly-defining-a-sequ
+ence-of-variables/
+\end_layout
+
 \end_deeper
-\begin_layout Subsection
-Friday
+\begin_layout Itemize
+At the office, made progress with the Mathematica code I had written
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basically used that code I wrote yesterday to calculate the CHSH inequality
 \end_layout
 
 \begin_layout Itemize
-http://ask.sagemath.org/question/8181/implicitly-defining-a-sequence-of-variables/
+Initially I had made some mistake in evaluating the operator corresponding
+ to 
+\begin_inset Formula $\cos(\alpha)\otimes\cos(\alpha)$
+\end_inset
+
+ that lead to a happy violation with 
+\begin_inset Formula $n>3$
+\end_inset
+
+ or so.
+ This was fixed.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset External
+	template PDFPages
+	filename bellTestMathematica/bellType1Draft.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali [made quite some progress relatively]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He suggested we could use instead of the 
+\begin_inset Formula $00+11$
+\end_inset
+
+ type of state, 
+\begin_inset Formula $(0+1)(0+1)+(0-1)(0-1)$
+\end_inset
+
+ type of state.
+ Although he himself wasn't so sure, it actually got me closer to the picture
+ I had with 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ rotating the phase in the 
+\begin_inset Formula $0,1$
+\end_inset
+
+ basis, while the state is expected to measured in the 
+\begin_inset Formula $+-$
+\end_inset
+
+ basis.
+\end_layout
+
+\begin_layout Itemize
+The issue however is that we still don't know what is the analogue of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ matrices and how it must be constructed.
+ The displacement operator itself is not the best option.
+\end_layout
+
+\begin_layout Itemize
+So basically we might be able to link all the 3 ideas, the AB effect (phase
+ shift), the locality issue (Bell test) and finally the relation between
+ pauli matrices and density operators
+\end_layout
+
+\begin_layout Itemize
+Also started to question the issue related to the meaning of modular position
+ on the screen as opposed to moments after the particle leaves the double
+ slit.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar [TODO: add link] It was the last in the series, about Bell.
+ Very itneresting ending.
 \end_layout
 
 \end_body
