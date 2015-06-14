@@ -174,3 +174,28 @@ Week 5
 * Tuesday (June 9)
   * Worked on finding the eigenkets of pmod and xmod
   * Seminars: Multiworld (where the photon's been), Twisters, Twin Bell
+
+* Wednesday (June 10)
+  * Finally derived the eigenkets, couldn't prove equivalence though
+  * Wrote a small code to plot these | worked  
+  * Seminar: Bell thm, locality is the only assumption
+  * Ali: concluded what to do with ideas from Monday
+
+* Thursday (June 11)
+  * Continuous variable bell test: Moulding the qubit case closer
+  * Mathematica: Tutorial + worked out code for one term in CHSH 
+  * Seminar: Bohmian mechanics fixing measurement problem etc.
+
+* Friday (June 12)
+  * Mathematica alternatives
+  * Mathematica code for CHSH | no violation yet
+  * Discussed with Ali about different possibilities
+  * Seminar: Something about Bell, interesting ending
+
+* Saturday Sunday (June 13, 14) [Weekend]
+  * Might have figured how to do the Bell test with a q,p settting
+
+Week 6
+--
+
+* Monday (June 15)  
