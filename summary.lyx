@@ -3858,7 +3858,7 @@ Wrote the code to find these stupid expectations quickly (it is not pasting
 
 \end_deeper
 \begin_layout Subsection
-Friday
+Friday, June 12
 \end_layout
 
 \begin_layout Itemize
@@ -4043,8 +4043,117 @@ Also started to question the issue related to the meaning of modular position
 \end_deeper
 \begin_layout Itemize
 Seminar [TODO: add link] It was the last in the series, about Bell.
- Very itneresting ending.
+ Very interesting ending.
 \end_layout
 
+\begin_layout Subsection
+Saturday & Sunday, June 13 & 14
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+first non-trivial result
+\emph default
+] Figured the mapping between the continuous variable and the discrete case
+\end_layout
+
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym on Saturday only.
+\end_layout
+
+\begin_layout Itemize
+Thought: Physics is about finding the most accurate assumptions.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 15-22 | Week 6
+\end_layout
+
+\begin_layout Subsection
+Monday, June 15
+\end_layout
+
+\begin_layout Itemize
+Misc/Seminars
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+On the Nature of Causality in Complex Systems, George F.R.
+ Ellis [https://www.youtube.com/watch?v=nEhTkF3eG8Q]
+\end_layout
+
+\begin_layout Itemize
+About non-commutative geometry, stopped watching after some time [https://www.you
+tube.com/watch?v=GKu5NkVPI2w]
+\end_layout
+
+\begin_layout Itemize
+Bracket notation for lyx [http://tex.stackexchange.com/questions/48031/lyx-quick-w
+ay-to-insert-dirac-bra-ket]
+\end_layout
+
+\begin_layout Itemize
+Thought: 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discussed what I had worked out.
+ It seems correct.
+ I must now do the explicit calculations without assuming 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continuous variable Bell Test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Worked out the explicit details for the usual bell test, with the scheme,
+ rotate the state first, then take the expectation.
+ Found the `correct' values of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Worked out the continuous variable case for 
+\begin_inset Formula $n\neq\infty$
+\end_inset
+
+.
+ Had made an assumption which I couldn't support in one of the proofs.
+ Recalculated without that assumption and obtained the same result.
+\end_layout
+
+\begin_layout Itemize
+Have to start working on the documentation of the same.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
