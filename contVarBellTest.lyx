@@ -1033,6 +1033,14 @@ Defn:
 \end_inset
 
 some length scale
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N\equiv$
+\end_inset
+
+number of slits
 \end_layout
 
 \begin_layout Labeling
@@ -1072,7 +1080,7 @@ Consider: A normalized wavefunction
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 Defn: 
-\begin_inset Formula $\left|\varphi(y')\right\rangle =\int dx'\varphi(x'-y')\left|x'\right\rangle $
+\begin_inset Formula $\left|\varphi(y')\right\rangle =\int dx'\varphi(x'-y'-\frac{NL}{2})\left|x'\right\rangle $
 \end_inset
 
 , basically it is just 
@@ -1083,7 +1091,8 @@ Defn:
 \begin_inset Formula $y'$
 \end_inset
 
-
+ if the origin is assumed at the appropriate centre, to make the following
+ symmetric.
 \end_layout
 
 \begin_layout Labeling
@@ -1128,7 +1137,7 @@ NB:
 Defn: 
 \begin_inset Formula 
 \[
-x\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
+X\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
 \]
 
 \end_inset
@@ -1145,8 +1154,8 @@ NB: For sufficiently large
 , 
 \begin_inset Formula 
 \begin{eqnarray*}
-x\left|+\right\rangle  & = & +\left|+\right\rangle \\
-x\left|-\right\rangle  & = & -\left|-\right\rangle 
+X\left|+\right\rangle  & = & +\left|+\right\rangle \\
+X\left|-\right\rangle  & = & -\left|-\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -1173,12 +1182,7 @@ Remark: We have almost all the cards, except for one that allows for setting
  This is done by essentially using alternate glass slabs (for photons) to
  adjust the relative phase as desired.
  We define this operator by it's action on the relevant state.
- [I must also obtain an analytic form for this operator, this will hint
- on the relation between 
-\begin_inset Formula $\sigma_{z}$
-\end_inset
-
-'s analogue here]
+ 
 \end_layout
 
 \begin_layout Labeling
@@ -1200,9 +1204,72 @@ U(\phi)\left|1\right\rangle  & = & e^{-i\phi/2}\left|1\right\rangle
 
 \end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Alternatively, we could also define 
+\begin_inset Formula $U(\phi)$
+\end_inset
+
+ in its analytic form as
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Alt
+\begin_inset space ~
+\end_inset
+
+Defn: 
+\begin_inset Formula 
+\[
+U(\phi)=e^{iZ(x_{mod2L})\phi/2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $x_{mod2L}\equiv x\text{\, mod\,}2L$
+\end_inset
+
+, whose operation can be defined explicitly (see appendix: TODO add to appendix)
+, and 
+\begin_inset Formula 
+\[
+Z(x)\equiv\begin{cases}
+1 & x\le L\\
+-1 & L<x\le2L
+\end{cases}
+\]
+
+\end_inset
+
+when 
+\begin_inset Formula $Z$
+\end_inset
+
+ acts on an eigenstate of 
+\begin_inset Formula $x_{mod2L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: Here, 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ plays the role of 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ in the discrete case.
+\end_layout
+
 \begin_layout Standard
 To evaluate the CHSH inequality, we again need terms of the form 
-\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})xU(\phi_{i})\otimes U^{\dagger}(\theta_{i})xU(\theta_{i})\right\rangle $
+\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle $
 \end_inset
 
  which can be evaluated easily to be the same as before 
@@ -1229,7 +1296,11 @@ Remark: The non-commutativity in this case is between
 \end_inset
 
  and 
-\begin_inset Formula $x$
+\begin_inset Formula $X$
+\end_inset
+
+, which arises from 
+\begin_inset Formula $[x_{mod2L},p_{modL}]\neq0$
 \end_inset
 
 .
@@ -1263,7 +1334,7 @@ Claim(5):
 \color none
 \lang english
 
-\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})xU(\phi_{i})\otimes U^{\dagger}(\theta_{i})xU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
 \end_inset
 
 

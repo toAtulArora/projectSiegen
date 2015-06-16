@@ -4151,7 +4151,172 @@ Worked out the continuous variable case for
 \end_layout
 
 \begin_layout Itemize
-Have to start working on the documentation of the same.
+Started documenting the same
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Walking back
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured that the phase shift operator must be a function of modular position
+ (
+\begin_inset Formula $x\text{mod}2L$
+\end_inset
+
+) and that 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ must correspond to this somehow
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Health etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 16
+\end_layout
+
+\begin_layout Itemize
+Roope's Lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I couldn't follow much today.
+ Need to read from the text
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continuous Variable Bell Test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ali told me about the more elegant representation he'd found for his contextuali
+ty paper with the set 
+\begin_inset Formula $D(\alpha_{i})$
+\end_inset
+
+ forming the pauli matrices.
+ He showed that the commutation is obeyed if 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ satisfy a constraint.
+ The task was to use this formalism and arrive at the violation.
+ 
+\end_layout
+
+\begin_layout Itemize
+To that end, I started looking for states that correspond to 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ etc.
+ and realized after an entire day of thinking, that it is not straight forward,
+ and perhaps, if one of my assumptions isn't false (that there're only two
+ eigenkets of 
+\begin_inset Formula $D(\alpha)$
+\end_inset
+
+ upto phase/scaling ofcourse) then these states don't span, well anything.
+ You can't even construct eigenkets of 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+ from those of 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+I had spent the whole day thinking about things based on the wrong assumption
+ that displacement operators only displace.
+ They infact, also add a phase which prevents say 
+\begin_inset Formula $\sum_{n}\left|n\alpha+\beta\right\rangle $
+\end_inset
+
+ from being an eigenstate of 
+\begin_inset Formula $D(\alpha)$
+\end_inset
+
+ for 
+\begin_inset Formula $\beta\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+My usual scheme of using 
+\begin_inset Formula $\left|0/1\right\rangle $
+\end_inset
+
+ states with 
+\begin_inset Formula $2L$
+\end_inset
+
+ separated lumps also doesn't work if the lumps are made of coherent states.
+ Other than it not being an eigenstate of neither 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+ nor 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+, they are not even orthogonal.
+ I had infact imagined that states of the form 
+\begin_inset Formula $\sum_{m,n}\left|n\alpha_{1}+m\alpha_{2}\right\rangle $
+\end_inset
+
+ are simultaneous eigenkets of 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+ and 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+ while these operators don't even commute.
+ Now I am in a situation where I can't even construct eigenkets general
+ enough to span another eigenket!
+\end_layout
+
+\begin_layout Itemize
+Other than this, I added the operator for the phases, viz.
+ 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+'s analogue in the continuous variable case.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Headache :(
 \end_layout
 
 \end_deeper
