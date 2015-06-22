@@ -9,6 +9,7 @@
 \setcounter{footnote}{0}
 \usepackage{perpage} %the perpage package
 \MakePerPage{footnote} %the perpage package command
+\usepackage{cancel}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -96,7 +97,7 @@ We show the violation of the Bell inequality in a more classical setting
 \end_inset
 
 .
- We use modular momentum and simple phase shifts to achieve this.
+ We use modular momentum and position to achieve this.
 \end_layout
 
 \begin_layout Section
@@ -123,7 +124,7 @@ Violation in EPR/Bell state
 \end_layout
 
 \begin_layout Standard
-Here the violation of Bell's inequality for the typical spin case, is derived
+Here the violation of Bell's inequality for the typical spin case, is stated
  in a way that is easier to translate to the continuous variable case.
  We first state the Bell test in its modern form, known as the CHSH inequality.
  
@@ -147,12 +148,12 @@ that are often chosen to be sufficiently far away that their measurements
  then separated.
  Alice takes one, Bob takes the other.
  Alice can measure one of two properties of her particle, call them 
-\begin_inset Formula $x,\, z$
+\begin_inset Formula $a_{1},\, a_{2}$
 \end_inset
 
 .
  Similarly Bob can measure 
-\begin_inset Formula $x',\, z'$
+\begin_inset Formula $b_{1},\, b_{2}$
 \end_inset
 
  of his particle.
@@ -226,7 +227,7 @@ NB: Alternatively, this follows from the definition of
 \begin_inset Formula $\sigma_{z}$
 \end_inset
 
- is diagonal) and the following definition.
+ is diagonal) and the following two definitions.
 \end_layout
 
 \begin_layout Labeling
@@ -340,7 +341,7 @@ x' & = & \frac{z-x}{\sqrt{2}}
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 Result 
-\begin_inset Formula $\left\langle Q\right\rangle =2\sqrt{2}\nleq2$
+\begin_inset Formula $\left\langle C((x,z),(x',z'))\right\rangle =2\sqrt{2}\nleq2$
 \end_inset
 
 , which is a violation.
@@ -998,6 +999,16 @@ We now construct continuous variable kets that satisfy the same orthogonality
 \end_inset
 
 .
+ We emphasise that the kets we construct, will not be eigenstates of 
+\begin_inset Formula $p$
+\end_inset
+
+ or 
+\begin_inset Formula $x$
+\end_inset
+
+ since these are highly idealized and strictly, not even a part of the Hilbert
+ space.
 \end_layout
 
 \begin_layout Subsection
@@ -1080,7 +1091,7 @@ Consider: A normalized wavefunction
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 Defn: 
-\begin_inset Formula $\left|\varphi(y')\right\rangle =\int dx'\varphi(x'-y'-\frac{NL}{2})\left|x'\right\rangle $
+\begin_inset Formula $\left|\varphi(y')\right\rangle =\int dx'\varphi(x'-y'-\frac{N\cancel{2}L}{\cancel{2}})\left|x'\right\rangle $
 \end_inset
 
 , basically it is just 
@@ -1111,6 +1122,23 @@ Defn:
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+Remark: Definition of 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1\right\rangle $
+\end_inset
+
+ justify the word `slit' in the definition of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Recall: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -1126,7 +1154,7 @@ Recall:
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 NB: 
-\begin_inset Formula $\left\langle 0|1\right\rangle =0,\,\left\langle +|-\right\rangle =0$
+\begin_inset Formula $\left\langle 0|1\right\rangle =0,\,\implies\left\langle +|-\right\rangle =0$
 \end_inset
 
 
@@ -1228,10 +1256,19 @@ U(\phi)=e^{iZ(x_{mod2L})\phi/2}
 \end_inset
 
 where 
-\begin_inset Formula $x_{mod2L}\equiv x\text{\, mod\,}2L$
+\begin_inset Formula $x_{mod2L}\equiv x\text{\,\ mod\,}2L$
 \end_inset
 
-, whose operation can be defined explicitly (see appendix: TODO add to appendix)
+, whose operation can be defined explicitly
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+claim (8) 
+\end_layout
+
+\end_inset
+
 , and 
 \begin_inset Formula 
 \[
@@ -1252,6 +1289,19 @@ when
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+NB: 
+\begin_inset Formula $Z(x_{mod2L})\left|0\right\rangle =\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $Z(x_{mod2L})\left|1\right\rangle =-\left|1\right\rangle $
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
@@ -1378,6 +1428,42 @@ Appendix
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+Claim(1): If
+\begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
+\end_inset
+
+, then
+\begin_inset Formula $\left|\psi\right\rangle =\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Proof: Trivial.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Claim(2): 
+\begin_inset Formula $\left\langle x\otimes x\right\rangle =-1$
+\end_inset
+
+, for 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ in Claim(1)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Proof: Trivial
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Claim(3): 
 \begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
 \end_inset
@@ -1387,13 +1473,97 @@ Claim(3):
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Proof: TODO: Type it (its trivial)
+Proof: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
+ & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\\
+ &  & \frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
+ &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}
+\end{eqnarray*}
+
+\end_inset
+
+We define, 
+\begin_inset Formula $\delta\equiv\phi-\theta$
+\end_inset
+
+ and using claim(1), it follows that only terms like 
+\begin_inset Formula $\left|+-\right\rangle $
+\end_inset
+
+ or 
+\begin_inset Formula $\left|-+\right\rangle $
+\end_inset
+
+; so
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \psi\right|x\otimes x\\
+ &  & \left[\frac{e^{i\delta}\left(\frac{\left|+-\right\rangle -\left|-+\right\rangle }{2}\right)-e^{-i\delta}\left(\frac{-\left|+-\right\rangle +\left|-+\right\rangle }{2}\right)}{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\left[\frac{e^{i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)+e^{-i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\right]\\
+ & =- & \frac{e^{i\delta}+e^{-i\delta}}{2}\\
+ & =- & \cos(\phi-\theta)
+\end{eqnarray*}
+
+\end_inset
+
+where we've used claim(2).
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Claim(5): 
-\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})xU(\phi_{i})\otimes U^{\dagger}(\theta_{i})xU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+Claim(4): With definitions from section 3, without taking the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle +\left|X\right|+\right\rangle =\frac{N-1}{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\langle -\left|X\right|-\right\rangle =-\frac{N-1}{N}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle 0\left|X\right|0\right\rangle =0$
+\end_inset
+
+, 
+\begin_inset Formula $\left\langle 1\left|X\right|1\right\rangle =0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle 1\left|X\right|0\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0\left|X\right|1\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle -\left|X\right|+\right\rangle =\frac{-\left\langle 1\left|X\right|0\right\rangle +\left\langle 0\left|X\right|1\right\rangle }{2}=0=\left\langle +\left|X\right|-\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle \psi\left|X\otimes X\right|\psi\right\rangle =\frac{\left\langle +\left|X\right|+\right\rangle \left\langle -\left|X\right|-\right\rangle +\left\langle -\left|X\right|-\right\rangle \left\langle +\left|X\right|+\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
 \end_inset
 
 
@@ -1401,7 +1571,147 @@ Claim(5):
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Proof: TODO: This is not completely trivial.
+Proof: Trivial.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Claim(5): 
+\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Proof: We start with defining 
+\begin_inset Formula $\phi\equiv\phi_{i}$
+\end_inset
+
+ , 
+\begin_inset Formula $\theta\equiv\theta_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\equiv\phi-\theta$
+\end_inset
+
+, 
+\begin_inset Formula $\delta'\equiv\delta/2$
+\end_inset
+
+.
+ Next, we note that 
+\begin_inset Formula $\text{LHS}=\left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\psi\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\\
+ &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\\
+ & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle +\left|+-\right\rangle -\left|-+\right\rangle -\left|--\right\rangle \right)\\
+ &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle -\left|+-\right\rangle +\left|-+\right\rangle -\left|--\right\rangle \right)\\
+ & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|++\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+-\right\rangle \\
+ &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-+\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|--\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+Now using claim(4), we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle \\
+ & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ &  & -\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
+ &  & -\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
+ &  & +\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\frac{1}{2}\left[2\left(\cos^{2}\delta/2-\sin^{2}\delta/2\right)\right]\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\cos\left(\delta\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Claim(8): Action of 
+\begin_inset Formula $x_{mod2L}$
+\end_inset
+
+ can be defined explicitly
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Proof: Consider the operator 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $x_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $
+\end_inset
+
+, consequently on the most general state 
+\begin_inset Formula $\left|f\right\rangle \equiv\int dx'f_{x'}\left|x'\right\rangle $
+\end_inset
+
+ then, we'd have 
+\begin_inset Formula $x_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Remark: One needn't necessarily consider eigenstates of 
+\begin_inset Formula $x$
+\end_inset
+
+ to define the action.
+ Eigenstates of 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\end_inset
+
+ maybe considered instead; they can be expressed as (a) 
+\begin_inset Formula $\left|\varphi\right\rangle ,\, s.t.\,\left\langle p+\frac{h}{2L}|\varphi\right\rangle =\left\langle p|\varphi\right\rangle ,\,\forall\, p\in\mathbb{R}$
+\end_inset
+
+ or (b) 
+\begin_inset Formula $\left|\bar{x}\right\rangle \propto\sum_{n\in\mathbb{Z}}\left|\bar{x}+n2L\right\rangle $
+\end_inset
+
+.
+ Using the second expression, we have 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $
+\end_inset
+
+.
+ Thus on a more general state, 
+\begin_inset Formula $\left|c\right\rangle \equiv\int_{0}^{2L}d\bar{x}c_{\bar{x}}\left|\bar{x}\right\rangle $
+\end_inset
+
+, we have 
+\begin_inset Formula $x_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
