@@ -4306,7 +4306,7 @@ Other than this, I added the operator for the phases, viz.
 \begin_inset Formula $\sigma_{z}$
 \end_inset
 
- in our case.
+'s analogue in the continuous variable case.
 \end_layout
 
 \end_deeper
@@ -4317,6 +4317,55 @@ Health
 \begin_deeper
 \begin_layout Itemize
 Headache :(
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 17
+\end_layout
+
+\begin_layout Itemize
+Appropriate Eigenkets of the displacement like pauli operators
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Thought along the lines of displacing states if there existed a number operator
+ like object for the coherent state, namely 
+\begin_inset Formula $\hat{O}\left|\alpha\right\rangle =\alpha\left|\alpha\right\rangle $
+\end_inset
+
+, then I could use this to construct something like 
+\begin_inset Formula $D(\lambda)e^{-i\text{Im}[(\lambda\hat{O})]}\left|\bar{\alpha}\right\rangle \propto\left|\bar{\alpha}\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\bar{\alpha}\right\rangle =\sum_{n}\left|n\alpha\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The other approach I had thought of was if there was some operator like
+ 
+\begin_inset Formula $\hat{S}_{\alpha}=\sum_{n}\left|(n+1)\alpha\right\rangle \left\langle n\alpha\right|$
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ sufficiently large so that 
+\begin_inset Formula $\left\langle n\alpha|m\alpha\right\rangle \approx\delta_{nm}$
+\end_inset
+
+ .
+ So what I intended to do was something like 
+\begin_inset Formula $(1-\hat{S}_{\alpha+\lambda})D(\lambda)\left|\bar{\alpha}\right\rangle \propto\left|\bar{\alpha}\right\rangle $
+\end_inset
+
+
 \end_layout
 
 \end_deeper
