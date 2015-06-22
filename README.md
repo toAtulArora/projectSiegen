@@ -195,7 +195,33 @@ Week 5
 * Saturday Sunday (June 13, 14) [Weekend]
   * Might have figured how to do the Bell test with a q,p settting
 
-Week 6
+Week 6 (shortened hereafter)
 --
 
-* Monday (June 15)  
+* Monday (June 15) 
+  * Worked out the details for Bell test in q,p setting, even when N is not infty
+  * Otfried Lecture
+
+* Tuesday (June 16)
+  * Attempting a more general derivation of eigenkets for the Bell Test | failed
+  * Roope's Lecture
+
+* Wednesday (June 17)
+  * Guest Lecture: Detlef Duerr
+  * Attempted further | failed
+  * GHZ using continuous variables paper
+
+* Thursday, Friday (June 18, 19) [UNWELL]
+
+* Saturday, Sunday (June 20, 21) [Weekend]
+  * Reading the GHZ paper, found similarity between mine and theirs, the approach that is.
+
+Week 7
+--
+
+* Monday (June 22)
+  * Completed typing the article
+
+
+
+

@@ -75,6 +75,12 @@
 projectSiegen | Summary
 \end_layout
 
+\begin_layout Abstract
+Summarized progress report of my summers 2015 I spent in Siegen, Germany.
+ Main themes of study were Modular Variables, AB effect, Bell Test in continuous
+ variables.
+\end_layout
+
 \begin_layout Section
 May 7-13 [week 0 and 1]
 \end_layout
@@ -4073,7 +4079,7 @@ Thought: Physics is about finding the most accurate assumptions.
 
 \end_deeper
 \begin_layout Section
-June 15-22 | Week 6
+June 15-21 | Week 6
 \end_layout
 
 \begin_layout Subsection
@@ -4105,6 +4111,20 @@ Thought:
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Otfried's Lecture: About how if one assumes that no information is transmitted
+ alone, the CHSH bound is violated by 
+\begin_inset Formula $4$
+\end_inset
+
+ and not just by 
+\begin_inset Formula $2\sqrt{2}$
+\end_inset
+
+.
+ There's more to QM, more restriction than is apparent.
+\end_layout
+
 \begin_layout Itemize
 Ali
 \end_layout
@@ -4391,5 +4411,266 @@ I tried to construct pauli operators using
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Guest Lecture on Bohmian Mechanics by Detlef Duerr from Munich on "What
+ is and to which end does one study Bohmian Mechanics?"
+\end_layout
+
+\begin_layout Itemize
+Couldn't make much progress with finding eigenstates of the displacement
+ like pauli operators.
+ Kind of proved that they don't exist.
+\end_layout
+
+\begin_layout Itemize
+Ali gave me a paper that does a GHZ test using continuous variables and
+ modular variables.
+ This seemed interesting because they had obtained the pauli like operators
+ with the only difference being that they hadn't considered 
+\begin_inset Formula $\cos(p\alpha)$
+\end_inset
+
+; instead they had 
+\begin_inset Formula $e^{ip\alpha}$
+\end_inset
+
+ like operators but rather elegantly used.
+\end_layout
+
+\begin_layout Itemize
+Health:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Not feeling well, no gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday and Friday, June 18 and 19 [unwell :(]
+\end_layout
+
+\begin_layout Subsection
+Saturday and Sunday, June 20 and 21 [catch up]
+\end_layout
+
+\begin_layout Itemize
+Saturday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Worked on completing the report (couldn't do the full thing because the
+ proofs were in the university and even though I went, I couldn't enter;
+ apparently you need some sort of a chip to enter)
+\end_layout
+
+\begin_layout Itemize
+Started re-reading the GHZ paper and understood where the 
+\begin_inset Formula $mod2$
+\end_inset
+
+ was coming from.
+ 
+\end_layout
+
+\begin_layout Itemize
+Took the hint from the state they had used and tried to work it out independentl
+y.
+ Didn't work
+\end_layout
+
+\begin_layout Itemize
+Peculiar point was that they had taken a state that looked similar to the
+ simultaneous eigenket of 
+\begin_inset Formula $\bar{x},\,\bar{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 1 or 2
+\end_layout
+
+\begin_layout Itemize
+Protocols: Pending documentation etc.
+\end_layout
+
+\begin_layout Itemize
+Health: Not fully normal, no gym, about 6 hours throughput
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sunday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read the GHZ paper further, realized that they were using more fancy things
+ than just modular operators.
+ They were using some kind of binary operators.
+ Idea was that eventually, they'll construct an operator 
+\begin_inset Formula $[\tilde{x}]_{k}$
+\end_inset
+
+ which would essentially yield the 
+\begin_inset Formula $k$
+\end_inset
+
+th bit of 
+\begin_inset Formula $x$
+\end_inset
+
+ when acted upon 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+.
+ They then exponentiate such operators and define 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ and 
+\begin_inset Formula $Z=iXY$
+\end_inset
+
+ (I actually never realized that you could easily define 
+\begin_inset Formula $\sigma_{z}\propto i\sigma_{x}\sigma_{y}$
+\end_inset
+
+ because 
+\begin_inset Formula $[\sigma_{x},\sigma_{y}]=2i\sigma_{z}$
+\end_inset
+
+ while 
+\begin_inset Formula $\{\sigma_{x},\sigma_{y}\}=0$
+\end_inset
+
+.
+ The point is that when we ask for 
+\begin_inset Formula $x_{modL}$
+\end_inset
+
+ say, then we extract infinite bits, but they're not really needed.
+ For instance my 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ operator essentially only needs to know if 
+\begin_inset Formula $x_{mod}<L$
+\end_inset
+
+ or not.
+ So my 
+\begin_inset Formula $Z$
+\end_inset
+
+ operator is infact somehow only using 1 bit of information.
+ This is perhaps the right direction towards an elegant generalization.
+\end_layout
+
+\begin_layout Itemize
+I found that 
+\begin_inset Formula $X\left|\uparrow\right\rangle =\left|\downarrow\right\rangle $
+\end_inset
+
+ works even when 
+\begin_inset Formula $X'\equiv\left(X+X^{\dagger}\right)/2$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $X'\left|\uparrow\right\rangle =\left|\downarrow\right\rangle $
+\end_inset
+
+.
+ To check if 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+ also work,
+\end_layout
+
+\begin_layout Itemize
+I need to figure how to convert (the old problem which I didn't solve then
+ because it seemed like a digression) between position ket representation
+ and momentum ket representation (I mean I know how, but I just don't get
+ the right result), since I can't use the displacement action as I could
+ with usual modular variables.
+\begin_inset Newline newline
+\end_inset
+
+OR
+\begin_inset Newline newline
+\end_inset
+
+I could just find how the binary operators act on 
+\begin_inset Formula $\left|p'\right\rangle $
+\end_inset
+
+ instead of 
+\begin_inset Formula $\left|q'\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 2
+\end_layout
+
+\begin_layout Itemize
+Protocols: Pending emails etc.
+\end_layout
+
+\begin_layout Itemize
+Health: Not fully normal, no gym, about 6 hours throughput
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 22-28 | Week 7
+\end_layout
+
+\begin_layout Subsection
+Monday, June 22
+\end_layout
+
+\begin_layout Itemize
+Protocol:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Organized documents (physical)
+\end_layout
+
+\begin_layout Itemize
+Updated documentation (was lagging)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Completed the article on continuous variable bell test (the proofs were
+ pending, proof read them partially!)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Emailed it to Ali
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 3
+\end_layout
+
 \end_body
 \end_document
