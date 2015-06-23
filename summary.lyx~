@@ -4678,10 +4678,473 @@ Not able to make much progress | things I couldn't derive, I still can't
  derive
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+I have issues with taking log of product of exponentiated operators and
+ the exponentiation of objects like 
+\begin_inset Formula $(a+b+c)mod2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+I am unable get the right answer for converting something from position
+ basis to momentum basis.
+ How sad is that :(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I was however able to figure out
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How 
+\begin_inset Formula $Y\left|\uparrow\right\rangle \propto i\left|\downarrow\right\rangle $
+\end_inset
+
+, but I just can't get the sign right.
+ This is very important if I wish to show that 
+\begin_inset Formula $\frac{Y+Y^{\dagger}}{2}$
+\end_inset
+
+ yields the same result as 
+\begin_inset Formula $Y$
+\end_inset
+
+; this in turn is essential for the Bell test.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+About the article I wrote
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He seemed to convinced that everything is correct
+\end_layout
+
+\begin_layout Itemize
+was glad to see the similarity between the GHZ approach and our approach
+\end_layout
+
+\begin_layout Itemize
+Suggested I calculate the Wigner function etc.
+ for the operators 
+\begin_inset Formula $U^{\dagger}XU$
+\end_inset
+
+ and show they are not unbounded like the parity operator.
+ Oh, I now understand what he meant.
+ Instead of the density matrix, I just put my operator and evaluate its
+ Wigner function.
+ So my MATLAB code for finding wigner function wasn't really a waste afterall
+ eigh :P
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+About his new proposal
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So his idea was to use the first order coherence function and construct
+ a Bell inequality using it.
+\end_layout
+
+\begin_layout Itemize
+It is interesting he said because first order coherence doesn't detect quantum
+ effects.
+ For that, one must use second order coherence.
+ So if we can show the bell test using first order coherence, then we would've
+ captured the effect somehow.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Seminar/Eating time: Watched Kardar's lecture # 3
 \end_layout
 
+\begin_layout Subsection
+Tuesday, June 23
+\end_layout
+
+\begin_layout Itemize
+Protocol:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Updated documentation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The GHZ paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fixed the sign, 
+\begin_inset Formula $Y\left|\uparrow\right\rangle =i\left|\downarrow\right\rangle $
+\end_inset
+
+ indeed.
+\end_layout
+
+\begin_layout Itemize
+The issue is that the states are
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Expressed as a countable superposition of 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+ (or equivalently
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+) states, thus not very 'nice'
+\end_layout
+
+\begin_layout Itemize
+Even if we express it as a superposition of 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+, there're infinite of them, therefore the state is not normalizable
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+However, nothing stops us from considering the Bell states with this formalism,
+ because 
+\begin_inset Formula $X^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y^{\dagger}$
+\end_inset
+
+ act the same way on 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ and therefore one can readily construct 
+\begin_inset Formula $\cos(\tilde{p})$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos(\tilde{x})$
+\end_inset
+
+ and construct the inequality and show a violation by an identical analysis.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I must now show that my 
+\begin_inset Formula $U^{\dagger}(\theta)XU(\theta)$
+\end_inset
+
+ are not unbounded in their wigner representation (and they might be, who
+ knows).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I have a feeling that it might just be.
+ Justification:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The operator that sends 
+\begin_inset Formula $\left|q\right\rangle \to\left|-q\right\rangle $
+\end_inset
+
+, Parity, is a delta function in the Wigner representation (we proved the
+ other way round in the Topics in QM, CM course).
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ operator also essentially does something similar, (for 
+\begin_inset Formula $0<q<2L$
+\end_inset
+
+) 
+\begin_inset Formula $Z\left|q\right\rangle =\pm\left|q\right\rangle $
+\end_inset
+
+, so for certain values, 
+\begin_inset Formula $\left|q\right\rangle \to-\left|q\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Ok now it doesn't seem all the compelling and its worth checking.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+It turns out that it is almost trivial to evaluate this also.
+ The answer is 
+\begin_inset Formula $W(q,p)\sim e^{iZ(q-L)}e^{ipL/\hbar}$
+\end_inset
+
+ upto some signs.
+ So it is well behaved and bounded.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Actually it was while explaining the result to Ali that I found 
+\begin_inset Formula $W(q,p)$
+\end_inset
+
+ exactly for 
+\begin_inset Formula $U^{\dagger}(\theta)XU(\theta)$
+\end_inset
+
+.
+ I must write this out neatly for the 
+\end_layout
+
+\begin_layout Itemize
+Explained the difference between the different types of AB effects and the
+ related photon AB effects
+\end_layout
+
+\begin_layout Itemize
+The next big question now is to understand how to extract the modular variable
+ information off of the screen.
+ This reminds me of the 3 pinhole paper we had read for Makundu's course.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Extracting Modular Variable information off of the screen: What are the
+ various approaches one could take?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So I could start with field quantization for the E, B fields.
+ In that case, the 
+\begin_inset Formula $E$
+\end_inset
+
+ field is a function of 
+\begin_inset Formula $q$
+\end_inset
+
+ and the 
+\begin_inset Formula $B$
+\end_inset
+
+ field is a function of 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ However, this is when they quantize in a box.
+ When they quantize in general, then they have 
+\begin_inset Formula $q+ip=A$
+\end_inset
+
+ and 
+\begin_inset Formula $q-ip=A^{*}$
+\end_inset
+
+ and then it takes more reading to understand how they all relate to 
+\begin_inset Formula $E$
+\end_inset
+
+, the observable.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I also just started thinking, agreed that the Hamiltonian is the same as
+ that for a harmonic oscillator.
+ That doesn't mean that the time evolution of 
+\begin_inset Formula $q,\, p$
+\end_inset
+
+ should be given by the Heisenberg equation of motion, or does it? Well
+ if the Hamiltonian is correct, then given the right coordinates (q and
+ p as we have), it should give the right evolution equations when plugged
+ into the Hamilton's equations.
+ So yes, in general also, one writes a Hamiltonian first which gives the
+ right dynamics and then quantizes the conjugate variables.
+ The usual trick.
+ (I wonder at times if you could do anything other than the Lagrangian or
+ the Hamiltonian, but not now anyway).
+ Mandy had explained the rest quite well, about what picture is associated
+ with the quantum states and where it's happening in the physical space.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The other approach is that I take a wavefunction as I had, and then just
+ evolve it according to a free Hamiltonian and from the interference obtained
+ (from 
+\begin_inset Formula $|\left\langle x|\psi\right\rangle |^{2}$
+\end_inset
+
+) I can explore how to extract 
+\begin_inset Formula $p_{mod2L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I remember now the contradiction.
+ The claim was that 
+\begin_inset Formula $\psi(t)^{*}p^{k}q^{m}\psi(t)$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ for any 
+\begin_inset Formula $t$
+\end_inset
+
+, if 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle +e^{i\phi}\left|\psi_{2}\right\rangle $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\psi_{2}\right\rangle $
+\end_inset
+
+ don't overlap to start with, but 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ is freely evolved, viz.
+ 
+\begin_inset Formula $H=p^{2}/2m$
+\end_inset
+
+.
+ The contradiction is based on intuition.
+ It is known that under free evolution, the wavefunction diffuses.
+ So the two lumps should eventually overlap.
+ If they do overlap, I expect ...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Allright, after all this mumbo jumbo and confusion, I just realized that
+ I must not try to find the value of 
+\begin_inset Formula $\phi,\,\theta$
+\end_inset
+
+ and take them as given.
+ The point is that I should just choose between 
+\begin_inset Formula $\phi_{1},\phi_{2}$
+\end_inset
+
+ (say) and then measure 
+\begin_inset Formula $X$
+\end_inset
+
+ somehow.
+ This must yield a value between 
+\begin_inset Formula $-1\le X\le1$
+\end_inset
+
+.
+ Now I share my values with Alice and we plug them in the Bell's inequality
+ and let the experiments say whether or not there's a violation.
+ The question really now is how to find the measurement outcome of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ I got all confused.
+ So for any observable, the axiom is that the outcome must be one of the
+ eigenvalues, corresponding to the eigenket to which the state is collapsed.
+ The issue is that my eigenkets are not really complete, or atleast not
+ the `subspace' (subset, fine) I am considering.
+ 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ are not really eigenkets and that's why all the hassle.
+ If they were, then the values of 
+\begin_inset Formula $X$
+\end_inset
+
+ would be 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ But here that's not the case; 
+\begin_inset Formula $N$
+\end_inset
+
+ must come into the picture somehow.
+ Is it possible to have observables who's eigenkets aren't complete? That
+ way I have difficulty figuring how to measure even theoretically.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar/Misc:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture # 3
+\end_layout
+
+\begin_layout Itemize
+Thought: When the motivation is not o, then exactly that becomes your strength,
+ your value; people always want what money can't buy.
+ This is what makes honour such a great word.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
