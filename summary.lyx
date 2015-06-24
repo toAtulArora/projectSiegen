@@ -4913,11 +4913,21 @@ Ok now it doesn't seem all the compelling and its worth checking.
 \begin_layout Itemize
 It turns out that it is almost trivial to evaluate this also.
  The answer is 
-\begin_inset Formula $W(q,p)\sim e^{iZ(q-L)}e^{ipL/\hbar}$
+\begin_inset Formula $W(q,p)\sim e^{iZ(q-L/2)\phi}e^{ipL/\hbar}$
 \end_inset
 
  upto some signs.
  So it is well behaved and bounded.
+\end_layout
+
+\begin_layout Itemize
+Surprisingly though, if I don't use the anti-commutation, I get 
+\begin_inset Formula $W(q,p)\sim e^{iZ(q-L/2)\phi/2}e^{ipL/\hbar}e^{iZ(q+L/2)\phi/2}$
+\end_inset
+
+ which is obviously not the same as the previous statement.
+ I'll stick to this because to derive the commutation, I had to make some
+ assumptions which I'm not so sure hold.
 \end_layout
 
 \end_deeper
@@ -4948,6 +4958,24 @@ Explained the difference between the different types of AB effects and the
 The next big question now is to understand how to extract the modular variable
  information off of the screen.
  This reminds me of the 3 pinhole paper we had read for Makundu's course.
+\end_layout
+
+\begin_layout Itemize
+Afterwards, he asked me to explicitly show that in my setting 
+\begin_inset Formula $[a_{1},a_{2}]\neq0$
+\end_inset
+
+ (same for 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+).
+ He basically wants me to explicitly show that the cause for the violation
+ is the commutation explicitly, by showing 
+\begin_inset Formula $B^{2}=4\mathbb{I}+[A,A']\otimes[B,B']$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -5135,6 +5163,78 @@ Allright, after all this mumbo jumbo and confusion, I just realized that
 s as probabilities somehow).
 \end_layout
 
+\begin_layout Itemize
+On the way back, I figured that if I use unnormalized eigenkets of 
+\begin_inset Formula $X$
+\end_inset
+
+ such as 
+\begin_inset Formula $\left|\tilde{x}\right\rangle \equiv\sum_{n}\left|x=\tilde{x}+nL\right\rangle $
+\end_inset
+
+, then 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|=1$
+\end_inset
+
+ because 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|\left|x\right\rangle =\left|x\right\rangle ,\,\forall\, x\in\mathbb{R}$
+\end_inset
+
+.
+ However, only now I realized that such states would give 
+\begin_inset Formula $X\left|\tilde{x}\right\rangle =\left|\tilde{x}\right\rangle $
+\end_inset
+
+, which means the measurement will always yield 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ What about the 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle \equiv\sum_{n}(-1)^{n}\left|x=\tilde{x}+nL\right\rangle $
+\end_inset
+
+ type of states? These are the ones that were supposed to yield 
+\begin_inset Formula $X\left|\tilde{x}'\right\rangle =-\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ resulting in a 
+\begin_inset Formula $-1$
+\end_inset
+
+ outcome.
+ 
+\end_layout
+
+\begin_layout Itemize
+I also tried proving the equivalence of the two representations of eigenstates
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+ but failed.
+\end_layout
+
+\begin_layout Itemize
+After reaching home, I thought perhaps we can use some other system.
+ Maybe we can swap 
+\begin_inset Formula $x\leftrightarrow p$
+\end_inset
+
+ so that in position space, there's nothing fancy, but in the momentum space
+ we have about 7 frequencies overlapped.
+ Then perhaps we can simply measure 
+\begin_inset Formula $X$
+\end_inset
+
+ which will be defined in terms of the position operator now, from the screen,
+ since I can simply measure 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ and record only its mod (or can I?).
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Seminar/Misc:
@@ -5149,6 +5249,369 @@ Kardar lecture # 3
 Thought: When the motivation is not o, then exactly that becomes your strength,
  your value; people always want what money can't buy.
  This is what makes honour such a great word.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 24
+\end_layout
+
+\begin_layout Itemize
+Health: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+8 hours wasn't enough, need about 9 hours of sleep (without coffee that
+ is), with coffee, I was able to pull off with 6 hours of sleep, 12 hours
+ of work, 1 hour of gym, cooking and everything else perfected.
+ Ofcourse, the system broke down towards the end for two days, that's a
+ disaster, but that too was well planned (absorbed as vacations) and effectively
+ lost only a few hours, assuming usual efficiency days.
+\end_layout
+
+\begin_layout Itemize
+No gym
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Paradox?: So the measurement axiom seems to suggest we express our state
+ in terms of eigenstates of the operator corresponding to the measurement.
+ One way to do that is to construct an identity operator using these eignkets
+ and then simply multiply it with the state in question.
+ The result would be a superposition of eigenkets as we wanted.
+ Then the amplitudes will tell us with what probability we get which eigenket,
+ thus which eigenvalue as the measurement outcome.
+ Nothing new or subtle yet.
+ But here's the issue.
+ Consider the operator 
+\begin_inset Formula $X$
+\end_inset
+
+ as defined yesterday.
+ Now if it is true, as has been shown, that 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|=1$
+\end_inset
+
+, and that 
+\begin_inset Formula $X\left|\tilde{x}\right\rangle =\left|\tilde{x}\right\rangle $
+\end_inset
+
+, then it seems that the only outcome of measurement of 
+\begin_inset Formula $X$
+\end_inset
+
+ on any arbitrary state, must result in the value 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ However, we know 
+\begin_inset Formula $\exists$
+\end_inset
+
+ states s.t.
+ 
+\begin_inset Formula $X\left|\tilde{x}'\right\rangle =-\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ has been explicitly defined earlier.
+ It's measurement must yield a 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ So what's wrong?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The obvious thing to try would be to see what we get when we do 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\int_{0}^{L}d\tilde{y}\left|\tilde{y}\right\rangle \left\langle \tilde{y}\right|\left|\tilde{x}'\right\rangle $
+\end_inset
+
+.
+ If one uses the fact that 
+\begin_inset Formula $\left\langle \tilde{y}|\tilde{x}'\right\rangle =0$
+\end_inset
+
+ (well this itself is a little tricky, works well only if you define it
+ as a partial sum first and then take the limits), then apparently 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =0$
+\end_inset
+
+ which is bizzare.
+ And if one uses the expansion of 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ then by the action of 
+\begin_inset Formula $1$
+\end_inset
+
+ on 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+, we get 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ as expected, but then (fine i'll have to do the calculation to find what
+ is the issue in that case) the expansion we get is something like this
+ 
+\begin_inset Formula $\sum_{m}\left(-1\right)^{m}\left|x=\tilde{x}+mL\right\rangle =\left|\tilde{x}'\right\rangle $
+\end_inset
+
+.
+ Here's the important step.
+ 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\sum_{n,m}\int d\tilde{y}\left\langle x=\tilde{y}+mL|x=\tilde{x}+nL\right\rangle \left|x=\tilde{y}+mL\right\rangle $
+\end_inset
+
+.
+ If I don't expand out 
+\begin_inset Formula $\left|\tilde{y}\right\rangle $
+\end_inset
+
+, then the only operation I can perform to proceed is 
+\begin_inset Formula $\left\langle \tilde{y}|\tilde{x}'\right\rangle $
+\end_inset
+
+ which is unambiguously zero for 
+\begin_inset Formula $\tilde{x}\neq\tilde{y}$
+\end_inset
+
+.
+ So then the only question that remains is 
+\begin_inset Formula $\left\langle \tilde{x}|\tilde{x}'\right\rangle $
+\end_inset
+
+, which we said is zero only when treated as a partial sum.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\strikeout on
+This maybe rationalized by imagining that 
+\begin_inset Formula $1.\left|\tilde{x}\right\rangle =\sum_{m}\left|\tilde{x}\right\rangle $
+\end_inset
+
+ which is basically just a consequence of the fact that 
+\begin_inset Formula $\left|\tilde{x}\right\rangle $
+\end_inset
+
+ is not normalized to even start with!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Thought: It maybe more helpful to think of measuring the modular variable
+ as extracting only the modular part, instead of thinking of it as displacements
+ etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basically, even 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+s are eigenkets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X\left|p\right\rangle =\cos(pL/\hbar)\left|p\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+ are also complete and well behaved relatively anyway.
+ So how must then I use this? [I must eventually figure out the equivalence
+ between these but first I must get some reasonable answers].
+ Infact I am not even sure which set of eigenstates should one use for such
+ purposes.
+ In anycase, proceeding with this, let's see what we get.
+ Looks like I need to know for sure exactly how to convert between position
+ and momentum space.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As it turns out, there's a paper titled `Nonlocal Young Tests with EPR correlate
+d particles' which states ``The position measurements at the detection screens
+ may thus be viewed as effective momentum measurements on 
+\begin_inset Formula $\left|\Psi_{T}'\right\rangle $
+\end_inset
+
+''.
+ This was again after a discussion with Ali
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I explained to him the issues, well the paradox stated above (there are
+ mistakes in the results there, scaling).
+ Obviously things looked spooky.
+ I told him why I thought that a measurement on the screen shouldn't work
+ (
+\begin_inset Formula $[x,p_{mod}]\neq0$
+\end_inset
+
+) and was trying to construct the right set of eigenstates etc.
+ He however he insisted I must extract this information off of the screen.
+ 
+\end_layout
+
+\begin_layout Itemize
+He explained the idea of how he used coupling with spin to evaluate 
+\begin_inset Formula $\left\langle \sigma\otimes\sigma\right\rangle =\frac{1}{4}\left\langle D\otimes D\right\rangle $
+\end_inset
+
+ as a way of measuring the correlated expectation value of the system (in
+ his contextuality paper).
+ Point being twofold (he didn't say it explicitly like this, but he has
+ some crazy good intuition)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Recall that for 
+\begin_inset Formula $\psi=\psi_{1}+e^{i\phi}\psi_{2}$
+\end_inset
+
+, when you evaluate 
+\begin_inset Formula $\psi^{*}\psi$
+\end_inset
+
+ it doesn't depend on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ if observed when 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ don't overlap.
+ However the modular momentum does at that time.
+ This 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence re-emerges when 
+\begin_inset Formula $\psi_{i}$
+\end_inset
+
+ overlap finally.
+ The point is that the information you thought you can't get from the screen,
+ you can.
+ Somehow the modular momentum information is contained in the position measureme
+nt.
+\end_layout
+
+\begin_layout Itemize
+Next, note that for a product state like 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle \left|\psi_{1}\right\rangle +e^{i\phi}\left|\psi_{2}\right\rangle \left|\psi_{2}\right\rangle $
+\end_inset
+
+, you won't see interference on the screen of either observers.
+ This is because you're left with a mixed state, after you trace out the
+ other system.
+ 
+\begin_inset Formula $\rho=\left|\psi_{1}\right\rangle \left\langle \psi_{1}\right|+\left|\psi_{2}\right\rangle \left\langle \psi_{2}\right|$
+\end_inset
+
+.
+ If you however calculate 
+\begin_inset Formula $P(x,y)=\psi(x,y)^{*}\psi(x,y)$
+\end_inset
+
+, you'll see the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence re-emerges, depending on again, the overlap condition.
+ So basically, the modular variable expectation you evaluated, which depended
+ on this 
+\begin_inset Formula $\phi$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $\left\langle X\otimes U^{\dagger}XU\right\rangle $
+\end_inset
+
+ should be in some form present in the 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ correlation.
+ This is what you have to extract.
+\end_layout
+
+\begin_layout Itemize
+Remark: It maybe mentioned that it is important to get the scaling factors
+ right between this expectation and expectation of the modular variables,
+ because that is crucial for the violation, if we intent to measure the
+ modular variables indirectly.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+He again showed me the Non local young experiment with the EPR state.
+ That actually has implemented recovery of modular variables in some way
+ which is worth looking at.
+\end_layout
+
+\begin_layout Itemize
+He also enquired if I evaluated the commutation: 
+\begin_inset Formula $[U_{1}^{\dagger}XU_{1},U_{2}^{\dagger}XU_{2}]$
+\end_inset
+
+, which I should and add to the report.
+ Tomorrow.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar/Misc:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture # 4
+\end_layout
+
+\begin_layout Itemize
+Thought: I really want to construct a test that tests for dynamical non
+ locality instead of the usual non-locality (co-relations)
+\end_layout
+
+\begin_layout Itemize
+After this, I might just end up asking if Mandy will be willing to guide
+ me.
+ He is insanely hard working and it might just be worth it.
 \end_layout
 
 \end_deeper

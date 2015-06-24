@@ -1066,7 +1066,7 @@ Consider: A normalized wavefunction
 \end_inset
 
 (a) 
-\begin_inset Formula $\varphi(x')=\varphi(-x')$
+\begin_inset Formula $\varphi(x'-L/2)=\varphi(-(x'-L/2))$
 \end_inset
 
 
@@ -1098,12 +1098,12 @@ Defn:
 \begin_inset Formula $\varphi$
 \end_inset
 
- centred at 
+ positioned at 
 \begin_inset Formula $y'$
 \end_inset
 
- if the origin is assumed at the appropriate centre, to make the following
- symmetric.
+ if the origin of the following is assumed at the appropriate centre, to
+ maintain symmetry.
 \end_layout
 
 \begin_layout Labeling
