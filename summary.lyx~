@@ -4960,6 +4960,24 @@ The next big question now is to understand how to extract the modular variable
  This reminds me of the 3 pinhole paper we had read for Makundu's course.
 \end_layout
 
+\begin_layout Itemize
+Afterwards, he asked me to explicitly show that in my setting 
+\begin_inset Formula $[a_{1},a_{2}]\neq0$
+\end_inset
+
+ (same for 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+).
+ He basically wants me to explicitly show that the cause for the violation
+ is the commutation explicitly, by showing 
+\begin_inset Formula $B^{2}=4\mathbb{I}+[A,A']\otimes[B,B']$
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Extracting Modular Variable information off of the screen: What are the
@@ -5594,6 +5612,110 @@ Thought: I really want to construct a test that tests for dynamical non
 After this, I might just end up asking if Mandy will be willing to guide
  me.
  He is insanely hard working and it might just be worth it.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday, June 25
+\end_layout
+
+\begin_layout Itemize
+Health:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No gym as per new schedule (only Fridays, Saturdays, Sundays and Mondays)
+\end_layout
+
+\begin_layout Itemize
+Slightly tired despite about 8.5 hours of sleep | but feels optimal, even
+ without coffee
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Group Meeting:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I was asked to speak today, did; couldn't quite reach the part which I had
+ worked on.
+ Just discussed 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the motivation with the displacement operator etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence
+\end_layout
+
+\begin_layout Itemize
+dynamic non locality
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+the AB effect setup;
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Electric AB in some detail
+\end_layout
+
+\begin_layout Itemize
+talked about how 
+\begin_inset Formula $\phi$
+\end_inset
+
+ can be introduced
+\end_layout
+
+\begin_layout Itemize
+talked about the photon AB effect
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+next week barbecue details will be decided :P
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nonlocal Young with EPR paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+reading and filling in the missing steps, it's getting more an more interesting
+ because it seems to come dangerously close to the Bell test but doesn't
+ mention it
+\end_layout
+
+\begin_layout Itemize
+it also seems like their EPR state can be used to somehow create the kind
+ of states I wanted
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Colloqium
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A master's student talked about some kind of trap that he'd created for
+ his thesis.
 \end_layout
 
 \end_deeper
