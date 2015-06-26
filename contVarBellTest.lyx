@@ -2,13 +2,13 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass article
+\textclass revtex4
 \begin_preamble
-\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
-%\renewcommand*{\thefootnote}{\arabic{footnote}}
-\setcounter{footnote}{0}
-\usepackage{perpage} %the perpage package
-\MakePerPage{footnote} %the perpage package command
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%%\renewcommand*{\thefootnote}{\arabic{footnote}}
+%\setcounter{footnote}{0}
+%\usepackage{perpage} %the perpage package
+%\MakePerPage{footnote} %the perpage package command
 \usepackage{cancel}
 \end_preamble
 \use_default_options true
@@ -17,10 +17,10 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman ccfonts
+\font_roman default
 \font_sans default
 \font_typewriter default
-\font_default_family rmdefault
+\font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -33,10 +33,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize 10
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -44,7 +44,7 @@
 \cite_engine basic
 \use_bibtopic false
 \use_indices false
-\paperorientation portrait
+\paperorientation landscape
 \suppress_date false
 \use_refstyle 1
 \index Index
@@ -81,8 +81,21 @@ Bell Test with Continuous Variables
 
 \begin_layout Author
 A.
- A., A.
  A.
+ 
+\end_layout
+
+\begin_layout Author
+A.
+ A.
+\end_layout
+
+\begin_layout Address
+University of Siegen, Germany
+\end_layout
+
+\begin_layout Address
+Indian Institute of Science Education & Research, Mohali, India
 \end_layout
 
 \begin_layout Date
@@ -97,7 +110,9 @@ We show the violation of the Bell inequality in a more classical setting
 \end_inset
 
 .
- We use modular momentum and position to achieve this.
+ This is achieved using modular momentum and position.
+ Assuming the state, experimental realization of the measurement scheme
+ has also been delineated.
 \end_layout
 
 \begin_layout Section
@@ -120,7 +135,7 @@ The Bell inequality is a statement about the statistical outcomes of a certain
 \end_layout
 
 \begin_layout Section
-Violation in EPR/Bell state
+Violation in Bell state
 \end_layout
 
 \begin_layout Standard
@@ -131,10 +146,10 @@ Here the violation of Bell's inequality for the typical spin case, is stated
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Suppose: There are two observers
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 that are often chosen to be sufficiently far away that their measurements
@@ -161,7 +176,7 @@ that are often chosen to be sufficiently far away that their measurements
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Notatn: 
 \begin_inset Formula $\left\langle a_{i}b_{j}\right\rangle =$
 \end_inset
@@ -178,7 +193,7 @@ Average value obtained when Alice chooses to measure
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Statemnt: 
 \begin_inset Formula $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle C(a_{i},b_{i})\right\rangle \right|\le2$
 \end_inset
@@ -195,7 +210,7 @@ Quantum Mechanics predicts a violation of this in the following physical
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula 
 \[
@@ -218,7 +233,7 @@ where the
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: Alternatively, this follows from the definition of 
 \begin_inset Formula $\sigma_{x}$
 \end_inset
@@ -231,7 +246,7 @@ NB: Alternatively, this follows from the definition of
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -245,7 +260,7 @@ Defn:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Notatn: The Pauli matrices are referred to as 
 \begin_inset Formula $x,\, y,\, z$
 \end_inset
@@ -254,7 +269,7 @@ Notatn: The Pauli matrices are referred to as
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
 \end_inset
@@ -272,7 +287,7 @@ Defn:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -286,7 +301,7 @@ NB:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: 
 \begin_inset Formula 
 \[
@@ -304,7 +319,7 @@ This state is crucial for violating the CHSH inequality.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Consider: (a) The first qubit is with Alice and the second is with Bob.
  
 \begin_inset Newline newline
@@ -339,7 +354,7 @@ x' & = & \frac{z-x}{\sqrt{2}}
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Result 
 \begin_inset Formula $\left\langle C((x,z),(x',z'))\right\rangle =2\sqrt{2}\nleq2$
 \end_inset
@@ -355,7 +370,7 @@ This value can be reproduced in a slightly modified situation.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Modifctn: (i) due to the symmetry in the setup, we expect the same results
  hold for 
 \begin_inset Formula $x,\, y$
@@ -378,7 +393,7 @@ Modifctn: (i) due to the symmetry in the setup, we expect the same results
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Questn: Can we obtain the same violation? 
 \end_layout
 
@@ -395,7 +410,7 @@ First we show that (ii) is equivalent to measuring along any direction.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Questn: 
 \begin_inset Formula $\exists\,\text{a}\, U,\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =U\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|x\right|\chi\right\rangle =\left\langle \chi'\left|y\right|\chi'\right\rangle $
 \end_inset
@@ -436,7 +451,7 @@ Therefore we define the following situation.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Consider: (a) The first qubit is with Alice and the second is with Bob.
  
 \begin_inset Newline newline
@@ -471,7 +486,7 @@ Consider: (a) The first qubit is with Alice and the second is with Bob.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: These values are motivated by the 
 \begin_inset Formula $\pi/2$
 \end_inset
@@ -696,7 +711,7 @@ Now it remains to show that this scheme also violates the Bell inequality
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(3): 
 \begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
 \end_inset
@@ -709,7 +724,7 @@ Given that, it is straight forward to evaluate
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 CHSH: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -724,7 +739,7 @@ CHSH:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark This is a violation since 
 \begin_inset Formula $\left|\left\langle C\right\rangle \right|=2\sqrt{2}\nleq2$
 \end_inset
@@ -752,7 +767,7 @@ However, to convert this to a more conventional form, we simply redefine
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Substn: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -975,7 +990,7 @@ so that we have
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Concln: The violation of the Bell spin state can be equivalently be obtained
  by the measurement of 
 \begin_inset Formula $x$
@@ -1016,12 +1031,12 @@ Ideal Case, infinite slits
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Imagine: <TODO: Add an image of the setup>
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Unassume: 
 \begin_inset Formula $x,\, y,\, z$
 \end_inset
@@ -1038,7 +1053,7 @@ Definitions of
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula $L\equiv$
 \end_inset
@@ -1055,7 +1070,7 @@ number of slits
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Consider: A normalized wavefunction 
 \begin_inset Formula $\varphi(x')$
 \end_inset
@@ -1089,7 +1104,7 @@ Consider: A normalized wavefunction
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula $\left|\varphi(y')\right\rangle =\int dx'\varphi(x'-y'-\frac{N\cancel{2}L}{\cancel{2}})\left|x'\right\rangle $
 \end_inset
@@ -1107,7 +1122,7 @@ Defn:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -1121,7 +1136,7 @@ Defn:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: Definition of 
 \begin_inset Formula $\left|0\right\rangle $
 \end_inset
@@ -1138,7 +1153,7 @@ Remark: Definition of
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Recall: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -1152,7 +1167,7 @@ Recall:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: 
 \begin_inset Formula $\left\langle 0|1\right\rangle =0,\,\implies\left\langle +|-\right\rangle =0$
 \end_inset
@@ -1161,7 +1176,7 @@ NB:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula 
 \[
@@ -1174,7 +1189,7 @@ X\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: For sufficiently large 
 \begin_inset Formula $N$
 \end_inset
@@ -1196,7 +1211,7 @@ just as was with
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: We have almost all the cards, except for one that allows for setting
  
 \begin_inset Formula $\phi$
@@ -1214,7 +1229,7 @@ Remark: We have almost all the cards, except for one that allows for setting
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Defn: 
 \begin_inset Formula $U(\phi)$
 \end_inset
@@ -1233,7 +1248,7 @@ U(\phi)\left|1\right\rangle  & = & e^{-i\phi/2}\left|1\right\rangle
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Alternatively, we could also define 
 \begin_inset Formula $U(\phi)$
 \end_inset
@@ -1242,7 +1257,7 @@ Alternatively, we could also define
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Alt
 \begin_inset space ~
 \end_inset
@@ -1292,7 +1307,7 @@ when
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 NB: 
 \begin_inset Formula $Z(x_{mod2L})\left|0\right\rangle =\left|0\right\rangle $
 \end_inset
@@ -1305,7 +1320,7 @@ NB:
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: Here, 
 \begin_inset Formula $Z(x_{mod2L})$
 \end_inset
@@ -1340,7 +1355,7 @@ To evaluate the CHSH inequality, we again need terms of the form
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: The non-commutativity in this case is between 
 \begin_inset Formula $U$
 \end_inset
@@ -1369,7 +1384,7 @@ If
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(5): 
 \family roman
 \series medium
@@ -1412,6 +1427,14 @@ Thus obviously then,
 .
 \end_layout
 
+\begin_layout Subsection
+Source of violation
+\end_layout
+
+\begin_layout Standard
+TODO: Complete this
+\end_layout
+
 \begin_layout Section
 Conclusion
 \end_layout
@@ -1427,7 +1450,7 @@ Appendix
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(1): If
 \begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
 \end_inset
@@ -1440,12 +1463,12 @@ Claim(1): If
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: Trivial.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(2): 
 \begin_inset Formula $\left\langle x\otimes x\right\rangle =-1$
 \end_inset
@@ -1458,12 +1481,12 @@ Claim(2):
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: Trivial
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(3): 
 \begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
 \end_inset
@@ -1472,15 +1495,15 @@ Claim(3):
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
  & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
  & = & \left\langle \psi\right|x\otimes x\\
- &  & \frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
- &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}
+ &  & \Bigg[\frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
+ &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\Bigg]
 \end{eqnarray*}
 
 \end_inset
@@ -1513,7 +1536,7 @@ where we've used claim(2).
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(4): With definitions from section 3, without taking the large 
 \begin_inset Formula $N$
 \end_inset
@@ -1570,12 +1593,12 @@ Claim(4): With definitions from section 3, without taking the large
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: Trivial.
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(5): 
 \begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
 \end_inset
@@ -1584,7 +1607,7 @@ Claim(5):
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: We start with defining 
 \begin_inset Formula $\phi\equiv\phi_{i}$
 \end_inset
@@ -1628,10 +1651,9 @@ Now using claim(4), we have
 \begin_inset Formula 
 \begin{eqnarray*}
 \text{LHS} & = & \left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle \\
- & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
- &  & -\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
- &  & -\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
- &  & +\frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
+ &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
  & = & -\left(\frac{N-1}{N}\right)^{2}\frac{1}{2}\left[2\left(\cos^{2}\delta/2-\sin^{2}\delta/2\right)\right]\\
  & = & -\left(\frac{N-1}{N}\right)^{2}\cos\left(\delta\right)
 \end{eqnarray*}
@@ -1642,7 +1664,7 @@ Now using claim(4), we have
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Claim(8): Action of 
 \begin_inset Formula $x_{mod2L}$
 \end_inset
@@ -1651,7 +1673,7 @@ Claim(8): Action of
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Proof: Consider the operator 
 \begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
 \end_inset
@@ -1678,7 +1700,7 @@ Proof: Consider the operator
 \end_layout
 
 \begin_layout Labeling
-\labelwidthstring 00.00.0000
+\labelwidthstring a
 Remark: One needn't necessarily consider eigenstates of 
 \begin_inset Formula $x$
 \end_inset

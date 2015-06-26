@@ -5707,15 +5707,136 @@ it also seems like their EPR state can be used to somehow create the kind
  of states I wanted
 \end_layout
 
+\begin_layout Itemize
+I had apparently gotten too excited about how close the EPR paper is to
+ my work, it isn't quite so.
+ [thought about it at night]
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
-Colloqium
+Physical Colloqium and Seminar
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 A master's student talked about some kind of trap that he'd created for
  his thesis.
+\end_layout
+
+\begin_layout Itemize
+The seminar was about unifying fundamental forces (the guy didn't include
+ gravity)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating/Seminar/Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar Lecture # 4 completed
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, June 26
+\end_layout
+
+\begin_layout Itemize
+Health/Protocol
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Documented
+\end_layout
+
+\begin_layout Itemize
+Feeling good with 8 hours of sleep.
+ Scheduled gym today :)
+\end_layout
+
+\begin_layout Itemize
+Added banana to mid breakfast/lunch meal | I can perhaps eat some more in
+ this time
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nonlocal Young with EPR paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read till section II and glanced through the rest.
+ The relevant part has been covered.
+ The following took the longest to derive, although it is quite trivial.
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+figured how to implement measurement
+\emph default
+] So I finally figured out exactly how one can measure the modular momentum
+ off of the screen.
+ The essential idea is that you keep the screen far enough so that the free
+ evolution can be approximated by a simple fourier transform.
+ Consequence is that if the experimentally obtained probability 
+\begin_inset Formula $P_{\text{screen}}(x_{1},x_{2})\left|\psi_{\text{screen}}(x_{1},x_{2})\right|^{2}\propto\left|\varphi_{\text{grating}}(p_{1},p_{2})\right|^{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $p_{i}\propto x_{i}$
+\end_inset
+
+ and the constant depends on masses and the time for which it is evolved.
+ In any case, with that information, one simply needs to plugin the value
+ of the modular variable and we're done for the evening.
+ Besides, one can just take the modular screen position and that itself
+ should suffice.
+\begin_inset Newline newline
+\end_inset
+
+Even though this is not a new/novel result, the point is that it was needed.
+\end_layout
+
+\begin_layout Itemize
+With that big piece in place, it only remains to figure out how to construct
+ the 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ entangled state from the EPR state.
+ To that end, it was found that after the simplification, the state in the
+ Young's paper and our paper are very distinct.
+ Need to figure out if it is even possible to do this.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating/Seminar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar Lecture # 5 (probability + zeroth law)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc/Computer
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Latex/Mark down plugin for gmail
+\end_layout
+
+\begin_layout Itemize
+
 \end_layout
 
 \end_deeper
