@@ -221,7 +221,26 @@ Week 7
 
 * Monday (June 22)
   * Completed typing the article
+  * Read the GHZ paper (not fully clear yet)
+  * Ali suggested additions
 
+* Tuesday (June 23)
+  * GHZ paper
+  * Showed my operators are bounded unlike parity
+  * Thought about how to measure
 
+* Wednesday (June 24)
+  * Inconsistencies found in measurement methods
+  * Discussions + `Non local young experiment' started reading
+
+* Thursday (June 25)
+  * Extempore speaker @ the group meeting [Otfried etc. weren't there]
+  * Reading `Non local young'
+
+* Friday (June 26)
+  * Figured how to implement measurements!
+
+* Saturday, Sunday (june 27, 28) [weekend]
+  * Documentation + thinking about state prep (last seeming step)
 
 
