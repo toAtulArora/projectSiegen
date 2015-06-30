@@ -76,7 +76,7 @@
 \begin_body
 
 \begin_layout Title
-Bell Test with Continuous Variables
+Bell Test with Continuous Variables (Report)
 \end_layout
 
 \begin_layout Author
@@ -1017,11 +1017,11 @@ Consider: A state
 \begin_layout Labeling
 \labelwidthstring a
 Defn: 
-\begin_inset Formula $T_{N}\equiv\{\frac{1}{2},\frac{1}{2}+1,\frac{1}{2}+2,\dots,\frac{1}{2}+(N-1)\}$
+\begin_inset Formula $S_{N}\equiv\{0,1,2,\dots,(N-1)\},\, T_{N}\equiv\{n+\frac{1}{2}\,|\, n\in S_{N}\}$
 \end_inset
 
-, 
-\begin_inset Formula $\left|\varphi_{y'}\right\rangle \equiv\int dx'\left\langle x'-y'|\varphi\right\rangle \left|x'\right\rangle $
+ and 
+\begin_inset Formula $\left|\varphi_{n}\right\rangle \equiv\int dx'\left\langle x'-n2L|\varphi\right\rangle \left|x'\right\rangle $
 \end_inset
 
  
@@ -1032,8 +1032,8 @@ Defn:
 Defn: 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n\in T_{N}}\left|\varphi_{n2L}\right\rangle \\
-\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n=T_{N}}\left|\varphi_{\left(n+\frac{1}{2}\right)(2L)}\right\rangle 
+\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{t\in T_{N}}\left|\varphi_{t}\right\rangle \\
+\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{s\in S_{N}}\left|\varphi_{s}\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -1328,7 +1328,92 @@ Thus obviously then,
 \end_layout
 
 \begin_layout Subsection
-Source of violation
+Validating phase space behaviour
+\end_layout
+
+\begin_layout Standard
+In the past, it has been shown that one can arrive at the violation of Bell
+ inequalities in continuous variable systems.
+ One issue concerning these is that the wigner function corresponding to
+ the observable operators, are unbounded.
+ An example of this is parity.
+ Note that the Wigner function for a physical state 
+\begin_inset Formula $\rho$
+\end_inset
+
+ has an upper bound.
+ Here however, we are simply using the prescription to evaluate it for unitary
+ operators.
+\end_layout
+
+\begin_layout Standard
+We care because wigner functions maybe thought of as a specific case of
+ the Wigner-Weyl correspondence, which relates classical functions to their
+ corresponding quantum operators.
+ Thus, in a phase-space description of quantum mechanics, it is important
+ to show that it is not necessary to have unboundedness to show a violation
+ of the Bell's inequality, and thereby non-locality.
+ 
+\end_layout
+
+\begin_layout Standard
+Our set of permissible states is manifestly bounded.
+ We must show that the observable in our case, given by 
+\begin_inset Formula $U^{\dagger}(\phi)XU(\phi)$
+\end_inset
+
+ is also bounded.
+ To that end, we note that 
+\begin_inset Formula 
+\begin{eqnarray*}
+W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(x_{mod2L})\phi/2}\\
+ &  & e^{ip\frac{L}{\hbar}}e^{iZ(x_{mod2L})\phi/2}\left|q'+\frac{q}{2}\right\rangle \\
+ & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}\phi/2}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $Z_{1/2}=Z[(q'\mp\frac{L}{2})\mod2L]$
+\end_inset
+
+.
+ Similarly one can evaluate 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ and obtain 
+\begin_inset Formula $W=\left(W_{1}+W_{2}\right)/\sqrt{2}$
+\end_inset
+
+ which corresponds to the observable.
+ Clearly 
+\begin_inset Formula $\left|W\right|\le\left(2\pi\hbar\right)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Source of Violation
+\end_layout
+
+\begin_layout Standard
+In the Bell test done with spins, the source of violation hinges on the
+ anti-commutativity of the pauli matrices.
+ It is known that 
+\begin_inset Formula $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$
+\end_inset
+
+.
+ To obtain a violation, it is therefore necessary that the commutations
+ don't vanish.
+ This is indeed true in our case.
+ Explicitly, I must show that 
+\begin_inset Formula $[U^{\dagger}XU,U'^{\dagger}XU']\neq0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Labeling

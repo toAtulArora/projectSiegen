@@ -5836,5 +5836,189 @@ Latex/Mark down plugin for gmail
 \end_layout
 
 \end_deeper
+\begin_layout Section
+June 29-July 5, 2015 | Week 8
+\end_layout
+
+\begin_layout Subsection
+Monday, June 29
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stable, food intake increased by 1 meal
+\end_layout
+
+\begin_layout Itemize
+Gym, usual
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+How to construct the state
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Concluded that from the EPR state and using just a grating, the results
+ will not be favourable.
+ Explicitly tried for even 
+\begin_inset Formula $n=2$
+\end_inset
+
+ and found that cross terms just can't be contained if I'm using the EPR
+ state with a grating.
+ 
+\end_layout
+
+\begin_layout Itemize
+Started reading about the Quantum Talbot Effect and near field grating effects
+ (as opposed to keeping the screen far away, you observe close to the grating).
+ Spent some time on figuring out the details about this paper by `Farias'
+ titled `Quantum Information Processing by Weaving Quantum Talbot Carpets'
+ but that didn't work out very well.
+ This still seems like the last resort as the paper claims to do some universal
+ unitaries.
+\end_layout
+
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Other than the usual attempts, he suggested using two gratings (near field
+ like) but then that would probably take longer.
+\end_layout
+
+\begin_layout Itemize
+Next he concluded that perhaps just finding some mathematical operators
+ that can starting from some entangled state (such as EPR hopefully) produce
+ the desired state.
+ [hold on, what about symmetrized and anti-symmetrized wavefunctions! in
+ the case of spins, that's what create the entangled states naturally.
+ Therefore I would suspect that symmetrization etc.
+ must have some role to play even with continuous variables]
+\end_layout
+
+\begin_layout Itemize
+Going into the Quantum Talbot Effect would require much longer and should
+ therefore be avoided at the moment
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali/General direction
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I should concentrate on writing this as a paper, which means I must add
+ all the remaining results including those about the measurement scheme.
+\end_layout
+
+\begin_layout Itemize
+There're two directions, either I can put in more work and publish in a
+ better journal (even PRL he was convinced) or I spend time polishing this
+ (he said writing a paper takes half the time it took to come up with the
+ result in the first place) since I have roughly only a month.
+ Either ways, he said the entangled state creation will keep going in the
+ back of my mind while I fix everything.
+\end_layout
+
+\begin_layout Itemize
+Remark about my writeup: It's more like a report and detailed.
+ I must omit the known results and focus on the new work I'm presenting.
+ In any case, I'll write everything and then the extras will be removed.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 30
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Needed more sleep | so slept
+\end_layout
+
+\begin_layout Itemize
+Food intake (not going so well)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+How to construct the state
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[
+\emph on
+final new step
+\emph default
+] Figured out how to construct the state!! It was rather simple.
+\end_layout
+
+\begin_layout Itemize
+TODO: Complete talking about
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Symmetrization etc.
+\end_layout
+
+\begin_layout Itemize
+Ancilla qubit
+\end_layout
+
+\begin_layout Itemize
+Finite dimension like
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Started adding the remaining results to the report
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Added the boundedness in phase space thing
+\end_layout
+
+\begin_layout Itemize
+Working on the commutations
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured the overall scheme of the paper (to be written)
+\end_layout
+
+\begin_layout Itemize
+Shared the latex link etc.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
