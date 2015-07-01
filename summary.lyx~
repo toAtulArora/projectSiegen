@@ -5970,7 +5970,8 @@ final new step
 \end_layout
 
 \begin_layout Itemize
-TODO: Complete talking about
+TODO: Complete talking about this | perhaps its better if you just read
+ the writeup :P
 \end_layout
 
 \begin_deeper
@@ -5998,7 +5999,7 @@ Added the boundedness in phase space thing
 \end_layout
 
 \begin_layout Itemize
-
+Working on the commutations
 \end_layout
 
 \end_deeper
@@ -6006,5 +6007,215 @@ Added the boundedness in phase space thing
 Discussion with Ali
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Figured the overall scheme of the paper (look at figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "layoutOfDraft"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction (slightly more than a page)
+\end_layout
+
+\begin_layout Itemize
+Construction
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modular Variables
+\end_layout
+
+\begin_layout Itemize
+CHSH (violation), plot, boundedness, cause of violation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Physical Implementation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Creation of the Entangled State
+\end_layout
+
+\begin_layout Itemize
+Measurement Settings
+\end_layout
+
+\begin_layout Itemize
+Measurement
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Conclusion anyone?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Shared the latex link etc.
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.overleaf.com/2935261wdscgp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename IMG_20150630_180511.jpg
+	lyxscale 50
+	width 10cm
+	BoundingBox 0bp 300bp 835bp 1000bp
+	clip
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "layoutOfDraft"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Layout of the draft
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Wednesday, July 1
+\end_layout
+
+\begin_layout Itemize
+Health/Protocol etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Completing the documentation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Working on the draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Plotting the graph
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+set terminal pdf 
+\end_layout
+
+\begin_layout Plain Layout
+
+set output "resultRENAMEme.pdf"
+\end_layout
+
+\begin_layout Plain Layout
+
+set xlabel "Number of lumps (N)" 
+\end_layout
+
+\begin_layout Plain Layout
+
+set ylabel "<CHSH>" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#set title "Violation of CHSH for N>6"
+\end_layout
+
+\begin_layout Plain Layout
+
+set xrange [1:10] 
+\end_layout
+
+\begin_layout Plain Layout
+
+set sample 10
+\end_layout
+
+\begin_layout Plain Layout
+
+set arrow from 1,2 to 10,2 nohead 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot ((x-1)/x)**2 * 2 * sqrt(2) w lp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Figured how to use latex formulae within Xfig | just use the usual text
+ box and in the properties select special text.
+ Put the latex as $
+\backslash
+ket{
+\backslash
+psi}$ and import in lyx using external material, xfig file (don't need to
+ export it either)
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

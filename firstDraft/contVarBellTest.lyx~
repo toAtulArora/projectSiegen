@@ -10,6 +10,7 @@
 %\usepackage{perpage} %the perpage package
 %\MakePerPage{footnote} %the perpage package command
 \usepackage{cancel}
+\usepackage{braket}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -135,7 +136,11 @@ The Bell inequality is a statement about the statistical outcomes of a certain
 \end_layout
 
 \begin_layout Section
-Violation in Bell state
+Violation of Bell Inequality
+\end_layout
+
+\begin_layout Subsection
+CHSH Inequality | prior art
 \end_layout
 
 \begin_layout Standard
@@ -338,7 +343,7 @@ Explicitly then, consider: (a) The first qubit is with Alice and the second
 \begin_inset Formula $\phi\in\{\pi/4,\pi/4+\pi/2\}$
 \end_inset
 
-; see 
+; see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "mesSch1"
@@ -671,7 +676,7 @@ Substn:
 \begin_inset Formula $\phi\to\phi'=\phi+\pi/2,\,\theta\to\theta'=\theta-\pi/2$
 \end_inset
 
-; see 
+; see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "mesSch2"
@@ -910,7 +915,15 @@ Concln: The violation of the Bell spin state can be equivalently be obtained
  by the aforesaid angles.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
+Modular Variables | prior art
+\end_layout
+
+\begin_layout Standard
+<TODO>
+\end_layout
+
+\begin_layout Subsection
 Violation in Continuous Variable State
 \end_layout
 
@@ -980,7 +993,7 @@ Unassume:
 \begin_inset Formula $x,\, y,\, z$
 \end_inset
 
- refer to pauli matrices.
+ refer to pauli matrices
 \end_layout
 
 \begin_layout Labeling
@@ -1017,11 +1030,7 @@ Consider: A state
 \begin_layout Labeling
 \labelwidthstring a
 Defn: 
-\begin_inset Formula $S_{N}\equiv\{0,1,2,\dots,(N-1)\},\, T_{N}\equiv\{n+\frac{1}{2}\,|\, n\in S_{N}\}$
-\end_inset
-
- and 
-\begin_inset Formula $\left|\varphi_{n}\right\rangle \equiv\int dx'\left\langle x'-n2L|\varphi\right\rangle \left|x'\right\rangle $
+\begin_inset Formula $\left|\varphi_{n}\right\rangle \equiv\int dx'\left\langle x'-nL|\varphi\right\rangle \left|x'\right\rangle $
 \end_inset
 
  
@@ -1032,8 +1041,8 @@ Defn:
 Defn: 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{t\in T_{N}}\left|\varphi_{t}\right\rangle \\
-\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{s\in S_{N}}\left|\varphi_{s}\right\rangle 
+\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n=0}^{N-1}\left|\varphi_{2n+1}\right\rangle \\
+\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n=0}^{N-1}\left|\varphi_{2n}\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -1089,6 +1098,19 @@ NB:
 \end_layout
 
 \begin_layout Standard
+Analogous to the spin case, we construct the entangled state 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $\left|\psi'\right\rangle \equiv\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 With these states, we're in a position to construct the relevant Hermitian
  operators.
 \end_layout
@@ -1108,8 +1130,8 @@ X\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
 
 \begin_layout Labeling
 \labelwidthstring a
-NB: For sufficiently large 
-\begin_inset Formula $N$
+NB: Only in the limit 
+\begin_inset Formula $N\to\infty$
 \end_inset
 
 , 
@@ -1126,6 +1148,7 @@ just as was with
 \end_inset
 
 .
+ In general however, the relation doesn't hold.
 \end_layout
 
 \begin_layout Standard
@@ -1245,6 +1268,69 @@ NB:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/CHSH.pdf
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Practically, the number of slits, 
+\begin_inset Formula $N$
+\end_inset
+
+ will be finite.
+ The plot shows 
+\begin_inset Formula $\left\langle C\right\rangle $
+\end_inset
+
+ as a function of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ To get a violation, we need merely 
+\begin_inset Formula $7$
+\end_inset
+
+ slits, while with 
+\begin_inset Formula $10$
+\end_inset
+
+ we start approaching 
+\begin_inset Formula $2\sqrt{2}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "chshViolation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 To evaluate the CHSH inequality, we again need terms of the form 
 \begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle $
 \end_inset
@@ -1324,52 +1410,14 @@ Thus obviously then,
 \begin_inset Formula $N\ge7$
 \end_inset
 
-.
-\end_layout
+; see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chshViolation"
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Practically, 
-\begin_inset Formula $N$
-\end_inset
-
- will be finite.
- The plot shows 
-\begin_inset Formula $\left\langle C\right\rangle $
-\end_inset
-
- as a function of 
-\begin_inset Formula $N$
 \end_inset
 
 .
- To get a violation, we need merely 
-\begin_inset Formula $7$
-\end_inset
-
- slits.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -1454,12 +1502,11 @@ In the Bell test done with spins, the source of violation hinges on the
  To obtain a violation, it is therefore necessary that the commutations
  don't vanish.
  This is indeed true in our case.
- Explicitly, I must show that 
+ Explicitly, we must show that 
 \begin_inset Formula $[U^{\dagger}XU,U'^{\dagger}XU']\neq0$
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Labeling
@@ -1481,6 +1528,277 @@ Remark: The non-commutativity in this case is between
 
 \begin_layout Standard
 TODO: Complete this
+\end_layout
+
+\begin_layout Section
+Physical Implementation
+\end_layout
+
+\begin_layout Standard
+We show that this scheme can be implemented rather easily using photons.
+ We harness the two degrees of freedom of a photon, it's polarization and
+ it's position to construct the required state.
+ The overall setup (see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme"
+
+\end_inset
+
+) is such that we need only consider the quantum mechanical description
+ along the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+\end_layout
+
+\begin_layout Subsection
+Creation of the entangled state
+\end_layout
+
+\begin_layout Standard
+The desired entangled state is 
+\begin_inset Formula $\left|\psi'\right\rangle \equiv\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}$
+\end_inset
+
+.
+ We start with noting the triviality of constructing a 
+\begin_inset Formula 
+\[
+\left|+'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n=0}^{2N-1}\left|\psi_{n}\right\rangle 
+\]
+
+\end_inset
+
+ state.
+ One simply needs a source and a grating, viz.
+ a screen with 
+\begin_inset Formula $2N$
+\end_inset
+
+ slits of width 
+\begin_inset Formula $a\ll L$
+\end_inset
+
+, separated by a distance 
+\begin_inset Formula $L$
+\end_inset
+
+ (centre to centre).
+ The 
+\begin_inset Formula 
+\[
+\left|-'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n=0}^{2N-1}\left(-1\right)^{n+1}\left|\psi_{n}\right\rangle 
+\]
+
+\end_inset
+
+ state can be similarly constructed by using glass slabs at alternate slits,
+ such that the phase introduced is 
+\begin_inset Formula $\phi=\pi\,\implies\, e^{i\phi}=-1$
+\end_inset
+
+.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme"
+
+\end_inset
+
+, if you consider only one particle, and disregard everything after the
+ grating, then the setup is expected to produce a 
+\begin_inset Formula $\left|+'\right\rangle $
+\end_inset
+
+ state, just after the grating.
+ To produce the desired entangled state, we start with two entangled photons,
+ such that their polarization state can be expressed as 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}
+\]
+
+\end_inset
+
+Their spatial description (along 
+\begin_inset Formula $x$
+\end_inset
+
+-axis) is initially assumed to be 
+\begin_inset Formula $\left|\zeta\right\rangle =\left|\gamma\right\rangle \otimes\left|\gamma\right\rangle =\left|\gamma\gamma\right\rangle $
+\end_inset
+
+.
+ The state 
+\begin_inset Formula $\left|\gamma\right\rangle $
+\end_inset
+
+ maybe considered to be a guassian with 
+\begin_inset Formula $\sigma\gg2NL$
+\end_inset
+
+ so that after the grating, the spatial state can be written as 
+\begin_inset Formula $\left|\zeta_{\text{grating}}\right\rangle =\left|+'+'\right\rangle $
+\end_inset
+
+.
+ Now comes the interesting part.
+ To produce a 
+\begin_inset Formula $\left|-'\right\rangle $
+\end_inset
+
+ state, we already know we needed alternate glass slabs.
+ If we had glass slabs, whose refractive index (given some orientation)
+ was say 
+\begin_inset Formula $\eta_{H}=1$
+\end_inset
+
+ for a horizontally polarized beam and 
+\begin_inset Formula $\eta_{V}=\eta\neq0$
+\end_inset
+
+ for vertical polarization, then we could harness the entangled polarization
+ state to create the required spatially entangled state.
+ Birefringent crystals have such polarization dependent refractive indices.
+ Assume that alternating birefringent crystals have been placed after both
+ the gratings as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme"
+
+\end_inset
+
+ (in the diagram, they're not alternating though).
+ These have width such that the resultant phase it introduces is 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ The combined initial state is given by 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
+\]
+
+\end_inset
+
+After the grating, the state is 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
+\]
+
+\end_inset
+
+And finally after the crystals, the combined state becomes 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|+'-'\right\rangle -\left|VH\right\rangle \left|-'+'\right\rangle }{\sqrt{2}}
+\]
+
+\end_inset
+
+At this stage, if I were to trace out the polarization state, I'd end up
+ with a mixed state.
+ That is useless for our test.
+ Ignoring the glass slabs at the moment in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme"
+
+\end_inset
+
+, we observe the action of the polarisers on the state.
+ After the 
+\begin_inset Formula $45^{0}$
+\end_inset
+
+ polariser, the state becomes 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & = & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
+ &  & -\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
+\end{eqnarray*}
+
+\end_inset
+
+After the final stage, the horizontal polarizer, the state becomes 
+\begin_inset Formula 
+\[
+\left|\chi_{\text{horzl}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|HH\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
+\]
+
+\end_inset
+
+Now if I trace out the polarization state, I am left with the target entangled
+ state.
+ As a remark, it maybe mentioned that only one 
+\begin_inset Formula $45^{0}$
+\end_inset
+
+ polariser is enough.
+ It must also be stated that although to arrive at this result we assumed
+ that 
+\begin_inset Formula $\eta_{H}=1$
+\end_inset
+
+, which is unreasonable physically, we can compensate for 
+\begin_inset Formula $\eta_{H}\neq0$
+\end_inset
+
+ by putting appropriate glass slabs at the alternate empty slits, to produce
+ zero relative phase when the polarization is horizontal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset External
+	template XFig
+	filename diagrams/scheme.fig
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Scheme for creating the state
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scheme"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Measurement Settings
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
