@@ -6078,11 +6078,22 @@ https://www.overleaf.com/2935261wdscgp
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Eating
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar # 6 [something interesting about Wick's Theorem] | redo the ending
+ part (will have to sit and calculate, perhaps later)
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -6203,6 +6214,10 @@ plot ((x-1)/x)**2 * 2 * sqrt(2) w lp
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -6213,7 +6228,52 @@ Figured how to use latex formulae within Xfig | just use the usual text
 ket{
 \backslash
 psi}$ and import in lyx using external material, xfig file (don't need to
- export it either)
+ export it either).
+ Use the usual float for positioning.
+\end_layout
+
+\begin_layout Itemize
+Other than making and adding the diagram for the physical setup using xfig,
+ wrote the physical implementation section, including the state creation,
+ measurement settings and measurement.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset External
+	template XFig
+	filename firstDraft/diagrams/scheme.fig
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+There was a slight issue with how to do the time evolution and therefore
+ the measurement.
+ This will be explored next time.
+ I think its worth adding a graph for 
+\begin_inset Formula $\left|\left\langle p_{A},p_{B}|\psi'\right\rangle \right|^{2}$
+\end_inset
+
+ and show what Alice and Bob measure might look like
+\end_layout
+
+\begin_layout Itemize
+figured how to use wide equations etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar # 6 (remaining part) + # 7 (couldn't understand some steps in between,
+ didn't put in too much effort)
 \end_layout
 
 \end_deeper

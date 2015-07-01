@@ -77,7 +77,7 @@
 \begin_body
 
 \begin_layout Title
-Bell Test with Continuous Variables (Report)
+Bell Test with Continuous Variables
 \end_layout
 
 \begin_layout Author
@@ -100,6 +100,10 @@ Ali Asadian
 University of Siegen, Germany
 \end_layout
 
+\begin_layout PACS
+Draft
+\end_layout
+
 \begin_layout Date
 May-July 2015
 \end_layout
@@ -112,9 +116,9 @@ We show the violation of the Bell inequality in a more classical setting
 \end_inset
 
 .
- This is achieved using modular momentum and position.
- Assuming the state, experimental realization of the measurement scheme
- has also been delineated.
+ This is achieved using displacement operators, or equivalently modular
+ momentum and position.
+ A possible experimental realization of the scheme has also been delineated.
 \end_layout
 
 \begin_layout Section
@@ -1303,7 +1307,7 @@ Practically, the number of slits,
 \end_inset
 
  slits, while with 
-\begin_inset Formula $10$
+\begin_inset Formula $50$
 \end_inset
 
  we start approaching 
@@ -1456,7 +1460,42 @@ Our set of permissible states is manifestly bounded.
 \end_inset
 
  is also bounded.
- To that end, we note that 
+ To that end, we note that
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{widetext}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{widetext}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(x_{mod2L})\phi/2}\\
@@ -1672,7 +1711,7 @@ reference "fig:scheme"
 
  (in the diagram, they're not alternating though).
  These have width such that the resultant phase it introduces is 
-\begin_inset Formula $\phi$
+\begin_inset Formula $\pi$
 \end_inset
 
 .
@@ -1734,13 +1773,8 @@ After the final stage, the horizontal polarizer, the state becomes
 
 Now if I trace out the polarization state, I am left with the target entangled
  state.
- As a remark, it maybe mentioned that only one 
-\begin_inset Formula $45^{0}$
-\end_inset
-
- polariser is enough.
- It must also be stated that although to arrive at this result we assumed
- that 
+ As a remark, it maybe be stated that although to arrive at this result
+ we assumed that 
 \begin_inset Formula $\eta_{H}=1$
 \end_inset
 
@@ -1754,15 +1788,15 @@ Now if I trace out the polarization state, I am left with the target entangled
 
 \begin_layout Standard
 \begin_inset Float figure
-wide false
+wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset External
 	template XFig
 	filename diagrams/scheme.fig
-	width 8cm
+	width 15cm
 
 \end_inset
 
@@ -1795,6 +1829,165 @@ name "fig:scheme"
 
 \begin_layout Subsection
 Measurement Settings
+\end_layout
+
+\begin_layout Standard
+In our scheme, Alice and Bob can choose 
+\begin_inset Formula $\phi\in\{\phi_{1},\phi_{2}\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta\in\{\theta_{1},\theta_{2}\}$
+\end_inset
+
+ respectively.
+ To implement this, we note that the action of 
+\begin_inset Formula $U(\theta)$
+\end_inset
+
+ is to introduce a phase difference between the 
+\begin_inset Formula $\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1'\right\rangle $
+\end_inset
+
+ states.
+ By construction, 
+\begin_inset Formula $\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1'\right\rangle $
+\end_inset
+
+ are spatially disjoint; thus the operation of 
+\begin_inset Formula $U(\theta)$
+\end_inset
+
+ can be implemented by simply placing alternating glass slabs at the slits,
+ with widths such that 
+\begin_inset Formula $\left|0'\right\rangle \to e^{i\theta}\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1'\right\rangle \to e^{-i\theta}\left|1'\right\rangle $
+\end_inset
+
+.
+ The same operation maybe done for 
+\begin_inset Formula $U(\phi)$
+\end_inset
+
+ for the second particle.
+ In the overall scheme, as shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scheme"
+
+\end_inset
+
+, this is done by the glass slabs right after the birefringent crystals.
+\end_layout
+
+\begin_layout Subsection
+Measurement
+\end_layout
+
+\begin_layout Standard
+The scheme requires us to evaluate the expectation value of 
+\begin_inset Formula $X\otimes X$
+\end_inset
+
+ (after the measurement settings have been applied by the appropriate unitaries).
+ If from the experiment, we can obtain the probability 
+\begin_inset Formula $\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$
+\end_inset
+
+, then evaluating 
+\begin_inset Formula $\left\langle X\otimes X\right\rangle =\left\langle \cos(pL/\hbar)\otimes\cos(pL/\hbar)\right\rangle $
+\end_inset
+
+ simply amounts to 
+\begin_inset Formula $\int dp'_{A}dp'_{B}\cos(p'_{A}L/\hbar)\cos(p'_{B}L/\hbar)\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$
+\end_inset
+
+.
+ Here 
+\begin_inset Formula $f$
+\end_inset
+
+ is used to index which of the four possible measurement settings was used.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore it is sufficient to explain how to obtain the joint momentum probabili
+ty distribution from the experiment, for a given measurement setting.
+ We start with stating the result that 
+\begin_inset Formula 
+\[
+\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p'_{A}=\frac{mx'_{A}}{T},p'_{B}=\frac{mx'_{B}}{T}|\psi'_{f}\right\rangle \right|^{2}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\psi'_{f\,\text{screen}}\right\rangle $
+\end_inset
+
+ is the state of the system at the screen, 
+\begin_inset Formula $T$
+\end_inset
+
+ is the time elapsed between leaving the gratings and arriving at the screens
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ is the mass of the particle (obviously this result is for massive particles,
+ but its analogue holds for photons also).
+ The point is that the momentum distribution at the grating can be recovered
+ by observing the spatial distribution at a screen, sufficiently far away.
+\end_layout
+
+\begin_layout Standard
+In an experiment then, given 
+\begin_inset Formula $f$
+\end_inset
+
+, Alice and Bob both note the position at which they obtain their particle.
+ After repeating the experiment sufficiently many times, they share their
+ list to create a sequence 
+\begin_inset Formula $\{\left(x{}_{A}^{(i)},x_{B}^{(i)}\right)\}$
+\end_inset
+
+.
+ From this sequence, they create a 2D histogram, by simply counting how
+ many time they got 
+\begin_inset Formula $(x'_{A},x'_{B})$
+\end_inset
+
+ to lie inside a given cell.
+ The normalized result is essentially 
+\begin_inset Formula $\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}$
+\end_inset
+
+ from which 
+\begin_inset Formula $\left\langle X\otimes X\right\rangle $
+\end_inset
+
+ can be computed as discussed.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ is changed to evaluate all the 4 terms to finally obtain 
+\begin_inset Formula $\left\langle C\right\rangle $
+\end_inset
+
+ experimentally.
 \end_layout
 
 \begin_layout Section
@@ -2048,18 +2241,18 @@ Proof: We start with defining
 
 .
  Next, we note that 
-\begin_inset Formula $\text{LHS}=\left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle $
+\begin_inset Formula $\text{LHS}=\left\langle \psi'_{f}\left|X\otimes X\right|\psi'\right\rangle $
 \end_inset
 
  where 
-\begin_inset Formula $\left|\psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\psi\right\rangle $
+\begin_inset Formula $\left|\psi'_{f}\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\psi'\right\rangle $
 \end_inset
 
 .
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\\
+\left|\psi'_{f}\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\\
  &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\\
  & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle +\left|+-\right\rangle -\left|-+\right\rangle -\left|--\right\rangle \right)\\
  &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle -\left|+-\right\rangle +\left|-+\right\rangle -\left|--\right\rangle \right)\\
@@ -2072,7 +2265,7 @@ Proof: We start with defining
 Now using claim(4), we have
 \begin_inset Formula 
 \begin{eqnarray*}
-\text{LHS} & = & \left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle \\
+\text{LHS} & = & \left\langle \psi'_{f}\left|X\otimes X\right|\psi'_{f}\right\rangle \\
  & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
  &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
  &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
