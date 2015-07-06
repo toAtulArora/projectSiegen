@@ -1682,8 +1682,8 @@ W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(p'L/\hbar)e^{\pm i\phi}
 
 \end_inset
 
- which corresponds to the observable (we used that 
-\begin_inset Formula $Z=\pm1$
+ which corresponds to the observab le (we used that 
+\begin_inset Formula $Z_{2}=\pm1$
 \end_inset
 
 ).
@@ -1793,8 +1793,8 @@ where
  This manifests in the other commutation relations 
 \begin_inset Formula 
 \begin{eqnarray*}
-[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
-[\hat{Y},\hat{Z}] & = & -2i\hat{X}
+[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\
+{}[\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
 
 \end_inset
@@ -2220,6 +2220,16 @@ reference "fig:scheme"
 \end_inset
 
 , this is done by the glass slabs right after the birefringent crystals.
+ The state after application of the unitaries is given by 
+\begin_inset Formula $\left|\Psi_{f}\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $f$
+\end_inset
+
+ is used to index which of the four possible measurement settings was used.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -2233,23 +2243,18 @@ The scheme requires us to evaluate the expectation value of
 
  (after the measurement settings have been applied by the appropriate unitaries).
  If from the experiment, we can obtain the probability 
-\begin_inset Formula $\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$
+\begin_inset Formula $\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$
 \end_inset
 
 , then evaluating 
-\begin_inset Formula $\left\langle \hat{X}\otimes\hat{X}\right\rangle =\left\langle \cos(pL/\hbar)\otimes\cos(pL/\hbar)\right\rangle $
+\begin_inset Formula $\left\langle \hat{X}\otimes\hat{X}\right\rangle =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
 \end_inset
 
  simply amounts to 
-\begin_inset Formula $\int dp'_{A}dp'_{B}\cos(p'_{A}L/\hbar)\cos(p'_{B}L/\hbar)\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$
+\begin_inset Formula $\int dp{}_{A}dp{}_{B}\cos(p{}_{A}L/\hbar)\cos(p{}_{B}L/\hbar)\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$
 \end_inset
 
 .
- Here 
-\begin_inset Formula $f$
-\end_inset
-
- is used to index which of the four possible measurement settings was used.
  
 \end_layout
 
@@ -2259,13 +2264,13 @@ ty distribution from the experiment, for a given measurement setting.
  We start with stating the result that 
 \begin_inset Formula 
 \[
-\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p'_{A}=\frac{p_{z}x'_{A}}{D},p'_{B}=\frac{p_{z}x'_{B}}{D}|\psi'_{f}\right\rangle \right|^{2}
+\left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}x{}_{A}}{D},p{}_{B}=\frac{p_{z}x{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}
 \]
 
 \end_inset
 
  where 
-\begin_inset Formula $\left|\psi'_{f\,\text{screen}}\right\rangle $
+\begin_inset Formula $\left|\Psi{}_{f\,\text{screen}}\right\rangle $
 \end_inset
 
  is the state of the system at the screen, 
@@ -2323,7 +2328,7 @@ In an experiment then, there are two possibilities.
 
  to lie inside a given cell.
  The normalized result is essentially 
-\begin_inset Formula $\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}$
+\begin_inset Formula $\left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
 \end_inset
 
  from which 
@@ -2353,7 +2358,7 @@ In an experiment then, there are two possibilities.
 \begin_inset Formula $i$
 \end_inset
 
-th repitition and evaluate 
+th repetition and evaluate 
 \begin_inset Formula $\cos(p_{A}^{(i)}L/\hbar)$
 \end_inset
 
@@ -2467,11 +2472,6 @@ Claim(1): If
 
 \begin_layout Labeling
 \labelwidthstring a
-Proof: Trivial.
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring a
 Claim(2): 
 \begin_inset Formula $\left\langle x\otimes x\right\rangle =-1$
 \end_inset
@@ -2481,11 +2481,6 @@ Claim(2):
 \end_inset
 
  in Claim(1)
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring a
-Proof: Trivial
 \end_layout
 
 \begin_layout Labeling
@@ -2581,7 +2576,7 @@ Claim(4): With definitions from section 3, without taking the large
 \end_inset
 
 
-\begin_inset Formula $\left\langle -\left|X\right|+\right\rangle =\frac{-\left\langle 1\left|X\right|0\right\rangle +\left\langle 0\left|X\right|1\right\rangle }{2}=0=\left\langle +\left|X\right|-\right\rangle $
+\begin_inset Formula $\left\langle -'\left|X\right|+'\right\rangle =\frac{-\left\langle 1'\left|X\right|0'\right\rangle +\left\langle 0'\left|X\right|1'\right\rangle }{2}=0=\left\langle +'\left|X\right|-'\right\rangle $
 \end_inset
 
 
@@ -2589,15 +2584,10 @@ Claim(4): With definitions from section 3, without taking the large
 \end_inset
 
 
-\begin_inset Formula $\left\langle \psi\left|X\otimes X\right|\psi\right\rangle =\frac{\left\langle +\left|X\right|+\right\rangle \left\langle -\left|X\right|-\right\rangle +\left\langle -\left|X\right|-\right\rangle \left\langle +\left|X\right|+\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
+\begin_inset Formula $\left\langle \Psi\left|X\otimes X\right|\Psi\right\rangle =\frac{\left\langle +'\left|X\right|+'\right\rangle \left\langle -'\left|X\right|-'\right\rangle +\left\langle -'\left|X\right|-'\right\rangle \left\langle +'\left|X\right|+'\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring a
-Proof: Trivial.
 \end_layout
 
 \begin_layout Labeling
