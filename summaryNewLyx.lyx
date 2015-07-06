@@ -84,6 +84,12 @@
 projectSiegen | Summary
 \end_layout
 
+\begin_layout Abstract
+Summarized progress report of my summers 2015 I spent in Siegen, Germany.
+ Main themes of study were Modular Variables, AB effect, Bell Test in continuous
+ variables.
+\end_layout
+
 \begin_layout Section
 May 7-13 [week 0 and 1]
 \end_layout
@@ -3865,7 +3871,49 @@ Wrote the code to find these stupid expectations quickly (it is not pasting
 
 \end_layout
 
+\end_deeper
+\begin_layout Subsection
+Friday, June 12
+\end_layout
+
 \begin_layout Itemize
+Mathematica Alternatives [was up till 5 or so, figuring this]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tried to get mathics to work first and then looked at other options
+\end_layout
+
+\begin_layout Itemize
+Then tried installing sage etc.
+\end_layout
+
+\begin_layout Itemize
+Tried converting the mathematica code to Sage [took the longest, and worked
+ the worst | there's no simple way I could find for indexing symbolic variables]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+And for some reason, it would always show 
+\begin_inset Formula $1/\sqrt{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $\sqrt{2}/2$
+\end_inset
+
+ which is plain annoying | this also I couldn't figure how to fix
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Finally, tried to convert the Mathematica code to Mathics and although the
+ code compiles, the result is not correct
+\begin_inset Newline newline
+\end_inset
+
 Print["intial state:"] 
 \begin_inset Newline newline
 \end_inset
@@ -3914,14 +3962,3074 @@ newState = state Expand[ (state /.
 Print["And the expectation for displacing p is"]
 \end_layout
 
+\begin_layout Itemize
+This had helped | http://ask.sagemath.org/question/8181/implicitly-defining-a-sequ
+ence-of-variables/
+\end_layout
+
 \end_deeper
-\begin_layout Subsection
-Friday
+\begin_layout Itemize
+At the office, made progress with the Mathematica code I had written
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basically used that code I wrote yesterday to calculate the CHSH inequality
 \end_layout
 
 \begin_layout Itemize
-http://ask.sagemath.org/question/8181/implicitly-defining-a-sequence-of-variables/
+Initially I had made some mistake in evaluating the operator corresponding
+ to 
+\begin_inset Formula $\cos(\alpha)\otimes\cos(\alpha)$
+\end_inset
+
+ that lead to a happy violation with 
+\begin_inset Formula $n>3$
+\end_inset
+
+ or so.
+ This was fixed.
 \end_layout
 
+\begin_layout Itemize
+\begin_inset External
+	template PDFPages
+	filename bellTestMathematica/bellType1Draft.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali [made quite some progress relatively]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He suggested we could use instead of the 
+\begin_inset Formula $00+11$
+\end_inset
+
+ type of state, 
+\begin_inset Formula $(0+1)(0+1)+(0-1)(0-1)$
+\end_inset
+
+ type of state.
+ Although he himself wasn't so sure, it actually got me closer to the picture
+ I had with 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ rotating the phase in the 
+\begin_inset Formula $0,1$
+\end_inset
+
+ basis, while the state is expected to measured in the 
+\begin_inset Formula $+-$
+\end_inset
+
+ basis.
+\end_layout
+
+\begin_layout Itemize
+The issue however is that we still don't know what is the analogue of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ matrices and how it must be constructed.
+ The displacement operator itself is not the best option.
+\end_layout
+
+\begin_layout Itemize
+So basically we might be able to link all the 3 ideas, the AB effect (phase
+ shift), the locality issue (Bell test) and finally the relation between
+ pauli matrices and density operators
+\end_layout
+
+\begin_layout Itemize
+Also started to question the issue related to the meaning of modular position
+ on the screen as opposed to moments after the particle leaves the double
+ slit.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar [TODO: add link] It was the last in the series, about Bell.
+ Very interesting ending.
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday, June 13 & 14
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+first non-trivial result
+\emph default
+] Figured the mapping between the continuous variable and the discrete case
+\end_layout
+
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym on Saturday only.
+\end_layout
+
+\begin_layout Itemize
+Thought: Physics is about finding the most accurate assumptions.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 15-21 | Week 6
+\end_layout
+
+\begin_layout Subsection
+Monday, June 15
+\end_layout
+
+\begin_layout Itemize
+Misc/Seminars
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+On the Nature of Causality in Complex Systems, George F.R.
+ Ellis [https://www.youtube.com/watch?v=nEhTkF3eG8Q]
+\end_layout
+
+\begin_layout Itemize
+About non-commutative geometry, stopped watching after some time [https://www.you
+tube.com/watch?v=GKu5NkVPI2w]
+\end_layout
+
+\begin_layout Itemize
+Bracket notation for lyx [http://tex.stackexchange.com/questions/48031/lyx-quick-w
+ay-to-insert-dirac-bra-ket]
+\end_layout
+
+\begin_layout Itemize
+Thought: 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Otfried's Lecture: About how if one assumes that no information is transmitted
+ alone, the CHSH bound is violated by 
+\begin_inset Formula $4$
+\end_inset
+
+ and not just by 
+\begin_inset Formula $2\sqrt{2}$
+\end_inset
+
+.
+ There's more to QM, more restriction than is apparent.
+\end_layout
+
+\begin_layout Itemize
+Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discussed what I had worked out.
+ It seems correct.
+ I must now do the explicit calculations without assuming 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continuous variable Bell Test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Worked out the explicit details for the usual bell test, with the scheme,
+ rotate the state first, then take the expectation.
+ Found the `correct' values of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Worked out the continuous variable case for 
+\begin_inset Formula $n\neq\infty$
+\end_inset
+
+.
+ Had made an assumption which I couldn't support in one of the proofs.
+ Recalculated without that assumption and obtained the same result.
+\end_layout
+
+\begin_layout Itemize
+Started documenting the same
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Walking back
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured that the phase shift operator must be a function of modular position
+ (
+\begin_inset Formula $x\text{mod}2L$
+\end_inset
+
+) and that 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ must correspond to this somehow
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Health etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 16
+\end_layout
+
+\begin_layout Itemize
+Roope's Lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I couldn't follow much today.
+ Need to read from the text
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Continuous Variable Bell Test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ali told me about the more elegant representation he'd found for his contextuali
+ty paper with the set 
+\begin_inset Formula $D(\alpha_{i})$
+\end_inset
+
+ forming the pauli matrices.
+ He showed that the commutation is obeyed if 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ satisfy a constraint.
+ The task was to use this formalism and arrive at the violation.
+ 
+\end_layout
+
+\begin_layout Itemize
+To that end, I started looking for states that correspond to 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ etc.
+ and realized after an entire day of thinking, that it is not straight forward,
+ and perhaps, if one of my assumptions isn't false (that there're only two
+ eigenkets of 
+\begin_inset Formula $D(\alpha)$
+\end_inset
+
+ upto phase/scaling ofcourse) then these states don't span, well anything.
+ You can't even construct eigenkets of 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+ from those of 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+I had spent the whole day thinking about things based on the wrong assumption
+ that displacement operators only displace.
+ They infact, also add a phase which prevents say 
+\begin_inset Formula $\sum_{n}\left|n\alpha+\beta\right\rangle $
+\end_inset
+
+ from being an eigenstate of 
+\begin_inset Formula $D(\alpha)$
+\end_inset
+
+ for 
+\begin_inset Formula $\beta\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+My usual scheme of using 
+\begin_inset Formula $\left|0/1\right\rangle $
+\end_inset
+
+ states with 
+\begin_inset Formula $2L$
+\end_inset
+
+ separated lumps also doesn't work if the lumps are made of coherent states.
+ Other than it not being an eigenstate of neither 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+ nor 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+, they are not even orthogonal.
+ I had infact imagined that states of the form 
+\begin_inset Formula $\sum_{m,n}\left|n\alpha_{1}+m\alpha_{2}\right\rangle $
+\end_inset
+
+ are simultaneous eigenkets of 
+\begin_inset Formula $D(\alpha_{1})$
+\end_inset
+
+ and 
+\begin_inset Formula $D(\alpha_{2})$
+\end_inset
+
+ while these operators don't even commute.
+ Now I am in a situation where I can't even construct eigenkets general
+ enough to span another eigenket!
+\end_layout
+
+\begin_layout Itemize
+Other than this, I added the operator for the phases, viz.
+ 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+'s analogue in the continuous variable case.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Headache :(
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 17
+\end_layout
+
+\begin_layout Itemize
+Appropriate Eigenkets of the displacement like pauli operators
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Thought along the lines of displacing states if there existed a number operator
+ like object for the coherent state, namely 
+\begin_inset Formula $\hat{O}\left|\alpha\right\rangle =\alpha\left|\alpha\right\rangle $
+\end_inset
+
+, then I could use this to construct something like 
+\begin_inset Formula $D(\lambda)e^{-i\text{Im}[(\lambda\hat{O})]}\left|\bar{\alpha}\right\rangle \propto\left|\bar{\alpha}\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\bar{\alpha}\right\rangle =\sum_{n}\left|n\alpha\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The other approach I had thought of was if there was some operator like
+ 
+\begin_inset Formula $\hat{S}_{\alpha}=\sum_{n}\left|(n+1)\alpha\right\rangle \left\langle n\alpha\right|$
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ sufficiently large so that 
+\begin_inset Formula $\left\langle n\alpha|m\alpha\right\rangle \approx\delta_{nm}$
+\end_inset
+
+ .
+ So what I intended to do was something like 
+\begin_inset Formula $(1-\hat{S}_{\alpha+\lambda})D(\lambda)\left|\bar{\alpha}\right\rangle \propto\left|\bar{\alpha}\right\rangle $
+\end_inset
+
+ which for sure won't work because you would need something like 
+\begin_inset Formula $\hat{S}_{n\alpha+\lambda}$
+\end_inset
+
+ for each term in the summation which defeats the purpose of the operator
+ itself.
+\end_layout
+
+\begin_layout Itemize
+I tried to construct pauli operators using 
+\begin_inset Formula $J_{k}=\epsilon_{ijk}p_{i}x_{j}$
+\end_inset
+
+ but then that is anyway the commutation for angular momentum.
+ Then I realized that I've also gone from 
+\begin_inset Formula $1$
+\end_inset
+
+ dimension to 
+\begin_inset Formula $3$
+\end_inset
+
+ dimension space.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Guest Lecture on Bohmian Mechanics by Detlef Duerr from Munich on "What
+ is and to which end does one study Bohmian Mechanics?"
+\end_layout
+
+\begin_layout Itemize
+Couldn't make much progress with finding eigenstates of the displacement
+ like pauli operators.
+ Kind of proved that they don't exist.
+\end_layout
+
+\begin_layout Itemize
+Ali gave me a paper that does a GHZ test using continuous variables and
+ modular variables.
+ This seemed interesting because they had obtained the pauli like operators
+ with the only difference being that they hadn't considered 
+\begin_inset Formula $\cos(p\alpha)$
+\end_inset
+
+; instead they had 
+\begin_inset Formula $e^{ip\alpha}$
+\end_inset
+
+ like operators but rather elegantly used.
+\end_layout
+
+\begin_layout Itemize
+Health:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Not feeling well, no gym
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday and Friday, June 18 and 19 [unwell :(]
+\end_layout
+
+\begin_layout Subsection
+Saturday and Sunday, June 20 and 21 [catch up]
+\end_layout
+
+\begin_layout Itemize
+Saturday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Worked on completing the report (couldn't do the full thing because the
+ proofs were in the university and even though I went, I couldn't enter;
+ apparently you need some sort of a chip to enter)
+\end_layout
+
+\begin_layout Itemize
+Started re-reading the GHZ paper and understood where the 
+\begin_inset Formula $mod2$
+\end_inset
+
+ was coming from.
+ 
+\end_layout
+
+\begin_layout Itemize
+Took the hint from the state they had used and tried to work it out independentl
+y.
+ Didn't work
+\end_layout
+
+\begin_layout Itemize
+Peculiar point was that they had taken a state that looked similar to the
+ simultaneous eigenket of 
+\begin_inset Formula $\bar{x},\,\bar{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 1 or 2
+\end_layout
+
+\begin_layout Itemize
+Protocols: Pending documentation etc.
+\end_layout
+
+\begin_layout Itemize
+Health: Not fully normal, no gym, about 6 hours throughput
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sunday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read the GHZ paper further, realized that they were using more fancy things
+ than just modular operators.
+ They were using some kind of binary operators.
+ Idea was that eventually, they'll construct an operator 
+\begin_inset Formula $[\tilde{x}]_{k}$
+\end_inset
+
+ which would essentially yield the 
+\begin_inset Formula $k$
+\end_inset
+
+th bit of 
+\begin_inset Formula $x$
+\end_inset
+
+ when acted upon 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+.
+ They then exponentiate such operators and define 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ and 
+\begin_inset Formula $Z=iXY$
+\end_inset
+
+ (I actually never realized that you could easily define 
+\begin_inset Formula $\sigma_{z}\propto i\sigma_{x}\sigma_{y}$
+\end_inset
+
+ because 
+\begin_inset Formula $[\sigma_{x},\sigma_{y}]=2i\sigma_{z}$
+\end_inset
+
+ while 
+\begin_inset Formula $\{\sigma_{x},\sigma_{y}\}=0$
+\end_inset
+
+.
+ The point is that when we ask for 
+\begin_inset Formula $x_{modL}$
+\end_inset
+
+ say, then we extract infinite bits, but they're not really needed.
+ For instance my 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ operator essentially only needs to know if 
+\begin_inset Formula $x_{mod}<L$
+\end_inset
+
+ or not.
+ So my 
+\begin_inset Formula $Z$
+\end_inset
+
+ operator is infact somehow only using 1 bit of information.
+ This is perhaps the right direction towards an elegant generalization.
+\end_layout
+
+\begin_layout Itemize
+I found that 
+\begin_inset Formula $X\left|\uparrow\right\rangle =\left|\downarrow\right\rangle $
+\end_inset
+
+ works even when 
+\begin_inset Formula $X'\equiv\left(X+X^{\dagger}\right)/2$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $X'\left|\uparrow\right\rangle =\left|\downarrow\right\rangle $
+\end_inset
+
+.
+ To check if 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $Z$
+\end_inset
+
+ also work,
+\end_layout
+
+\begin_layout Itemize
+I need to figure how to convert (the old problem which I didn't solve then
+ because it seemed like a digression) between position ket representation
+ and momentum ket representation (I mean I know how, but I just don't get
+ the right result), since I can't use the displacement action as I could
+ with usual modular variables.
+\begin_inset Newline newline
+\end_inset
+
+OR
+\begin_inset Newline newline
+\end_inset
+
+I could just find how the binary operators act on 
+\begin_inset Formula $\left|p'\right\rangle $
+\end_inset
+
+ instead of 
+\begin_inset Formula $\left|q'\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 2
+\end_layout
+
+\begin_layout Itemize
+Protocols: Pending emails etc.
+\end_layout
+
+\begin_layout Itemize
+Health: Not fully normal, no gym, about 6 hours throughput
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 22-28 | Week 7
+\end_layout
+
+\begin_layout Subsection
+Monday, June 22
+\end_layout
+
+\begin_layout Itemize
+Protocol:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Organized documents (physical)
+\end_layout
+
+\begin_layout Itemize
+Updated documentation (was lagging)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Completed the article on continuous variable bell test (the proofs were
+ pending, proof read them partially!)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Emailed it to Ali
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The GHZ paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Not able to make much progress | things I couldn't derive, I still can't
+ derive
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I have issues with taking log of product of exponentiated operators and
+ the exponentiation of objects like 
+\begin_inset Formula $(a+b+c)mod2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+I am unable get the right answer for converting something from position
+ basis to momentum basis.
+ How sad is that :(
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I was however able to figure out
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How 
+\begin_inset Formula $Y\left|\uparrow\right\rangle \propto i\left|\downarrow\right\rangle $
+\end_inset
+
+, but I just can't get the sign right.
+ This is very important if I wish to show that 
+\begin_inset Formula $\frac{Y+Y^{\dagger}}{2}$
+\end_inset
+
+ yields the same result as 
+\begin_inset Formula $Y$
+\end_inset
+
+; this in turn is essential for the Bell test.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+About the article I wrote
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He seemed to convinced that everything is correct
+\end_layout
+
+\begin_layout Itemize
+was glad to see the similarity between the GHZ approach and our approach
+\end_layout
+
+\begin_layout Itemize
+Suggested I calculate the Wigner function etc.
+ for the operators 
+\begin_inset Formula $U^{\dagger}XU$
+\end_inset
+
+ and show they are not unbounded like the parity operator.
+ Oh, I now understand what he meant.
+ Instead of the density matrix, I just put my operator and evaluate its
+ Wigner function.
+ So my MATLAB code for finding wigner function wasn't really a waste afterall
+ eigh :P
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+About his new proposal
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So his idea was to use the first order coherence function and construct
+ a Bell inequality using it.
+\end_layout
+
+\begin_layout Itemize
+It is interesting he said because first order coherence doesn't detect quantum
+ effects.
+ For that, one must use second order coherence.
+ So if we can show the bell test using first order coherence, then we would've
+ captured the effect somehow.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Seminar/Eating time: Watched Kardar's lecture # 3
+\end_layout
+
+\begin_layout Subsection
+Tuesday, June 23
+\end_layout
+
+\begin_layout Itemize
+Protocol:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Updated documentation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The GHZ paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fixed the sign, 
+\begin_inset Formula $Y\left|\uparrow\right\rangle =i\left|\downarrow\right\rangle $
+\end_inset
+
+ indeed.
+\end_layout
+
+\begin_layout Itemize
+The issue is that the states are
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Expressed as a countable superposition of 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+ (or equivalently
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+) states, thus not very 'nice'
+\end_layout
+
+\begin_layout Itemize
+Even if we express it as a superposition of 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+, there're infinite of them, therefore the state is not normalizable
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+However, nothing stops us from considering the Bell states with this formalism,
+ because 
+\begin_inset Formula $X^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y^{\dagger}$
+\end_inset
+
+ act the same way on 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ and therefore one can readily construct 
+\begin_inset Formula $\cos(\tilde{p})$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos(\tilde{x})$
+\end_inset
+
+ and construct the inequality and show a violation by an identical analysis.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I must now show that my 
+\begin_inset Formula $U^{\dagger}(\theta)XU(\theta)$
+\end_inset
+
+ are not unbounded in their wigner representation (and they might be, who
+ knows).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I have a feeling that it might just be.
+ Justification:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The operator that sends 
+\begin_inset Formula $\left|q\right\rangle \to\left|-q\right\rangle $
+\end_inset
+
+, Parity, is a delta function in the Wigner representation (we proved the
+ other way round in the Topics in QM, CM course).
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ operator also essentially does something similar, (for 
+\begin_inset Formula $0<q<2L$
+\end_inset
+
+) 
+\begin_inset Formula $Z\left|q\right\rangle =\pm\left|q\right\rangle $
+\end_inset
+
+, so for certain values, 
+\begin_inset Formula $\left|q\right\rangle \to-\left|q\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Ok now it doesn't seem all the compelling and its worth checking.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+It turns out that it is almost trivial to evaluate this also.
+ The answer is 
+\begin_inset Formula $W(q,p)\sim e^{iZ(q-L/2)\phi}e^{ipL/\hbar}$
+\end_inset
+
+ upto some signs.
+ So it is well behaved and bounded.
+\end_layout
+
+\begin_layout Itemize
+Surprisingly though, if I don't use the anti-commutation, I get 
+\begin_inset Formula $W(q,p)\sim e^{iZ(q-L/2)\phi/2}e^{ipL/\hbar}e^{iZ(q+L/2)\phi/2}$
+\end_inset
+
+ which is obviously not the same as the previous statement.
+ I'll stick to this because to derive the commutation, I had to make some
+ assumptions which I'm not so sure hold.
+ [Later: It is infact the same as I'll discover next week]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Actually it was while explaining the result to Ali that I found 
+\begin_inset Formula $W(q,p)$
+\end_inset
+
+ exactly for 
+\begin_inset Formula $U^{\dagger}(\theta)XU(\theta)$
+\end_inset
+
+.
+ I must write this out neatly for the 
+\end_layout
+
+\begin_layout Itemize
+Explained the difference between the different types of AB effects and the
+ related photon AB effects
+\end_layout
+
+\begin_layout Itemize
+The next big question now is to understand how to extract the modular variable
+ information off of the screen.
+ This reminds me of the 3 pinhole paper we had read for Makundu's course.
+\end_layout
+
+\begin_layout Itemize
+Afterwards, he asked me to explicitly show that in my setting 
+\begin_inset Formula $[a_{1},a_{2}]\neq0$
+\end_inset
+
+ (same for 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+).
+ He basically wants me to explicitly show that the cause for the violation
+ is the commutation explicitly, by showing 
+\begin_inset Formula $B^{2}=4\mathbb{I}+[A,A']\otimes[B,B']$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Extracting Modular Variable information off of the screen: What are the
+ various approaches one could take?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So I could start with field quantization for the E, B fields.
+ In that case, the 
+\begin_inset Formula $E$
+\end_inset
+
+ field is a function of 
+\begin_inset Formula $q$
+\end_inset
+
+ and the 
+\begin_inset Formula $B$
+\end_inset
+
+ field is a function of 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ However, this is when they quantize in a box.
+ When they quantize in general, then they have 
+\begin_inset Formula $q+ip=A$
+\end_inset
+
+ and 
+\begin_inset Formula $q-ip=A^{*}$
+\end_inset
+
+ and then it takes more reading to understand how they all relate to 
+\begin_inset Formula $E$
+\end_inset
+
+, the observable.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I also just started thinking, agreed that the Hamiltonian is the same as
+ that for a harmonic oscillator.
+ That doesn't mean that the time evolution of 
+\begin_inset Formula $q,\,p$
+\end_inset
+
+ should be given by the Heisenberg equation of motion, or does it? Well
+ if the Hamiltonian is correct, then given the right coordinates (q and
+ p as we have), it should give the right evolution equations when plugged
+ into the Hamilton's equations.
+ So yes, in general also, one writes a Hamiltonian first which gives the
+ right dynamics and then quantizes the conjugate variables.
+ The usual trick.
+ (I wonder at times if you could do anything other than the Lagrangian or
+ the Hamiltonian, but not now anyway).
+ Mandy had explained the rest quite well, about what picture is associated
+ with the quantum states and where it's happening in the physical space.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The other approach is that I take a wavefunction as I had, and then just
+ evolve it according to a free Hamiltonian and from the interference obtained
+ (from 
+\begin_inset Formula $|\left\langle x|\psi\right\rangle |^{2}$
+\end_inset
+
+) I can explore how to extract 
+\begin_inset Formula $p_{mod2L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I remember now the contradiction.
+ The claim was that 
+\begin_inset Formula $\psi(t)^{*}p^{k}q^{m}\psi(t)$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ for any 
+\begin_inset Formula $t$
+\end_inset
+
+, if 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle +e^{i\phi}\left|\psi_{2}\right\rangle $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\psi_{2}\right\rangle $
+\end_inset
+
+ don't overlap to start with, but 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ is freely evolved, viz.
+ 
+\begin_inset Formula $H=p^{2}/2m$
+\end_inset
+
+.
+ The contradiction is based on intuition.
+ It is known that under free evolution, the wavefunction diffuses.
+ So the two lumps should eventually overlap.
+ If they do overlap, I expect ...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Allright, after all this mumbo jumbo and confusion, I just realized that
+ I must not try to find the value of 
+\begin_inset Formula $\phi,\,\theta$
+\end_inset
+
+ and take them as given.
+ The point is that I should just choose between 
+\begin_inset Formula $\phi_{1},\phi_{2}$
+\end_inset
+
+ (say) and then measure 
+\begin_inset Formula $X$
+\end_inset
+
+ somehow.
+ This must yield a value between 
+\begin_inset Formula $-1\le X\le1$
+\end_inset
+
+.
+ Now I share my values with Alice and we plug them in the Bell's inequality
+ and let the experiments say whether or not there's a violation.
+ The question really now is how to find the measurement outcome of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ I got all confused.
+ So for any observable, the axiom is that the outcome must be one of the
+ eigenvalues, corresponding to the eigenket to which the state is collapsed.
+ The issue is that my eigenkets are not really complete, or atleast not
+ the `subspace' (subset, fine) I am considering.
+ 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ are not really eigenkets and that's why all the hassle.
+ If they were, then the values of 
+\begin_inset Formula $X$
+\end_inset
+
+ would be 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ But here that's not the case; 
+\begin_inset Formula $N$
+\end_inset
+
+ must come into the picture somehow.
+ Is it possible to have observables who's eigenkets aren't complete? That
+ way I have difficulty figuring how to measure even theoretically.
+ Maybe the notion of measurement can be generalized in some way here (I
+ must get the 
+\begin_inset Formula $N$
+\end_inset
+
+s as probabilities somehow).
+\end_layout
+
+\begin_layout Itemize
+On the way back, I figured that if I use unnormalized eigenkets of 
+\begin_inset Formula $X$
+\end_inset
+
+ such as 
+\begin_inset Formula $\left|\tilde{x}\right\rangle \equiv\sum_{n}\left|x=\tilde{x}+nL\right\rangle $
+\end_inset
+
+, then 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|=1$
+\end_inset
+
+ because 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|\left|x\right\rangle =\left|x\right\rangle ,\,\forall\,x\in\mathbb{R}$
+\end_inset
+
+.
+ However, only now I realized that such states would give 
+\begin_inset Formula $X\left|\tilde{x}\right\rangle =\left|\tilde{x}\right\rangle $
+\end_inset
+
+, which means the measurement will always yield 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ What about the 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle \equiv\sum_{n}(-1)^{n}\left|x=\tilde{x}+nL\right\rangle $
+\end_inset
+
+ type of states? These are the ones that were supposed to yield 
+\begin_inset Formula $X\left|\tilde{x}'\right\rangle =-\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ resulting in a 
+\begin_inset Formula $-1$
+\end_inset
+
+ outcome.
+ 
+\end_layout
+
+\begin_layout Itemize
+I also tried proving the equivalence of the two representations of eigenstates
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+ but failed.
+\end_layout
+
+\begin_layout Itemize
+After reaching home, I thought perhaps we can use some other system.
+ Maybe we can swap 
+\begin_inset Formula $x\leftrightarrow p$
+\end_inset
+
+ so that in position space, there's nothing fancy, but in the momentum space
+ we have about 7 frequencies overlapped.
+ Then perhaps we can simply measure 
+\begin_inset Formula $X$
+\end_inset
+
+ which will be defined in terms of the position operator now, from the screen,
+ since I can simply measure 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ and record only its mod (or can I?).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar/Misc:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture # 3
+\end_layout
+
+\begin_layout Itemize
+Thought: When the motivation is not o, then exactly that becomes your strength,
+ your value; people always want what money can't buy.
+ This is what makes honour such a great word.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, June 24
+\end_layout
+
+\begin_layout Itemize
+Health: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+8 hours wasn't enough, need about 9 hours of sleep (without coffee that
+ is), with coffee, I was able to pull off with 6 hours of sleep, 12 hours
+ of work, 1 hour of gym, cooking and everything else perfected.
+ Ofcourse, the system broke down towards the end for two days, that's a
+ disaster, but that too was well planned (absorbed as vacations) and effectively
+ lost only a few hours, assuming usual efficiency days.
+\end_layout
+
+\begin_layout Itemize
+No gym
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Paradox?: So the measurement axiom seems to suggest we express our state
+ in terms of eigenstates of the operator corresponding to the measurement.
+ One way to do that is to construct an identity operator using these eignkets
+ and then simply multiply it with the state in question.
+ The result would be a superposition of eigenkets as we wanted.
+ Then the amplitudes will tell us with what probability we get which eigenket,
+ thus which eigenvalue as the measurement outcome.
+ Nothing new or subtle yet.
+ But here's the issue.
+ Consider the operator 
+\begin_inset Formula $X$
+\end_inset
+
+ as defined yesterday.
+ Now if it is true, as has been shown, that 
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|=1$
+\end_inset
+
+, and that 
+\begin_inset Formula $X\left|\tilde{x}\right\rangle =\left|\tilde{x}\right\rangle $
+\end_inset
+
+, then it seems that the only outcome of measurement of 
+\begin_inset Formula $X$
+\end_inset
+
+ on any arbitrary state, must result in the value 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ However, we know 
+\begin_inset Formula $\exists$
+\end_inset
+
+ states s.t.
+ 
+\begin_inset Formula $X\left|\tilde{x}'\right\rangle =-\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ has been explicitly defined earlier.
+ It's measurement must yield a 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ So what's wrong?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The obvious thing to try would be to see what we get when we do 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\int_{0}^{L}d\tilde{y}\left|\tilde{y}\right\rangle \left\langle \tilde{y}\right|\left|\tilde{x}'\right\rangle $
+\end_inset
+
+.
+ If one uses the fact that 
+\begin_inset Formula $\left\langle \tilde{y}|\tilde{x}'\right\rangle =0$
+\end_inset
+
+ (well this itself is a little tricky, works well only if you define it
+ as a partial sum first and then take the limits), then apparently 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =0$
+\end_inset
+
+ which is bizzare.
+ And if one uses the expansion of 
+\begin_inset Formula $\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ then by the action of 
+\begin_inset Formula $1$
+\end_inset
+
+ on 
+\begin_inset Formula $\left|x\right\rangle $
+\end_inset
+
+, we get 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\left|\tilde{x}'\right\rangle $
+\end_inset
+
+ as expected, but then (fine i'll have to do the calculation to find what
+ is the issue in that case) the expansion we get is something like this
+ 
+\begin_inset Formula $\sum_{m}\left(-1\right)^{m}\left|x=\tilde{x}+mL\right\rangle =\left|\tilde{x}'\right\rangle $
+\end_inset
+
+.
+ Here's the important step.
+ 
+\begin_inset Formula $1.\left|\tilde{x}'\right\rangle =\sum_{n,m}\int d\tilde{y}\left\langle x=\tilde{y}+mL|x=\tilde{x}+nL\right\rangle \left|x=\tilde{y}+mL\right\rangle $
+\end_inset
+
+.
+ If I don't expand out 
+\begin_inset Formula $\left|\tilde{y}\right\rangle $
+\end_inset
+
+, then the only operation I can perform to proceed is 
+\begin_inset Formula $\left\langle \tilde{y}|\tilde{x}'\right\rangle $
+\end_inset
+
+ which is unambiguously zero for 
+\begin_inset Formula $\tilde{x}\neq\tilde{y}$
+\end_inset
+
+.
+ So then the only question that remains is 
+\begin_inset Formula $\left\langle \tilde{x}|\tilde{x}'\right\rangle $
+\end_inset
+
+, which we said is zero only when treated as a partial sum.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\strikeout on
+This maybe rationalized by imagining that 
+\begin_inset Formula $1.\left|\tilde{x}\right\rangle =\sum_{m}\left|\tilde{x}\right\rangle $
+\end_inset
+
+ which is basically just a consequence of the fact that 
+\begin_inset Formula $\left|\tilde{x}\right\rangle $
+\end_inset
+
+ is not normalized to even start with!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Thought: It maybe more helpful to think of measuring the modular variable
+ as extracting only the modular part, instead of thinking of it as displacements
+ etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Basically, even 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+s are eigenkets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X\left|p\right\rangle =\cos(pL/\hbar)\left|p\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+ are also complete and well behaved relatively anyway.
+ So how must then I use this? [I must eventually figure out the equivalence
+ between these but first I must get some reasonable answers].
+ Infact I am not even sure which set of eigenstates should one use for such
+ purposes.
+ In anycase, proceeding with this, let's see what we get.
+ Looks like I need to know for sure exactly how to convert between position
+ and momentum space.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As it turns out, there's a paper titled `Nonlocal Young Tests with EPR correlate
+d particles' which states ``The position measurements at the detection screens
+ may thus be viewed as effective momentum measurements on 
+\begin_inset Formula $\left|\Psi_{T}'\right\rangle $
+\end_inset
+
+''.
+ This was again after a discussion with Ali
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I explained to him the issues, well the paradox stated above (there are
+ mistakes in the results there, scaling).
+ Obviously things looked spooky.
+ I told him why I thought that a measurement on the screen shouldn't work
+ (
+\begin_inset Formula $[x,p_{mod}]\neq0$
+\end_inset
+
+) and was trying to construct the right set of eigenstates etc.
+ He however he insisted I must extract this information off of the screen.
+ 
+\end_layout
+
+\begin_layout Itemize
+He explained the idea of how he used coupling with spin to evaluate 
+\begin_inset Formula $\left\langle \sigma\otimes\sigma\right\rangle =\frac{1}{4}\left\langle D\otimes D\right\rangle $
+\end_inset
+
+ as a way of measuring the correlated expectation value of the system (in
+ his contextuality paper).
+ Point being twofold (he didn't say it explicitly like this, but he has
+ some crazy good intuition)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Recall that for 
+\begin_inset Formula $\psi=\psi_{1}+e^{i\phi}\psi_{2}$
+\end_inset
+
+, when you evaluate 
+\begin_inset Formula $\psi^{*}\psi$
+\end_inset
+
+ it doesn't depend on 
+\begin_inset Formula $\phi$
+\end_inset
+
+ if observed when 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ don't overlap.
+ However the modular momentum does at that time.
+ This 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence re-emerges when 
+\begin_inset Formula $\psi_{i}$
+\end_inset
+
+ overlap finally.
+ The point is that the information you thought you can't get from the screen,
+ you can.
+ Somehow the modular momentum information is contained in the position measureme
+nt.
+\end_layout
+
+\begin_layout Itemize
+Next, note that for a product state like 
+\begin_inset Formula $\left|\psi\right\rangle =\left|\psi_{1}\right\rangle \left|\psi_{1}\right\rangle +e^{i\phi}\left|\psi_{2}\right\rangle \left|\psi_{2}\right\rangle $
+\end_inset
+
+, you won't see interference on the screen of either observers.
+ This is because you're left with a mixed state, after you trace out the
+ other system.
+ 
+\begin_inset Formula $\rho=\left|\psi_{1}\right\rangle \left\langle \psi_{1}\right|+\left|\psi_{2}\right\rangle \left\langle \psi_{2}\right|$
+\end_inset
+
+.
+ If you however calculate 
+\begin_inset Formula $P(x,y)=\psi(x,y)^{*}\psi(x,y)$
+\end_inset
+
+, you'll see the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence re-emerges, depending on again, the overlap condition.
+ So basically, the modular variable expectation you evaluated, which depended
+ on this 
+\begin_inset Formula $\phi$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $\left\langle X\otimes U^{\dagger}XU\right\rangle $
+\end_inset
+
+ should be in some form present in the 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ correlation.
+ This is what you have to extract.
+\end_layout
+
+\begin_layout Itemize
+Remark: It maybe mentioned that it is important to get the scaling factors
+ right between this expectation and expectation of the modular variables,
+ because that is crucial for the violation, if we intent to measure the
+ modular variables indirectly.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+He again showed me the Non local young experiment with the EPR state.
+ That actually has implemented recovery of modular variables in some way
+ which is worth looking at.
+\end_layout
+
+\begin_layout Itemize
+He also enquired if I evaluated the commutation: 
+\begin_inset Formula $[U_{1}^{\dagger}XU_{1},U_{2}^{\dagger}XU_{2}]$
+\end_inset
+
+, which I should and add to the report.
+ Tomorrow.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Seminar/Misc:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture # 4
+\end_layout
+
+\begin_layout Itemize
+Thought: I really want to construct a test that tests for dynamical non
+ locality instead of the usual non-locality (co-relations)
+\end_layout
+
+\begin_layout Itemize
+After this, I might just end up asking if Mandy will be willing to guide
+ me.
+ He is insanely hard working and it might just be worth it.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday, June 25
+\end_layout
+
+\begin_layout Itemize
+Health:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No gym as per new schedule (only Fridays, Saturdays, Sundays and Mondays)
+\end_layout
+
+\begin_layout Itemize
+Slightly tired despite about 8.5 hours of sleep | but feels optimal, even
+ without coffee
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Group Meeting:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I was asked to speak today, did; couldn't quite reach the part which I had
+ worked on.
+ Just discussed 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the motivation with the displacement operator etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence
+\end_layout
+
+\begin_layout Itemize
+dynamic non locality
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+the AB effect setup;
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Electric AB in some detail
+\end_layout
+
+\begin_layout Itemize
+talked about how 
+\begin_inset Formula $\phi$
+\end_inset
+
+ can be introduced
+\end_layout
+
+\begin_layout Itemize
+talked about the photon AB effect
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+next week barbecue details will be decided :P
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nonlocal Young with EPR paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+reading and filling in the missing steps, it's getting more an more interesting
+ because it seems to come dangerously close to the Bell test but doesn't
+ mention it
+\end_layout
+
+\begin_layout Itemize
+it also seems like their EPR state can be used to somehow create the kind
+ of states I wanted
+\end_layout
+
+\begin_layout Itemize
+I had apparently gotten too excited about how close the EPR paper is to
+ my work, it isn't quite so.
+ [thought about it at night]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Physical Colloqium and Seminar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A master's student talked about some kind of trap that he'd created for
+ his thesis.
+\end_layout
+
+\begin_layout Itemize
+The seminar was about unifying fundamental forces (the guy didn't include
+ gravity)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating/Seminar/Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar Lecture # 4 completed
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, June 26
+\end_layout
+
+\begin_layout Itemize
+Health/Protocol
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Documented
+\end_layout
+
+\begin_layout Itemize
+Feeling good with 8 hours of sleep.
+ Scheduled gym today :)
+\end_layout
+
+\begin_layout Itemize
+Added banana to mid breakfast/lunch meal | I can perhaps eat some more in
+ this time
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Nonlocal Young with EPR paper
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Read till section II and glanced through the rest.
+ The relevant part has been covered.
+ The following took the longest to derive, although it is quite trivial.
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+figured how to implement measurement
+\emph default
+] So I finally figured out exactly how one can measure the modular momentum
+ off of the screen.
+ The essential idea is that you keep the screen far enough so that the free
+ evolution can be approximated by a simple fourier transform.
+ Consequence is that if the experimentally obtained probability 
+\begin_inset Formula $P_{\text{screen}}(x_{1},x_{2})\left|\psi_{\text{screen}}(x_{1},x_{2})\right|^{2}\propto\left|\varphi_{\text{grating}}(p_{1},p_{2})\right|^{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $p_{i}\propto x_{i}$
+\end_inset
+
+ and the constant depends on masses and the time for which it is evolved.
+ In any case, with that information, one simply needs to plugin the value
+ of the modular variable and we're done for the evening.
+ Besides, one can just take the modular screen position and that itself
+ should suffice.
+\begin_inset Newline newline
+\end_inset
+
+Even though this is not a new/novel result, the point is that it was needed.
+\end_layout
+
+\begin_layout Itemize
+With that big piece in place, it only remains to figure out how to construct
+ the 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ entangled state from the EPR state.
+ To that end, it was found that after the simplification, the state in the
+ Young's paper and our paper are very distinct.
+ Need to figure out if it is even possible to do this.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating/Seminar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar Lecture # 5 (probability + zeroth law)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc/Computer
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Latex/Mark down plugin for gmail
+\end_layout
+
+\end_deeper
+\begin_layout Section
+June 29-July 5, 2015 | Week 8
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+[Interesting week]
+\end_layout
+
+\begin_layout Subsection
+Monday, June 29
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stable, food intake increased by 1 meal
+\end_layout
+
+\begin_layout Itemize
+Gym, usual
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+How to construct the state
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Concluded that from the EPR state and using just a grating, the results
+ will not be favourable.
+ Explicitly tried for even 
+\begin_inset Formula $n=2$
+\end_inset
+
+ and found that cross terms just can't be contained if I'm using the EPR
+ state with a grating.
+ 
+\end_layout
+
+\begin_layout Itemize
+Started reading about the Quantum Talbot Effect and near field grating effects
+ (as opposed to keeping the screen far away, you observe close to the grating).
+ Spent some time on figuring out the details about this paper by `Farias'
+ titled `Quantum Information Processing by Weaving Quantum Talbot Carpets'
+ but that didn't work out very well.
+ This still seems like the last resort as the paper claims to do some universal
+ unitaries.
+\end_layout
+
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Other than the usual attempts, he suggested using two gratings (near field
+ like) but then that would probably take longer.
+\end_layout
+
+\begin_layout Itemize
+Next he concluded that perhaps just finding some mathematical operators
+ that can starting from some entangled state (such as EPR hopefully) produce
+ the desired state.
+ [hold on, what about symmetrized and anti-symmetrized wavefunctions! in
+ the case of spins, that's what create the entangled states naturally.
+ Therefore I would suspect that symmetrization etc.
+ must have some role to play even with continuous variables]
+\end_layout
+
+\begin_layout Itemize
+Going into the Quantum Talbot Effect would require much longer and should
+ therefore be avoided at the moment
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali/General direction
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I should concentrate on writing this as a paper, which means I must add
+ all the remaining results including those about the measurement scheme.
+\end_layout
+
+\begin_layout Itemize
+There're two directions, either I can put in more work and publish in a
+ better journal (even PRL he was convinced) or I spend time polishing this
+ (he said writing a paper takes half the time it took to come up with the
+ result in the first place) since I have roughly only a month.
+ Either ways, he said the entangled state creation will keep going in the
+ back of my mind while I fix everything.
+\end_layout
+
+\begin_layout Itemize
+Remark about my writeup: It's more like a report and detailed.
+ I must omit the known results and focus on the new work I'm presenting.
+ In any case, I'll write everything and then the extras will be removed.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, June 30
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Needed more sleep | so slept
+\end_layout
+
+\begin_layout Itemize
+Food intake (not going so well)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+How to construct the state
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[
+\emph on
+final new step
+\emph default
+] Figured out how to construct the state!! It was rather simple.
+\end_layout
+
+\begin_layout Itemize
+TODO: Complete talking about this | perhaps its better if you just read
+ the writeup :P
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Symmetrization etc.
+\end_layout
+
+\begin_layout Itemize
+Ancilla qubit
+\end_layout
+
+\begin_layout Itemize
+Finite dimension like
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Started adding the remaining results to the report
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Added the boundedness in phase space thing
+\end_layout
+
+\begin_layout Itemize
+Working on the commutations
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discussion with Ali
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured the overall scheme of the paper (look at figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "layoutOfDraft"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction (slightly more than a page)
+\end_layout
+
+\begin_layout Itemize
+Construction
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modular Variables
+\end_layout
+
+\begin_layout Itemize
+CHSH (violation), plot, boundedness, cause of violation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Physical Implementation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Creation of the Entangled State
+\end_layout
+
+\begin_layout Itemize
+Measurement Settings
+\end_layout
+
+\begin_layout Itemize
+Measurement
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Conclusion anyone?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Shared the latex link etc.
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.overleaf.com/2935261wdscgp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar # 6 [something interesting about Wick's Theorem] | redo the ending
+ part (will have to sit and calculate, perhaps later)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename IMG_20150630_180511.jpg
+	lyxscale 50
+	width 10cm
+	BoundingBox 0bp 300bp 835bp 1000bp
+	clip
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "layoutOfDraft"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Layout of the draft
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Wednesday, July 1
+\end_layout
+
+\begin_layout Itemize
+Health/Protocol etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Completing the documentation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[
+\emph on
+essential progress in writing the draft
+\emph default
+] Working on the draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Plotting the graph
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+set terminal pdf 
+\end_layout
+
+\begin_layout Plain Layout
+
+set output "resultRENAMEme.pdf"
+\end_layout
+
+\begin_layout Plain Layout
+
+set xlabel "Number of lumps (N)" 
+\end_layout
+
+\begin_layout Plain Layout
+
+set ylabel "<CHSH>" 
+\end_layout
+
+\begin_layout Plain Layout
+
+#set title "Violation of CHSH for N>6"
+\end_layout
+
+\begin_layout Plain Layout
+
+set xrange [1:10] 
+\end_layout
+
+\begin_layout Plain Layout
+
+set sample 10
+\end_layout
+
+\begin_layout Plain Layout
+
+set arrow from 1,2 to 10,2 nohead 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot ((x-1)/x)**2 * 2 * sqrt(2) w lp
+\end_layout
+
+\end_inset
+
+The y=2 line shows the classical prediction.
+ Anything above is proof of nonlocality in continuous variables, viz.
+ position :D
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename firstDraft/plots/CHSH.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Figured how to use latex formulae within Xfig | just use the usual text
+ box and in the properties select special text.
+ Put the latex as $
+\backslash
+ket{
+\backslash
+psi}$ and import in lyx using external material, xfig file (don't need to
+ export it either).
+ Use the usual float for positioning.
+\end_layout
+
+\begin_layout Itemize
+Other than making and adding the diagram for the physical setup using xfig,
+ wrote the physical implementation section, including the state creation,
+ measurement settings and measurement.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset External
+	template XFig
+	filename firstDraft/diagrams/scheme.fig
+	width 14cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+There was a slight issue with how to do the time evolution and therefore
+ the measurement.
+ This will be explored next time.
+ I think its worth adding a graph for 
+\begin_inset Formula $\left|\left\langle p_{A},p_{B}|\psi'\right\rangle \right|^{2}$
+\end_inset
+
+ and show what Alice and Bob measure might look like
+\end_layout
+
+\begin_layout Itemize
+figured how to use wide equations etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Eating
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar # 6 (remaining part) + # 7 (couldn't understand some steps in between,
+ didn't put in too much effort)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Thursday, July 2
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Headache/couldn't go today
+\end_layout
+
+\begin_layout Itemize
+Ate a lot of bread (no rice, and little protein :( )
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Issues (probably explains the headache, even in my sleep the brain kept
+ doing some giberish)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I couldn't rederive the `fourier transform on screen' result even for matter
+ waves
+\end_layout
+
+\begin_layout Itemize
+For photons, multiple issues: There's no schrodinger equation (
+\begin_inset Formula $p^{2}/2m$
+\end_inset
+
+ doesn't exist, its non-relatavistic, but you could put in the actual relativist
+ic hamiltonian, but that has issues by itself).
+ Then there's nowhere we quantize 
+\begin_inset Formula $q,p$
+\end_inset
+
+, we only quantize 
+\begin_inset Formula $E,B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Read about 35 pages from the quantum optics book by Scully.
+ It explained interesting things.
+ Here's an email I wrote to Ali after reading that.
+\begin_inset Newline newline
+\end_inset
+
+I wasn’t able to rest properly because my mind kept thinking about the free
+ evolution problem.
+ I re-derived the result for matter waves, but the issue is that I am able
+ to arrive at that result without even having to assume the grating.
+ So obviously I’m missing something.
+ In addition, I was thinking about whether or not I can even extend that
+ result for photons, but the issue is that with photons, we don’t quantize
+ it’s momentum and position.
+ I therefore can’t quite use momentum as a generator of translations by
+ assuming the usual commutations.
+ To verify my reasoning, I started to read the more advanced book on quantum
+ optics by Scully and Zubairy.
+\begin_inset Newline newline
+\end_inset
+
+On page 25 it states “Thus it is natural to ask what are the 
+\backslash
+phi‘s for photons? Strictly speaking there’re no such wave functions! One
+ may not speak of particles in a radiation field in the same sense as in
+ the elementary quantum mechanics of systems of particles used in the last
+ chapter.
+ The reason is that the wave equation..
+ solutions of Schrodinger’s time dependent wave function corresponding to
+ an energy 
+\begin_inset Formula $E_{\lambda}$
+\end_inset
+
+ have a circular frequency 
+\begin_inset Formula $\omega_{\lambda}=+E_{\lambda}/\hbar$
+\end_inset
+
+, while the monochromatic solutions of the wave equation have both 
+\begin_inset Formula $\pm\omega_{\lambda}$
+\end_inset
+
+.
+ The E and B fields satisfying the Maxwell equations in free space, and
+ therefore satisfying the wave equation too, are real and are not eigenfunctions
+ of 
+\begin_inset Formula $i\hbar\partial/\partial t$
+\end_inset
+
+.
+ A Schrodinger wave of given energy must be complex.”
+\begin_inset Newline newline
+\end_inset
+
+He goes on to say that “the concept of a photon wave function must be used
+ with care and can be very misleading.
+ However as we shall see, each of the above objections to the concept can
+ be overcome”, where he is referring to issues pointed out by Bohm in his
+ classic Quantum Theory book.
+\begin_inset Newline newline
+\end_inset
+
+I think the best option is for me to continue reading the book to understand
+ this notion better.
+ In anycase, I think tomorrow, we should talk to Ottfried about the progress
+ we’ve made so far and ask him about this.
+ I’m sure he’d know this very well.
+\end_layout
+
+\begin_layout Itemize
+Basically the issue is that for massive objects, classically we have newtonian
+ that gives particle, qm gives waves.
+ For photons, classically we have waves, qft gives (both waves and) particles.
+ So to compare, you must elevate both to a field description and then figure
+ the meaning of a wavefunction.
+ It's quite nicely given in the text.
+\end_layout
+
+\begin_layout Itemize
+Wasn't sure about which journal to publish in between the new journal of
+ physics and PRA.
+ [later: I think I'll stick with PRA for the moment, especially becaues
+ of the following.
+ Two great researchers, one has money one doesn't.
+ So NJP is out of the question for the one without money.
+ I'd rather publish in a place where you don't have to be rich just to publish.]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Progress
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ali sent me some papers in which they've used the formalism on photons (so
+ it works, but I don't know why)
+\end_layout
+
+\begin_layout Itemize
+Ali also arranged a meeting with Otfried where I have to present my work
+ so far.
+ Apparently Otfried was happy to know that we had some results.
+\end_layout
+
+\begin_layout Itemize
+I started working on a presentation (although didn't use it for tomorrow,
+ it helped me present as I'll find out later)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, July 3
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Feeling better
+\end_layout
+
+\begin_layout Itemize
+Gym (unbarably hot, but somehow completed)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fourier transform derivation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Spent the morning figuring out exactly how to get that far field result
+ for massive particles (apparently my derivation earlier was wrong!)
+\end_layout
+
+\begin_layout Itemize
+Tried to construct a closer analogy with how we treat waves for electrodynamics
+ and schrodinger waves (how they're different).
+ Worked to a point, then brokedown because usually we consider monochromatic
+ light, while for matter waves, well we don't
+\end_layout
+
+\begin_layout Itemize
+Still can't find any easy description anywhere, and am not sure how to proceed.
+ Pragmatically, since I have a paper with the calculation for matter waves
+ and for photons, the classical result essentially holds (that's where the
+ whole wavefunction of a photon issue started), plus that same paper tells
+ you the exact relation, therefore I won't bother much.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Otfried Presentation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I started with explaing the usual CHSH and setting up the notation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+talked about how its equivalent to rotate then measure
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pre-requisite for continuous variable
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Told him the observable must be bounded; started with modular variables,
+ then put it in a cosine
+\end_layout
+
+\begin_layout Itemize
+Talked about derivation of displacement operators, related them with the
+ cosine
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Construction of the scheme
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Started with constructing eigenket like states for X
+\end_layout
+
+\begin_layout Itemize
+Oops, no wait, constructed the 
+\begin_inset Formula $\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1'\right\rangle $
+\end_inset
+
+ state just to start, then defined the aforesaid
+\end_layout
+
+\begin_layout Itemize
+Talked about 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit and eigen ness
+\end_layout
+
+\begin_layout Itemize
+Told him how to implement the `rotation' using glass slabs
+\end_layout
+
+\begin_layout Itemize
+Told him the formal operator that does that
+\end_layout
+
+\begin_layout Itemize
+Stated the important result 
+\begin_inset Formula $\left\langle U^{\dagger}(\phi)XU(\phi)\otimes U^{\dagger}(\theta)XU(\theta)\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi-\theta)$
+\end_inset
+
+ and how for the spin case it is 
+\begin_inset Formula $\cos(\phi-\theta)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Concluded 
+\begin_inset Formula $N>6$
+\end_inset
+
+ will result in a violation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Talked about implementation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Started with polarization entangled state
+\end_layout
+
+\begin_layout Itemize
+Talked about state after grating
+\end_layout
+
+\begin_layout Itemize
+Then put the birefringent crystals and produced almost the right state
+\end_layout
+
+\begin_layout Itemize
+Then talked about polarizers (this took time, he wasn't convinced about
+ why two polarizers are needed.
+ He felt that one effective polarizer must be enough.
+ Was able to convince him this is not true, simply the case of one horizontal
+ then one vertical gives zero light can't be achieved by a single polarizer.)
+\end_layout
+
+\begin_layout Itemize
+The rotation I'd already told him
+\end_layout
+
+\begin_layout Itemize
+Measurement from the screens I explained (but I realized later that one
+ doesn't even need to construct the histogram of probablities, just plug
+ in the value into a cosine and that's it)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Comments
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He seemed to have liked it
+\end_layout
+
+\begin_layout Itemize
+Had some questions about how feasable it is to implement
+\end_layout
+
+\begin_layout Itemize
+He was concerned about making things fast (I suggested accousto optic effect)
+\end_layout
+
+\begin_layout Itemize
+There we some discussion about some loop hole free ness (Bell test usual
+ issues)
+\end_layout
+
+\begin_layout Itemize
+In the measurement scheme, he was concerned about not measuring 
+\begin_inset Formula $p_{mod}$
+\end_inset
+
+ directly but that wasn't any prominent issue he concluded eventually.
+\end_layout
+
+\begin_layout Itemize
+I raised the issue about the photon wave function, quantizing 
+\begin_inset Formula $q,p$
+\end_inset
+
+ and 
+\begin_inset Formula $E,B$
+\end_inset
+
+ and he said he'll think about it (read up also?) and get back to us.
+\end_layout
+
+\begin_layout Itemize
+Also glanced through the draft of the paper (looked at the diagram carefully
+ for some time)
+\end_layout
+
+\begin_layout Itemize
+He didn't think what we've done is trivial.
+\end_layout
+
+\begin_layout Itemize
+I also asked him for PhD position.
+ He seemed to be in favour.
+ Said was impressed by how quickly we got to this stage.
+ He said we could look at the financing options next week onwards.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Commutation relation 
+\begin_inset Formula $[U^{\dagger}XU,U^{\dagger}XU]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ali had an idea about using the Heisenberg equation to get 
+\begin_inset Formula $dX/dt$
+\end_inset
+
+ and then using that to get 
+\begin_inset Formula $U^{\dagger}XU$
+\end_inset
+
+ explicitly.
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+new
+\emph default
+] That idea didn't help much, but I figured I could explicitly evaluate
+ these by simply using 
+\begin_inset Formula $\int dx\left|x\right\rangle \left\langle x\right|$
+\end_inset
+
+.
+ Using this and while discussing with Ali, I realized that
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Z^{2}=1$
+\end_inset
+
+, so essentially the 
+\begin_inset Formula $U$
+\end_inset
+
+ can be expanded as some 
+\begin_inset Formula $iZ\sin$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $ZX=-XZ$
+\end_inset
+
+ follows from the fact that 
+\begin_inset Formula $Z(x+L)=Z(x-L)=-Z(x)$
+\end_inset
+
+.
+ This is very elegent!
+\end_layout
+
+\begin_layout Itemize
+So then 
+\begin_inset Formula $U^{\dagger}(\theta)XU(\theta)=XU(2\theta)$
+\end_inset
+
+ and I can even expand 
+\begin_inset Formula $U(2\theta)$
+\end_inset
+
+.
+ So that helps alot.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+I also realized the mistake I was making.
+ Just because 
+\begin_inset Formula $e^{iA}e^{iB}=-e^{iB}e^{iA}$
+\end_inset
+
+ doesn't mean 
+\begin_inset Formula $AB=-BA$
+\end_inset
+
+.
+ I know I'm that stupid [besides if you try to take log, then addition doesn't
+ remain commutative as pointed out in the GHZ paper].
+ I assumed something intuitively using the spin case (which was correct),
+ couldn't prove it was correct so assumed this as a correction and got into
+ issues.
+ So everything is consistent.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Saturday, July 4
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym
+\end_layout
+
+\begin_layout Itemize
+Not enough meals
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Evaluated the explicit commutations for all 
+\begin_inset Formula $X,Z,Y$
+\end_inset
+
+ with 
+\begin_inset Formula $Y=ZX$
+\end_inset
+
+ (or some such).
+ It was fun.
+ Since 
+\begin_inset Formula $X^{2}\neq1$
+\end_inset
+
+, things didn't work perfectly! But that's good, else I would've obtained
+ a answers identical to the usual case.
+\end_layout
+
+\begin_layout Itemize
+Also evaluated the commutation relation 
+\begin_inset Formula $[UXU,UXU]$
+\end_inset
+
+ explicitly (need to verify it, will do so tomorrow/or on Monday)
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+new
+\emph default
+] Realized that the most elegent way would be to use 
+\begin_inset Formula $\hat{X}=e^{i\hat{p}L/\hbar}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{Z}=e^{i\hat{x}2\pi/2L}$
+\end_inset
+
+ and then 
+\begin_inset Formula $\hat{Y}=\hat{X}\hat{Z}$
+\end_inset
+
+ or some such.
+ So what justification do I have for using this funky 
+\begin_inset Formula $Z$
+\end_inset
+
+? The answer to that is that I want to allow the wavefunctions to be physical
+ (don't want to use a countable superposition of position eigenkets).
+ One neat way around it is 
+\begin_inset Formula $\hat{Z}=Z(\hat{x}_{mod2L})$
+\end_inset
+
+.
+ This just works beautifully.
+ So I get to have my cake and eat it too!
+\begin_inset Newline newline
+\end_inset
+
+I want to think about it a little deeper at some point (because it looks
+ like the GHZ case where they extract only one bit of information).
+ I'm sure there's more to it but not clear yet.
+ 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ I don't change because it displaces position.
+ So the justfication is that I am treating position in a special way in
+ my setup, therefore the operators are such.
+\begin_inset Newline newline
+\end_inset
+
+Perhaps the EPR would need the conventional 
+\begin_inset Formula $x_{mod}$
+\end_inset
+
+.
+ etc.
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+new
+\emph default
+] Also figured that perhaps instead of making histograms, I can simply evaluate
+ the 
+\begin_inset Formula $\cos(pL/\hbar)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Just realized that the 
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ polarizer is not infact supposed to do 
+\begin_inset Formula $\left|H\right\rangle \to\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},\left|V\right\rangle \to\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
+\end_inset
+
+.
+ That's wrong.
+ It basically sends both to the same state, viz.
+ 
+\begin_inset Formula $\left|H\right\rangle \to\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},\left|V\right\rangle \to\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ (except the normalization of course).
+ This is because 
+\begin_inset Formula $\left|H\right\rangle \propto\left|H'\right\rangle +\left|V'\right\rangle $
+\end_inset
+
+ while 
+\begin_inset Formula $\left|V\right\rangle \propto\left|H'\right\rangle -\left|V'\right\rangle $
+\end_inset
+
+.
+ The 
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ polarizer is simply 
+\begin_inset Formula $\left|H'\right\rangle \left\langle H'\right|$
+\end_inset
+
+, so that wipes out the 
+\begin_inset Formula $\left|V'\right\rangle $
+\end_inset
+
+.
+ Now it makes perfect sense.
+ The good thing is that my result is correct regardless because I project
+ 
+\begin_inset Formula $\left|H\right\rangle \left\langle H\right|$
+\end_inset
+
+ in the end, but anyway.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Sunday, July 5
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Done writing most of the new things into the draft including
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modular variables and displacement operators (at night, wasn't feeling sleepy!)
+\end_layout
+
+\begin_layout Itemize
+completed the `Validating phase space behaviour' section
+\end_layout
+
+\begin_layout Itemize
+completed the `Source of violation' section
+\end_layout
+
+\begin_layout Itemize
+added the section `Advantage of asymmetry in X and Z'
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Think
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One bit of information in Z
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+new
+\emph default
+ 
+\emph on
+setup
+\emph default
+] Spin Space coupling, use B field to construct matter state?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One can mix the stern gerlach and electric AB effect to achieve what the
+ birefringent material does
+\end_layout
+
+\begin_layout Itemize
+glass slabs we anyway had found are essentially electric AB effect
+\end_layout
+
+\begin_layout Itemize
+polarizers will essentially be stern gerlach like in different directions
+ [work out details]
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
 \end_body
 \end_document

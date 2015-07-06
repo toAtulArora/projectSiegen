@@ -928,11 +928,92 @@ Concln: The violation of the Bell spin state can be equivalently be obtained
 \end_layout
 
 \begin_layout Subsection
-Modular Variables | prior art
+Modular Variables and Displacement Operators | prior art
 \end_layout
 
 \begin_layout Standard
-<TODO>
+The observables admissible in the CHSH inequality must 
+\begin_inset Formula $\in[-1,1]$
+\end_inset
+
+.
+ If we consider the real variable 
+\begin_inset Formula $p\in(-\infty,\infty)$
+\end_inset
+
+, then one way of obtaining a bound variable is to use 
+\begin_inset Formula $p_{mod}\equiv p\mod h/L$
+\end_inset
+
+, where 
+\begin_inset Formula $h/L$
+\end_inset
+
+ has been introduced for dimensional reasons.
+ This forces 
+\begin_inset Formula $p_{mod}\in[0,h/L)$
+\end_inset
+
+.
+ If I further consider, say 
+\begin_inset Formula $\cos(p_{mod}L/\hbar)$
+\end_inset
+
+, then I get precisely the bound needed for the CHSH inequality.
+ I chose the factor so that for 
+\begin_inset Formula $p_{mod}=h/L$
+\end_inset
+
+, the 
+\begin_inset Formula $\cos$
+\end_inset
+
+function also completes a period.
+ Note that 
+\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{\sqrt{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Next, recall that in quantum mechanics, the momentum that's quantized, is
+ one that generates infinitesimal translations.
+ Formally, this means that 
+\begin_inset Formula $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle =\left|x+\delta L\right\rangle $
+\end_inset
+
+.
+ If I want a finite translation, I can do the following procedure: 
+\begin_inset Formula $\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle =e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $
+\end_inset
+
+.
+ This operator is aptly called the displacement operator.
+ We must add that 
+\begin_inset Formula $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar ab}e^{i\hat{x}b}e^{i\hat{p}a}$
+\end_inset
+
+.
+ Thus for appropriate choices of 
+\begin_inset Formula $a,b$
+\end_inset
+
+, the displacement operators can be made to commute or anti-commute.
+ In the former case, it means one can simultaneously measure modular position
+ and momentum (which is striking) and in the latter case, one can define
+ pauli matrix like commutation.
+\end_layout
+
+\begin_layout Standard
+The idea was that the obvious generalization for obtaining an appropriate
+ operator for the CHSH inequality is 
+\begin_inset Formula $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{i\hat{p}L/\hbar}}{\sqrt{2}}$
+\end_inset
+
+.
+ The action of the operator will guide us in creating the appropriate states
+ in the next sub section.
 \end_layout
 
 \begin_layout Subsection
@@ -988,7 +1069,7 @@ We emphasise that the kets we construct, will not be a countable superposition
 
 \end_inset
 
- We then construct the relavent operators and finally evaluate 
+ We then construct the relevant operators and finally evaluate 
 \begin_inset Formula $\left\langle C\right\rangle $
 \end_inset
 
@@ -1132,7 +1213,7 @@ With these states, we're in a position to construct the relevant Hermitian
 Defn: 
 \begin_inset Formula 
 \[
-X\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
+\hat{X}\equiv\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}
 \]
 
 \end_inset
@@ -1394,9 +1475,10 @@ Claim(5)
 \color none
 \lang english
 \begin_inset Formula 
-\[
-\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})
-\]
+\begin{eqnarray*}
+\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle  & =\\
+ & -\left(\frac{N-1}{N}\right)^{2} & \cos(\phi_{i}-\theta_{i})
+\end{eqnarray*}
 
 \end_inset
 
@@ -1508,7 +1590,8 @@ end{widetext}
 \begin{eqnarray*}
 W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(x_{mod2L})\phi/2}\\
  &  & e^{ip\frac{L}{\hbar}}e^{iZ(x_{mod2L})\phi/2}\left|q'+\frac{q}{2}\right\rangle \\
- & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q')\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}(q')\phi/2}
+ & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q')\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}(q')\phi/2}\\
+ & = & \frac{1}{2\pi\hbar}e^{ip'L/\hbar}e^{iZ_{2}(q')\phi}
 \end{eqnarray*}
 
 \end_inset
@@ -1517,13 +1600,25 @@ where
 \begin_inset Formula $Z_{1/2}(q')=Z[(q'\mp\frac{L}{2})\mod2L]$
 \end_inset
 
-.
+ and we used the fact that 
+\begin_inset Formula $Z(x')=-Z(x'+L)$
+\end_inset
+
+ (omitting the 
+\begin_inset Formula $\mod2L$
+\end_inset
+
+).
  Similarly one can evaluate 
 \begin_inset Formula $W_{2}$
 \end_inset
 
  and obtain 
-\begin_inset Formula $W=\left(W_{1}+W_{2}\right)/\sqrt{2}$
+\begin_inset Formula 
+\[
+W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(p'L/\hbar)e^{iZ_{2}(q')\phi}
+\]
+
 \end_inset
 
  which corresponds to the observable.
@@ -1545,36 +1640,188 @@ In the Bell test done with spins, the source of violation hinges on the
 \begin_inset Formula $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$
 \end_inset
 
+, when 
+\begin_inset Formula $a_{i},b_{i}\in\{-1,1\}$
+\end_inset
+
 .
- To obtain a violation, it is therefore necessary that the commutations
- don't vanish.
+ To obtain a violation in general (where the first term maybe less than
+ 
+\begin_inset Formula $4\mathbb{I}$
+\end_inset
+
+), it is therefore necessary that the commutations don't vanish.
  This is indeed true in our case.
  Explicitly, we must show that 
 \begin_inset Formula $[U^{\dagger}XU,U'^{\dagger}XU']\neq0$
 \end_inset
 
 .
+ To arrive at the desired expression we first evaluate some simpler commutation
+ and anti-commutation relations explicitly.
+ Let's start with 
+\begin_inset Formula $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$
+\end_inset
+
+.
+ To evaluate it, we multiply the second term with 
+\begin_inset Formula $\int dx\left|x\right\rangle \left\langle x\right|$
+\end_inset
+
+ and obtain 
+\begin_inset Formula $Ze^{i\hat{p}L/\hbar}+Ze^{i\hat{p}L/\hbar}$
+\end_inset
+
+ where we've used 
+\begin_inset Formula $Z(\hat{x}_{mod2L})=-Z(\left(\hat{x}\pm L\right)_{mod2L})$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $
+\end_inset
+
+.
+ Thus we have 
+\begin_inset Formula 
+\[
+[\hat{Z},\hat{X}]=2\hat{Y}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{Y}=\hat{Z}\hat{X}$
+\end_inset
+
+.
+ Similarly it follows that 
+\begin_inset Formula $\{\hat{Z},\hat{X}\}=0$
+\end_inset
+
+.
+ While we're at it, we may state that while 
+\begin_inset Formula $\hat{Z}^{2}=1$
+\end_inset
+
+, it is not a sum of a 2 state projector and 
+\begin_inset Formula $\hat{X}^{2}\neq1$
+\end_inset
+
+ in general.
+ Also, the other commutation relations follow and are [something wrong with
+ the signs] 
+\begin_inset Formula 
+\begin{eqnarray*}
+[\hat{Y},\hat{X}] & = & 2\hat{Z}\hat{X}\hat{X}\\{}
+[\hat{Y},\hat{Z}] & = & 2\hat{X}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Further, note that 
+\begin_inset Formula $e^{-i\hat{Z}\phi/2}Xe^{i\hat{Z}\phi/2}=Xe^{i\hat{Z}\phi}$
+\end_inset
+
+ and that 
+\begin_inset Formula $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$
+\end_inset
+
+.
+ With all these, it is easy to show that (TODO: put proof in the appendix)
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+[U^{\dagger}(\frac{\phi}{2})XU(\frac{\phi}{2}),U^{\dagger}(\frac{\phi'}{2})XU(\frac{\phi'}{2})] & =\\
+\left(\cos\phi\sin\phi'-i\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & + & 2\sin\phi\sin\phi'\hat{X}
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring a
 Remark: The non-commutativity in this case is between 
-\begin_inset Formula $U$
+\begin_inset Formula $\hat{U}$
 \end_inset
 
  and 
-\begin_inset Formula $X$
+\begin_inset Formula $\hat{X}$
 \end_inset
 
 , which arises from 
-\begin_inset Formula $[x_{mod2L},p_{modL}]\neq0$
+\begin_inset Formula $[\hat{x}_{mod2L},\hat{p}_{modL}]\neq0$
 \end_inset
 
 .
 \end_layout
 
+\begin_layout Subsection
+Advantage of asymmetry in 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-TODO: Complete this
+Considering the operators (they're not made hermitian for simplicity) 
+\begin_inset Formula $\hat{X}=e^{i\hat{p}L/\hbar}$
+\end_inset
+
+, defining 
+\begin_inset Formula $\hat{Z}=e^{i\hat{x}2\pi/2L}$
+\end_inset
+
+ is more natural.
+ They also follow the desired anti-commutation 
+\begin_inset Formula $\{\hat{X},\hat{Z}\}=0$
+\end_inset
+
+ and we could define 
+\begin_inset Formula $\hat{Y}=\hat{Z}\hat{X}$
+\end_inset
+
+ to get a more natural generalization.
+ The question is why did I choose 
+\begin_inset Formula $\hat{Z}=Z(\hat{x}_{mod2L})$
+\end_inset
+
+.
+ The cause of this asymmetry hinges on the preferential treatment of the
+ position space.
+ I could have constructed states of the form 
+\begin_inset Formula $\left|0'\right\rangle =\sum_{n}\left|x+nd\right\rangle $
+\end_inset
+
+ and used the natural definition of 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ to obtain the violation.
+ The issue is that this forces me to choose a countable superposition of
+ position eigenkets as my state.
+ Such a state is strictly not even in the Hilbert space.
+ In the scheme proposed, this issue is resolved by 
+\begin_inset Formula $Z(\hat{x}_{mod2L})$
+\end_inset
+
+ and a larger set of physically realizable states become admissible.
+\end_layout
+
+\begin_layout Standard
+Thus while our construction is motivated by the spin formalism, it is not
+ just a relabelling of states and operators achieved by severely restricting
+ the subspace.
 \end_layout
 
 \begin_layout Section
@@ -1585,6 +1832,8 @@ Physical Implementation
 We show that this scheme can be implemented rather easily using photons.
  We harness the two degrees of freedom of a photon, it's polarization and
  it's position to construct the required state.
+ With appropriate tools, it maybe possible to do the same with spin and
+ position for matter waves.
  The overall setup (see figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1765,8 +2014,8 @@ reference "fig:scheme"
  polariser, the state becomes 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & = & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
- &  & -\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & = & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
+ &  & -\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
 \end{eqnarray*}
 
 \end_inset
@@ -1901,6 +2150,10 @@ reference "fig:scheme"
 
 \begin_layout Subsection
 Measurement
+\end_layout
+
+\begin_layout Standard
+TODO: Rewrite this section | it has become a lot simpler now!
 \end_layout
 
 \begin_layout Standard
