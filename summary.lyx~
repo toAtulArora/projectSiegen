@@ -6213,8 +6213,17 @@ plot ((x-1)/x)**2 * 2 * sqrt(2) w lp
 
 \end_inset
 
-
+The y=2 line shows the classical prediction.
+ Anything above is proof of nonlocality in continuous variables, viz.
+ position :D
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename firstDraft/plots/CHSH.pdf
+	width 8cm
+
 \end_inset
 
 

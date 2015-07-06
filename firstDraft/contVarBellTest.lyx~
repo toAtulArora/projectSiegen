@@ -1796,7 +1796,7 @@ status open
 \begin_inset External
 	template XFig
 	filename diagrams/scheme.fig
-	width 8cm
+	width 15cm
 
 \end_inset
 

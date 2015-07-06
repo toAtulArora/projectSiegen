@@ -193,13 +193,13 @@ Week 5
   * Seminar: Something about Bell, interesting ending
 
 * Saturday Sunday (June 13, 14) [Weekend]
-  * Might have figured how to do the Bell test with a q,p settting
+  * Might have **figured how to do the Bell test with a q,p settting**
 
 Week 6 (shortened hereafter)
 --
 
 * Monday (June 15) 
-  * Worked out the details for Bell test in q,p setting, even when N is not infty
+  * **Worked out the details for Bell test in q,p setting, even when N is not infty**
   * Otfried Lecture
 
 * Tuesday (June 16)
@@ -238,9 +238,45 @@ Week 7
   * Reading `Non local young'
 
 * Friday (June 26)
-  * Figured how to implement measurements!
+  * **Figured how to implement measurements**!
 
 * Saturday, Sunday (june 27, 28) [weekend]
   * Documentation + thinking about state prep (last seeming step)
 
+
+Week 8
+--
+
+* Monday (June 29)
+  * Working on how to construct the entangled state
+
+* Tuesday (June 30)
+  * **Figured how to construct the state**!
+  * Finalized the scheme of the draft
+
+* Wednesday (July 1)
+  * Essential progress in writing the draft
+
+* Thursday (July 2) [headache]
+  * Issue with deriving ft on the screen
+  * No wavefunction for photon
+  * Presentation prep
+
+* Friday (July 3)
+  * **Presentation | otfried**, he seemd to have liked it
+  * Commutation relation progress
+
+* Saturday (July 4)
+  * **Commutation relations and mod elegence**
+  * Polarization mistake spotted, fixed
+
+* Sunday (July 5)
+  * Working on report
+  * **Setup for massive particles figured** using electric AB and stern gerlach
+
+
+Week 9
+--
+
+* Monday (Jul 6)
 
