@@ -1829,6 +1829,9 @@ y hinges on the non-commutativity of
 \end_inset
 
 .
+ It is apparent that the complete pauli algebra is unnecessary for showing
+ a violation.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1892,6 +1895,7 @@ Considering the operator (non-hermitian for simplicity)
 Thus while our construction is motivated by the spin formalism, it is not
  just a relabelling of states and operators achieved by a severe restriction
  of the Hilbert space.
+ 
 \end_layout
 
 \begin_layout Section
@@ -2224,7 +2228,7 @@ Measurement
 
 \begin_layout Standard
 The scheme requires us to evaluate the expectation value of 
-\begin_inset Formula $X\otimes X$
+\begin_inset Formula $\hat{X}\otimes\hat{X}$
 \end_inset
 
  (after the measurement settings have been applied by the appropriate unitaries).
@@ -2233,7 +2237,7 @@ The scheme requires us to evaluate the expectation value of
 \end_inset
 
 , then evaluating 
-\begin_inset Formula $\left\langle X\otimes X\right\rangle =\left\langle \cos(pL/\hbar)\otimes\cos(pL/\hbar)\right\rangle $
+\begin_inset Formula $\left\langle \hat{X}\otimes\hat{X}\right\rangle =\left\langle \cos(pL/\hbar)\otimes\cos(pL/\hbar)\right\rangle $
 \end_inset
 
  simply amounts to 
@@ -2255,7 +2259,7 @@ ty distribution from the experiment, for a given measurement setting.
  We start with stating the result that 
 \begin_inset Formula 
 \[
-\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p'_{A}=\frac{mx'_{A}}{T},p'_{B}=\frac{mx'_{B}}{T}|\psi'_{f}\right\rangle \right|^{2}
+\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p'_{A}=\frac{p_{z}x'_{A}}{D},p'_{B}=\frac{p_{z}x'_{B}}{D}|\psi'_{f}\right\rangle \right|^{2}
 \]
 
 \end_inset
@@ -2265,22 +2269,43 @@ ty distribution from the experiment, for a given measurement setting.
 \end_inset
 
  is the state of the system at the screen, 
+\begin_inset Formula $D$
+\end_inset
+
+ is the distance between the gratings and the screens and 
+\begin_inset Formula $p_{z}$
+\end_inset
+
+ is the 
+\begin_inset Formula $z$
+\end_inset
+
+ component of momentum of the particle.
+ For a photon, 
+\begin_inset Formula $p_{z}=h/\lambda$
+\end_inset
+
+ while for an electron, 
+\begin_inset Formula $p_{z}=m_{e}D/T$
+\end_inset
+
+, where 
 \begin_inset Formula $T$
 \end_inset
 
- is the time elapsed between leaving the gratings and arriving at the screens
- and 
-\begin_inset Formula $m$
-\end_inset
-
- is the mass of the particle (obviously this result is for massive particles,
- but its analogue holds for photons also).
- The point is that the momentum distribution at the grating can be recovered
- by observing the spatial distribution at a screen, sufficiently far away.
+ is the time taken to arrive at the screen from the grating.
+ The idea is simply that the momentum distribution at the grating can be
+ recovered by observing the spatial distribution at a screen, sufficiently
+ far away.
 \end_layout
 
 \begin_layout Standard
-In an experiment then, given 
+In an experiment then, there are two possibilities.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(a) Given 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2315,6 +2340,39 @@ In an experiment then, given
 \end_inset
 
  experimentally.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(b) The other simpler and direct possibility is that Alice and Bob both
+ obtain the position, 
+\begin_inset Formula $\{x_{A}^{(i)},x_{B}^{(i)}\}$
+\end_inset
+
+ for the 
+\begin_inset Formula $i$
+\end_inset
+
+th repitition and evaluate 
+\begin_inset Formula $\cos(p_{A}^{(i)}L/\hbar)$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos(p_{B}^{(i)}L/\hbar)$
+\end_inset
+
+.
+ After sufficient iterations, they exchange their observations to simply
+ evaluate the average, viz.
+ 
+\begin_inset Formula 
+\[
+\frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\left\langle C\right\rangle 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2323,8 +2381,11 @@ Conclusion
 
 \begin_layout Standard
 We have shown how to realize a Bell test in continuous variables position
- and momentum using specifically chosen and physically realizable states
- along with modular variables.
+ and momentum using specifically chosen and physically realizable states.
+ In addition it has been demonstrated that the exact pauli commutation relations
+ aren't necessary to capture the essence of non-locality; infact by relaxing
+ the similarity, the set of states that show a violation is made considerably
+ larger.
 \end_layout
 
 \begin_layout Section
@@ -2488,11 +2549,11 @@ Claim(4): With definitions from section 3, without taking the large
 \end_inset
 
 
-\begin_inset Formula $\left\langle +\left|X\right|+\right\rangle =\frac{N-1}{N}$
+\begin_inset Formula $\left\langle +'\left|X\right|+'\right\rangle =\frac{N-1}{N}$
 \end_inset
 
 , 
-\begin_inset Formula $\left\langle -\left|X\right|-\right\rangle =-\frac{N-1}{N}$
+\begin_inset Formula $\left\langle -'\left|X\right|-'\right\rangle =-\frac{N-1}{N}$
 \end_inset
 
 
@@ -2500,11 +2561,11 @@ Claim(4): With definitions from section 3, without taking the large
 \end_inset
 
 
-\begin_inset Formula $\left\langle 0\left|X\right|0\right\rangle =0$
+\begin_inset Formula $\left\langle 0'\left|X\right|0'\right\rangle =0$
 \end_inset
 
 , 
-\begin_inset Formula $\left\langle 1\left|X\right|1\right\rangle =0$
+\begin_inset Formula $\left\langle 1'\left|X\right|1'\right\rangle =0$
 \end_inset
 
 
@@ -2512,7 +2573,7 @@ Claim(4): With definitions from section 3, without taking the large
 \end_inset
 
 
-\begin_inset Formula $\left\langle 1\left|X\right|0\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0\left|X\right|1\right\rangle $
+\begin_inset Formula $\left\langle 1'\left|X\right|0'\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0'\left|X\right|1'\right\rangle $
 \end_inset
 
 
@@ -2568,23 +2629,23 @@ Proof: We start with defining
 
 .
  Next, we note that 
-\begin_inset Formula $\text{LHS}=\left\langle \psi'_{f}\left|X\otimes X\right|\psi'\right\rangle $
+\begin_inset Formula $\text{LHS}=\left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle $
 \end_inset
 
  where 
-\begin_inset Formula $\left|\psi'_{f}\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\psi'\right\rangle $
+\begin_inset Formula $\left|\Psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\Psi\right\rangle $
 \end_inset
 
 .
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\psi'_{f}\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\\
- &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\\
- & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle +\left|+-\right\rangle -\left|-+\right\rangle -\left|--\right\rangle \right)\\
- &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle -\left|+-\right\rangle +\left|-+\right\rangle -\left|--\right\rangle \right)\\
- & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|++\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+-\right\rangle \\
- &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-+\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|--\right\rangle 
+\left|\Psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\\
+ &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\\
+ & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle +\left|+'-'\right\rangle -\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
+ &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle -\left|+'-'\right\rangle +\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
+ & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|+'+'\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+'-'\right\rangle \\
+ &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'+'\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'-'\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -2592,7 +2653,7 @@ Proof: We start with defining
 Now using claim(4), we have
 \begin_inset Formula 
 \begin{eqnarray*}
-\text{LHS} & = & \left\langle \psi'_{f}\left|X\otimes X\right|\psi'_{f}\right\rangle \\
+\text{LHS} & = & \left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle \\
  & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
  &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
  &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
@@ -2608,7 +2669,7 @@ Now using claim(4), we have
 \begin_layout Labeling
 \labelwidthstring a
 Claim(8): Action of 
-\begin_inset Formula $x_{mod2L}$
+\begin_inset Formula $\hat{x}_{mod2L}$
 \end_inset
 
  can be defined explicitly
@@ -2617,22 +2678,22 @@ Claim(8): Action of
 \begin_layout Labeling
 \labelwidthstring a
 Proof: 
-\begin_inset Formula $x_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$
+\begin_inset Formula $\hat{x}_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$
 \end_inset
 
 .
  To arrive at this more carefully, consider the operator 
-\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}$
 \end_inset
 
 .
  Note that 
-\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $
+\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $
 \end_inset
 
 .
  Thus, 
-\begin_inset Formula $x_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $
+\begin_inset Formula $\hat{x}_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $
 \end_inset
 
 , consequently on the most general state 
@@ -2640,7 +2701,7 @@ Proof:
 \end_inset
 
  then, we'd have 
-\begin_inset Formula $x_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $
+\begin_inset Formula $\hat{x}_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $
 \end_inset
 
 .
@@ -2650,12 +2711,12 @@ Proof:
 \begin_layout Labeling
 \labelwidthstring a
 Remark: One needn't necessarily consider eigenstates of 
-\begin_inset Formula $x$
+\begin_inset Formula $\hat{x}$
 \end_inset
 
  to define the action.
  Eigenstates of 
-\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}$
 \end_inset
 
  maybe considered instead; they can be expressed as (a) 
@@ -2668,7 +2729,7 @@ Remark: One needn't necessarily consider eigenstates of
 
 .
  Using the second expression, we have 
-\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $
+\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $
 \end_inset
 
 .
@@ -2677,7 +2738,7 @@ Remark: One needn't necessarily consider eigenstates of
 \end_inset
 
 , we have 
-\begin_inset Formula $x_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
+\begin_inset Formula $\hat{x}_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
 \end_inset
 
 .
