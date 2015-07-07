@@ -978,12 +978,12 @@ variable
 \end_inset
 
 .
- If I further consider, say 
+ If we further consider, say 
 \begin_inset Formula $\cos(p_{mod}L/\hbar)$
 \end_inset
 
-, then I get precisely the bound needed for the CHSH inequality.
- I chose the factor so that for 
+, then we get precisely the bound needed for the CHSH inequality.
+ We chose the factor so that for 
 \begin_inset Formula $p_{mod}=h/L$
 \end_inset
 
@@ -991,7 +991,7 @@ variable
 \begin_inset Formula $\cos$
 \end_inset
 
-function also completes a period.
+ function also completes a period.
  Note that 
 \begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{\sqrt{2}}$
 \end_inset
@@ -1007,7 +1007,7 @@ Next, recall that in quantum mechanics, the momentum that's quantized, is
 \end_inset
 
 .
- If I want a finite translation, I can do the following procedure: 
+ If we want a finite translation, we can do the following procedure: 
 \begin_inset Formula $\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle =e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $
 \end_inset
 
@@ -1899,8 +1899,8 @@ Considering the operator (non-hermitian for simplicity)
 \end_inset
 
  to obtain the violation.
- The issue is that this forces me to choose a countable superposition of
- position eigenkets as my state.
+ The issue is that this forces us to choose a countable superposition of
+ position eigenkets as our desired state.
  Such a state is strictly not even in the Hilbert space.
  In the scheme proposed, this issue is resolved by 
 \begin_inset Formula $Z(\hat{x}_{mod2L})$
@@ -1925,8 +1925,7 @@ We show that this scheme can be implemented rather easily using photons.
  We harness the two degrees of freedom of a photon, it's polarization and
  it's position to construct the required state.
  With a slightly modified setup, it is possible to do the same with spin
- and position for matter waves, which is briefly discussed in the appendix
- (see 
+ and position for matter waves (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sub:c7"
@@ -2096,8 +2095,8 @@ And finally after the crystals, the combined state becomes
 
 \end_inset
 
-At this stage, if I were to trace out the polarization state, I'd end up
- with a mixed state.
+At this stage, if we were to trace out the polarization state, we'd end
+ up with a mixed state.
  That is useless for our test.
  Ignoring the glass slabs at the moment in figure 
 \begin_inset CommandInset ref
@@ -2124,7 +2123,7 @@ Rewriting
 \begin_inset Formula $\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}=\left|H'\right\rangle $
 \end_inset
 
-, I get 
+, we get 
 \begin_inset Formula 
 \[
 \left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
@@ -2132,8 +2131,8 @@ Rewriting
 
 \end_inset
 
-Now if I trace out the polarization state, I am left with the target entangled
- state.
+Now if we trace out the polarization state, we'd be left with the target
+ entangled state.
  As a remark, it maybe be stated that although to arrive at this result
  we assumed that 
 \begin_inset Formula $\eta_{H}=1$

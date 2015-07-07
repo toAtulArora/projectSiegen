@@ -7252,6 +7252,63 @@ I can't quite think of anything just yet.
 \end_inset
 
  case and then see if there's something I can do to fix it.
+ Bascially there, ...
+\end_layout
+
+\begin_layout Itemize
+So it's useless basically | discussed with Ali also
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+added a note on how to do the same with fermions
+\end_layout
+
+\begin_layout Itemize
+improved the graph, lumps replaced by slits
+\end_layout
+
+\begin_layout Itemize
+improved format for the appendix
+\end_layout
+
+\begin_layout Itemize
+fixed some Is to we's
+\end_layout
+
+\begin_layout Itemize
+interestingly, you need only one polariser as Otfried felt, and more interesting
+ly, I had written the right state after which there was no need to put the
+ vertical polarizer and Ali, although himself seemed confused about some
+ things, seemed to point at the same thing that only one polariser should
+ be enough and I realized he was right.
+ So fixed that also, in both the text and the diagram.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Future direction?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ali said one immediate thing which we should see if can be done is to use
+ the Talbot effect to implement the entangled state, without using spins/polariz
+ations etc.
+ This he wanted so that there's no question of spins anymore, it's all neatly
+ continuous variables
+\end_layout
+
+\begin_layout Itemize
+This formulation is correct because it is here that the question of decoherence
+ makes perfect sense.
+ Talking about spins and decoherence doesn't quite add up to why we don't
+ see quantum effects in macroscopic objects readily.
 \end_layout
 
 \end_deeper
