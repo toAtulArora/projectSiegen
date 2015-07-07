@@ -1,10 +1,19 @@
-set terminal pdf 
+set terminal pdfcairo
+set termoption enhanced
+set key noautotitle
 set output "resultRENAMEme.pdf"
-set xlabel "Number of lumps (N)" 
+set xlabel "Number of slits (N)" 
 set ylabel "<CHSH>" 
 #set title "Violation of CHSH for N>6"
 set xrange [1:50] 
+set yrange [0:2*sqrt(2)]
 set sample 50
-set arrow from 1,2 to 50,2 nohead 
+set arrow from 1,2 to 50,2 nohead lc 1 lt 0 lw 5
 set arrow from 1,2*sqrt(2) to 50,2*sqrt(2) nohead 
-plot ((x-1)/x)**2 * 2 * sqrt(2) w lp
+#set label 1 at -2.2,2*sqrt(2)
+set label 1 "2√2" at -2.2,2*sqrt(2)
+set label 2 "Classical bound" at 20, 1.9 tc lt 1
+#set label 2 "Classical bound"
+#set label 1 "{/Symbol @{\140\140\140\140}\326}m+3"
+#test
+plot ((x-1)/x)**2 * 2 * sqrt(2) w lp pt 7 ps 0.3 lc 0 lt 0

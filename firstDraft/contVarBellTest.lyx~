@@ -333,7 +333,7 @@ Modifictn: (i) Due to the symmetry in the setup, we expect the same results
 
  but are allowed to perform a local unitary before the measurement.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Note that (ii) is equivalent to measuring along any direction.
@@ -682,7 +682,7 @@ However, to convert this to a more conventional form, we simply redefine
 
 .
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 so that 
@@ -1060,11 +1060,11 @@ Defn:
 
  are s.t.
  
-\begin_inset Formula $z\left|0\right\rangle =\left|0\right\rangle $
+\begin_inset Formula $\hat{z}\left|0\right\rangle =\left|0\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $z\left|1\right\rangle =-\left|1\right\rangle $
+\begin_inset Formula $\hat{z}\left|1\right\rangle =-\left|1\right\rangle $
 \end_inset
 
 
@@ -1395,7 +1395,14 @@ status open
 \begin_inset Formula $\hat{x}_{mod2L}$
 \end_inset
 
- is well defined, see claim 8
+ is well defined, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c6"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1521,17 +1528,15 @@ To evaluate the CHSH inequality, we again need terms of the form
 \begin_inset Formula $N$
 \end_inset
 
- is not assumed to be arbitrarily large, then it can be shown that
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Claim(5)
-\end_layout
+ is not assumed to be arbitrarily large, then it can be shown that (see
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c5"
 
 \end_inset
 
-
+)
 \end_layout
 
 \begin_layout Standard
@@ -1682,7 +1687,7 @@ W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(p'L/\hbar)e^{\pm i\phi}
 
 \end_inset
 
- which corresponds to the observab le (we used that 
+ which corresponds to the observable (we used that 
 \begin_inset Formula $Z_{2}=\pm1$
 \end_inset
 
@@ -1781,6 +1786,19 @@ where
 \end_inset
 
 .
+ From the definition of 
+\begin_inset Formula $Y$
+\end_inset
+
+ and the anti-commutation, 
+\begin_inset Formula $\{\hat{Y},\hat{X}\}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\{\hat{Y},\hat{Z}\}=0$
+\end_inset
+
+ also follow trivially.
  While we're at it, we may state that while 
 \begin_inset Formula $\hat{Z}^{2}=1$
 \end_inset
@@ -1793,8 +1811,8 @@ where
  This manifests in the other commutation relations 
 \begin_inset Formula 
 \begin{eqnarray*}
-[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\
-{}[\hat{Y},\hat{Z}] & = & -2i\hat{X}
+[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
+[\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
 
 \end_inset
@@ -1906,8 +1924,16 @@ Physical Implementation
 We show that this scheme can be implemented rather easily using photons.
  We harness the two degrees of freedom of a photon, it's polarization and
  it's position to construct the required state.
- With a slightly more complicated setup, it is possible to do the same with
- spin and position for matter waves, which is discussed in the last subsection.
+ With a slightly modified setup, it is possible to do the same with spin
+ and position for matter waves, which is briefly discussed in the appendix
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c7"
+
+\end_inset
+
+).
  The overall setup (see figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2088,16 +2114,20 @@ reference "fig:scheme"
  polariser, the state becomes 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & = & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & \propto & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
  &  & -\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
 \end{eqnarray*}
 
 \end_inset
 
-After the final stage, the horizontal polarizer, the state becomes 
+Rewriting 
+\begin_inset Formula $\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}=\left|H'\right\rangle $
+\end_inset
+
+, I get 
 \begin_inset Formula 
 \[
-\left|\chi_{\text{horzl}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|HH\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
 \]
 
 \end_inset
@@ -2328,7 +2358,7 @@ In an experiment then, there are two possibilities.
 
  to lie inside a given cell.
  The normalized result is essentially 
-\begin_inset Formula $\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}$
+\begin_inset Formula $\left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
 \end_inset
 
  from which 
@@ -2349,8 +2379,8 @@ In an experiment then, there are two possibilities.
 \begin_inset Newline newline
 \end_inset
 
-(b) The other simpler and direct possibility is that Alice and Bob both
- obtain the position, 
+(b) The other simpler, equivalent and direct possibility is that Alice and
+ Bob both obtain the position, 
 \begin_inset Formula $\{x_{A}^{(i)},x_{B}^{(i)}\}$
 \end_inset
 
@@ -2397,12 +2427,8 @@ We have shown how to realize a Bell test in continuous variables position
 Appendix
 \end_layout
 
-\begin_layout Subsection*
-Remarks
-\end_layout
-
-\begin_layout Standard
-Illustration(1): 
+\begin_layout Subsubsection*
+Illustration (I)
 \end_layout
 
 \begin_layout Standard
@@ -2454,12 +2480,11 @@ for
 \end_layout
 
 \begin_layout Subsection*
-Proofs
+Claims
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(1): If
+\begin_layout Subsubsection
+If
 \begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
 \end_inset
 
@@ -2468,11 +2493,16 @@ Claim(1): If
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c1"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(2): 
+\begin_layout Subsubsection
 \begin_inset Formula $\left\langle x\otimes x\right\rangle =-1$
 \end_inset
 
@@ -2481,19 +2511,30 @@ Claim(2):
 \end_inset
 
  in Claim(1)
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c2"
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(3): 
-\begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
+\begin_layout Subsubsection
+\begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Proof: 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -2510,7 +2551,14 @@ We define,
 \begin_inset Formula $\delta\equiv\phi-\theta$
 \end_inset
 
- and using claim(1), it follows that only terms like 
+ and using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c1"
+
+\end_inset
+
+, it follows that only terms like 
 \begin_inset Formula $\left|+-\right\rangle $
 \end_inset
 
@@ -2530,20 +2578,32 @@ We define,
 
 \end_inset
 
-where we've used claim(2).
+where we've used 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c2"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(4): With definitions from section 3, without taking the large 
+\begin_layout Subsubsection
+With definitions from section 3, without taking the large 
 \begin_inset Formula $N$
 \end_inset
 
  limit,
-\begin_inset Newline newline
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c4"
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\left\langle +'\left|X\right|+'\right\rangle =\frac{N-1}{N}$
 \end_inset
 
@@ -2590,17 +2650,21 @@ Claim(4): With definitions from section 3, without taking the large
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(5): 
+\begin_layout Subsubsection
 \begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c5"
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
+\begin_layout Standard
 Proof: We start with defining 
 \begin_inset Formula $\phi\equiv\phi_{i}$
 \end_inset
@@ -2640,7 +2704,14 @@ Proof: We start with defining
 
 \end_inset
 
-Now using claim(4), we have
+Now using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c4"
+
+\end_inset
+
+, we have
 \begin_inset Formula 
 \begin{eqnarray*}
 \text{LHS} & = & \left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle \\
@@ -2656,17 +2727,22 @@ Now using claim(4), we have
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(8): Action of 
+\begin_layout Subsubsection
+Action of 
 \begin_inset Formula $\hat{x}_{mod2L}$
 \end_inset
 
  can be defined explicitly
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c6"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
+\begin_layout Standard
 Proof: 
 \begin_inset Formula $\hat{x}_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$
 \end_inset
@@ -2698,8 +2774,7 @@ Proof:
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
+\begin_layout Standard
 Remark: One needn't necessarily consider eigenstates of 
 \begin_inset Formula $\hat{x}$
 \end_inset
@@ -2733,6 +2808,65 @@ Remark: One needn't necessarily consider eigenstates of
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Physical implementation with electrons is also possible
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c7"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we can show that the basic components used to describe the photon setup
+ can be translated to the electron setup, then in principle we are through.
+ (a) Glass slab: The equivalent is the electric AB effect.
+ We need to simply put a capacitor after the slit and the two components
+ will pick up a phase difference.
+ (b) Polariser: The Stern Gerlach setup is the classic analogue.
+ We simply block the orthogonal component.
+ (c) Birefringent crystal: This is slightly tricky.
+ It can be modelled by using a combination of gradient of magnetic field
+ (as in Stern Gerlach) and a capacitor.
+ We start with an equivalent superposition of spin states, 
+\begin_inset Formula $\frac{\left|\uparrow\downarrow\right\rangle -\left|\downarrow\uparrow\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle $
+\end_inset
+
+.
+ To construct the spin dependent 
+\begin_inset Formula $\left|-'\right\rangle $
+\end_inset
+
+ state, we use the magnetic field gradient to spatially separate the 
+\begin_inset Formula $\left|\uparrow\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ states.
+ We place capacitors as described at the spatial position corresponding
+ to 
+\begin_inset Formula $\left|\downarrow\right\rangle $
+\end_inset
+
+ say.
+ Thereafter, we remove the magnetic field gradient and allow the beams to
+ meet again.
+ This will effectively act as a Birefringent crystal, since the phase difference
+ is spin dependent.
 \end_layout
 
 \end_body

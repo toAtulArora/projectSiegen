@@ -6956,6 +6956,17 @@ Sunday, July 5
 Health
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Figured eating fast is the way to eat more (body doesn't realize its full
+ until about 20 minutes, so I can stuff in whatever amount till then)
+\end_layout
+
+\begin_layout Itemize
+Gym | usual
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Work
 \end_layout
@@ -7020,6 +7031,230 @@ polarizers will essentially be stern gerlach like in different directions
 \end_layout
 
 \end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+July 6-12 | Week 9
+\end_layout
+
+\begin_layout Subsection
+Monday, July 6
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Forgot there was a lecture by otfried, so less sleep than planned
+\end_layout
+
+\begin_layout Itemize
+No gym
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Otfried's Lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He talked about he measurement problem of QM (basically can't figure which
+ evolution to do)
+\end_layout
+
+\begin_layout Itemize
+He pointed out the difference in interpreting a density matrix vs.
+ a reduced density matrix.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Made corrections to some calculations I'd done yesterday
+\end_layout
+
+\begin_layout Itemize
+Fixed the typesetting (
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ where necessary)
+\end_layout
+
+\begin_layout Itemize
+Fixed the definitions of the states 
+\begin_inset Formula $\left|\pm'\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tried to change the notation of 
+\begin_inset Formula $\left|+'\right\rangle $
+\end_inset
+
+ to something else, but couldn't find a suitable symbol, since there're
+ also 
+\begin_inset Formula $\left|0'\right\rangle $
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Itemize
+Updated how to make measurements more simply
+\end_layout
+
+\begin_layout Itemize
+Updated the measurement result to being more general, which holds for both
+ photons and electrons
+\end_layout
+
+\begin_layout Itemize
+Updated 
+\begin_inset Formula $\left|\psi'\right\rangle $
+\end_inset
+
+ to 
+\begin_inset Formula $\left|\Psi\right\rangle $
+\end_inset
+
+ so that post unitary, the state become 
+\begin_inset Formula $\left|\Psi'\right\rangle $
+\end_inset
+
+ as expected.
+\end_layout
+
+\begin_layout Itemize
+Updated 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ to 
+\begin_inset Formula $\left|\pm'\right\rangle $
+\end_inset
+
+s where necessary.
+\end_layout
+
+\begin_layout Itemize
+Put the changes on overleaf so ali can make changes | he seems to have written
+ an interesting and long introduction
+\end_layout
+
+\begin_layout Itemize
+Discussed with Ali and told him that I'd rather publish in PRA than in NJP
+ | don't like the philosophy that a `richer' person can publish in a better
+ journal, I might as well not publish in that journal.
+\end_layout
+
+\begin_layout Itemize
+Ali suggestions
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The graph, dotted line etc.
+\end_layout
+
+\begin_layout Itemize
+lumps by (I forgot the word I'm supposed to replace it with)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Tuesday, July 7
+\end_layout
+
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+GHZ
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured that in the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit, one can easily construct the corresponding continuous variable case
+ for the GHZ.
+ If one assumes a cylindrical space, then also this can be done (just impose
+ periodic boundary conditions on the wavefunction).
+ What must be interesting is the 
+\begin_inset Formula $N\ne\infty$
+\end_inset
+
+ case.
+ In this case, I must be able to show something like you get some values
+ (continuous) but according to local realism, some other measurement must
+ give, say the product, of these, but it doesn't happen in experiments (as
+ predicted by QM).
+ The trouble is that I must have an eigenstate, else repeated measurements
+ won't work.
+ The moment I enforce an eigenstate, I won't get a continuous valued outcome,
+ I'll get exactly one number.
+ To keep both aspects, I must come up with something different.
+ Question is what? What are some of my guiding principles? 
+\end_layout
+
+\begin_layout Itemize
+Is it even possible to have an eigenstate of an operator and not know the
+ outcome of measurement? Not that I know of
+\begin_inset Newline newline
+\end_inset
+
+So I must construct some sort of eigenstates, such that the operation yields
+ a continuous valued, but fixed outcome, depending on the state
+\begin_inset Newline newline
+\end_inset
+
+Then I must use some anti-commutation etc.
+ like relation between these operators and measure
+\end_layout
+
+\begin_layout Itemize
+But the whole idea of an eigenstate is troublesome in our formalism.
+ So what makes GHZ really remarkable? The outcome predicted is in contradiction
+ with classical expections (so far bell test also works the same), and you
+ don't need to repeat the experiment many times (and bell needs the experiment
+ to be repeated).
+ So I must come up with something in which you make a single measurement,
+ with neither of the measurement outcomes certain, but I must have some
+ sort of classical constraint on the measurement (by assuming local hidden
+ variables) and then show that quantum mechanically it fails, with a single
+ (or a given number M) measurement (meaning all Alice, Bob, Clausius).
+\end_layout
+
+\begin_layout Itemize
+I can't quite think of anything just yet.
+ So one way to proceed is to understand what goes wrong with the finite
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ case and then see if there's something I can do to fix it.
+ Bascially there, ...
+\end_layout
+
 \end_deeper
 \end_deeper
 \end_body

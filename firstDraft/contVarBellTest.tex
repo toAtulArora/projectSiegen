@@ -1,0 +1,758 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[10pt,twocolumn,landscape,british,aps,manuscript]{revtex4}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setcounter{secnumdepth}{3}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{esint}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\@ifundefined{textcolor}{}
+{%
+ \definecolor{BLACK}{gray}{0}
+ \definecolor{WHITE}{gray}{1}
+ \definecolor{RED}{rgb}{1,0,0}
+ \definecolor{GREEN}{rgb}{0,1,0}
+ \definecolor{BLUE}{rgb}{0,0,1}
+ \definecolor{CYAN}{cmyk}{1,0,0,0}
+ \definecolor{MAGENTA}{cmyk}{0,1,0,0}
+ \definecolor{YELLOW}{cmyk}{0,0,1,0}
+}
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%%\renewcommand*{\thefootnote}{\arabic{footnote}}
+%\setcounter{footnote}{0}
+%\usepackage{perpage} %the perpage package
+%\MakePerPage{footnote} %the perpage package command
+\usepackage{cancel}
+\usepackage{braket}
+\usepackage{tikz}
+
+\newcommand{\Plus}{\mathord{\begin{tikzpicture}[baseline=0ex, line width=1, scale=0.13]
+\draw (1,0) -- (1,2);
+\draw (0,1) -- (2,1);
+\end{tikzpicture}}}
+
+\newcommand{\Minus}{\mathord{\begin{tikzpicture}[baseline=0ex, line width=1, scale=0.13]
+\draw (0,1) -- (2,1);
+\end{tikzpicture}}}
+
+
+%\newcommand{\Plus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0.5,0) -- (0.5,1)(0,0.5) -- (1,0.5);}}
+%\newcommand{\Minus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0,0.5) -- (1,0.5);}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Bell Test with Continuous Variables}
+
+
+\author{Atul Singh Arora}
+
+
+\address{University of Siegen, Germany}
+
+
+\address{Indian Institute of Science Education \& Research, Mohali, India}
+
+
+\author{Ali Asadian}
+
+
+\address{University of Siegen, Germany}
+
+
+\pacs{Draft}
+
+
+\date{May-July 2015}
+\begin{abstract}
+We show the violation of the Bell inequality in a more classical setting
+than the usual quantum spin, viz. with continuous variables $x,\, p$.
+This is achieved using displacement operators, or equivalently modular
+momentum and position. Two possible experimental realizations of the
+scheme have also been delineated, one uses photons, while the other
+is based on electrons.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+The Bell inequality is a statement about the statistical outcomes
+of a certain class of experiments. The inequality was formulated by
+assuming the most general `local theory'. Any violation of the inequality
+would imply that local realism must be false. Quantum Mechanics predicts
+a violation which has been confirmed experimentally. The physical
+situation for which this violation is usually formulated, uses entangled
+spin states. Here we show that a violation can be achieved without
+having to use spins, which is a purely quantum phenomenon; measuring
+a particle's position is sufficient.
+
+
+\section{Violation of Bell Inequality}
+
+
+\subsection{CHSH Inequality | prior art}
+
+Here the violation of Bell's inequality for the typical spin case,
+is stated in a way that is easier to translate to the continuous variable
+case. We first state the Bell test in its modern form, known as the
+CHSH inequality. 
+\begin{lyxlist}{a}
+\item [{Suppose:}] There are two observers%
+\footnote{that are often chosen to be sufficiently far away that their measurements
+don't influence each other%
+}, Alice and Bob. There are two particles, which are allowed to interact
+initially and are then separated. Alice takes one, Bob takes the other.
+Alice can measure one of two properties of her particle, call them
+$a_{1},\, a_{2}$. Similarly Bob can measure $b_{1},\, b_{2}$ of
+his particle. 
+\item [{Notatn:}] $\left\langle a_{i}b_{j}\right\rangle =$Average value
+obtained when Alice chooses to measure $a_{i}$ and Bob chooses to
+measure $b_{j}$
+\item [{Statemnt:}] $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle C(a_{i},b_{i})\right\rangle \right|\le2$
+if (a) result of measuring $a_{i},\, b_{i}$ $\in\,[-1,1]$, (b) local
+realism is assumed. This result will be referred to as the CHSH inequality. 
+\end{lyxlist}
+Quantum Mechanics predicts a violation of this in the following physical
+situation.
+\begin{lyxlist}{a}
+\item [{Defn:}] $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
+where the $\left|\pm\right\rangle $ states are s.t. $\hat{\sigma}_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $. 
+\item [{Consider:}] (a) Two particles are described by $\left|\psi\right\rangle $,
+(b) the first particle is with Alice, second with Bob, and (c) Alice
+measures $\hat{z}$ or $\hat{x}$ while Bob is allowed to choose between
+$\hat{z}'$ and $\hat{x}'$, where $\hat{z}'=\frac{-\hat{z}-\hat{x}}{\sqrt{2}}$,
+$\hat{x}'=\frac{\hat{z}-\hat{x}}{\sqrt{2}}$.
+\item [{Notatn:}] The Pauli matrices are referred to as $\hat{x},\,\hat{y},\,\hat{z}$.
+\item [{Result:}] $\left\langle C((\hat{x},\hat{z}),(\hat{x}',\hat{z}'))\right\rangle =2\sqrt{2}\nleq2$,
+which is a violation. 
+\end{lyxlist}
+This value can be reproduced in a slightly modified situation.
+\begin{lyxlist}{a}
+\item [{Modifictn:}] (i) Due to the symmetry in the setup, we expect the
+same results hold for $\hat{x},\,\hat{y}$ and $\hat{x}',\,\hat{y}'$
+and (ii) we demand that Alice and Bob can only measure $\hat{x}$
+but are allowed to perform a local unitary before the measurement.%
+\footnote{Note that (ii) is equivalent to measuring along any direction. Details
+in the Apendix.%
+}
+\item [{Explicitly}] then, consider: (a) The first qubit is with Alice
+and the second is with Bob. (b) Alice and Bob apply local unitaries
+$e^{i\hat{z}\theta/2}\otimes I$ and $I\otimes e^{i\hat{z}\phi/2}$
+respectively and then both measure $\hat{x}$. (c) Alice can choose
+$\theta\in\{0,\pi/2\}$ and Bob can choose $\phi\in\{\pi/4,\pi/4+\pi/2\}$;
+see Table \ref{mesSch1}.%
+\footnote{These values are motivated by the $\pi/2$ between $z$ and $x$,
+\& $\pi/4$ between $z$ and $z'$ in the conventional Bell case.%
+}
+\end{lyxlist}
+\begin{table}
+\begin{tabular}{l|c|c|c|c}
+\multicolumn{1}{l}{} & \multicolumn{1}{c}{Alice} &  & \multicolumn{1}{c}{Bob} & \tabularnewline
+\hline 
+Convention & $a_{1}$ & $a_{2}$ & $b_{1}$ & $b_{2}$\tabularnewline
+Angle & $\theta_{1}=\pi/2$ & $\theta_{2}=0$ & $\phi_{1}=\pi/4$ & $\phi_{2}=\pi/4+\pi/2$\tabularnewline
+\end{tabular}
+
+\caption{Measurement Scheme}
+\label{mesSch1}
+\end{table}
+
+
+Now it remains to show that this scheme also violates the Bell inequality
+(and by the same value). To that end, we state a result. 
+\begin{lyxlist}{a}
+\item [{Claim(3):}] $\left\langle e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\otimes e^{-i\hat{z}\phi/2}\hat{x}e^{i\hat{z}\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\end{lyxlist}
+Given that, it is straight forward to evaluate
+\begin{lyxlist}{a}
+\item [{CHSH:}] 
+\begin{eqnarray*}
+\left\langle C\right\rangle  & = & \left\langle a_{1}b_{1}\right\rangle +\left\langle a_{1}b_{2}\right\rangle +\left\langle a_{2}b_{1}\right\rangle -\left\langle a_{2}b_{2}\right\rangle \\
+ & = & \left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)-\left(+\frac{1}{\sqrt{2}}\right)\\
+ & = & -2\sqrt{2}
+\end{eqnarray*}
+
+\item [{Remark:}] This is a violation since $\left|\left\langle C\right\rangle \right|=2\sqrt{2}\nleq2$. 
+\end{lyxlist}
+However, to convert this to a more conventional form, we simply redefine
+the angles $\theta$ and $\phi$.%
+\footnote{so that $\phi-\theta\to\phi'-\theta'=\phi-\theta+\pi=\left(\phi+\pi/2\right)-\left(\theta-\pi/2\right)$%
+} 
+\begin{lyxlist}{a}
+\item [{Substn:}] $\phi\to\phi'=\phi+\pi/2,\,\theta\to\theta'=\theta-\pi/2$;
+see Table \ref{mesSch2}
+\end{lyxlist}
+\begin{table}
+\begin{tabular}{c|c|c|c|c}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{Alice} &  & \multicolumn{1}{c}{Bob} & \tabularnewline
+\hline 
+Convention & $a_{1}$ & $a_{2}$ & $b_{1}$ & $b_{2}$\tabularnewline
+Angle & $\theta'_{1}=0$ & $\theta'_{2}=-\pi/2$ & $\phi'_{1}=3\pi/8$ & $\phi'_{2}=5\pi/4$\tabularnewline
+\end{tabular}
+
+\caption{`Corrected' Measurement Scheme}
+\label{mesSch2}
+\end{table}
+Now we have $\left\langle C\right\rangle =2\sqrt{2}$.
+\begin{lyxlist}{a}
+\item [{Concln:}] The violation of the Bell spin state can be equivalently
+be obtained by the measurement of $\hat{x}$ after applying a rotation
+along $\hat{z}$ by the aforesaid angles.
+\end{lyxlist}
+
+\subsection{Modular Variables and Displacement Operators | prior art}
+
+The observables admissible in the CHSH inequality must $\in[-1,1]$.
+If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$,
+then one way of obtaining a bound variable is to use $p_{mod}\equiv p\mod h/L$,
+where $h/L$ has been introduced for dimensional reasons. This forces
+$p_{mod}\in[0,h/L)$. If I further consider, say $\cos(p_{mod}L/\hbar)$,
+then I get precisely the bound needed for the CHSH inequality. I chose
+the factor so that for $p_{mod}=h/L$, the $\cos$function also completes
+a period. Note that $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{\sqrt{2}}$.
+
+Next, recall that in quantum mechanics, the momentum that's quantized,
+is one that generates infinitesimal translations. Formally, this means
+that $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle =\left|x+\delta L\right\rangle $.
+If I want a finite translation, I can do the following procedure:
+$\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle =e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $.
+This operator is aptly called the displacement operator. We must add
+that $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar ab}e^{i\hat{x}b}e^{i\hat{p}a}$.
+Thus for appropriate choices of $a,b$, the displacement operators
+can be made to commute or anti-commute. In the former case, it means
+one can simultaneously measure modular position and momentum (which
+is striking) and in the latter case, one can define pauli matrix like
+commutation.
+
+The idea was that the obvious generalization for obtaining an appropriate
+operator for the CHSH inequality is $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{i\hat{p}L/\hbar}}{\sqrt{2}}$.
+The action of the operator will guide us in creating the appropriate
+states in the next sub section.
+
+
+\subsection{Violation in Continuous Variable State}
+
+We start with constructing continuous variable kets that satisfy the
+same orthogonality and mutual relations as $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $.%
+\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $z\left|0\right\rangle =\left|0\right\rangle $
+and $z\left|1\right\rangle =-\left|1\right\rangle $%
+}%
+\footnote{We emphasise that the kets we construct, will not be a countable superposition
+of eigenstates of $p$ or $x$ since these are highly idealized and
+strictly, not even a part of the Hilbert space.%
+} We then construct the relevant operators and finally evaluate $\left\langle C\right\rangle $
+to show the violation.
+
+To construct the states, we start with some definitions.
+\begin{lyxlist}{a}
+\item [{Forgt:}] $\hat{x},\,\hat{y},\,\hat{z}$ represent Pauli matrices
+\item [{Defn:}] $L\equiv$some length scale, $N\equiv$number of slits
+\item [{Consider:}] A state $\left|\varphi\right\rangle $ symmetric about
+$x=L/2$, with spread $\ll L$. Formally, $\left|\varphi\right\rangle \equiv\int dx\left\langle x-L/2|\varphi'\right\rangle \left|x\right\rangle $
+where $\left|\varphi'\right\rangle $ s.t. (a) $\left\langle x|\varphi'\right\rangle =\left\langle -x|\varphi'\right\rangle $
+and (b) it's spread is $\ll L$
+\item [{Defn:}] $\left|\varphi_{n}\right\rangle \equiv\int dx\left\langle x-nL|\varphi\right\rangle \left|x\right\rangle $ 
+\item [{Defn:}] $I_{N}=\{-\frac{N}{2},\dots,\frac{N}{2}-1,\frac{N}{2}-1\}$,
+defined for even $N$ only (for simplicity)
+\item [{Defn:}] 
+\begin{eqnarray*}
+\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{2n+1}\right\rangle \\
+\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{2n}\right\rangle 
+\end{eqnarray*}
+
+\end{lyxlist}
+Using these states, we construct the analogues of the $\left|+\right\rangle $
+and $\left|-\right\rangle $ states.
+\begin{lyxlist}{a}
+\item [{Remark:}] Definition of $\left|0'\right\rangle $ and $\left|1'\right\rangle $
+justify the word `slit' in the definition of $N$.
+\item [{Defn:}] $\left|+'\right\rangle \equiv\frac{\left|0'\right\rangle +\left|1'\right\rangle }{\sqrt{2}},\,\left|-'\right\rangle \equiv\frac{\left|0'\right\rangle -\left|1'\right\rangle }{\sqrt{2}}$
+\item [{NB:}] $\left\langle 0'|1'\right\rangle =0,\,\implies\left\langle +'|-'\right\rangle =0$
+\end{lyxlist}
+Analogous to the spin case, we construct the entangled state 
+\begin{lyxlist}{a}
+\item [{Defn:}] $\left|\Psi\right\rangle \equiv\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}$
+\end{lyxlist}
+These states were constructed with a partial translational symmetry
+which is appropriate to the hermitian operator, $\cos(\hat{p}L/\hbar)$
+discussed earlier.
+\begin{lyxlist}{a}
+\item [{Defn:}] 
+\[
+\hat{X}\equiv\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}
+\]
+
+\item [{NB:}] Only in the limit $N\to\infty$, 
+\begin{eqnarray*}
+\hat{X}\left|+'\right\rangle  & = & +\left|+'\right\rangle \\
+\hat{X}\left|-'\right\rangle  & = & -\left|-'\right\rangle 
+\end{eqnarray*}
+just as was with $\hat{\sigma}_{x}$. In general however, the relation
+doesn't hold.
+\end{lyxlist}
+We have almost all the cards, except for one that allows for setting
+\{$\phi$, $\theta$\}. In the spin case, this was achieved by operating
+$e^{i\hat{\sigma}_{z}\phi/2}$ on the state before measurement. Correspondingly,
+here we define this operator by it's action on the relevant state. 
+\begin{lyxlist}{a}
+\item [{Defn:}] $\hat{U}(\phi)$ is defined to be s.t. 
+\begin{eqnarray*}
+\hat{U}(\phi)\left|0'\right\rangle  & = & e^{i\phi/2}\left|0'\right\rangle \\
+\hat{U}(\phi)\left|1'\right\rangle  & = & e^{-i\phi/2}\left|1'\right\rangle 
+\end{eqnarray*}
+
+\end{lyxlist}
+This can achieved in principle using alternate glass slabs (capacitors)
+for photons (fermions) to adjust the relative phase as desired, since
+$\left|0'\right\rangle $ and $\left|1'\right\rangle $ are spatially
+separated. Alternatively, we could also define $\hat{U}(\phi)$ in
+its analytic form as
+\begin{lyxlist}{a}
+\item [{Alt~Defn:}] 
+\[
+\hat{U}(\phi)=e^{iZ(\hat{x}_{mod2L})\phi/2}
+\]
+where $Z(x')\equiv\begin{cases}
+1 & 0<x'\mod2L\le L\\
+-1 & L<x'\mod2L\le2L
+\end{cases}$ when $Z$ acts on an eigenstate of $\hat{x}$.%
+\footnote{$\hat{x}_{mod2L}$ is well defined, see claim 8%
+}
+\item [{NB:}] $Z(\hat{x}_{mod2L})\left|0'\right\rangle =\left|0'\right\rangle $
+and $Z(\hat{x}_{mod2L})\left|1'\right\rangle =-\left|1'\right\rangle $
+viz. $Z(\hat{x}_{mod2L})$ plays the role of $\hat{\sigma}_{z}$
+\item [{Notatn:}] $\hat{Z}\equiv Z(\hat{x}_{mod2L})$
+\end{lyxlist}
+\begin{figure}
+\includegraphics[width=8cm]{/afs/tp\lyxdot nt\lyxdot uni-siegen\lyxdot de/user/arora/Documents/projectSiegen/firstDraft/plots/CHSH}\caption{Practically, the number of slits, $N$ will be finite. The plot shows
+$\left\langle C\right\rangle $ as a function of $N$. To get a violation,
+we need merely $7$ slits, while with $50$ we are almost at $2\sqrt{2}$.\label{chshViolation}}
+\end{figure}
+
+
+To evaluate the CHSH inequality, we again need terms of the form $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle $.
+If we assume $N\to\infty$, these can be evaluated easily to be the
+same as before $-\cos(\phi_{i}-\theta_{i})$. Thus, the same analysis
+as before yields $\left\langle C\right\rangle =2\sqrt{2}$ which is
+the same maximal violation, in a completely different setup. If $N$
+is not assumed to be arbitrarily large, then it can be shown that%
+\footnote{Claim(5)%
+}
+
+\begin{eqnarray*}
+\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle  & =\\
+ & -\left(\frac{N-1}{N}\right)^{2} & \cos(\phi_{i}-\theta_{i})
+\end{eqnarray*}
+
+
+Thus obviously then, $\left\langle C\right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$.
+If we ask for the smallest $N$ s.t. $\left\langle C\right\rangle >2$,
+we get $N\ge7$; see Figure \ref{chshViolation}.
+
+
+\subsection{Validating phase space behaviour}
+
+In the past, it has been shown that one can arrive at the violation
+of Bell inequalities in continuous variable systems. One issue concerning
+these is that the wigner function corresponding to the observable
+operators, are unbounded. An example of this is parity. Note that
+the Wigner function for a physical state $\rho$ has an upper bound.
+Here however, we are simply using the prescription to evaluate it
+for unitary operators.
+
+We care because wigner functions maybe thought of as a specific case
+of the Wigner-Weyl correspondence, which relates classical functions
+to their corresponding quantum operators. Thus, in a phase-space description
+of quantum mechanics, it is important to show that it is not necessary
+to have unboundedness to show a violation of the Bell's inequality,
+and thereby non-locality. 
+
+Our set of permissible states is manifestly bounded. We must show
+that the observable in our case, given by $\hat{U}^{\dagger}(\phi)\hat{X}\hat{U}(\phi)$
+is also bounded. To that end, we note that
+
+%\begin{widetext}
+
+%\end{widetext}
+
+\begin{eqnarray*}
+W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(\hat{x}_{mod2L})\phi/2}\\
+ &  & e^{i\hat{p}\frac{L}{\hbar}}e^{iZ(\hat{x}_{mod2L})\phi/2}\left|q'+\frac{q}{2}\right\rangle \\
+ & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q')\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}(q')\phi/2}\\
+ & = & \frac{1}{2\pi\hbar}e^{ip'L/\hbar}e^{iZ_{2}(q')\phi}
+\end{eqnarray*}
+where $Z_{1/2}(q')=Z[(q'\mp\frac{L}{2})\mod2L]$ and we used the fact
+that $Z(x')=-Z(x'+L)$ (omitting the $\mod2L$). Similarly one can
+evaluate $W_{2}$ and obtain 
+\[
+W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(p'L/\hbar)e^{\pm i\phi}
+\]
+ which corresponds to the observab le (we used that $Z_{2}=\pm1$).
+Clearly $\left|W\right|\le\left(2\pi\hbar\right)^{-1}$.
+
+
+\subsection{Source of Violation}
+
+In the Bell test done with spins, the source of violation hinges on
+the non-commutativity of the Pauli matrices. It is known that $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$,
+when $a_{i},b_{i}\in\{-1,1\}$. To obtain a violation in general (where
+the first term maybe less than $4\mathbb{I}$), it is therefore necessary
+that the commutations don't vanish. This is indeed true in our case.
+Explicitly, we must have $[\hat{U}^{\dagger}\hat{X}\hat{U},\hat{U}'^{\dagger}\hat{X}\hat{U}']\neq0$.
+To arrive at the desired expression we first evaluate some simpler
+commutation and anti-commutation relations explicitly. Let's start
+with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$.
+To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$
+and obtain $Ze^{i\hat{p}L/\hbar}+Ze^{i\hat{p}L/\hbar}$ where we've
+used $Z(\hat{x}_{mod2L})=-Z(\left(\hat{x}\pm L\right)_{mod2L})$ and
+$e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $.
+Thus we have 
+\[
+[\hat{Z},\hat{X}]=2\hat{Z}\hat{X}=-2i\hat{Y}
+\]
+where $\hat{Y}=i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure
+$\hat{Y}^{\dagger}=\hat{Y}$, since $X^{\dagger}=X$ and $\hat{Z}^{\dagger}=\hat{Z}$.
+Similarly it follows that $\{\hat{Z},\hat{X}\}=0$. While we're at
+it, we may state that while $\hat{Z}^{2}=1$, it is not a sum of a
+2 state projector and $\hat{X}^{2}\neq1$ in general. This manifests
+in the other commutation relations 
+\begin{eqnarray*}
+[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\
+{}[\hat{Y},\hat{Z}] & = & -2i\hat{X}
+\end{eqnarray*}
+
+
+Further, note that $e^{-i\hat{Z}\phi/2}Xe^{i\hat{Z}\phi/2}=Xe^{i\hat{Z}\phi}$
+and that $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$. With all these,
+it is easy to show that 
+\begin{eqnarray*}
+[U^{\dagger}(\frac{\phi}{2})XU(\frac{\phi}{2}),U^{\dagger}(\frac{\phi'}{2})XU(\frac{\phi'}{2})] & =\\
+\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
+\end{eqnarray*}
+as was necessary. Ofcourse this is not sufficient, however we have
+shown explicitly the violation. This evaluation was meant to illuminate
+that the source of violation essentially hinges on the non-commutativity
+of $[\hat{x}_{mod2L},\hat{p}_{modL}]\neq0$. It is apparent that the
+complete pauli algebra is unnecessary for showing a violation. 
+
+
+\subsection{Advantage of asymmetry in $\hat{X}$ and $\hat{Z}$}
+
+Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$,
+defining $\hat{Z}=e^{i\hat{x}2\pi/2L}$ is more natural. They also
+follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we
+could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization.
+The question is why did we choose $\hat{Z}=Z(\hat{x}_{mod2L})$. The
+cause of this asymmetry hinges on the preferential treatment of position
+space. We could have constructed states of the form $\left|0'\right\rangle =\sum_{n}\left|x+nd\right\rangle $
+and used the natural definition of $\hat{Z}$ to obtain the violation.
+The issue is that this forces me to choose a countable superposition
+of position eigenkets as my state. Such a state is strictly not even
+in the Hilbert space. In the scheme proposed, this issue is resolved
+by $Z(\hat{x}_{mod2L})$ which causes a larger set of physically realizable
+states become admissible.
+
+Thus while our construction is motivated by the spin formalism, it
+is not just a relabelling of states and operators achieved by a severe
+restriction of the Hilbert space. 
+
+
+\section{Physical Implementation}
+
+We show that this scheme can be implemented rather easily using photons.
+We harness the two degrees of freedom of a photon, it's polarization
+and it's position to construct the required state. With a slightly
+more complicated setup, it is possible to do the same with spin and
+position for matter waves, which is discussed in the last subsection.
+The overall setup (see figure \ref{fig:scheme}) is such that we need
+only consider the quantum mechanical description along the $x$-axis.
+
+
+\subsection{Creation of the entangled state}
+
+The desired entangled state is $\left|\Psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$.
+We start with noting the triviality of constructing a 
+\[
+\left|+'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n\in I_{2N}}\left|\varphi_{n}\right\rangle 
+\]
+ state. One simply needs a source and a grating, viz. a screen with
+$2N$ slits of width $a\ll L$, separated by a distance $L$ (centre
+to centre). The 
+\[
+\left|-'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n\in I_{2N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
+\]
+ state can be similarly constructed by using glass slabs at alternate
+slits, such that the phase introduced is $\phi=\pi\,\implies\, e^{i\phi}=-1$.
+In figure \ref{fig:scheme}, if you consider only one particle, and
+disregard everything after the grating, then the setup is expected
+to produce a $\left|+\right\rangle $ state, just after the grating.
+To produce the desired entangled state, we start with two entangled
+photons, such that their polarization state can be expressed as 
+\[
+\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}
+\]
+Their spatial description (along $x$-axis) is initially assumed to
+be $\left|\zeta\right\rangle =\left|\gamma\right\rangle \otimes\left|\gamma\right\rangle =\left|\gamma\gamma\right\rangle $.
+The state $\left|\gamma\right\rangle $ maybe considered to be a guassian
+with $\sigma\gg2NL$ so that after the grating, the spatial state
+can be written as $\left|\zeta_{\text{grating}}\right\rangle =\left|+'+'\right\rangle $.
+Now comes the interesting part. To produce a $\left|-'\right\rangle $
+state, we already know we needed alternate glass slabs. If we had
+glass slabs, whose refractive index (given some orientation) was say
+$\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq0$
+for vertical polarization, then we could harness the entangled polarization
+state to create the required spatially entangled state. Birefringent
+crystals have such polarization dependent refractive indices. Assume
+that alternating birefringent crystals have been placed after both
+the gratings as shown in figure \ref{fig:scheme} (in the diagram,
+they're not alternating though). These have width such that the resultant
+phase it introduces is $\pi$. The combined initial state is given
+by 
+\[
+\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
+\]
+After the grating, the state is 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
+\]
+And finally after the crystals, the combined state becomes 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|+'-'\right\rangle -\left|VH\right\rangle \left|-'+'\right\rangle }{\sqrt{2}}
+\]
+At this stage, if I were to trace out the polarization state, I'd
+end up with a mixed state. That is useless for our test. Ignoring
+the glass slabs at the moment in figure \ref{fig:scheme}, we observe
+the action of the polarisers on the state. After the $45^{0}$ polariser,
+the state becomes 
+\begin{eqnarray*}
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & = & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
+ &  & -\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
+\end{eqnarray*}
+After the final stage, the horizontal polarizer, the state becomes
+\[
+\left|\chi_{\text{horzl}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|HH\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
+\]
+Now if I trace out the polarization state, I am left with the target
+entangled state. As a remark, it maybe be stated that although to
+arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable
+physically, we can compensate for $\eta_{H}\neq0$ by putting appropriate
+glass slabs at the alternate empty slits, to produce zero relative
+phase when the polarization is horizontal.
+
+\begin{figure*}
+\resizebox{15cm}{!}{\input{/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/diagrams/scheme.pdftex_t}}
+
+\caption{Scheme for creating the state\label{fig:scheme}}
+\end{figure*}
+
+
+
+\subsection{Measurement Settings}
+
+In our scheme, Alice and Bob can choose $\phi\in\{\phi_{1},\phi_{2}\}$
+and $\theta\in\{\theta_{1},\theta_{2}\}$ respectively. To implement
+this, we note that the action of $\hat{U}(\theta)$ is to introduce
+a phase difference between the $\left|0'\right\rangle $ and $\left|1'\right\rangle $
+states. By construction, $\left|0'\right\rangle $ and $\left|1'\right\rangle $
+are spatially disjoint; thus the operation of $\hat{U}(\theta)$ can
+be implemented by simply placing alternating glass slabs at the slits,
+with widths such that $\left|0'\right\rangle \to e^{i\theta/2}\left|0'\right\rangle $
+and $\left|1'\right\rangle \to e^{-i\theta/2}\left|1'\right\rangle $.
+The same operation maybe done for $\hat{U}(\phi)$ for the second
+particle. In the overall scheme, as shown in figure \ref{fig:scheme},
+this is done by the glass slabs right after the birefringent crystals.
+
+
+\subsection{Measurement}
+
+The scheme requires us to evaluate the expectation value of $\hat{X}\otimes\hat{X}$
+(after the measurement settings have been applied by the appropriate
+unitaries). If from the experiment, we can obtain the probability
+$\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$,
+then evaluating $\left\langle \hat{X}\otimes\hat{X}\right\rangle =\left\langle \cos(pL/\hbar)\otimes\cos(pL/\hbar)\right\rangle $
+simply amounts to $\int dp'_{A}dp'_{B}\cos(p'_{A}L/\hbar)\cos(p'_{B}L/\hbar)\left|\left\langle p'_{A},p'_{B}|\psi'_{f}\right\rangle \right|^{2}$.
+Here $f$ is used to index which of the four possible measurement
+settings was used. 
+
+Therefore it is sufficient to explain how to obtain the joint momentum
+probability distribution from the experiment, for a given measurement
+setting. We start with stating the result that 
+\[
+\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p'_{A}=\frac{p_{z}x'_{A}}{D},p'_{B}=\frac{p_{z}x'_{B}}{D}|\psi'_{f}\right\rangle \right|^{2}
+\]
+ where $\left|\psi'_{f\,\text{screen}}\right\rangle $ is the state
+of the system at the screen, $D$ is the distance between the gratings
+and the screens and $p_{z}$ is the $z$ component of momentum of
+the particle. For a photon, $p_{z}=h/\lambda$ while for an electron,
+$p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen
+from the grating. The idea is simply that the momentum distribution
+at the grating can be recovered by observing the spatial distribution
+at a screen, sufficiently far away.
+
+In an experiment then, there are two possibilities. \\
+(a) Given $f$, Alice and Bob both note the position at which they
+obtain their particle. After repeating the experiment sufficiently
+many times, they share their list to create a sequence $\{\left(x{}_{A}^{(i)},x_{B}^{(i)}\right)\}$.
+From this sequence, they create a 2D histogram, by simply counting
+how many time they got $(x'_{A},x'_{B})$ to lie inside a given cell.
+The normalized result is essentially $\left|\left\langle x'_{A},x'_{B}|\psi'_{f\,\text{screen}}\right\rangle \right|^{2}$
+from which $\left\langle X\otimes X\right\rangle $ can be computed
+as discussed. $f$ is changed to evaluate all the 4 terms to finally
+obtain $\left\langle C\right\rangle $ experimentally. \\
+(b) The other simpler and direct possibility is that Alice and Bob
+both obtain the position, $\{x_{A}^{(i)},x_{B}^{(i)}\}$ for the $i$th
+repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and $\cos(p_{B}^{(i)}L/\hbar)$.
+After sufficient iterations, they exchange their observations to simply
+evaluate the average, viz. 
+\[
+\frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\left\langle C\right\rangle 
+\]
+
+
+
+\section{Conclusion}
+
+We have shown how to realize a Bell test in continuous variables position
+and momentum using specifically chosen and physically realizable states.
+In addition it has been demonstrated that the exact pauli commutation
+relations aren't necessary to capture the essence of non-locality;
+infact by relaxing the similarity, the set of states that show a violation
+is made considerably larger.
+
+
+\section{Appendix}
+
+
+\subsection*{Remarks}
+
+Illustration(1): 
+
+This is trival if one uses the Bloch sphere picture. Instead of measuring
+along an arbitrary axis, we rotate the Bloch sphere appropriately,
+and then measure $x$. To illustrate this, consider
+\begin{lyxlist}{a}
+\item [{Questn:}] $\exists\,\text{a}\, U,\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =U\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|x\right|\chi\right\rangle =\left\langle \chi'\left|y\right|\chi'\right\rangle $?
+\\
+Explicitly, we have 
+\begin{eqnarray*}
+y & = & U^{\dagger}xU=e^{-iz\theta/2}xe^{iz\theta/2}\\
+ & = & xe^{iz\theta}=\left[\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right]\left[\begin{array}{cc}
+e^{i\theta} & 0\\
+0 & e^{-i\theta}
+\end{array}\right]\\
+ & = & \left[\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right]
+\end{eqnarray*}
+for $\theta=\pi/2$ as one would guess geometrically. 
+\end{lyxlist}
+
+\subsection*{Proofs}
+\begin{lyxlist}{a}
+\item [{Claim(1):}] If$\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$,
+then$\left|\psi\right\rangle =\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}$
+\item [{Proof:}] Trivial.
+\item [{Claim(2):}] $\left\langle x\otimes x\right\rangle =-1$, for $\left|\psi\right\rangle $
+in Claim(1)
+\item [{Proof:}] Trivial
+\item [{Claim(3):}] $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\item [{Proof:}] 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
+ & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\\
+ &  & \Bigg[\frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
+ &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\Bigg]
+\end{eqnarray*}
+We define, $\delta\equiv\phi-\theta$ and using claim(1), it follows
+that only terms like $\left|+-\right\rangle $ or $\left|-+\right\rangle $;
+so
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \psi\right|x\otimes x\\
+ &  & \left[\frac{e^{i\delta}\left(\frac{\left|+-\right\rangle -\left|-+\right\rangle }{2}\right)-e^{-i\delta}\left(\frac{-\left|+-\right\rangle +\left|-+\right\rangle }{2}\right)}{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\left[\frac{e^{i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)+e^{-i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\right]\\
+ & =- & \frac{e^{i\delta}+e^{-i\delta}}{2}\\
+ & =- & \cos(\phi-\theta)
+\end{eqnarray*}
+where we've used claim(2).
+\item [{Claim(4):}] With definitions from section 3, without taking the
+large $N$ limit,\\
+$\left\langle +'\left|X\right|+'\right\rangle =\frac{N-1}{N}$, $\left\langle -'\left|X\right|-'\right\rangle =-\frac{N-1}{N}$\\
+$\left\langle 0'\left|X\right|0'\right\rangle =0$, $\left\langle 1'\left|X\right|1'\right\rangle =0$\\
+$\left\langle 1'\left|X\right|0'\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0'\left|X\right|1'\right\rangle $\\
+$\left\langle -\left|X\right|+\right\rangle =\frac{-\left\langle 1\left|X\right|0\right\rangle +\left\langle 0\left|X\right|1\right\rangle }{2}=0=\left\langle +\left|X\right|-\right\rangle $\\
+$\left\langle \psi\left|X\otimes X\right|\psi\right\rangle =\frac{\left\langle +\left|X\right|+\right\rangle \left\langle -\left|X\right|-\right\rangle +\left\langle -\left|X\right|-\right\rangle \left\langle +\left|X\right|+\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
+\item [{Proof:}] Trivial.
+\item [{Claim(5):}] $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+\item [{Proof:}] We start with defining $\phi\equiv\phi_{i}$ , $\theta\equiv\theta_{i}$,
+$\delta\equiv\phi-\theta$, $\delta'\equiv\delta/2$. Next, we note
+that $\text{LHS}=\left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle $
+where $\left|\Psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\Psi\right\rangle $.
+\begin{eqnarray*}
+\left|\Psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\\
+ &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\\
+ & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle +\left|+'-'\right\rangle -\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
+ &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle -\left|+'-'\right\rangle +\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
+ & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|+'+'\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+'-'\right\rangle \\
+ &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'+'\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'-'\right\rangle 
+\end{eqnarray*}
+Now using claim(4), we have
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle \\
+ & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
+ &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\frac{1}{2}\left[2\left(\cos^{2}\delta/2-\sin^{2}\delta/2\right)\right]\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\cos\left(\delta\right)
+\end{eqnarray*}
+
+\item [{Claim(8):}] Action of $\hat{x}_{mod2L}$ can be defined explicitly
+\item [{Proof:}] $\hat{x}_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$.
+To arrive at this more carefully, consider the operator $e^{i\hat{x}\frac{2\pi}{2L}}$.
+Note that $e^{i\hat{x}\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $.
+Thus, $\hat{x}_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $,
+consequently on the most general state $\left|f\right\rangle \equiv\int dx'f_{x'}\left|x'\right\rangle $
+then, we'd have $\hat{x}_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $. 
+\item [{Remark:}] One needn't necessarily consider eigenstates of $\hat{x}$
+to define the action. Eigenstates of $e^{i\hat{x}\frac{2\pi}{2L}}$
+maybe considered instead; they can be expressed as (a) $\left|\varphi\right\rangle ,\, s.t.\,\left\langle p+\frac{h}{2L}|\varphi\right\rangle =\left\langle p|\varphi\right\rangle ,\,\forall\, p\in\mathbb{R}$
+or (b) $\left|\bar{x}\right\rangle \propto\sum_{n\in\mathbb{Z}}\left|\bar{x}+n2L\right\rangle $.
+Using the second expression, we have $e^{i\hat{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $.
+Thus on a more general state, $\left|c\right\rangle \equiv\int_{0}^{2L}d\bar{x}c_{\bar{x}}\left|\bar{x}\right\rangle $,
+we have $\hat{x}_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $. \end{lyxlist}
+
+\end{document}
