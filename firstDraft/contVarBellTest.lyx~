@@ -265,8 +265,7 @@ Consider: (a) Two particles are described by
 \begin_inset Formula $\left|\psi\right\rangle $
 \end_inset
 
-, (b) the first particle is with Alice, second with Bob, and (c) Alice measures
- 
+ and (b) Alice measures 
 \begin_inset Formula $\hat{z}$
 \end_inset
 
@@ -347,9 +346,7 @@ Note that (ii) is equivalent to measuring along any direction.
 
 \begin_layout Labeling
 \labelwidthstring a
-Explicitly then, consider: (a) The first qubit is with Alice and the second
- is with Bob.
- (b) Alice and Bob apply local unitaries 
+Explicitly then, consider: (a) Alice and Bob apply local unitaries 
 \begin_inset Formula $e^{i\hat{z}\theta/2}\otimes I$
 \end_inset
 
@@ -362,7 +359,7 @@ Explicitly then, consider: (a) The first qubit is with Alice and the second
 \end_inset
 
 .
- (c) Alice can choose 
+ (b) Alice can choose 
 \begin_inset Formula $\theta\in\{0,\pi/2\}$
 \end_inset
 
@@ -370,9 +367,9 @@ Explicitly then, consider: (a) The first qubit is with Alice and the second
 \begin_inset Formula $\phi\in\{\pi/4,\pi/4+\pi/2\}$
 \end_inset
 
-; see Table 
+; see table 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "mesSch1"
 
 \end_inset
@@ -605,12 +602,7 @@ Angle
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Measurement Scheme
-\end_layout
-
-\end_inset
-
-
+Measurement Scheme 
 \begin_inset CommandInset label
 LatexCommand label
 name "mesSch1"
@@ -625,17 +617,31 @@ name "mesSch1"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Now it remains to show that this scheme also violates the Bell inequality
  (and by the same value).
- To that end, we state a result.
+ To that end, we state a result (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c3"
+
+\end_inset
+
+).
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Claim(3): 
-\begin_inset Formula $\left\langle e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\otimes e^{-i\hat{z}\phi/2}\hat{x}e^{i\hat{z}\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\otimes e^{-i\hat{z}\phi/2}\hat{x}e^{i\hat{z}\phi/2}\right\rangle =-\cos(\phi-\theta)
+\]
+
 \end_inset
 
 
@@ -645,9 +651,7 @@ Claim(3):
 Given that, it is straight forward to evaluate
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-CHSH: 
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \left\langle C\right\rangle  & = & \left\langle a_{1}b_{1}\right\rangle +\left\langle a_{1}b_{2}\right\rangle +\left\langle a_{2}b_{1}\right\rangle -\left\langle a_{2}b_{2}\right\rangle \\
@@ -660,18 +664,13 @@ CHSH:
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Remark: This is a violation since 
+\begin_layout Standard
+This is still a violation since 
 \begin_inset Formula $\left|\left\langle C\right\rangle \right|=2\sqrt{2}\nleq2$
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-However, to convert this to a more conventional form, we simply redefine
+ However, to convert this to a more conventional form, we simply redefine
  the angles 
 \begin_inset Formula $\theta$
 \end_inset
@@ -703,9 +702,9 @@ Substn:
 \begin_inset Formula $\phi\to\phi'=\phi+\pi/2,\,\theta\to\theta'=\theta-\pi/2$
 \end_inset
 
-; see Table 
+; see table 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "mesSch2"
 
 \end_inset
@@ -904,15 +903,15 @@ Angle
 \begin_inset Caption
 
 \begin_layout Plain Layout
-`Corrected' Measurement Scheme
-\end_layout
+`Corrected' Measurement Scheme 
+\begin_inset CommandInset label
+LatexCommand label
+name "mesSch2"
 
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "mesSch2"
+\end_layout
 
 \end_inset
 
@@ -928,10 +927,10 @@ Now we have
 .
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
-Concln: The violation of the Bell spin state can be equivalently be obtained
- by the measurement of 
+\begin_layout Standard
+In conclusion, we have shown that, in the spin setting, the violation of
+ the Bell inequality can be equivalently obtained by the measurement of
+ 
 \begin_inset Formula $\hat{x}$
 \end_inset
 
@@ -983,7 +982,7 @@ variable
 \end_inset
 
 , then we get precisely the bound needed for the CHSH inequality.
- We chose the factor so that for 
+ We chose the constant factors so that for 
 \begin_inset Formula $p_{mod}=h/L$
 \end_inset
 
@@ -1035,8 +1034,8 @@ The idea was that the obvious generalization for obtaining an appropriate
 \end_inset
 
 .
- The action of the operator will guide us in creating the appropriate states
- in the next sub section.
+ While by construction this is bounded, the action of displacement operators
+ will guide us in creating the appropriate states in the next sub section.
 \end_layout
 
 \begin_layout Subsection
@@ -1044,8 +1043,27 @@ Violation in Continuous Variable State
 \end_layout
 
 \begin_layout Standard
-We start with constructing continuous variable kets that satisfy the same
- orthogonality and mutual relations as 
+We start with constructing continuous variable kets
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We emphasise that the kets we construct, will not be a countable superposition
+ of eigenstates of 
+\begin_inset Formula $p$
+\end_inset
+
+ or 
+\begin_inset Formula $x$
+\end_inset
+
+ since these are highly idealized and strictly, not even a part of the Hilbert
+ space.
+\end_layout
+
+\end_inset
+
+ that satisfy the same orthogonality and mutual relations as 
 \begin_inset Formula $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $
 \end_inset
 
@@ -1068,26 +1086,6 @@ Defn:
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-We emphasise that the kets we construct, will not be a countable superposition
- of eigenstates of 
-\begin_inset Formula $p$
-\end_inset
-
- or 
-\begin_inset Formula $x$
-\end_inset
-
- since these are highly idealized and strictly, not even a part of the Hilbert
- space.
 \end_layout
 
 \end_inset
@@ -1123,6 +1121,113 @@ some length scale,
 \end_inset
 
 number of slits
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/zeroOne.svg
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(a) 
+\begin_inset Formula $\left\langle x|0'\right\rangle $
+\end_inset
+
+ (dashed) and 
+\begin_inset Formula $\left\langle x|1'\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/plus.svg
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(b) 
+\begin_inset Formula $\left\langle x|+'\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/minus.svg
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(c) 
+\begin_inset Formula $\left\langle x|-'\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Illustration of 
+\begin_inset Formula $\left|\pm'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
+\end_inset
+
+ states for 
+\begin_inset Formula $N=4,\, L=1$
+\end_inset
+
+ unit.
+ The 
+\begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
+\end_inset
+
+ states are not normalized.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:wavefns"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
@@ -1197,7 +1302,14 @@ Defn:
 \end_layout
 
 \begin_layout Standard
-Using these states, we construct the analogues of the 
+Using these states, as illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:wavefns"
+
+\end_inset
+
+, we construct the analogues of the 
 \begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
@@ -1223,6 +1335,16 @@ Remark: Definition of
 \end_inset
 
 .
+ Also note that from the illustration, it is obvious that to physically
+ realize 
+\begin_inset Formula $\left|\pm'\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $2N$
+\end_inset
+
+ slits will be required.
 \end_layout
 
 \begin_layout Labeling
@@ -1341,8 +1463,8 @@ Defn:
 \end_layout
 
 \begin_layout Standard
-This can achieved in principle using alternate glass slabs (capacitors)
- for photons (fermions) to adjust the relative phase as desired, since 
+This can achieved in principle using alternate glass slabs for photons,
+ to adjust the relative phase as desired, since 
 \begin_inset Formula $\left|0'\right\rangle $
 \end_inset
 
@@ -1570,9 +1692,9 @@ Thus obviously then,
 \begin_inset Formula $N\ge7$
 \end_inset
 
-; see Figure 
+; see figure 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "chshViolation"
 
 \end_inset
@@ -1587,30 +1709,43 @@ Validating phase space behaviour
 \begin_layout Standard
 In the past, it has been shown that one can arrive at the violation of Bell
  inequalities in continuous variable systems.
- One issue concerning these is that the wigner function corresponding to
- the observable operators, are unbounded.
+ One issue concerning some of these approaches is that the wavefunction
+ used is highly idealized and not normalizable, such as 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|q\right\rangle $
+\end_inset
+
+ or their countable superposition.
+ Another issue in certain other approaches, is that the wigner function
+ corresponding to the observables, are unbounded.
  An example of this is parity.
- Note that the Wigner function for a physical state 
+ Note that while the Wigner function for a physical state 
 \begin_inset Formula $\rho$
 \end_inset
 
- has an upper bound.
- Here however, we are simply using the prescription to evaluate it for unitary
- operators.
+ has an upper bound, here we are simply using the prescription to evaluate
+ the same for hermitian operators.
 \end_layout
 
 \begin_layout Standard
 We care because wigner functions maybe thought of as a specific case of
- the Wigner-Weyl correspondence, which relates classical functions to their
- corresponding quantum operators.
+ the Wigner-Weyl correspondence, which is a one-one map between classical
+ functions and their corresponding quantum operators.
  Thus, in a phase-space description of quantum mechanics, it is important
- to show that it is not necessary to have unboundedness to show a violation
- of the Bell's inequality, and thereby non-locality.
+ to show that it is not necessary to have unboundedness in observables to
+ arrive a violation of the Bell's inequality, and thereby non-locality.
  
 \end_layout
 
 \begin_layout Standard
-Our set of permissible states is manifestly bounded.
+In our case, 
+\begin_inset Formula $\left|\Psi\right\rangle $
+\end_inset
+
+ is manifestly normalized.
  We must show that the observable in our case, given by 
 \begin_inset Formula $\hat{U}^{\dagger}(\phi)\hat{X}\hat{U}(\phi)$
 \end_inset
@@ -1811,8 +1946,8 @@ where
  This manifests in the other commutation relations 
 \begin_inset Formula 
 \begin{eqnarray*}
-[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
-[\hat{Y},\hat{Z}] & = & -2i\hat{X}
+[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\
+{}[\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
 
 \end_inset
@@ -1842,7 +1977,7 @@ Further, note that
 as was necessary.
  Ofcourse this is not sufficient, however we have shown explicitly the violation.
  This evaluation was meant to illuminate that the source of violation essentiall
-y hinges on the non-commutativity of 
+y hinges on 
 \begin_inset Formula $[\hat{x}_{mod2L},\hat{p}_{modL}]\neq0$
 \end_inset
 
@@ -1906,7 +2041,7 @@ Considering the operator (non-hermitian for simplicity)
 \begin_inset Formula $Z(\hat{x}_{mod2L})$
 \end_inset
 
- which causes a larger set of physically realizable states become admissible.
+ which causes a larger set of physically realizable states to become admissible.
 \end_layout
 
 \begin_layout Standard
@@ -1933,9 +2068,9 @@ reference "sub:c7"
 \end_inset
 
 ).
- The overall setup (see figure 
+ The overall setup (see 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:scheme"
 
 \end_inset
@@ -1995,9 +2130,9 @@ The desired entangled state is
 \end_inset
 
 .
- In figure 
+ In 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:scheme"
 
 \end_inset
@@ -2010,14 +2145,11 @@ reference "fig:scheme"
  state, just after the grating.
  To produce the desired entangled state, we start with two entangled photons,
  such that their polarization state can be expressed as 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}
-\]
-
+\begin_inset Formula $\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}$
 \end_inset
 
-Their spatial description (along 
+.
+ Their spatial description (along 
 \begin_inset Formula $x$
 \end_inset
 
@@ -2026,20 +2158,35 @@ Their spatial description (along
 \end_inset
 
 .
- The state 
+ Thus the initial state is 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The state 
 \begin_inset Formula $\left|\gamma\right\rangle $
 \end_inset
 
- maybe considered to be a guassian with 
+ maybe considered to be a Gaussian with 
 \begin_inset Formula $\sigma\gg2NL$
 \end_inset
 
  so that after the grating, the spatial state can be written as 
-\begin_inset Formula $\left|\zeta_{\text{grating}}\right\rangle =\left|+'+'\right\rangle $
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
+\]
+
 \end_inset
 
-.
- Now comes the interesting part.
+Now comes the interesting part.
  To produce a 
 \begin_inset Formula $\left|-'\right\rangle $
 \end_inset
@@ -2051,43 +2198,26 @@ Their spatial description (along
 \end_inset
 
  for a horizontally polarized beam and 
-\begin_inset Formula $\eta_{V}=\eta\neq0$
+\begin_inset Formula $\eta_{V}=\eta\neq1$
 \end_inset
 
  for vertical polarization, then we could harness the entangled polarization
  state to create the required spatially entangled state.
  Birefringent crystals have such polarization dependent refractive indices.
  Assume that alternating birefringent crystals have been placed after both
- the gratings as shown in figure 
+ the gratings as shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:scheme"
 
 \end_inset
 
- (in the diagram, they're not alternating though).
+ (in the diagram, they're not alternating though as will be explained shortly).
  These have width such that the resultant phase it introduces is 
 \begin_inset Formula $\pi$
 \end_inset
 
-.
- The combined initial state is given by 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
-\]
-
-\end_inset
-
-After the grating, the state is 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
-\]
-
-\end_inset
-
-And finally after the crystals, the combined state becomes 
+ and the state is 
 \begin_inset Formula 
 \[
 \left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|+'-'\right\rangle -\left|VH\right\rangle \left|-'+'\right\rangle }{\sqrt{2}}
@@ -2098,9 +2228,9 @@ And finally after the crystals, the combined state becomes
 At this stage, if we were to trace out the polarization state, we'd end
  up with a mixed state.
  That is useless for our test.
- Ignoring the glass slabs at the moment in figure 
+ Ignoring the glass slabs at the moment in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:scheme"
 
 \end_inset
@@ -2110,7 +2240,14 @@ reference "fig:scheme"
 \begin_inset Formula $45^{0}$
 \end_inset
 
- polariser, the state becomes 
+ polariser, the state becomes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c8"
+
+\end_inset
+
+) 
 \begin_inset Formula 
 \begin{eqnarray*}
 \left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & \propto & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
@@ -2241,9 +2378,9 @@ In our scheme, Alice and Bob can choose
 \end_inset
 
  for the second particle.
- In the overall scheme, as shown in figure 
+ In the overall scheme, as shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:scheme"
 
 \end_inset
@@ -2290,7 +2427,7 @@ The scheme requires us to evaluate the expectation value of
 \begin_layout Standard
 Therefore it is sufficient to explain how to obtain the joint momentum probabili
 ty distribution from the experiment, for a given measurement setting.
- We start with stating the result that 
+ We start with stating the result that in the far-field approximation, 
 \begin_inset Formula 
 \[
 \left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}x{}_{A}}{D},p{}_{B}=\frac{p_{z}x{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}
@@ -2396,8 +2533,11 @@ th repetition and evaluate
 \end_inset
 
 .
- After sufficient iterations, they exchange their observations to simply
- evaluate the average, viz.
+ After sufficient iterations (for all values of 
+\begin_inset Formula $f$
+\end_inset
+
+), they exchange their observations to simply evaluate the average, viz.
  
 \begin_inset Formula 
 \[
@@ -2866,6 +3006,49 @@ If we can show that the basic components used to describe the photon setup
  meet again.
  This will effectively act as a Birefringent crystal, since the phase difference
  is spin dependent.
+\end_layout
+
+\begin_layout Subsubsection
+Action of a polariser
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c8"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we define 
+\begin_inset Formula $\left|H'\right\rangle \equiv\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},$
+\end_inset
+
+
+\begin_inset Formula $\left|V'\right\rangle \equiv-\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ and the 
+\begin_inset Formula $45^{\ocircle}$
+\end_inset
+
+ projector as 
+\begin_inset Formula $\left|H'\right\rangle \left\langle H'\right|$
+\end_inset
+
+, then both 
+\begin_inset Formula $\left|H\right\rangle \to\left|H'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|V\right\rangle \to\left|H'\right\rangle $
+\end_inset
+
+ where ofcourse with a probability 
+\begin_inset Formula $1/2$
+\end_inset
+
+, the photon will be lost.
 \end_layout
 
 \end_body
