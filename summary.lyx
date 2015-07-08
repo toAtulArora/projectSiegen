@@ -7317,5 +7317,60 @@ This formulation is correct because it is here that the question of decoherence
 Health
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Gym usual
+\end_layout
+
+\begin_layout Itemize
+heavy diet | stomach issues
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Wednesday, July 8
+\end_layout
+
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+added more plots using mathematica
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename mathematicaWaveFnPlots.png
+	BoundingBox 70bp 0bp 800bp 1200bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Fixed some English
+\end_layout
+
+\begin_layout Itemize
+Rewrote chunks for Physical Implementation, Phase Space behaviour etc.
+\end_layout
+
+\begin_layout Itemize
+Ali pointed out two typos, which I overlooked despite proof reading it a
+ minute ago and making some other corrections!
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document

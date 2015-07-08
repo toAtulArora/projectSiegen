@@ -26,7 +26,8 @@
 %\newcommand{\Plus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0.5,0) -- (0.5,1)(0,0.5) -- (1,0.5);}}
 %\newcommand{\Minus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0,0.5) -- (1,0.5);}}
 \end_preamble
-\use_default_options true
+\options pra,twocolumn,superscriptaddress
+\use_default_options false
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -78,9 +79,9 @@
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
-\papercolumns 2
+\papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle default
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -992,7 +993,7 @@ variable
 
  function also completes a period.
  Note that 
-\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{\sqrt{2}}$
+\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$
 \end_inset
 
 .
@@ -1030,7 +1031,7 @@ Next, recall that in quantum mechanics, the momentum that's quantized, is
 \begin_layout Standard
 The idea was that the obvious generalization for obtaining an appropriate
  operator for the CHSH inequality is 
-\begin_inset Formula $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{i\hat{p}L/\hbar}}{\sqrt{2}}$
+\begin_inset Formula $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$
 \end_inset
 
 .
@@ -1211,14 +1212,17 @@ Illustration of
 \end_inset
 
  states are not normalized.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:wavefns"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -1299,7 +1303,14 @@ Defn:
 \end_layout
 
 \begin_layout Standard
-Using these states, we construct the analogues of the 
+Using these states, as illustrated in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:wavefns"
+
+\end_inset
+
+, we construct the analogues of the 
 \begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
@@ -1325,6 +1336,16 @@ Remark: Definition of
 \end_inset
 
 .
+ Also note that from the illustration, it is obvious that to physically
+ realize 
+\begin_inset Formula $\left|\pm'\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $2N$
+\end_inset
+
+ slits will be required.
 \end_layout
 
 \begin_layout Labeling
@@ -1443,8 +1464,8 @@ Defn:
 \end_layout
 
 \begin_layout Standard
-This can achieved in principle using alternate glass slabs (capacitors)
- for photons (fermions) to adjust the relative phase as desired, since 
+This can achieved in principle using alternate glass slabs for photons,
+ to adjust the relative phase as desired, since 
 \begin_inset Formula $\left|0'\right\rangle $
 \end_inset
 
@@ -1957,7 +1978,7 @@ Further, note that
 as was necessary.
  Ofcourse this is not sufficient, however we have shown explicitly the violation.
  This evaluation was meant to illuminate that the source of violation essentiall
-y hinges on the non-commutativity of 
+y hinges on 
 \begin_inset Formula $[\hat{x}_{mod2L},\hat{p}_{modL}]\neq0$
 \end_inset
 
@@ -2125,14 +2146,11 @@ reference "fig:scheme"
  state, just after the grating.
  To produce the desired entangled state, we start with two entangled photons,
  such that their polarization state can be expressed as 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}
-\]
-
+\begin_inset Formula $\left|\chi\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}$
 \end_inset
 
-Their spatial description (along 
+.
+ Their spatial description (along 
 \begin_inset Formula $x$
 \end_inset
 
@@ -2141,20 +2159,35 @@ Their spatial description (along
 \end_inset
 
 .
- The state 
+ Thus the initial state is 
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The state 
 \begin_inset Formula $\left|\gamma\right\rangle $
 \end_inset
 
- maybe considered to be a guassian with 
+ maybe considered to be a Gaussian with 
 \begin_inset Formula $\sigma\gg2NL$
 \end_inset
 
  so that after the grating, the spatial state can be written as 
-\begin_inset Formula $\left|\zeta_{\text{grating}}\right\rangle =\left|+'+'\right\rangle $
+\begin_inset Formula 
+\[
+\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
+\]
+
 \end_inset
 
-.
- Now comes the interesting part.
+Now comes the interesting part.
  To produce a 
 \begin_inset Formula $\left|-'\right\rangle $
 \end_inset
@@ -2166,7 +2199,7 @@ Their spatial description (along
 \end_inset
 
  for a horizontally polarized beam and 
-\begin_inset Formula $\eta_{V}=\eta\neq0$
+\begin_inset Formula $\eta_{V}=\eta\neq1$
 \end_inset
 
  for vertical polarization, then we could harness the entangled polarization
@@ -2180,29 +2213,12 @@ reference "fig:scheme"
 
 \end_inset
 
- (in the diagram, they're not alternating though).
+ (in the diagram, they're not alternating though as will be explained shortly).
  These have width such that the resultant phase it introduces is 
 \begin_inset Formula $\pi$
 \end_inset
 
-.
- The combined initial state is given by 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle \left|\zeta\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle 
-\]
-
-\end_inset
-
-After the grating, the state is 
-\begin_inset Formula 
-\[
-\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
-\]
-
-\end_inset
-
-And finally after the crystals, the combined state becomes 
+ and the state is 
 \begin_inset Formula 
 \[
 \left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|+'-'\right\rangle -\left|VH\right\rangle \left|-'+'\right\rangle }{\sqrt{2}}
@@ -2225,7 +2241,14 @@ reference "fig:scheme"
 \begin_inset Formula $45^{0}$
 \end_inset
 
- polariser, the state becomes 
+ polariser, the state becomes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:c8"
+
+\end_inset
+
+) 
 \begin_inset Formula 
 \begin{eqnarray*}
 \left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & \propto & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
@@ -2405,7 +2428,7 @@ The scheme requires us to evaluate the expectation value of
 \begin_layout Standard
 Therefore it is sufficient to explain how to obtain the joint momentum probabili
 ty distribution from the experiment, for a given measurement setting.
- We start with stating the result that 
+ We start with stating the result that in the far-field approximation, 
 \begin_inset Formula 
 \[
 \left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}x{}_{A}}{D},p{}_{B}=\frac{p_{z}x{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}
@@ -2511,8 +2534,11 @@ th repetition and evaluate
 \end_inset
 
 .
- After sufficient iterations, they exchange their observations to simply
- evaluate the average, viz.
+ After sufficient iterations (for all values of 
+\begin_inset Formula $f$
+\end_inset
+
+), they exchange their observations to simply evaluate the average, viz.
  
 \begin_inset Formula 
 \[
@@ -2981,6 +3007,49 @@ If we can show that the basic components used to describe the photon setup
  meet again.
  This will effectively act as a Birefringent crystal, since the phase difference
  is spin dependent.
+\end_layout
+
+\begin_layout Subsubsection
+Action of a polariser
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:c8"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we define 
+\begin_inset Formula $\left|H'\right\rangle \equiv\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},$
+\end_inset
+
+
+\begin_inset Formula $\left|V'\right\rangle \equiv-\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ and the 
+\begin_inset Formula $45^{\ocircle}$
+\end_inset
+
+ projector as 
+\begin_inset Formula $\left|H'\right\rangle \left\langle H'\right|$
+\end_inset
+
+, then both 
+\begin_inset Formula $\left|H\right\rangle \to\left|H'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|V\right\rangle \to\left|H'\right\rangle $
+\end_inset
+
+ where ofcourse with a probability 
+\begin_inset Formula $1/2$
+\end_inset
+
+, the photon will be lost.
 \end_layout
 
 \end_body
