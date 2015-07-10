@@ -7342,19 +7342,14 @@ Draft
 
 \begin_deeper
 \begin_layout Itemize
-added more plots using mathematica
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Graphics
-	filename mathematicaWaveFnPlots.png
-	BoundingBox 70bp 0bp 800bp 1200bp
-	clip
+added more plots using mathematica (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Wavefunctions"
 
 \end_inset
 
-
+) 
 \end_layout
 
 \begin_layout Itemize
@@ -7365,7 +7360,193 @@ Fixed some English
 Rewrote chunks for Physical Implementation, Phase Space behaviour etc.
 \end_layout
 
+\begin_layout Itemize
+Ali pointed out two typos, which I overlooked despite proof reading it a
+ minute ago and making some other corrections!
+\end_layout
+
+\begin_layout Itemize
+Tried to plot the wigner function, but mathematica fails to integrate, even
+ numerically
+\end_layout
+
 \end_deeper
 \end_deeper
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stomach issue, had to come back
+\end_layout
+
+\begin_layout Itemize
+Smaller food intake (obviously)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename mathematicaWaveFnPlots.png
+	lyxscale 30
+	width 12cm
+	BoundingBox 70bp 0bp 800bp 1200bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Wavefunctions
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Wavefunctions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Thursday, July 9 | [unwell]
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stomach issue
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Official
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured out how to do the GRE registration
+\end_layout
+
+\begin_layout Itemize
+Need information about which universities to send the score to
+\end_layout
+
+\begin_layout Itemize
+Discussed some strategies
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, July 10
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured the stomach issue was caused by the meat gone bad (because of extra
+ heat)
+\end_layout
+
+\begin_layout Itemize
+Extra sleep fixed everything
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Work
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Working on obtaining the wigner function for my state
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Doesn't work with mathematica
+\end_layout
+
+\begin_layout Itemize
+Wrote it again in Matlab (easier since mathematica's code guided) and obtained
+ a wigner function for a given 
+\begin_inset Formula $\{x_{1},x_{2}\}$
+\end_inset
+
+ 
+\begin_inset Formula $W(p_{1},p_{2},x_{1},x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Also plotted the state 
+\begin_inset Formula $\Psi(x_{1},x_{2})$
+\end_inset
+
+ as shown in 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The entangled state
+\begin_inset Formula $\Psi(x_{1},x_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

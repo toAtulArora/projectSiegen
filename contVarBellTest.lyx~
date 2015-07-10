@@ -1,0 +1,1858 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass revtex4
+\begin_preamble
+%\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%%\renewcommand*{\thefootnote}{\arabic{footnote}}
+%\setcounter{footnote}{0}
+%\usepackage{perpage} %the perpage package
+%\MakePerPage{footnote} %the perpage package command
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Bell Test with Continuous Variables (Report)
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Address
+University of Siegen, Germany
+\end_layout
+
+\begin_layout Address
+Indian Institute of Science Education & Research, Mohali, India
+\end_layout
+
+\begin_layout Author
+Ali Asadian
+\end_layout
+
+\begin_layout Address
+University of Siegen, Germany
+\end_layout
+
+\begin_layout Date
+May-July 2015
+\end_layout
+
+\begin_layout Abstract
+We show the violation of the Bell inequality in a more classical setting
+ than the usual quantum spin, viz.
+ with continuous variables 
+\begin_inset Formula $x,\, p$
+\end_inset
+
+.
+ This is achieved using modular momentum and position.
+ Assuming the state, experimental realization of the measurement scheme
+ has also been delineated.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The Bell inequality is a statement about the statistical outcomes of a certain
+ class of experiments.
+ The inequality was formulated by assuming the most general `local theory'.
+ Any violation of the inequality would imply that local realism must be
+ false.
+ Quantum Mechanics predicts a violation which has been confirmed experimentally.
+ The physical situation for which this violation is usually formulated,
+ uses entangled spin states.
+ Here we show that a violation can be achieved without having to use spins,
+ which is a purely quantum phenomenon; measuring a particle's position is
+ sufficient.
+\end_layout
+
+\begin_layout Section
+Violation in Bell state
+\end_layout
+
+\begin_layout Standard
+Here the violation of Bell's inequality for the typical spin case, is stated
+ in a way that is easier to translate to the continuous variable case.
+ We first state the Bell test in its modern form, known as the CHSH inequality.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Suppose: There are two observers
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+that are often chosen to be sufficiently far away that their measurements
+ don't influence each other
+\end_layout
+
+\end_inset
+
+, Alice and Bob.
+ There are two particles, which are allowed to interact initially and are
+ then separated.
+ Alice takes one, Bob takes the other.
+ Alice can measure one of two properties of her particle, call them 
+\begin_inset Formula $a_{1},\, a_{2}$
+\end_inset
+
+.
+ Similarly Bob can measure 
+\begin_inset Formula $b_{1},\, b_{2}$
+\end_inset
+
+ of his particle.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Notatn: 
+\begin_inset Formula $\left\langle a_{i}b_{j}\right\rangle =$
+\end_inset
+
+Average value obtained when Alice chooses to measure 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ and Bob chooses to measure 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Statemnt: 
+\begin_inset Formula $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle C(a_{i},b_{i})\right\rangle \right|\le2$
+\end_inset
+
+ if local realism is assumed.
+ This result will be referred to as the CHSH inequality.
+ 
+\end_layout
+
+\begin_layout Standard
+Quantum Mechanics predicts a violation of this in the following physical
+ situation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ where the 
+\begin_inset Formula $\left|\pm\right\rangle $
+\end_inset
+
+ states are s.t.
+ 
+\begin_inset Formula $\sigma_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Consider: (a) Two particles are described by 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+, (b) the first particle is with Alice, second with Bob, and (c) Alice measures
+ 
+\begin_inset Formula $z$
+\end_inset
+
+ or 
+\begin_inset Formula $x$
+\end_inset
+
+ while Bob is allowed to choose between 
+\begin_inset Formula $z'$
+\end_inset
+
+ and 
+\begin_inset Formula $x'$
+\end_inset
+
+, where 
+\begin_inset Formula $z'=\frac{-z-x}{\sqrt{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $x'=\frac{z-x}{\sqrt{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Notatn: The Pauli matrices are referred to as 
+\begin_inset Formula $x,\, y,\, z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Result: 
+\begin_inset Formula $\left\langle C((x,z),(x',z'))\right\rangle =2\sqrt{2}\nleq2$
+\end_inset
+
+, which is a violation.
+ 
+\end_layout
+
+\begin_layout Standard
+This value can be reproduced in a slightly modified situation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Modifictn: (i) Due to the symmetry in the setup, we expect the same results
+ hold for 
+\begin_inset Formula $x,\, y$
+\end_inset
+
+ and 
+\begin_inset Formula $x',\, y'$
+\end_inset
+
+ and (ii) we demand that Alice and Bob can only measure 
+\begin_inset Formula $x$
+\end_inset
+
+ but are allowed to perform a local unitary before the measurement.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that (ii) is equivalent to measuring along any direction.
+ Details in the Apendix.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Explicitly then, consider: (a) The first qubit is with Alice and the second
+ is with Bob.
+ (b) Alice and Bob apply local unitaries 
+\begin_inset Formula $e^{iz\theta/2}\otimes I$
+\end_inset
+
+ and 
+\begin_inset Formula $I\otimes e^{iz\phi/2}$
+\end_inset
+
+ respectively and then both measure 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ (c) Alice can choose 
+\begin_inset Formula $\theta\in\{0,\pi/2\}$
+\end_inset
+
+ and Bob can choose 
+\begin_inset Formula $\phi\in\{\pi/4,\pi/4+\pi/2\}$
+\end_inset
+
+; see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "mesSch1"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+These values are motivated by the 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ between 
+\begin_inset Formula $z$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+, & 
+\begin_inset Formula $\pi/4$
+\end_inset
+
+ between 
+\begin_inset Formula $z$
+\end_inset
+
+ and 
+\begin_inset Formula $z'$
+\end_inset
+
+ in the conventional Bell case.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bob
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convention
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Angle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta_{1}=\pi/2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi_{1}=\pi/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi_{2}=\pi/4+\pi/2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Measurement Scheme
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "mesSch1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now it remains to show that this scheme also violates the Bell inequality
+ (and by the same value).
+ To that end, we state a result.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(3): 
+\begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given that, it is straight forward to evaluate
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+CHSH: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle C\right\rangle  & = & \left\langle a_{1}b_{1}\right\rangle +\left\langle a_{1}b_{2}\right\rangle +\left\langle a_{2}b_{1}\right\rangle -\left\langle a_{2}b_{2}\right\rangle \\
+ & = & \left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)-\left(+\frac{1}{\sqrt{2}}\right)\\
+ & = & -2\sqrt{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Remark: This is a violation since 
+\begin_inset Formula $\left|\left\langle C\right\rangle \right|=2\sqrt{2}\nleq2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+However, to convert this to a more conventional form, we simply redefine
+ the angles 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+so that 
+\begin_inset Formula $\phi-\theta\to\phi'-\theta'=\phi-\theta+\pi=\left(\phi+\pi/2\right)-\left(\theta-\pi/2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Substn: 
+\begin_inset Formula $\phi\to\phi'=\phi+\pi/2,\,\theta\to\theta'=\theta-\pi/2$
+\end_inset
+
+; see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "mesSch2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alice
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bob
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Convention
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Angle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta'_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta'_{2}=-\pi/2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi'_{1}=3\pi/8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi'_{2}=5\pi/4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+`Corrected' Measurement Scheme
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "mesSch2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Now we have 
+\begin_inset Formula $\left\langle C\right\rangle =2\sqrt{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Concln: The violation of the Bell spin state can be equivalently be obtained
+ by the measurement of 
+\begin_inset Formula $x$
+\end_inset
+
+ after applying a rotation along 
+\begin_inset Formula $z$
+\end_inset
+
+ by the aforesaid angles.
+\end_layout
+
+\begin_layout Section
+Violation in Continuous Variable State
+\end_layout
+
+\begin_layout Standard
+We start with constructing continuous variable kets that satisfy the same
+ orthogonality and mutual relations as 
+\begin_inset Formula $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Defn: 
+\begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
+\end_inset
+
+ are s.t.
+ 
+\begin_inset Formula $z\left|0\right\rangle =\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $z\left|1\right\rangle =-\left|1\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We emphasise that the kets we construct, will not be a countable superposition
+ of eigenstates of 
+\begin_inset Formula $p$
+\end_inset
+
+ or 
+\begin_inset Formula $x$
+\end_inset
+
+ since these are highly idealized and strictly, not even a part of the Hilbert
+ space.
+\end_layout
+
+\end_inset
+
+ We then construct the relavent operators and finally evaluate 
+\begin_inset Formula $\left\langle C\right\rangle $
+\end_inset
+
+ to show the violation.
+\end_layout
+
+\begin_layout Standard
+To construct the states, we start with some definitions.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Unassume: 
+\begin_inset Formula $x,\, y,\, z$
+\end_inset
+
+ refer to pauli matrices.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $L\equiv$
+\end_inset
+
+some length scale, 
+\begin_inset Formula $N\equiv$
+\end_inset
+
+number of slits
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Consider: A state 
+\begin_inset Formula $\left|\varphi\right\rangle $
+\end_inset
+
+ s.t.
+ (a) 
+\begin_inset Formula $\left\langle x'|\varphi\right\rangle =\left\langle -x'|\varphi\right\rangle $
+\end_inset
+
+ and (b) it's spread is 
+\begin_inset Formula $\ll L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $S_{N}\equiv\{0,1,2,\dots,(N-1)\},\, T_{N}\equiv\{n+\frac{1}{2}\,|\, n\in S_{N}\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\varphi_{n}\right\rangle \equiv\int dx'\left\langle x'-n2L|\varphi\right\rangle \left|x'\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{t\in T_{N}}\left|\varphi_{t}\right\rangle \\
+\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{s\in S_{N}}\left|\varphi_{s}\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using these states, we construct the analogues of the 
+\begin_inset Formula $\left|+\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|-\right\rangle $
+\end_inset
+
+ states.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Remark: Definition of 
+\begin_inset Formula $\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|1'\right\rangle $
+\end_inset
+
+ justify the word `slit' in the definition of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $\left|+'\right\rangle \equiv\frac{\left|0'\right\rangle +\left|1'\right\rangle }{\sqrt{2}},\,\left|-'\right\rangle \equiv\frac{\left|0'\right\rangle -\left|1'\right\rangle }{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+NB: 
+\begin_inset Formula $\left\langle 0'|1'\right\rangle =0,\,\implies\left\langle +'|-'\right\rangle =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With these states, we're in a position to construct the relevant Hermitian
+ operators.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula 
+\[
+X\equiv\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+NB: For sufficiently large 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+X\left|+'\right\rangle  & = & +\left|+'\right\rangle \\
+X\left|-'\right\rangle  & = & -\left|-'\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+just as was with 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We have almost all the cards, except for one that allows for setting {
+\begin_inset Formula $\phi$
+\end_inset
+
+, 
+\begin_inset Formula $\theta$
+\end_inset
+
+}.
+ In the spin case, this was achieved by operating 
+\begin_inset Formula $e^{i\sigma_{z}\phi/2}$
+\end_inset
+
+ on the state before measurement.
+ Correspondingly, here we define this operator by it's action on the relevant
+ state.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Defn: 
+\begin_inset Formula $U(\phi)$
+\end_inset
+
+ is defined to be s.t.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+U(\phi)\left|0'\right\rangle  & = & e^{i\phi/2}\left|0'\right\rangle \\
+U(\phi)\left|1'\right\rangle  & = & e^{-i\phi/2}\left|1'\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This can achieved in principle using alternate glass slabs (capacitors)
+ for photons (fermions) to adjust the relative phase as desired.
+ Alternatively, we could also define 
+\begin_inset Formula $U(\phi)$
+\end_inset
+
+ in its analytic form as
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Alt
+\begin_inset space ~
+\end_inset
+
+Defn: 
+\begin_inset Formula 
+\[
+U(\phi)=e^{iZ(x_{mod2L})\phi/2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $Z(x')\equiv\begin{cases}
+1 & 0<x'\mod2L\le L\\
+-1 & L<x'\mod2L\le2L
+\end{cases}$
+\end_inset
+
+ when 
+\begin_inset Formula $Z$
+\end_inset
+
+ acts on an eigenstate of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{mod2L}$
+\end_inset
+
+ is well defined, see claim 8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+NB: 
+\begin_inset Formula $Z(x_{mod2L})\left|0'\right\rangle =\left|0'\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $Z(x_{mod2L})\left|1'\right\rangle =-\left|1'\right\rangle $
+\end_inset
+
+ viz.
+ 
+\begin_inset Formula $Z(x_{mod2L})$
+\end_inset
+
+ plays the role of 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To evaluate the CHSH inequality, we again need terms of the form 
+\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle $
+\end_inset
+
+.
+ If we assume 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+, these can be evaluated easily to be the same as before 
+\begin_inset Formula $-\cos(\phi_{i}-\theta_{i})$
+\end_inset
+
+.
+ Thus, the same analysis as before yields 
+\begin_inset Formula $\left\langle C\right\rangle =2\sqrt{2}$
+\end_inset
+
+ which is the same maximal violation, in a completely different setup.
+ If 
+\begin_inset Formula $N$
+\end_inset
+
+ is not assumed to be arbitrarily large, then it can be shown that
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Claim(5)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus obviously then, 
+\begin_inset Formula $\left\langle C\right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$
+\end_inset
+
+.
+ If we ask for the smallest 
+\begin_inset Formula $N$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\left\langle C\right\rangle >2$
+\end_inset
+
+, we get 
+\begin_inset Formula $N\ge7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Practically, 
+\begin_inset Formula $N$
+\end_inset
+
+ will be finite.
+ The plot shows 
+\begin_inset Formula $\left\langle C\right\rangle $
+\end_inset
+
+ as a function of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ To get a violation, we need merely 
+\begin_inset Formula $7$
+\end_inset
+
+ slits.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Validating phase space behaviour
+\end_layout
+
+\begin_layout Standard
+In the past, it has been shown that one can arrive at the violation of Bell
+ inequalities in continuous variable systems.
+ One issue concerning these is that the wigner function corresponding to
+ the observable operators, are unbounded.
+ An example of this is parity.
+ Note that the Wigner function for a physical state 
+\begin_inset Formula $\rho$
+\end_inset
+
+ has an upper bound.
+ Here however, we are simply using the prescription to evaluate it for unitary
+ operators.
+\end_layout
+
+\begin_layout Standard
+We care because wigner functions maybe thought of as a specific case of
+ the Wigner-Weyl correspondence, which relates classical functions to their
+ corresponding quantum operators.
+ Thus, in a phase-space description of quantum mechanics, it is important
+ to show that it is not necessary to have unboundedness to show a violation
+ of the Bell's inequality, and thereby non-locality.
+ 
+\end_layout
+
+\begin_layout Standard
+Our set of permissible states is manifestly bounded.
+ We must show that the observable in our case, given by 
+\begin_inset Formula $U^{\dagger}(\phi)XU(\phi)$
+\end_inset
+
+ is also bounded.
+ To that end, we note that 
+\begin_inset Formula 
+\begin{eqnarray*}
+W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(x_{mod2L})\phi/2}\\
+ &  & e^{ip\frac{L}{\hbar}}e^{iZ(x_{mod2L})\phi/2}\left|q'+\frac{q}{2}\right\rangle \\
+ & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q')\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}(q')\phi/2}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $Z_{1/2}(q')=Z[(q'\mp\frac{L}{2})\mod2L]$
+\end_inset
+
+.
+ Similarly one can evaluate 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+ and obtain 
+\begin_inset Formula $W=\left(W_{1}+W_{2}\right)/\sqrt{2}$
+\end_inset
+
+ which corresponds to the observable.
+ Clearly 
+\begin_inset Formula $\left|W\right|\le\left(2\pi\hbar\right)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Source of Violation
+\end_layout
+
+\begin_layout Standard
+In the Bell test done with spins, the source of violation hinges on the
+ anti-commutativity of the pauli matrices.
+ It is known that 
+\begin_inset Formula $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$
+\end_inset
+
+.
+ To obtain a violation, it is therefore necessary that the commutations
+ don't vanish.
+ This is indeed true in our case.
+ Explicitly, I must show that 
+\begin_inset Formula $[U^{\dagger}XU,U'^{\dagger}XU']\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Remark: The non-commutativity in this case is between 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+, which arises from 
+\begin_inset Formula $[x_{mod2L},p_{modL}]\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+TODO: Complete this
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+We have shown how to realize a Bell test in continuous variables position
+ and momentum using specifically chosen and physically realizable states
+ along with modular variables.
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+Remarks
+\end_layout
+
+\begin_layout Standard
+Illustration(1): 
+\end_layout
+
+\begin_layout Standard
+This is trival if one uses the Bloch sphere picture.
+ Instead of measuring along an arbitrary axis, we rotate the Bloch sphere
+ appropriately, and then measure 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ To illustrate this, consider
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Questn: 
+\begin_inset Formula $\exists\,\text{a}\, U,\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =U\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|x\right|\chi\right\rangle =\left\langle \chi'\left|y\right|\chi'\right\rangle $
+\end_inset
+
+? 
+\begin_inset Newline newline
+\end_inset
+
+Explicitly, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & U^{\dagger}xU=e^{-iz\theta/2}xe^{iz\theta/2}\\
+ & = & xe^{iz\theta}=\left[\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right]\left[\begin{array}{cc}
+e^{i\theta} & 0\\
+0 & e^{-i\theta}
+\end{array}\right]\\
+ & = & \left[\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right]
+\end{eqnarray*}
+
+\end_inset
+
+for 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+ as one would guess geometrically.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Proofs
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(1): If
+\begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
+\end_inset
+
+, then
+\begin_inset Formula $\left|\psi\right\rangle =\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: Trivial.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(2): 
+\begin_inset Formula $\left\langle x\otimes x\right\rangle =-1$
+\end_inset
+
+, for 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ in Claim(1)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: Trivial
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(3): 
+\begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
+ & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\\
+ &  & \Bigg[\frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
+ &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\Bigg]
+\end{eqnarray*}
+
+\end_inset
+
+We define, 
+\begin_inset Formula $\delta\equiv\phi-\theta$
+\end_inset
+
+ and using claim(1), it follows that only terms like 
+\begin_inset Formula $\left|+-\right\rangle $
+\end_inset
+
+ or 
+\begin_inset Formula $\left|-+\right\rangle $
+\end_inset
+
+; so
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \psi\right|x\otimes x\\
+ &  & \left[\frac{e^{i\delta}\left(\frac{\left|+-\right\rangle -\left|-+\right\rangle }{2}\right)-e^{-i\delta}\left(\frac{-\left|+-\right\rangle +\left|-+\right\rangle }{2}\right)}{\sqrt{2}}\right]\\
+ & = & \left\langle \psi\right|x\otimes x\left[\frac{e^{i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)+e^{-i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\right]\\
+ & =- & \frac{e^{i\delta}+e^{-i\delta}}{2}\\
+ & =- & \cos(\phi-\theta)
+\end{eqnarray*}
+
+\end_inset
+
+where we've used claim(2).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(4): With definitions from section 3, without taking the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle +\left|X\right|+\right\rangle =\frac{N-1}{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\left\langle -\left|X\right|-\right\rangle =-\frac{N-1}{N}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle 0\left|X\right|0\right\rangle =0$
+\end_inset
+
+, 
+\begin_inset Formula $\left\langle 1\left|X\right|1\right\rangle =0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle 1\left|X\right|0\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0\left|X\right|1\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle -\left|X\right|+\right\rangle =\frac{-\left\langle 1\left|X\right|0\right\rangle +\left\langle 0\left|X\right|1\right\rangle }{2}=0=\left\langle +\left|X\right|-\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\langle \psi\left|X\otimes X\right|\psi\right\rangle =\frac{\left\langle +\left|X\right|+\right\rangle \left\langle -\left|X\right|-\right\rangle +\left\langle -\left|X\right|-\right\rangle \left\langle +\left|X\right|+\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: Trivial.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(5): 
+\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: We start with defining 
+\begin_inset Formula $\phi\equiv\phi_{i}$
+\end_inset
+
+ , 
+\begin_inset Formula $\theta\equiv\theta_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\equiv\phi-\theta$
+\end_inset
+
+, 
+\begin_inset Formula $\delta'\equiv\delta/2$
+\end_inset
+
+.
+ Next, we note that 
+\begin_inset Formula $\text{LHS}=\left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle $
+\end_inset
+
+ where 
+\begin_inset Formula $\left|\psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\psi\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\\
+ &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\\
+ & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle +\left|+-\right\rangle -\left|-+\right\rangle -\left|--\right\rangle \right)\\
+ &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|++\right\rangle -\left|+-\right\rangle +\left|-+\right\rangle -\left|--\right\rangle \right)\\
+ & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|++\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+-\right\rangle \\
+ &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-+\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|--\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+Now using claim(4), we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{LHS} & = & \left\langle \psi'\left|X\otimes X\right|\psi'\right\rangle \\
+ & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
+ &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
+ &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\frac{1}{2}\left[2\left(\cos^{2}\delta/2-\sin^{2}\delta/2\right)\right]\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}\cos\left(\delta\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Claim(8): Action of 
+\begin_inset Formula $x_{mod2L}$
+\end_inset
+
+ can be defined explicitly
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Proof: 
+\begin_inset Formula $x_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$
+\end_inset
+
+.
+ To arrive at this more carefully, consider the operator 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $x_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $
+\end_inset
+
+, consequently on the most general state 
+\begin_inset Formula $\left|f\right\rangle \equiv\int dx'f_{x'}\left|x'\right\rangle $
+\end_inset
+
+ then, we'd have 
+\begin_inset Formula $x_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring a
+Remark: One needn't necessarily consider eigenstates of 
+\begin_inset Formula $x$
+\end_inset
+
+ to define the action.
+ Eigenstates of 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}$
+\end_inset
+
+ maybe considered instead; they can be expressed as (a) 
+\begin_inset Formula $\left|\varphi\right\rangle ,\, s.t.\,\left\langle p+\frac{h}{2L}|\varphi\right\rangle =\left\langle p|\varphi\right\rangle ,\,\forall\, p\in\mathbb{R}$
+\end_inset
+
+ or (b) 
+\begin_inset Formula $\left|\bar{x}\right\rangle \propto\sum_{n\in\mathbb{Z}}\left|\bar{x}+n2L\right\rangle $
+\end_inset
+
+.
+ Using the second expression, we have 
+\begin_inset Formula $e^{ix\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $
+\end_inset
+
+.
+ Thus on a more general state, 
+\begin_inset Formula $\left|c\right\rangle \equiv\int_{0}^{2L}d\bar{x}c_{\bar{x}}\left|\bar{x}\right\rangle $
+\end_inset
+
+, we have 
+\begin_inset Formula $x_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,5 +1,5 @@
-set terminal pdfcairo
-set termoption enhanced
+set terminal pdfcairo font ',18'
+set termoption enhanced 
 set key noautotitle
 set output "resultRENAMEme.pdf"
 set xlabel "Number of slits (N)" 
@@ -11,7 +11,7 @@ set sample 50
 set arrow from 1,2 to 50,2 nohead lc 1 lt 0 lw 5
 set arrow from 1,2*sqrt(2) to 50,2*sqrt(2) nohead 
 #set label 1 at -2.2,2*sqrt(2)
-set label 1 "2√2" at -2.2,2*sqrt(2)
+set label 1 "2√2" at -4.5,2*sqrt(2)
 set label 2 "Classical bound" at 20, 1.9 tc lt 1
 #set label 2 "Classical bound"
 #set label 1 "{/Symbol @{\140\140\140\140}\326}m+3"

@@ -26,7 +26,8 @@
 %\newcommand{\Plus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0.5,0) -- (0.5,1)(0,0.5) -- (1,0.5);}}
 %\newcommand{\Minus}{\mathord{\tikz\draw[line width=0.3ex, x=1ex, y=1ex] (0,0.5) -- (1,0.5);}}
 \end_preamble
-\use_default_options true
+\options pra,twocolumn,superscriptaddress
+\use_default_options false
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -78,9 +79,9 @@
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
-\papercolumns 2
+\papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle plain
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -992,7 +993,7 @@ variable
 
  function also completes a period.
  Note that 
-\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{\sqrt{2}}$
+\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$
 \end_inset
 
 .
@@ -1030,7 +1031,7 @@ Next, recall that in quantum mechanics, the momentum that's quantized, is
 \begin_layout Standard
 The idea was that the obvious generalization for obtaining an appropriate
  operator for the CHSH inequality is 
-\begin_inset Formula $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{i\hat{p}L/\hbar}}{\sqrt{2}}$
+\begin_inset Formula $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$
 \end_inset
 
 .
@@ -1141,11 +1142,15 @@ status open
 \end_inset
 
 (a) 
-\begin_inset Formula $\left\langle x|0'\right\rangle $
+\begin_inset Formula $\left\langle x|\psi_{0}\right\rangle $
 \end_inset
 
  (dashed) and 
-\begin_inset Formula $\left\langle x|1'\right\rangle $
+\begin_inset Formula $\left\langle x|\psi_{1}\right\rangle $
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -1164,7 +1169,11 @@ status open
 \end_inset
 
 (b) 
-\begin_inset Formula $\left\langle x|+'\right\rangle $
+\begin_inset Formula $\left\langle x|\psi_{+}\right\rangle $
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -1183,7 +1192,7 @@ status open
 \end_inset
 
 (c) 
-\begin_inset Formula $\left\langle x|-'\right\rangle $
+\begin_inset Formula $\left\langle x|\psi_{-}\right\rangle $
 \end_inset
 
 
@@ -1194,20 +1203,20 @@ status open
 
 \begin_layout Plain Layout
 Illustration of 
-\begin_inset Formula $\left|\pm'\right\rangle $
+\begin_inset Formula $\left|\psi_{\pm}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
 \end_inset
 
  states for 
-\begin_inset Formula $N=4,\, L=1$
+\begin_inset Formula $N=8,\, L=1$
 \end_inset
 
  unit.
  The 
-\begin_inset Formula $\left|0\right\rangle ,\,\left|1\right\rangle $
+\begin_inset Formula $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
 \end_inset
 
  states are not normalized.
@@ -1292,10 +1301,14 @@ Defn:
 Defn: 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|0'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{2n+1}\right\rangle \\
-\left|1'\right\rangle  & \equiv & \frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{2n}\right\rangle 
+\left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n+1}\right\rangle \\
+\left|\psi_{1}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n}\right\rangle 
 \end{eqnarray*}
 
+\end_inset
+
+where 
+\begin_inset Formula $N'\equiv N/2$
 \end_inset
 
 
@@ -1310,11 +1323,11 @@ reference "fig:wavefns"
 \end_inset
 
 , we construct the analogues of the 
-\begin_inset Formula $\left|+\right\rangle $
+\begin_inset Formula $\left|\psi_{+}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|-\right\rangle $
+\begin_inset Formula $\left|\psi_{-}\right\rangle $
 \end_inset
 
  states.
@@ -1323,11 +1336,7 @@ reference "fig:wavefns"
 \begin_layout Labeling
 \labelwidthstring a
 Remark: Definition of 
-\begin_inset Formula $\left|0'\right\rangle $
-\end_inset
-
- and 
-\begin_inset Formula $\left|1'\right\rangle $
+\begin_inset Formula $\left|\psi_{\pm}\right\rangle $
 \end_inset
 
  justify the word `slit' in the definition of 
@@ -1335,22 +1344,13 @@ Remark: Definition of
 \end_inset
 
 .
- Also note that from the illustration, it is obvious that to physically
- realize 
-\begin_inset Formula $\left|\pm'\right\rangle $
-\end_inset
-
-, 
-\begin_inset Formula $2N$
-\end_inset
-
- slits will be required.
+ 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring a
 Defn: 
-\begin_inset Formula $\left|+'\right\rangle \equiv\frac{\left|0'\right\rangle +\left|1'\right\rangle }{\sqrt{2}},\,\left|-'\right\rangle \equiv\frac{\left|0'\right\rangle -\left|1'\right\rangle }{\sqrt{2}}$
+\begin_inset Formula $\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},\,\left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}$
 \end_inset
 
 
@@ -1359,7 +1359,7 @@ Defn:
 \begin_layout Labeling
 \labelwidthstring a
 NB: 
-\begin_inset Formula $\left\langle 0'|1'\right\rangle =0,\,\implies\left\langle +'|-'\right\rangle =0$
+\begin_inset Formula $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$
 \end_inset
 
 
@@ -1372,7 +1372,7 @@ Analogous to the spin case, we construct the entangled state
 \begin_layout Labeling
 \labelwidthstring a
 Defn: 
-\begin_inset Formula $\left|\Psi\right\rangle \equiv\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}$
+\begin_inset Formula $\left|\Psi\right\rangle \equiv\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}$
 \end_inset
 
 
@@ -1409,8 +1409,8 @@ NB: Only in the limit
 , 
 \begin_inset Formula 
 \begin{eqnarray*}
-\hat{X}\left|+'\right\rangle  & = & +\left|+'\right\rangle \\
-\hat{X}\left|-'\right\rangle  & = & -\left|-'\right\rangle 
+\hat{X}\left|\psi_{+}\right\rangle  & = & +\left|\psi_{+}\right\rangle \\
+\hat{X}\left|\psi_{-}\right\rangle  & = & -\left|\psi_{-}\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -1453,8 +1453,8 @@ Defn:
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\hat{U}(\phi)\left|0'\right\rangle  & = & e^{i\phi/2}\left|0'\right\rangle \\
-\hat{U}(\phi)\left|1'\right\rangle  & = & e^{-i\phi/2}\left|1'\right\rangle 
+\hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
+\hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -1465,11 +1465,11 @@ Defn:
 \begin_layout Standard
 This can achieved in principle using alternate glass slabs for photons,
  to adjust the relative phase as desired, since 
-\begin_inset Formula $\left|0'\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|1'\right\rangle $
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
 \end_inset
 
  are spatially separated.
@@ -1477,11 +1477,38 @@ This can achieved in principle using alternate glass slabs for photons,
 \begin_inset Formula $\hat{U}(\phi)$
 \end_inset
 
- in its analytic form as
+ in its analytic form.
+ First we claim that 
+\begin_inset Formula $\exists$
+\end_inset
+
+ an operator 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ s.t.
+ it satisfies 
+\begin_inset Formula $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Before explicitly defining 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+, we observe that given this operator, we can naturally define the analytic
+ form of 
+\begin_inset Formula $\hat{U}(\phi)$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring a
+\begin_layout Standard
 Alt
 \begin_inset space ~
 \end_inset
@@ -1489,29 +1516,102 @@ Alt
 Defn: 
 \begin_inset Formula 
 \[
-\hat{U}(\phi)=e^{iZ(\hat{x}_{mod2L})\phi/2}
+\hat{U}(\phi)=e^{i\hat{Z}\phi/2}
+\]
+
+\end_inset
+
+in close analogy with the spin case.
+ It is suggestive from this form that 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ must play the role of 
+\begin_inset Formula $\hat{\sigma}_{z}$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ is a function of 
+\begin_inset Formula $\hat{p}_{mod}$
+\end_inset
+
+.
+ It is thus natural to expect 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ to be a function of 
+\begin_inset Formula $\hat{x}_{mod}$
+\end_inset
+
+.
+ From it's action, we also note that 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ must differentiate between spatial wavefunctions 
+\begin_inset Formula $\left\langle x|\varphi\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle x-L|\varphi\right\rangle $
+\end_inset
+
+.
+ Thus the appropriate operator must be 
+\begin_inset Formula $\hat{x}_{mod2L}$
+\end_inset
+
+ and not 
+\begin_inset Formula $\hat{x}_{modL}$
+\end_inset
+
+.
+ This is supported by the fact that 
+\begin_inset Formula $[\hat{p}_{mod},\hat{x}_{modL}]=0$
+\end_inset
+
+.
+ Now since the action of 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ must work for arbitrary 
+\begin_inset Formula $\left|\varphi\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+, we define 
+\begin_inset Formula 
+\[
+\hat{Z}\equiv Z(\hat{x}_{mod2L})
 \]
 
 \end_inset
 
 where 
-\begin_inset Formula $Z(x')\equiv\begin{cases}
-1 & 0<x'\mod2L\le L\\
--1 & L<x'\mod2L\le2L
-\end{cases}$
-\end_inset
-
- when 
 \begin_inset Formula $Z$
 \end_inset
 
- acts on an eigenstate of 
-\begin_inset Formula $\hat{x}$
+ is some appropriate function, so that 
+\begin_inset Formula $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{mod2L})\left|x\right\rangle =Z(x_{mod2L})\left|x\right\rangle $
 \end_inset
 
-.
+ .
+ From the constraints on 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+, we conclude that for consistency, we must define
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula $\hat{x}_{mod2L}$
@@ -1529,35 +1629,15 @@ reference "sub:c6"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring a
-NB: 
-\begin_inset Formula $Z(\hat{x}_{mod2L})\left|0'\right\rangle =\left|0'\right\rangle $
-\end_inset
-
- and 
-\begin_inset Formula $Z(\hat{x}_{mod2L})\left|1'\right\rangle =-\left|1'\right\rangle $
-\end_inset
-
- viz.
  
-\begin_inset Formula $Z(\hat{x}_{mod2L})$
-\end_inset
+\begin_inset Formula 
+\[
+Z(x)\equiv\begin{cases}
+1 & 0<x\le L\\
+-1 & L<x\le2L
+\end{cases}
+\]
 
- plays the role of 
-\begin_inset Formula $\hat{\sigma}_{z}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring a
-Notatn: 
-\begin_inset Formula $\hat{Z}\equiv Z(\hat{x}_{mod2L})$
 \end_inset
 
 
@@ -1571,7 +1651,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/plots/CHSH.pdf
+	filename plots/CHSH.pdf
 	width 8cm
 
 \end_inset
@@ -1707,8 +1787,8 @@ Validating phase space behaviour
 \end_layout
 
 \begin_layout Standard
-In the past, it has been shown that one can arrive at the violation of Bell
- inequalities in continuous variable systems.
+In the past, it has been shown that one can arrive at the violation of the
+ Bell inequality in continuous variable systems.
  One issue concerning some of these approaches is that the wavefunction
  used is highly idealized and not normalizable, such as 
 \begin_inset Formula $\left|p\right\rangle $
@@ -1719,7 +1799,7 @@ In the past, it has been shown that one can arrive at the violation of Bell
 \end_inset
 
  or their countable superposition.
- Another issue in certain other approaches, is that the wigner function
+ Another issue in certain other approaches, is that the wigner functions
  corresponding to the observables, are unbounded.
  An example of this is parity.
  Note that while the Wigner function for a physical state 
@@ -1789,20 +1869,20 @@ end{widetext}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-W_{1}(q',p') & = & \frac{1}{2\pi\hbar}\int dqe^{ip'q/\hbar}\left\langle q'-\frac{q}{2}\right|e^{-iZ(\hat{x}_{mod2L})\phi/2}\\
- &  & e^{i\hat{p}\frac{L}{\hbar}}e^{iZ(\hat{x}_{mod2L})\phi/2}\left|q'+\frac{q}{2}\right\rangle \\
- & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q')\phi/2}e^{ip'\frac{L}{\hbar}}e^{iZ_{2}(q')\phi/2}\\
- & = & \frac{1}{2\pi\hbar}e^{ip'L/\hbar}e^{iZ_{2}(q')\phi}
+W_{1}(q,p) & = & \frac{1}{2\pi\hbar}\int dq'e^{ipq'/\hbar}\left\langle q-\frac{q'}{2}\right|e^{-iZ(\hat{x}_{mod2L})\phi/2}\\
+ &  & e^{i\hat{p}\frac{L}{\hbar}}e^{iZ(\hat{x}_{mod2L})\phi/2}\left|q+\frac{q'}{2}\right\rangle \\
+ & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{2}(q)\phi/2}\\
+ & = & \frac{1}{2\pi\hbar}e^{ipL/\hbar}e^{iZ_{2}(q)\phi}
 \end{eqnarray*}
 
 \end_inset
 
 where 
-\begin_inset Formula $Z_{1/2}(q')=Z[(q'\mp\frac{L}{2})\mod2L]$
+\begin_inset Formula $Z_{1/2}(q)=Z[(q\mp\frac{L}{2})\mod2L]$
 \end_inset
 
  and we used the fact that 
-\begin_inset Formula $Z(x')=-Z(x'+L)$
+\begin_inset Formula $Z(x)=-Z(x+L)$
 \end_inset
 
  (omitting the 
@@ -1817,7 +1897,7 @@ where
  and obtain 
 \begin_inset Formula 
 \[
-W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(p'L/\hbar)e^{\pm i\phi}
+W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(pL/\hbar)e^{\pm i\phi}
 \]
 
 \end_inset
@@ -1908,7 +1988,7 @@ where
 \end_inset
 
 , since 
-\begin_inset Formula $X^{\dagger}=X$
+\begin_inset Formula $\hat{X}^{\dagger}=\hat{X}$
 \end_inset
 
  and 
@@ -1946,8 +2026,8 @@ where
  This manifests in the other commutation relations 
 \begin_inset Formula 
 \begin{eqnarray*}
-[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\
-{}[\hat{Y},\hat{Z}] & = & -2i\hat{X}
+[\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
+[\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
 
 \end_inset
@@ -1957,7 +2037,7 @@ where
 
 \begin_layout Standard
 Further, note that 
-\begin_inset Formula $e^{-i\hat{Z}\phi/2}Xe^{i\hat{Z}\phi/2}=Xe^{i\hat{Z}\phi}$
+\begin_inset Formula $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$
 \end_inset
 
  and that 
@@ -1968,7 +2048,7 @@ Further, note that
  With all these, it is easy to show that 
 \begin_inset Formula 
 \begin{eqnarray*}
-[U^{\dagger}(\frac{\phi}{2})XU(\frac{\phi}{2}),U^{\dagger}(\frac{\phi'}{2})XU(\frac{\phi'}{2})] & =\\
+[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})] & =\\
 \left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
 \end{eqnarray*}
 
@@ -2018,15 +2098,15 @@ Considering the operator (non-hermitian for simplicity)
 \end_inset
 
  to get a more natural generalization.
- The question is why did we choose 
+ The question is why did 
 \begin_inset Formula $\hat{Z}=Z(\hat{x}_{mod2L})$
 \end_inset
 
-.
+ appear in the analysis.
  The cause of this asymmetry hinges on the preferential treatment of position
  space.
  We could have constructed states of the form 
-\begin_inset Formula $\left|0'\right\rangle =\sum_{n}\left|x+nd\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle =\sum_{n}\left|x+nd\right\rangle $
 \end_inset
 
  and used the natural definition of 
@@ -2089,14 +2169,14 @@ Creation of the entangled state
 
 \begin_layout Standard
 The desired entangled state is 
-\begin_inset Formula $\left|\Psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
+\begin_inset Formula $\left|\Psi\right\rangle \equiv\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}$
 \end_inset
 
 .
  We start with noting the triviality of constructing a 
 \begin_inset Formula 
 \[
-\left|+'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n\in I_{2N}}\left|\varphi_{n}\right\rangle 
+\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{n}\right\rangle 
 \]
 
 \end_inset
@@ -2104,7 +2184,7 @@ The desired entangled state is
  state.
  One simply needs a source and a grating, viz.
  a screen with 
-\begin_inset Formula $2N$
+\begin_inset Formula $N$
 \end_inset
 
  slits of width 
@@ -2119,7 +2199,7 @@ The desired entangled state is
  The 
 \begin_inset Formula 
 \[
-\left|-'\right\rangle =\frac{1}{\sqrt{2N}}\sum_{n\in I_{2N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
+\left|\psi_{-}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
 \]
 
 \end_inset
@@ -2139,7 +2219,7 @@ reference "fig:scheme"
 
 , if you consider only one particle, and disregard everything after the
  grating, then the setup is expected to produce a 
-\begin_inset Formula $\left|+\right\rangle $
+\begin_inset Formula $\left|\psi_{+}\right\rangle $
 \end_inset
 
  state, just after the grating.
@@ -2181,14 +2261,14 @@ The state
  so that after the grating, the spatial state can be written as 
 \begin_inset Formula 
 \[
-\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle 
+\left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\psi_{+}\psi_{+}\right\rangle 
 \]
 
 \end_inset
 
 Now comes the interesting part.
  To produce a 
-\begin_inset Formula $\left|-'\right\rangle $
+\begin_inset Formula $\left|\psi_{-}\right\rangle $
 \end_inset
 
  state, we already know we needed alternate glass slabs.
@@ -2220,7 +2300,7 @@ reference "fig:scheme"
  and the state is 
 \begin_inset Formula 
 \[
-\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|+'-'\right\rangle -\left|VH\right\rangle \left|-'+'\right\rangle }{\sqrt{2}}
+\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle \left|\psi_{+}\psi_{-}\right\rangle -\left|VH\right\rangle \left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}
 \]
 
 \end_inset
@@ -2237,7 +2317,7 @@ reference "fig:scheme"
 
 , we observe the action of the polarisers on the state.
  After the 
-\begin_inset Formula $45^{0}$
+\begin_inset Formula $45^{\circ}$
 \end_inset
 
  polariser, the state becomes (see 
@@ -2249,26 +2329,18 @@ reference "sub:c8"
 
 ) 
 \begin_inset Formula 
-\begin{eqnarray*}
-\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle  & \propto & \frac{1}{\sqrt{2}}\bigg(\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|+'-'\right\rangle \\
- &  & -\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}}\left|-'+'\right\rangle \bigg)
-\end{eqnarray*}
-
-\end_inset
-
-Rewriting 
-\begin_inset Formula $\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}=\left|H'\right\rangle $
-\end_inset
-
-, we get 
-\begin_inset Formula 
 \[
-\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|+'-'\right\rangle -\left|-'+'\right\rangle }{\sqrt{2}}\right)
+\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}\right)
 \]
 
 \end_inset
 
-Now if we trace out the polarization state, we'd be left with the target
+where 
+\begin_inset Formula $\left|H'\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+.
+ Now if we trace out the polarization state, we'd be left with the target
  entangled state.
  As a remark, it maybe be stated that although to arrive at this result
  we assumed that 
@@ -2276,7 +2348,7 @@ Now if we trace out the polarization state, we'd be left with the target
 \end_inset
 
 , which is unreasonable physically, we can compensate for 
-\begin_inset Formula $\eta_{H}\neq0$
+\begin_inset Formula $\eta_{H}\neq1$
 \end_inset
 
  by putting appropriate glass slabs at the alternate empty slits, to produce
@@ -2292,7 +2364,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset External
 	template XFig
-	filename /afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/diagrams/scheme.fig
+	filename diagrams/scheme.fig
 	width 15cm
 
 \end_inset
@@ -2343,20 +2415,20 @@ In our scheme, Alice and Bob can choose
 \end_inset
 
  is to introduce a phase difference between the 
-\begin_inset Formula $\left|0'\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|1'\right\rangle $
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
 \end_inset
 
  states.
  By construction, 
-\begin_inset Formula $\left|0'\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|1'\right\rangle $
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
 \end_inset
 
  are spatially disjoint; thus the operation of 
@@ -2365,11 +2437,11 @@ In our scheme, Alice and Bob can choose
 
  can be implemented by simply placing alternating glass slabs at the slits,
  with widths such that 
-\begin_inset Formula $\left|0'\right\rangle \to e^{i\theta/2}\left|0'\right\rangle $
+\begin_inset Formula $\left|\psi_{0}\right\rangle \to e^{i\theta/2}\left|\psi_{0}\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|1'\right\rangle \to e^{-i\theta/2}\left|1'\right\rangle $
+\begin_inset Formula $\left|\psi_{1}\right\rangle \to e^{-i\theta/2}\left|\psi_{1}\right\rangle $
 \end_inset
 
 .
@@ -2498,7 +2570,7 @@ In an experiment then, there are two possibilities.
 \end_inset
 
  from which 
-\begin_inset Formula $\left\langle X\otimes X\right\rangle $
+\begin_inset Formula $\left\langle \hat{X}\otimes\hat{X}\right\rangle $
 \end_inset
 
  can be computed as discussed.
@@ -2584,7 +2656,7 @@ This is trival if one uses the Bloch sphere picture.
 \begin_layout Labeling
 \labelwidthstring a
 Questn: 
-\begin_inset Formula $\exists\,\text{a}\, U,\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =U\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|x\right|\chi\right\rangle =\left\langle \chi'\left|y\right|\chi'\right\rangle $
+\begin_inset Formula $\exists\,\text{a}\,\hat{U},\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =\hat{U}\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|\hat{x}\right|\chi\right\rangle =\left\langle \chi'\left|\hat{y}\right|\chi'\right\rangle $
 \end_inset
 
 ? 
@@ -2594,8 +2666,8 @@ Questn:
 Explicitly, we have 
 \begin_inset Formula 
 \begin{eqnarray*}
-y & = & U^{\dagger}xU=e^{-iz\theta/2}xe^{iz\theta/2}\\
- & = & xe^{iz\theta}=\left[\begin{array}{cc}
+\hat{y} & = & \hat{U}^{\dagger}\hat{x}\hat{U}=e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\\
+ & = & \hat{x}e^{i\hat{z}\theta}=\left[\begin{array}{cc}
 0 & 1\\
 1 & 0
 \end{array}\right]\left[\begin{array}{cc}
@@ -2623,7 +2695,7 @@ Claims
 \end_layout
 
 \begin_layout Subsubsection
-If
+If 
 \begin_inset Formula $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
 \end_inset
 
@@ -2728,11 +2800,11 @@ reference "sub:c2"
 \end_layout
 
 \begin_layout Subsubsection
-With definitions from section 3, without taking the large 
+Without taking the large 
 \begin_inset Formula $N$
 \end_inset
 
- limit,
+ limit
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:c4"
@@ -2743,11 +2815,11 @@ name "sub:c4"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left\langle +'\left|X\right|+'\right\rangle =\frac{N-1}{N}$
+\begin_inset Formula $\left\langle \psi_{+}\left|\hat{X}\right|\psi_{+}\right\rangle =\frac{N-1}{N}$
 \end_inset
 
 , 
-\begin_inset Formula $\left\langle -'\left|X\right|-'\right\rangle =-\frac{N-1}{N}$
+\begin_inset Formula $\left\langle \psi_{-}\left|\hat{X}\right|\psi_{-}\right\rangle =-\frac{N-1}{N}$
 \end_inset
 
 
@@ -2755,11 +2827,11 @@ name "sub:c4"
 \end_inset
 
 
-\begin_inset Formula $\left\langle 0'\left|X\right|0'\right\rangle =0$
+\begin_inset Formula $\left\langle \psi_{0}\left|\hat{X}\right|\psi_{0}\right\rangle =0$
 \end_inset
 
 , 
-\begin_inset Formula $\left\langle 1'\left|X\right|1'\right\rangle =0$
+\begin_inset Formula $\left\langle \psi_{1}\left|\hat{X}\right|\psi_{1}\right\rangle =0$
 \end_inset
 
 
@@ -2767,7 +2839,7 @@ name "sub:c4"
 \end_inset
 
 
-\begin_inset Formula $\left\langle 1'\left|X\right|0'\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle 0'\left|X\right|1'\right\rangle $
+\begin_inset Formula $\left\langle \psi_{1}\left|\hat{X}\right|\psi_{0}\right\rangle =\frac{\frac{N-1}{N}+\frac{N}{N}}{2}=\frac{2N-1}{2N}=\left\langle \psi_{0}\left|\hat{X}\right|\psi_{1}\right\rangle $
 \end_inset
 
 
@@ -2775,7 +2847,7 @@ name "sub:c4"
 \end_inset
 
 
-\begin_inset Formula $\left\langle -'\left|X\right|+'\right\rangle =\frac{-\left\langle 1'\left|X\right|0'\right\rangle +\left\langle 0'\left|X\right|1'\right\rangle }{2}=0=\left\langle +'\left|X\right|-'\right\rangle $
+\begin_inset Formula $\left\langle \psi_{-}\left|\hat{X}\right|\psi_{+}\right\rangle =\frac{-\left\langle \psi_{1}\left|\hat{X}\right|\psi_{0}\right\rangle +\left\langle \psi_{0}\left|\hat{X}\right|\psi_{1}\right\rangle }{2}=0=\left\langle \psi_{+}\left|\hat{X}\right|\psi_{-}\right\rangle $
 \end_inset
 
 
@@ -2783,14 +2855,29 @@ name "sub:c4"
 \end_inset
 
 
-\begin_inset Formula $\left\langle \Psi\left|X\otimes X\right|\Psi\right\rangle =\frac{\left\langle +'\left|X\right|+'\right\rangle \left\langle -'\left|X\right|-'\right\rangle +\left\langle -'\left|X\right|-'\right\rangle \left\langle +'\left|X\right|+'\right\rangle }{2}=-\left(\frac{N-1}{N}\right)^{2}$
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle \Psi\left|\hat{X}\otimes\hat{X}\right|\Psi\right\rangle  & = & \frac{1}{2}\bigg(\left\langle \psi_{-}\left|\hat{X}\right|\psi_{-}\right\rangle \left\langle \psi_{+}\left|\hat{X}\right|\psi_{+}\right\rangle +\\
+ &  & \left\langle \psi_{+}\left|\hat{X}\right|\psi_{+}\right\rangle \left\langle \psi_{-}\left|\hat{X}\right|\psi_{-}\right\rangle \bigg)\\
+ & = & -\left(\frac{N-1}{N}\right)^{2}
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsubsection
-\begin_inset Formula $\left\langle U^{\dagger}(\phi_{i})XU(\phi_{i})\otimes U^{\dagger}(\theta_{i})XU(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
+For arbitrary 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{i}$
+\end_inset
+
+ 
+\begin_inset Formula $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$
 \end_inset
 
 
@@ -2822,23 +2909,23 @@ Proof: We start with defining
 
 .
  Next, we note that 
-\begin_inset Formula $\text{LHS}=\left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle $
+\begin_inset Formula $\text{LHS}=\left\langle \Psi'\left|\hat{X}\otimes\hat{X}\right|\Psi'\right\rangle $
 \end_inset
 
  where 
-\begin_inset Formula $\left|\Psi'\right\rangle =U(\phi_{i})\otimes U(\theta_{i})\left|\Psi\right\rangle $
+\begin_inset Formula $\left|\Psi'\right\rangle =\hat{U}(\phi_{i})\otimes\hat{U}(\theta_{i})\left|\Psi\right\rangle $
 \end_inset
 
 .
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\Psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\\
- &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|+'\right\rangle +\left|-'\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+'\right\rangle -\left|-'\right\rangle }{\sqrt{2}}\right)\\
- & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle +\left|+'-'\right\rangle -\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
- &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|+'+'\right\rangle -\left|+'-'\right\rangle +\left|-'+'\right\rangle -\left|-'-'\right\rangle \right)\\
- & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|+'+'\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|+'-'\right\rangle \\
- &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'+'\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|-'-'\right\rangle 
+\left|\Psi'\right\rangle  & = & \frac{e^{i\delta'}}{\sqrt{2}}\left(\frac{\left|\psi_{+}\right\rangle -\left|\psi_{-}\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|\psi_{+}\right\rangle +\left|\psi_{-}\right\rangle }{\sqrt{2}}\right)\\
+ &  & -\frac{e^{-i\delta'}}{\sqrt{2}}\left(\frac{\left|\psi_{+}\right\rangle +\left|\psi_{-}\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|\psi_{+}\right\rangle -\left|\psi_{-}\right\rangle }{\sqrt{2}}\right)\\
+ & = & \frac{e^{i\delta'}}{2\sqrt{2}}\left(\left|\psi_{+}\psi_{+}\right\rangle +\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle -\left|\psi_{-}\psi_{-}\right\rangle \right)\\
+ &  & -\frac{e^{-i\delta'}}{2\sqrt{2}}\left(\left|\psi_{+}\psi_{+}\right\rangle -\left|\psi_{+}\psi_{-}\right\rangle +\left|\psi_{-}\psi_{+}\right\rangle -\left|\psi_{-}\psi_{-}\right\rangle \right)\\
+ & = & \frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\left|\psi_{+}\psi_{+}\right\rangle +\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\left|\psi_{+}\psi_{-}\right\rangle \\
+ &  & -\left(\frac{e^{i\delta'}+e^{-i\delta'}}{2\sqrt{2}}\right)\left|\psi_{-}\psi_{+}\right\rangle -\left(\frac{e^{i\delta'}-e^{-i\delta'}}{2\sqrt{2}}\right)\left|\psi_{-}\psi_{-}\right\rangle 
 \end{eqnarray*}
 
 \end_inset
@@ -2853,7 +2940,7 @@ reference "sub:c4"
 , we have
 \begin_inset Formula 
 \begin{eqnarray*}
-\text{LHS} & = & \left\langle \Psi'\left|X\otimes X\right|\Psi'\right\rangle \\
+\text{LHS} & = & \left\langle \Psi'\left|\hat{X}\otimes\hat{X}\right|\Psi'\right\rangle \\
  & = & \frac{1}{2}\left(\frac{N-1}{N}\right)^{2}\Bigg[\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\\
  &  & -\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}-\left|\frac{e^{i\delta'}+e^{-i\delta'}}{2}\right|^{2}\\
  &  & +\left|\frac{e^{i\delta'}-e^{-i\delta'}}{2}\right|^{2}\Bigg]\\
@@ -2979,12 +3066,12 @@ If we can show that the basic components used to describe the photon setup
  It can be modelled by using a combination of gradient of magnetic field
  (as in Stern Gerlach) and a capacitor.
  We start with an equivalent superposition of spin states, 
-\begin_inset Formula $\frac{\left|\uparrow\downarrow\right\rangle -\left|\downarrow\uparrow\right\rangle }{\sqrt{2}}\left|+'+'\right\rangle $
+\begin_inset Formula $\frac{\left|\uparrow\downarrow\right\rangle -\left|\downarrow\uparrow\right\rangle }{\sqrt{2}}\left|\psi_{+}\psi_{+}\right\rangle $
 \end_inset
 
 .
  To construct the spin dependent 
-\begin_inset Formula $\left|-'\right\rangle $
+\begin_inset Formula $\left|\psi_{-}\right\rangle $
 \end_inset
 
  state, we use the magnetic field gradient to spatially separate the 
@@ -3024,12 +3111,12 @@ If we define
 \begin_inset Formula $\left|H'\right\rangle \equiv\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},$
 \end_inset
 
-
+ 
 \begin_inset Formula $\left|V'\right\rangle \equiv-\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
 \end_inset
 
  and the 
-\begin_inset Formula $45^{\ocircle}$
+\begin_inset Formula $45^{\circ}$
 \end_inset
 
  projector as 
