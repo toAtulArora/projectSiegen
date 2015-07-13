@@ -4,7 +4,10 @@
 ![Wigner function for superposition of coherent states (taken from QuTiP)](wignerQuTiP.png)
 ![Wigner function plotted using ft, for a given rho, using matlab/octave](plotWigner1.3/imagFixed.png)
 
-Using Git
+![The state in position basis](firstDraft/plots/entangledPsi.pdf)
+![The state in momentum basis (apprx)](firstDraft/plots/entangledPsiFromFTN8.eps)
+
+For Ali | Using Git
 --
 
 1. cd Desktop/drafts/projectSiegen
@@ -13,6 +16,7 @@ Using Git
 4. git commit -am "message"
 5. git push
 6. git pull
+
 
 Week 0 and 1
 --
