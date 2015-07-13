@@ -293,4 +293,25 @@ Week 9
 --
 
 * Monday (Jul 6)
+  * Working on the draft (finalized PRA)
 
+* Tuesday (Jul 7)
+  * Extension to GHZ (not proceeding with it)
+  * Draft (added fermion part, polarizer issue, other fixes)
+
+* Wednesday (Jul 8)
+  * Draft (fixed physical implementation section etc., typos plus proof read)
+
+* Thursday (Jul 9) [Not well]
+  * Some GRE registration work + GRE words
+
+* Friday (Jul 10)
+  * Wigner func + Psi itself  
+
+* Sat, Sun (Jul 10, 11)
+  * Read about Bohmian mechanics
+
+Week 10
+--
+* Monday (Jul 12)
+  * 
