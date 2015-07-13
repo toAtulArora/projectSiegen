@@ -133,7 +133,7 @@
 \usepackage{babel}
 \begin{document}
 
-\title{Bell Test with Continuous Variables}
+\title{Towards macroscopic Bell test with modular variables}
 
 
 \author{Atul Singh Arora}
@@ -207,7 +207,7 @@ Bell-operator would be generally written as
 In order to apply the CHSH criterion we need to use variables which take on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of continuous variable (CV) systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \begin{equation}
 |a_j|\leq 1
 \end{equation}
-One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for proper probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence. That is, 
+One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence. That is, 
 \begin{equation}
 \mathcal{W}_{\hat A}(q,p)=\dfrac{1}{2\pi\hbar}\int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
 \end{equation} 
@@ -222,117 +222,15 @@ Therefore,
 \mean{\hat{\mathcal{B}}}=\int \mathcal{W}_{\hat\rho}(q,p)\mathcal{W}_{\hat {\mathcal{B}}}(q,p)dq dp\leq 2
 \end{equation}
  We that we ascertain that any state described by positive definite Wigner function, that is compatible with local hidden phase space variable, satisfy above inequality.  leading to the violation of this version of Bell inequality must be characterized by negative Wigner function deviating from proper probability distribution in hidden phase space coordinates. That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
-
-\subsection{CHSH Inequality | prior art}
-
-Here the violation of Bell's inequality for the typical spin case,
-is stated in a way that is easier to translate to the continuous variable
-case. We first state the Bell test in its modern form, known as the
-CHSH inequality. 
-\begin{lyxlist}{a}
-\item [{Suppose:}] There are two observers%
-\footnote{that are often chosen to be sufficiently far away that their measurements
-don't influence each other%
-}, Alice and Bob. There are two particles, which are allowed to interact
-initially and are then separated. Alice takes one, Bob takes the other.
-Alice can measure one of two properties of her particle, call them
-$a_{1},\, a_{2}$. Similarly Bob can measure $b_{1},\, b_{2}$ of
-his particle. 
-\item [{Notatn:}] $\left\langle a_{i}b_{j}\right\rangle =$Average value
-obtained when Alice chooses to measure $a_{i}$ and Bob chooses to
-measure $b_{j}$
-\item [{Statemnt:}] $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle C(a_{i},b_{i})\right\rangle \right|\le2$
-if (a) result of measuring $a_{i},\, b_{i}$ $\in\,[-1,1]$, (b) local
-realism is assumed. This result will be referred to as the CHSH inequality. 
-\end{lyxlist}
-Quantum Mechanics predicts a violation of this in the following physical
-situation.
-\begin{lyxlist}{a}
-\item [{Defn:}] $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$
-where the $\left|\pm\right\rangle $ states are s.t. $\hat{\sigma}_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $. 
-\item [{Consider:}] (a) Two particles are described by $\left|\psi\right\rangle $
-and (b) Alice measures $\hat{z}$ or $\hat{x}$ while Bob is allowed
-to choose between $\hat{z}'$ and $\hat{x}'$, where $\hat{z}'=\frac{-\hat{z}-\hat{x}}{\sqrt{2}}$,
-$\hat{x}'=\frac{\hat{z}-\hat{x}}{\sqrt{2}}$.
-\item [{Notatn:}] The Pauli matrices are referred to as $\hat{x},\,\hat{y},\,\hat{z}$.
-\item [{Result:}] $\left\langle C((\hat{x},\hat{z}),(\hat{x}',\hat{z}'))\right\rangle =2\sqrt{2}\nleq2$,
-which is a violation. 
-\end{lyxlist}
-This value can be reproduced in a slightly modified situation.
-\begin{lyxlist}{a}
-\item [{Modifictn:}] (i) Due to the symmetry in the setup, we expect the
-same results hold for $\hat{x},\,\hat{y}$ and $\hat{x}',\,\hat{y}'$
-and (ii) we demand that Alice and Bob can only measure $\hat{x}$
-but are allowed to perform a local unitary before the measurement.%
-\footnote{Note that (ii) is equivalent to measuring along any direction. Details
-in the Apendix.%
-}
-\item [{Explicitly}] then, consider: (a) Alice and Bob apply local unitaries
-$e^{i\hat{z}\theta/2}\otimes I$ and $I\otimes e^{i\hat{z}\phi/2}$
-respectively and then both measure $\hat{x}$. (b) Alice can choose
-$\theta\in\{0,\pi/2\}$ and Bob can choose $\phi\in\{\pi/4,\pi/4+\pi/2\}$;
-see table \ref{mesSch1}.%
-\footnote{These values are motivated by the $\pi/2$ between $z$ and $x$,
-\& $\pi/4$ between $z$ and $z'$ in the conventional Bell case.%
-}
-\end{lyxlist}
-\begin{table}
-\begin{tabular}{l|c|c|c|c}
-\multicolumn{1}{l}{} & \multicolumn{1}{c}{Alice} &  & \multicolumn{1}{c}{Bob} & \tabularnewline
-\hline 
-Convention & $a_{1}$ & $a_{2}$ & $b_{1}$ & $b_{2}$\tabularnewline
-Angle & $\theta_{1}=\pi/2$ & $\theta_{2}=0$ & $\phi_{1}=\pi/4$ & $\phi_{2}=\pi/4+\pi/2$\tabularnewline
-\end{tabular}
-
-\caption{Measurement Scheme \label{mesSch1}}
-\end{table}
+ 
+It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
 
 
-Now it remains to show that this scheme also violates the Bell inequality
-(and by the same value). To that end, we state a result (see \subref{c3}). 
+\subsection{Phase space translation operators and modular variables }
 
-\[
-\left\langle e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\otimes e^{-i\hat{z}\phi/2}\hat{x}e^{i\hat{z}\phi/2}\right\rangle =-\cos(\phi-\theta)
-\]
+Particular class of bounded observable can be constructed from the quantum mechanical phase space translation operator
 
-
-Given that, it is straight forward to evaluate
-
-\begin{eqnarray*}
-\left\langle C\right\rangle  & = & \left\langle a_{1}b_{1}\right\rangle +\left\langle a_{1}b_{2}\right\rangle +\left\langle a_{2}b_{1}\right\rangle -\left\langle a_{2}b_{2}\right\rangle \\
- & = & \left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)+\left(-\frac{1}{\sqrt{2}}\right)-\left(+\frac{1}{\sqrt{2}}\right)\\
- & = & -2\sqrt{2}
-\end{eqnarray*}
-
-
-This is still a violation since $\left|\left\langle C\right\rangle \right|=2\sqrt{2}\nleq2$.
-However, to convert this to a more conventional form, we simply redefine
-the angles $\theta$ and $\phi$.%
-\footnote{so that $\phi-\theta\to\phi'-\theta'=\phi-\theta+\pi=\left(\phi+\pi/2\right)-\left(\theta-\pi/2\right)$%
-} 
-\begin{lyxlist}{a}
-\item [{Substn:}] $\phi\to\phi'=\phi+\pi/2,\,\theta\to\theta'=\theta-\pi/2$;
-see table \ref{mesSch2}
-\end{lyxlist}
-\begin{table}
-\begin{tabular}{c|c|c|c|c}
-\multicolumn{1}{c}{} & \multicolumn{1}{c}{Alice} &  & \multicolumn{1}{c}{Bob} & \tabularnewline
-\hline 
-Convention & $a_{1}$ & $a_{2}$ & $b_{1}$ & $b_{2}$\tabularnewline
-Angle & $\theta'_{1}=0$ & $\theta'_{2}=-\pi/2$ & $\phi'_{1}=3\pi/8$ & $\phi'_{2}=5\pi/4$\tabularnewline
-\end{tabular}
-
-\caption{`Corrected' Measurement Scheme \label{mesSch2}}
-\end{table}
-Now we have $\left\langle C\right\rangle =2\sqrt{2}$.
-
-In conclusion, we have shown that, in the spin setting, the violation
-of the Bell inequality can be equivalently obtained by the measurement
-of $\hat{x}$ after applying a rotation along $\hat{z}$ by the aforesaid
-angles.
-
-
-\subsection{Modular Variables and Displacement Operators | prior art}
+This observable is not Hermitian therefore it does not directly correspond to an observable. 
 
 The observables admissible in the CHSH inequality must $\in[-1,1]$.
 If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$,
