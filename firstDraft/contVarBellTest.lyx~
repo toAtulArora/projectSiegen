@@ -965,7 +965,7 @@ variable
 \end_inset
 
 , then one way of obtaining a bound variable is to use 
-\begin_inset Formula $p_{mod}\equiv p\mod h/L$
+\begin_inset Formula $p_{\text{mod}}\equiv p\mod h/L$
 \end_inset
 
 , where 
@@ -974,17 +974,17 @@ variable
 
  has been introduced for dimensional reasons.
  This forces 
-\begin_inset Formula $p_{mod}\in[0,h/L)$
+\begin_inset Formula $p_{\text{mod}}\in[0,h/L)$
 \end_inset
 
 .
  If we further consider, say 
-\begin_inset Formula $\cos(p_{mod}L/\hbar)$
+\begin_inset Formula $\cos(p_{\text{mod}}L/\hbar)$
 \end_inset
 
 , then we get precisely the bound needed for the CHSH inequality.
  We chose the constant factors so that for 
-\begin_inset Formula $p_{mod}=h/L$
+\begin_inset Formula $p_{\text{mod}}=h/L$
 \end_inset
 
 , the 
@@ -993,7 +993,7 @@ variable
 
  function also completes a period.
  Note that 
-\begin_inset Formula $\cos(p_{mod}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$
+\begin_inset Formula $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$
 \end_inset
 
 .
@@ -1134,6 +1134,8 @@ status open
 \begin_inset Graphics
 	filename plots/zeroOne.svg
 	width 6cm
+	BoundingBox 0bp 90bp 359bp 222bp
+	clip
 
 \end_inset
 
@@ -1161,6 +1163,8 @@ status open
 \begin_inset Graphics
 	filename plots/plus.svg
 	width 6cm
+	BoundingBox 0bp 90bp 359bp 222bp
+	clip
 
 \end_inset
 
@@ -1184,6 +1188,8 @@ status open
 \begin_inset Graphics
 	filename plots/minus.svg
 	width 6cm
+	BoundingBox 0bp 20bp 359bp 200bp
+	clip
 
 \end_inset
 
@@ -1536,7 +1542,7 @@ in close analogy with the spin case.
 \end_inset
 
  is a function of 
-\begin_inset Formula $\hat{p}_{mod}$
+\begin_inset Formula $\hat{p}_{\text{mod}}$
 \end_inset
 
 .
@@ -1545,7 +1551,7 @@ in close analogy with the spin case.
 \end_inset
 
  to be a function of 
-\begin_inset Formula $\hat{x}_{mod}$
+\begin_inset Formula $\hat{x}_{\text{mod}}$
 \end_inset
 
 .
@@ -1563,16 +1569,16 @@ in close analogy with the spin case.
 
 .
  Thus the appropriate operator must be 
-\begin_inset Formula $\hat{x}_{mod2L}$
+\begin_inset Formula $\hat{x}_{\text{mod}2L}$
 \end_inset
 
  and not 
-\begin_inset Formula $\hat{x}_{modL}$
+\begin_inset Formula $\hat{x}_{\text{mod}L}$
 \end_inset
 
 .
  This is supported by the fact that 
-\begin_inset Formula $[\hat{p}_{mod},\hat{x}_{modL}]=0$
+\begin_inset Formula $[\hat{p}_{\text{mod}},\hat{x}_{\text{mod}L}]=0$
 \end_inset
 
 .
@@ -1591,7 +1597,7 @@ in close analogy with the spin case.
 , we define 
 \begin_inset Formula 
 \[
-\hat{Z}\equiv Z(\hat{x}_{mod2L})
+\hat{Z}\equiv Z(\hat{x}_{\text{mod}2L})
 \]
 
 \end_inset
@@ -1601,7 +1607,7 @@ where
 \end_inset
 
  is some appropriate function, so that 
-\begin_inset Formula $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{mod2L})\left|x\right\rangle =Z(x_{mod2L})\left|x\right\rangle $
+\begin_inset Formula $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{\text{mod}2L})\left|x\right\rangle =Z(x_{\text{mod}2L})\left|x\right\rangle $
 \end_inset
 
  .
@@ -1614,7 +1620,7 @@ where
 status collapsed
 
 \begin_layout Plain Layout
-\begin_inset Formula $\hat{x}_{mod2L}$
+\begin_inset Formula $\hat{x}_{\text{mod}2L}$
 \end_inset
 
  is well defined, see 
@@ -1878,7 +1884,7 @@ W_{1}(q,p) & = & \frac{1}{2\pi\hbar}\int dq'e^{ipq'/\hbar}\left\langle q-\frac{q
 \end_inset
 
 where 
-\begin_inset Formula $Z_{1/2}(q)=Z[(q\mp\frac{L}{2})\mod2L]$
+\begin_inset Formula $Z_{1/2}(q)=Z[(q\mp\frac{L}{2})\text{mod}2L]$
 \end_inset
 
  and we used the fact that 
@@ -1958,7 +1964,7 @@ In the Bell test done with spins, the source of violation hinges on the
 \end_inset
 
  where we've used 
-\begin_inset Formula $Z(\hat{x}_{mod2L})=-Z(\left(\hat{x}\pm L\right)_{mod2L})$
+\begin_inset Formula $Z(\hat{x}_{\text{mod}2L})=-Z(\left(\hat{x}\pm L\right)_{\text{mod}2L})$
 \end_inset
 
  and 
@@ -2058,7 +2064,7 @@ as was necessary.
  Ofcourse this is not sufficient, however we have shown explicitly the violation.
  This evaluation was meant to illuminate that the source of violation essentiall
 y hinges on 
-\begin_inset Formula $[\hat{x}_{mod2L},\hat{p}_{modL}]\neq0$
+\begin_inset Formula $[\hat{x}_{\text{mod}2L},\hat{p}_{\text{mod}}]\neq0$
 \end_inset
 
 .
@@ -2099,7 +2105,7 @@ Considering the operator (non-hermitian for simplicity)
 
  to get a more natural generalization.
  The question is why did 
-\begin_inset Formula $\hat{Z}=Z(\hat{x}_{mod2L})$
+\begin_inset Formula $\hat{Z}=Z(\hat{x}_{\text{mod}2L})$
 \end_inset
 
  appear in the analysis.
@@ -2118,7 +2124,7 @@ Considering the operator (non-hermitian for simplicity)
  position eigenkets as our desired state.
  Such a state is strictly not even in the Hilbert space.
  In the scheme proposed, this issue is resolved by 
-\begin_inset Formula $Z(\hat{x}_{mod2L})$
+\begin_inset Formula $Z(\hat{x}_{\text{mod}2L})$
 \end_inset
 
  which causes a larger set of physically realizable states to become admissible.
@@ -2955,7 +2961,7 @@ reference "sub:c4"
 
 \begin_layout Subsubsection
 Action of 
-\begin_inset Formula $\hat{x}_{mod2L}$
+\begin_inset Formula $\hat{x}_{\text{mod}2L}$
 \end_inset
 
  can be defined explicitly
@@ -2970,7 +2976,7 @@ name "sub:c6"
 
 \begin_layout Standard
 Proof: 
-\begin_inset Formula $\hat{x}_{mod2L}\equiv\int dx'x'_{mod2L}\left|x'\right\rangle \left\langle x'\right|$
+\begin_inset Formula $\hat{x}_{\text{mod}2L}\equiv\int dxx{}_{mod2L}\left|x\right\rangle \left\langle x\right|$
 \end_inset
 
 .
@@ -2980,20 +2986,20 @@ Proof:
 
 .
  Note that 
-\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'\frac{2\pi}{2L}}\left|x'\right\rangle =e^{ix'_{mod2L}\frac{2\pi}{2L}}\left|x'\right\rangle $
+\begin_inset Formula $e^{i\hat{x}\frac{2\pi}{2L}}\left|x\right\rangle =e^{ix\frac{2\pi}{2L}}\left|x\right\rangle =e^{ix{}_{mod2L}\frac{2\pi}{2L}}\left|x\right\rangle $
 \end_inset
 
 .
  Thus, 
-\begin_inset Formula $\hat{x}_{mod2L}\left|x'\right\rangle =x'_{mod2L}\left|x'\right\rangle $
+\begin_inset Formula $\hat{x}_{\text{mod}2L}\left|x\right\rangle =x{}_{mod2L}\left|x\right\rangle $
 \end_inset
 
 , consequently on the most general state 
-\begin_inset Formula $\left|f\right\rangle \equiv\int dx'f_{x'}\left|x'\right\rangle $
+\begin_inset Formula $\left|f\right\rangle \equiv\int dxf_{x}\left|x\right\rangle $
 \end_inset
 
  then, we'd have 
-\begin_inset Formula $\hat{x}_{mod2L}\left|f\right\rangle =\int dx'f_{x'}x'_{mod2L}\left|x'\right\rangle $
+\begin_inset Formula $\hat{x}_{\text{mod}2L}\left|f\right\rangle =\int dxf_{x}x{}_{mod2L}\left|x\right\rangle $
 \end_inset
 
 .
@@ -3029,7 +3035,7 @@ Remark: One needn't necessarily consider eigenstates of
 \end_inset
 
 , we have 
-\begin_inset Formula $\hat{x}_{mod2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
+\begin_inset Formula $\hat{x}_{\text{mod}2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $
 \end_inset
 
 .

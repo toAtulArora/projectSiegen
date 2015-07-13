@@ -7387,17 +7387,19 @@ Smaller food intake (obviously)
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename mathematicaWaveFnPlots.png
 	lyxscale 30
 	width 12cm
-	BoundingBox 70bp 0bp 800bp 1200bp
+	BoundingBox 70bp 50bp 800bp 1100bp
 	clip
 
 \end_inset
@@ -7421,6 +7423,10 @@ name "fig:Wavefunctions"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -7513,17 +7519,33 @@ Also plotted the state
 \end_inset
 
  as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:The-entangled-state"
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \end_deeper
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename firstDraft/plots/entangledPsi.pdf
+	lyxscale 50
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -7531,12 +7553,229 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The entangled state
+\begin_inset Formula $\left\langle x_{1}x_{2}|\Psi\right\rangle $
+\end_inset
+
+; the entangled state 
 \begin_inset Formula $\Psi(x_{1},x_{2})$
 \end_inset
 
+.
+ There're more repeats of this unit; the graph is cropped
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-entangled-state"
+
+\end_inset
+
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Saturday/Sunday, July 11/12 [weekend]
+\end_layout
+
+\begin_layout Itemize
+Read about Bohmian mechanics
+\end_layout
+
+\begin_layout Itemize
+Watched 
+\begin_inset Quotes eld
+\end_inset
+
+The Theory of Everything
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Great motivation.
+\end_layout
+
+\begin_layout Itemize
+Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gym [double on Sunday]
+\end_layout
+
+\end_deeper
+\begin_layout Section
+July 13-19
+\end_layout
+
+\begin_layout Itemize
+Otfried's lecture
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He talked about the PBR argument, pretty damn awesome, especially given
+ that its so recent and that its so simple (I could've thought of it, just
+ proves that I must keep pushing the limits)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Work/Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I should simply plot 
+\begin_inset Formula $\left\langle p_{1},p_{2}|\Psi\right\rangle $
+\end_inset
+
+ instead of 
+\begin_inset Formula $\left\langle x_{1},x_{2}|\Psi\right\rangle $
+\end_inset
+
+ since the former will show what kind of resolution is needed.
+ Did that, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:psiP"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So now if I want to resolve this, I must have the ball park 
+\begin_inset Formula $p=h/L=p_{z}x/D$
+\end_inset
+
+.
+ So from this I get that the typical distance on the screen must be 
+\begin_inset Formula $\lambda D/L=x$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $D\gg L$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ will be of usable units.
+ The resolution should be then about 
+\begin_inset Formula $\frac{1}{10}^{\text{th}}$
+\end_inset
+
+ of 
+\begin_inset Formula $h/L$
+\end_inset
+
+.
+ The range as is clear from the figure, should be about 
+\begin_inset Formula $6h/L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $\left|\left\langle p_{1}p_{2}|\varphi\right\rangle \right|$
+\end_inset
+
+ part has been ignored because it is expected to be roughly constant over
+ 
+\begin_inset Formula $6h/L$
+\end_inset
+
+.
+ This is because we assumed that 
+\begin_inset Formula $a\ll D$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is the slit size and 
+\begin_inset Formula $D$
+\end_inset
+
+ the separation between centres of consecutive slits.
+\end_layout
+
+\begin_layout Itemize
+Note that this was done only for illustration of what we get on the screen.
+ The theoretical results are exact.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Played a little more with 
+\begin_inset Formula $\left\langle x_{1}x_{2}|\Psi\right\rangle $
+\end_inset
+
+ and found that the phase 
+\begin_inset Formula $\delta$
+\end_inset
+
+ essentially just introduces a nearly identical mirror in the imaginary
+ part of the wavefunction.
+ You analtyically have 
+\begin_inset Formula $1/\sqrt{2}\left(i\sin(\delta')\left[\left|++\right\rangle -\left|--\right\rangle \right]+\cos(\delta')\left[\left|+-\right\rangle -\left|-+\right\rangle \right]\right)$
+\end_inset
+
+ which automatically means what I said.
+ Quite nice.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename firstDraft/plots/entangledPsiN8.eps
+	lyxscale 50
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|\left\langle p_{1}p_{2}|\Psi\right\rangle \right|/\left|\left\langle p_{1}p_{2}|\varphi\right\rangle \right|$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:psiP"
 
 \end_inset
 
@@ -7548,5 +7787,49 @@ The entangled state
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture 8
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+If God is fair, prayers shouldn't work
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Stupidity and subtlety aid in discovery.
+ It helps you explore things you'd otherwise consider pointless, and they
+ maybe, just not completely.
+ Be thankful for stupid friends, they're effectively smart.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
