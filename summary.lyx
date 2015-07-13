@@ -7718,6 +7718,18 @@ The
 \end_inset
 
  the separation between centres of consecutive slits.
+ This can be confirmed from the fact that in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:psiP"
+
+\end_inset
+
+, both the fourier transform and the analytic solution divided by 
+\begin_inset Formula $\left|\left\langle p_{1}p_{2}|\varphi\right\rangle \right|$
+\end_inset
+
+, are qualitatively the same.
 \end_layout
 
 \begin_layout Itemize
@@ -7745,6 +7757,19 @@ Played a little more with
  Quite nice.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Also figured that this can be easily translated to the theory of diffraction
+ in 2 dimensions.
+ Therefore the patterns looked familiar (for say 
+\begin_inset Formula $N=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Wrap figure
@@ -7763,16 +7788,44 @@ status open
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+(analytic, but 
+\begin_inset Formula $\left|\left\langle p_{1}p_{2}|\Psi\right\rangle \right|/\left|\left\langle p_{1}p_{2}|\varphi\right\rangle \right|$
+\end_inset
+
+, with appropriate axis scaling)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename firstDraft/plots/entangledPsiFromFTN8.eps
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(fourier transform of 
+\begin_inset Formula $\left\langle x_{1}x_{2}|\Psi\right\rangle $
+\end_inset
+
+, with scales arbitrary)
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-\begin_inset Formula $\left|\left\langle p_{1}p_{2}|\Psi\right\rangle \right|/\left|\left\langle p_{1}p_{2}|\varphi\right\rangle \right|$
+Entangled 
+\begin_inset Formula $\Psi$
 \end_inset
 
-
+ in the momentum space 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:psiP"
