@@ -4,6 +4,16 @@
 ![Wigner function for superposition of coherent states (taken from QuTiP)](wignerQuTiP.png)
 ![Wigner function plotted using ft, for a given rho, using matlab/octave](plotWigner1.3/imagFixed.png)
 
+Using Git
+--
+
+1. cd Desktop/drafts/projectSiegen
+2. git status
+3. git add .
+4. git commit -am "message"
+5. git push
+6. git pull
+
 Week 0 and 1
 --
 
