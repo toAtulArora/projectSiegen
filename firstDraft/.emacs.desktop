@@ -1,0 +1,73 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Jul 13 22:45:06 2015
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/Documents/projectSiegen/firstDraft/" "~/Documents/projectSiegen/firstDraft/Modular.bib" "~/Documents/projectSiegen/firstDraft/compilePDF" "~/Documents/projectSiegen/firstDraft/" "~/Documents/projectSiegen/README.md" "~/Documents/projectSiegen/firstDraft/.." "~/Documents/projectSiegen/firstDraft/Modular.bib"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/_region_.tex"
+  "_region_.tex"
+  'latex-mode
+  nil
+  7112
+  '(50539 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . iso-latin-9-unix)))
+
+(desktop-create-buffer 206
+  "/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/Modular.bib"
+  "Modular.bib"
+  'bibtex-mode
+  nil
+  543
+  '(1040 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (TeX-master . t)))
+
+(desktop-create-buffer 206
+  "/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/compilePDF"
+  "compilePDF"
+  'fundamental-mode
+  nil
+  117
+  '(92 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/README.md"
+  "README.md"
+  'fundamental-mode
+  nil
+  520
+  '(9125 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/afs/tp.nt.uni-siegen.de/user/arora/Documents/projectSiegen/firstDraft/contVarBellTest.tex"
+  "contVarBellTest.tex"
+  'latex-mode
+  '(TeX-PDF-mode)
+  5158
+  '(457 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . iso-latin-9-unix)))
+
