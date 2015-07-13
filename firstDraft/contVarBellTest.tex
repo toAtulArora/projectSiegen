@@ -14,6 +14,54 @@
 
 \makeatletter
 
+%---------- New commands
+
+%\usepackage{multicol}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\newcommand{\ket}[1]{| #1 \rangle}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\rb}[1]{\left( #1 \right)}
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\ew}[1]{\langle #1 \rangle}
+\newcommand{\beq}{\begin{eqnarray}}
+\newcommand{\eeq}{\end{eqnarray}}
+\newcommand{\blg}[1]{\mathrm{lg}\left[  #1right]}
+\newcommand{\svec}{\mbox{\boldmath$\sigma$}}
+\newcommand{\op}[2]{| #1 \rangle \langle #2 |}
+\newcommand{\sech}{\mathrm{sech}}
+\newcommand{\sfrac}[2]{\begin{array}{c}\frac{#1}{#2}\end{array}}
+\newcommand{\cum}[1]{\langle\langle #1 \rangle \rangle}
+\newcommand{\eq}[1]{Eq.~(\ref{#1})}
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+\newcommand{\ul}[1]{{\underline{#1}}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\trace}[1]{\mathrm{Tr}\left\{#1\right\}}
+
+\newcommand{\etal}{{\em et al.}\xspace}
+
+% Ali's commands
+\newcommand{\proj}[1]{\ket{#1}\!\bra{#1}}
+
+
+% GME vector notation
+\newcommand{\kett}[1]{| #1 \rangle\!\rangle }
+\newcommand{\braa}[1]{\langle\!\langle #1|}
+\newcommand{\eww}[1]{\langle\! \langle #1\rangle\! \rangle}
+\newcommand{\opp}[2]{| #1 \rangle\! \rangle\langle\! \langle #2 |}
+\DeclareMathOperator{\tr}{tr}
+\renewcommand\Re{\operatorname{Re }}
+\renewcommand\Im{\operatorname{Im }}
+
+% citation command Ref.[...]
+\newcommand{\citer}[1]{{Ref.~\cite{#1}}}
+\definecolor{mygray}{gray}{0.5}
+\definecolor{mymagenta}{cmyk}{0,1,0,0.12}
+\newcommand{\mtext}[1]{{\color{mymagenta}#1}}
+\newcommand{\rtext}[1]{{\color{red} #1}}
+
+
+%------------
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
 
 \AtBeginDocument{\providecommand\subref[1]{\ref{sub:#1}}}
@@ -147,8 +195,34 @@ In Sec. we introduce our framework for Bell nonlocality test aiming to use most 
 
 
 
-\section{Violation of Bell Inequality}
+\section{Framework for macroscopic Bell test}
 
+The central 
+problem here is to construct a suitable Bell-operator expressed in terms of 
+local continuous variable operators $\hat A$.  A general form of CHSH expression of such a 
+Bell-operator would be generally written as
+\begin{align}
+\label{Bellmodular}
+\hat {\mathcal{B}}= \hat A_1\otimes &(\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
+\end{align}
+In order to apply the CHSH criterion we need to use variables which take on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of continuous variable (CV) systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \begin{equation}
+|a_j|\leq 1
+\end{equation}
+One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for proper probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence. That is, 
+\begin{equation}
+\mathcal{W}_{\hat A}(q,p)=\dfrac{1}{2\pi\hbar}\int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
+\end{equation} 
+Accordingly, the inequality should hold for any state described by valid (positive) probability distribution.
+
+\begin{align}
+\mathcal{W}_{\hat {\mathcal{B}}}(q,p)=&\mathcal{W}_{A_1}(q,p)[\mathcal{W}_{A_2}(q,p)+\mathcal{W}_{A_2'}(q,p)] \\&+\mathcal{W}_{A'_1}(q,p)[\mathcal{W}_{A_2}(q,p)-\mathcal{W}_{A_2'}(q,p)]\leq 2 \nonumber
+\end{align}
+
+Therefore,
+\begin{equation}
+\mean{\hat{\mathcal{B}}}=\int \mathcal{W}_{\hat\rho}(q,p)\mathcal{W}_{\hat {\mathcal{B}}}(q,p)dq dp\leq 2
+\end{equation}
+ We that we ascertain that any state described by positive definite Wigner function, that is compatible with local hidden phase space variable, satisfy above inequality.  leading to the violation of this version of Bell inequality must be characterized by negative Wigner function deviating from proper probability distribution in hidden phase space coordinates. That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
 
 \subsection{CHSH Inequality | prior art}
 
