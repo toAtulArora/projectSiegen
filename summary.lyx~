@@ -7563,7 +7563,7 @@ status open
 \begin_inset Graphics
 	filename firstDraft/plots/entangledPsi.pdf
 	lyxscale 50
-	width 10cm
+	width 8cm
 
 \end_inset
 
@@ -7815,13 +7815,74 @@ He introduced bibtex
 
 \end_deeper
 \end_deeper
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture 8
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+If God is fair, prayers shouldn't work
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Stupidity and subtlety aid in discovery.
+ It helps you explore things you'd otherwise consider pointless, and they
+ maybe, just not completely.
+ Be thankful for stupid friends, they're effectively smart.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Everyone can choose to act according to what's right or according to what's
+ convenient
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+assuming they're not the same act
+\end_layout
+
+\end_inset
+
+.
+ The probability with which you make these choices defines you; decides
+ whether you're predictable or not.
+ I would rather be predictable in this sense; Then the remaining unpredictabilit
+y in me must come from my imagination.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
 overhang 0col%
 width "50col%"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7884,76 +7945,11 @@ name "fig:psiP"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-Misc/Health
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Kardar lecture 8
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes eld
-\end_inset
-
-If God is fair, prayers shouldn't work
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes eld
-\end_inset
-
-Stupidity and subtlety aid in discovery.
- It helps you explore things you'd otherwise consider pointless, and they
- maybe, just not completely.
- Be thankful for stupid friends, they're effectively smart.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes eld
-\end_inset
-
-Everyone can choose to act according to what's right or according to what's
- convenient
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-assuming they're not the same act
-\end_layout
-
-\end_inset
-
-.
- The probability with which you make these choices defines you; decides
- whether you're predictable or not.
- I would rather be predictable in this sense; Then the remaining unpredictabilit
-y in me must come from my imagination.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Subsection
 Tuesday, July 14
 \end_layout
@@ -7987,6 +7983,104 @@ Figured it thanks to Mukunda's notes
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Got emacs to work beautifully; see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Emacs-natively-running"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+C-c C-p C-s (for the preview) [you need some auktex]
+\end_layout
+
+\begin_layout Itemize
+Multiple cursors C-> C-< C-: and C-? (insane stuff): Here's how to initialize
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+(add-to-list 'package-archives '("melpa" .
+ "http://melpa.org/packages/")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+(("gnu" .
+ "http://elpa.gnu.org/packages/") 
+\end_layout
+
+\begin_layout Plain Layout
+
+("marmalade" .
+ "https://marmalade-repo.org/packages/") 
+\end_layout
+
+\begin_layout Plain Layout
+
+("melpa" .
+ "http://melpa.org/packages/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines) 
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this) 
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this) 
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C-:") 'mc/unmark-next-like-this) 
+\end_layout
+
+\begin_layout Plain Layout
+
+(global-set-key (kbd "C-?") 'mc/skip-to-next-like-this)
+\end_layout
+
+\end_inset
+
+Put this in the lisp window (C-
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+ etc.
+ to navigate between buffers) and press C-j to compile
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fixing the nomenclature etc.
+ | man it's annoying but it's also good to see how neatly one can present
+ things! makes things clearer
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Misc/Health
@@ -8023,5 +8117,48 @@ Idea is to use latex for writing the basic thing, then collaborate with
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename emacs.png
+	lyxscale 50
+	width 20cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Emacs natively running latex :)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Emacs-natively-running"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
