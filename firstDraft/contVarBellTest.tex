@@ -266,21 +266,20 @@ using $[q,p]=i\hbar$. For appropriate choices of $a,b$, the translation operator
 
 \subsection{Violation in Continuous Variable State}
 
-We start with constructing continuous variable kets%
-\footnote{We emphasise that the kets we construct, will not be a countable superposition
+We start with constructing continuous variable kets\footnote{We emphasise that the kets we construct, will not be a countable superposition
 of eigenstates of $p$ or $x$ since these are highly idealized and
 strictly, not even a part of the Hilbert space.%
-} that satisfy the same orthogonality and mutual relations as $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $.%
-\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{z}\left|0\right\rangle =\left|0\right\rangle $
-and $\hat{z}\left|1\right\rangle =-\left|1\right\rangle $%
-} We then construct the relevant operators and finally evaluate $\left\langle C\right\rangle $
-to show the violation.
+} that satisfy the same orthogonality and mutual relations as $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $.\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{z}\left|0\right\rangle =\left|0\right\rangle $
+and $\hat{z}\left|1\right\rangle =-\left|1\right\rangle $, where $\hat x, \hat y, \hat z$ refer to Pauli matrices.%
+} We then construct the relevant operators and finally evaluate $\mean {\hat{\mathcal{B}}} $ to show the violation. 
+To construct the states, we start with defining $L\equiv$some length scale, $N\equiv$number of slits. Consider a state $\left|\varphi\right\rangle $ symmetric about $x=L/2$, with spread $\ll L$. Formally, $\left|\varphi\right\rangle \equiv\int dx\left\langle x-L/2|\varphi'\right\rangle \left|x\right\rangle $ where $\left|\varphi'\right\rangle $ s.t. (a) $\left\langle x|\varphi'\right\rangle =\left\langle -x|\varphi'\right\rangle $ and (b) it's spread is $\ll L$.
+Next, we define $\left|\varphi_{n}\right\rangle \equiv\int dx\left\langle x-nL|\varphi\right\rangle \left|x\right\rangle $ and $I_{N}=\{-\frac{N}{2},\dots,\frac{N}{2}-1,\frac{N}{2}-1\}$, defined for even $N$ only (for simplicity). Finally we define the following to be analogues of $\ket{0}$ and $\ket{1}$;
 
-To construct the states, we start with some definitions.
-\begin{lyxlist}{a}
-\item [{Forgt:}] $\hat{x},\,\hat{y},\,\hat{z}$ represent Pauli matrices
-\item [{Defn:}] $L\equiv$some length scale, $N\equiv$number of slits
-\end{lyxlist}
+\begin{eqnarray*}
+\left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n+1}\right\rangle \\
+\left|\psi_{1}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n}\right\rangle 
+\end{eqnarray*}
+where $N'\equiv N/2$.
 \begin{figure}
 \includegraphics[bb=0bp 90bp 359bp 222bp,clip,width=6cm]{plots/zeroOne}\\
 (a) $\left\langle x|\psi_{0}\right\rangle $ (dashed) and $\left\langle x|\psi_{1}\right\rangle $\bigskip{}
@@ -295,52 +294,22 @@ To construct the states, we start with some definitions.
 states for $N=8,\, L=1$ unit. The $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
 states are not normalized.\label{fig:wavefns}}
 \end{figure}
-
-\begin{lyxlist}{a}
-\item [{Consider:}] A state $\left|\varphi\right\rangle $ symmetric about
-$x=L/2$, with spread $\ll L$. Formally, $\left|\varphi\right\rangle \equiv\int dx\left\langle x-L/2|\varphi'\right\rangle \left|x\right\rangle $
-where $\left|\varphi'\right\rangle $ s.t. (a) $\left\langle x|\varphi'\right\rangle =\left\langle -x|\varphi'\right\rangle $
-and (b) it's spread is $\ll L$
-\item [{Defn:}] $\left|\varphi_{n}\right\rangle \equiv\int dx\left\langle x-nL|\varphi\right\rangle \left|x\right\rangle $ 
-\item [{Defn:}] $I_{N}=\{-\frac{N}{2},\dots,\frac{N}{2}-1,\frac{N}{2}-1\}$,
-defined for even $N$ only (for simplicity)
-\item [{Defn:}] 
-\begin{eqnarray*}
-\left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n+1}\right\rangle \\
-\left|\psi_{1}\right\rangle  & \equiv & \frac{1}{\sqrt{N'}}\sum_{n\in I_{N'}}\left|\varphi_{2n}\right\rangle 
-\end{eqnarray*}
-where $N'\equiv N/2$
-\end{lyxlist}
-Using these states, as illustrated in \figref{wavefns}, we construct
-the analogues of the $\left|\psi_{+}\right\rangle $ and $\left|\psi_{-}\right\rangle $
-states.
-\begin{lyxlist}{a}
-\item [{Remark:}] Definition of $\left|\psi_{\pm}\right\rangle $ justify
-the word `slit' in the definition of $N$. 
-\item [{Defn:}] $\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},\,\left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}$
-\item [{NB:}] $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$
-\end{lyxlist}
-Analogous to the spin case, we construct the entangled state 
-\begin{lyxlist}{a}
-\item [{Defn:}] $\left|\Psi\right\rangle \equiv\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}$
-\end{lyxlist}
-These states were constructed with a partial translational symmetry
-which is appropriate to the hermitian operator, $\cos(\hat{p}L/\hbar)$
-discussed earlier.
-\begin{lyxlist}{a}
-\item [{Defn:}] 
+Using these states, as illustrated in \figref{wavefns}, we construct the analogues of the $\ket + $ and $\ket - $ states
 \[
-\hat{X}\equiv\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}
+\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},\\
+\left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}
 \]
-
-\item [{NB:}] Only in the limit $N\to\infty$, 
+These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. In the limit $N\to\infty$, we have
 \begin{eqnarray*}
 \hat{X}\left|\psi_{+}\right\rangle  & = & +\left|\psi_{+}\right\rangle \\
 \hat{X}\left|\psi_{-}\right\rangle  & = & -\left|\psi_{-}\right\rangle 
 \end{eqnarray*}
-just as was with $\hat{\sigma}_{x}$. In general however, the relation
-doesn't hold.
-\end{lyxlist}
+just as was with $\hat x$. In general however, the relation doesn't hold. Note that definition of $\left|\psi_{\pm}\right\rangle $ justifies the word `slit' in the definition of $N$, as is clear from the illustration. The construction preserves the orthogonality relations from the spin case; $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$. Analogous to the spin case, we construct the entangled state 
+ \[
+\left|\Psi\right\rangle \equiv\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}
+\]
+
+
 We have almost all the cards, except for one that allows for setting
 \{$\phi$, $\theta$\}. In the spin case, this was achieved by operating
 $e^{i\hat{\sigma}_{z}\phi/2}$ on the state before measurement. Correspondingly,
