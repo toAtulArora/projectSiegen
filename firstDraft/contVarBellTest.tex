@@ -302,54 +302,26 @@ These states were constructed with a partial translational symmetry which is app
 \hat{X}\left|\psi_{+}\right\rangle  & = & +\left|\psi_{+}\right\rangle \\
 \hat{X}\left|\psi_{-}\right\rangle  & = & -\left|\psi_{-}\right\rangle 
 \end{eqnarray*}
-just as was with $\hat x$. In general however, the relation doesn't hold. Note that definition of $\left|\psi_{\pm}\right\rangle $ justifies the word `slit' in the definition of $N$, as is clear from the illustration. The construction preserves the orthogonality relations from the spin case; $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$. Analogous to the spin case, we construct the entangled state 
+just as was with $\hat x$ and $\ket{\pm}$. In general however, the relation doesn't hold. Note that definition of $\left|\psi_{\pm}\right\rangle $ justifies the word `slit' in the definition of $N$, as is clear from the illustration. This construction also preserves the orthogonality relations from the spin case; $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$. Analogously, we construct the entangled state 
  \[
-\left|\Psi\right\rangle \equiv\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}
+\ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_A\ket{\psi_{-}}_B - \ket{\psi_{-}}_A\ket{\psi_{+}}_B }{\sqrt{2}}
 \]
-
-
-We have almost all the cards, except for one that allows for setting
-\{$\phi$, $\theta$\}. In the spin case, this was achieved by operating
-$e^{i\hat{\sigma}_{z}\phi/2}$ on the state before measurement. Correspondingly,
-here we define this operator by it's action on the relevant state. 
-\begin{lyxlist}{a}
-\item [{Defn:}] $\hat{U}(\phi)$ is defined to be s.t. 
+In the spin case, a violation can be arrived at by measuring along different specific directions in a plane. To measure along different directions, within say the $x-y$ plane, one simply needs to rotate by appropriate angles, say \{$\phi$, $\theta$\}. This can be achieved by operating
+$e^{i\hat{z}\phi/2}\otimes e^{i\hat{z}\theta/2}$ on the state before measurement. Correspondingly, here we define this operator by it's action on the relevant state. $\hat{U}(\phi)$ is defined to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
 \end{eqnarray*}
-
-\end{lyxlist}
-This can achieved in principle using alternate glass slabs for photons,
-to adjust the relative phase as desired, since $\left|\psi_{0}\right\rangle $
-and $\left|\psi_{1}\right\rangle $ are spatially separated. Alternatively,
-we could also define $\hat{U}(\phi)$ in its analytic form. First
-we claim that $\exists$ an operator $\hat{Z}$ s.t. it satisfies
-$\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $
-and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $.
-Before explicitly defining $\hat{Z}$, we observe that given this
-operator, we can naturally define the analytic form of $\hat{U}(\phi)$.
-
-Alt~Defn: 
+This can achieved in principle using alternate glass slabs for photons, to adjust the relative phase as desired, since $\left|\psi_{0}\right\rangle $ and $\left|\psi_{1}\right\rangle $ are spatially separated. Alternatively, we could also define $\hat{U}(\phi)$ in its analytic form. First we claim that $\exists$ an operator $\hat{Z}$ s.t. it satisfies
+$\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. Before explicitly defining $\hat{Z}$, we observe that given this operator, we can naturally define the analytic form of $\hat{U}(\phi)$. 
 \[
-\hat{U}(\phi)=e^{i\hat{Z}\phi/2}
+\hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
-in close analogy with the spin case. It is suggestive from this form
-that $\hat{Z}$ must play the role of $\hat{\sigma}_{z}$. We know
-that $\hat{X}$ is a function of $\hat{p}_{\text{mod}}$. It is thus
-natural to expect $\hat{Z}$ to be a function of $\hat{x}_{\text{mod}}$.
-From it's action, we also note that $\hat{Z}$ must differentiate
-between spatial wavefunctions $\left\langle x|\varphi\right\rangle $
-and $\left\langle x-L|\varphi\right\rangle $. Thus the appropriate
-operator must be $\hat{x}_{\text{mod}2L}$ and not $\hat{x}_{\text{mod}L}$.
-This is supported by the fact that $[\hat{p}_{\text{mod}},\hat{x}_{\text{mod}L}]=0$.
-Now since the action of $\hat{Z}$ must work for arbitrary $\left|\varphi\right\rangle $
-and $N$, we define 
-\[
+in close analogy with the spin case. It is suggestive from this form that $\hat{Z}$ must play the role of $\hat{z}$. We know that $\hat{X}$ is a function of $\hat{p}_{\text{mod}}$. It is thus natural to expect $\hat{Z}$ to be a function of $\hat{x}_{\text{mod}}$. From it's action, we also note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle x|\varphi\right\rangle $ and $\left\langle x-L|\varphi\right\rangle $. Thus the appropriate operator must be $\hat{x}_{\text{mod}2L}$ and not $\hat{x}_{\text{mod}L}$. This is supported by the fact that $[\hat{p}_{\text{mod}},\hat{x}_{\text{mod}L}]=0$. Now since the action of $\hat{Z}$ must work for arbitrary $\left|\varphi\right\rangle $ and $N$, we define
+ \[
 \hat{Z}\equiv Z(\hat{x}_{\text{mod}2L})
 \]
-where $Z$ is some appropriate function, so that $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{\text{mod}2L})\left|x\right\rangle =Z(x_{\text{mod}2L})\left|x\right\rangle $
-. From the constraints on $\hat{Z}$, we conclude that for consistency,
+where $Z$ is some appropriate function, so that $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{\text{mod}2L})\left|x\right\rangle =Z(x_{\text{mod}2L})\left|x\right\rangle $. From the constraints on $\hat{Z}$, we conclude that for consistency,
 we must define%
 \footnote{$\hat{x}_{\text{mod}2L}$ is well defined, see \subref{c6}%
 } 
@@ -363,18 +335,12 @@ Z(x)\equiv\begin{cases}
 
 \begin{figure}
 \includegraphics[width=8cm]{plots/CHSH}\caption{Practically, the number of slits, $N$ will be finite. The plot shows
-$\left\langle C\right\rangle $ as a function of $N$. To get a violation,
+$\left\langle \mathcal B \right\rangle $ as a function of $N$. To get a violation,
 we need merely $7$ slits, while with $50$ we are almost at $2\sqrt{2}$.\label{chshViolation}}
 \end{figure}
 
 
-To evaluate the CHSH inequality, we again need terms of the form $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle $.
-If we assume $N\to\infty$, these can be evaluated easily to be the
-same as before $-\cos(\phi_{i}-\theta_{i})$. Thus, the same analysis
-as before yields $\left\langle C\right\rangle =2\sqrt{2}$ which is
-the same maximal violation, in a completely different setup. If $N$
-is not assumed to be arbitrarily large, then it can be shown that
-(see \subref{c5})
+To evaluate the CHSH inequality, we again need terms of the form $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle $, where $\theta \in \{0,-\pi/2\}$ and $\phi \in \{3\pi/8,5\pi/4\}$. If we assume $N\to\infty$, these can be evaluated easily to be the same as the spin case; $-\cos(\phi_{i}-\theta_{i})$. Thus, the same analysis as that of the spin case yields the maximum violation, $\left\langle \mathcal B \right\rangle =2\sqrt{2}$ which is the same maximal violation, in a completely different setup. If $N$ is not assumed to be arbitrarily large, then it can be shown that (see \subref{c5})
 
 \begin{eqnarray*}
 \left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle  & =\\
@@ -382,9 +348,7 @@ is not assumed to be arbitrarily large, then it can be shown that
 \end{eqnarray*}
 
 
-Thus obviously then, $\left\langle C\right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$.
-If we ask for the smallest $N$ s.t. $\left\langle C\right\rangle >2$,
-we get $N\ge7$; see figure \ref{chshViolation}.
+Thus obviously then, $\left\langle C\right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$. If we ask for the smallest $N$ s.t. $\left\langle C\right\rangle >2$, we get $N\ge7$; see figure \ref{chshViolation}.
 
 
 \subsection{Validating phase space behaviour}
