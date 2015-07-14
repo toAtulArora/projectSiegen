@@ -7769,6 +7769,25 @@ Also figured that this can be easily translated to the theory of diffraction
  
 \end_layout
 
+\begin_layout Itemize
+In that setting, creating any aribtrary entangled state is straight forward;
+ the drawback is you can't do the bell test etc.
+ since it's a single particle system now.
+ I think this is interesting, but we'll not pursue it for the moment
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Git - now Ali is also using git, it has become a lot more easier to work
+ in collaboration.
+ The online thing didn't have enough resolution
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He introduced bibtex
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Standard

@@ -7757,6 +7757,19 @@ Played a little more with
  Quite nice.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Also figured that this can be easily translated to the theory of diffraction
+ in 2 dimensions.
+ Therefore the patterns looked familiar (for say 
+\begin_inset Formula $N=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Wrap figure
