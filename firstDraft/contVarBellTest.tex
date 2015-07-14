@@ -1,7 +1,11 @@
 %% LyX 2.0.8.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[10pt,landscape,british,pra,twocolumn,superscriptaddress,nofootinbib,nobibnotes,tightenlines]{revtex4}
+\documentclass[10pt,landscape,british,pra,twocolumn,superscriptaddress,nofootinbib,nobibnotes,tightenlines,longbibliography]{revtex4}
 %\bibliographystyle{aipnum4-1}
+%\bibliographystyle{apsrev4-1}
+%\usepackage{doi}
+
+\bibliographystyle{plainnat}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \pagestyle{plain}
@@ -132,6 +136,7 @@
 \makeatother
 
 \usepackage{babel}
+
 \begin{document}
 
 \title{Towards macroscopic Bell test with modular variables}
@@ -215,7 +220,7 @@ One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to 
 Accordingly, the inequality should hold for any state described by valid (positive) probability distribution.
 
 \begin{align}
-\mathcal{W}_{\hat {\mathcal{B}}}(q,p)=&\mathcal{W}_{A_1}(q,p)[\mathcal{W}_{A_2}(q,p)+\mathcal{W}_{A_2'}(q,p)] \\&+\mathcal{W}_{A'_1}(q,p)[\mathcal{W}_{A_2}(q,p)-\mathcal{W}_{A_2'}(q,p)]\leq 2 \nonumber
+\mathcal{W}_{\hat {\mathcal{B}}}(q,p)=&\mathcal{W}_{A_1}(q,p)[\mathcal{W}_{A_2}(q,p)+\mathcal{W}_{A_2'}(q,p)] \\&+\mathcal{W}_{ A'_1}(q,p)[\mathcal{W}_{A_2}(q,p)-\mathcal{W}_{A_2'}(q,p)]\leq 2 \nonumber
 \end{align}
 
 Therefore,
@@ -226,40 +231,46 @@ Therefore,
  
 It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
 
-
 \subsection{Phase space translation operators and modular variables }
 
-Particular class of bounded observable can be constructed from the quantum mechanical phase space translation operator
+Particular class of bounded observable can be constructed from the
+quantum mechanical phase space translation operator
 
-This observable is not Hermitian therefore it does not directly correspond to an observable. 
+This observable is not Hermitian therefore it does not directly
+correspond to an observable.
 
 The observables admissible in the CHSH inequality must $\in[-1,1]$.
 If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$,
-then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$,
-where $h/L$ has been introduced for dimensional reasons. This forces
-$p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$,
-then we get precisely the bound needed for the CHSH inequality. We
-chose the constant factors so that for $p_{\text{mod}}=h/L$, the
-$\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
+then one way of obtaining a bound variable is to use
+$p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for
+dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we
+further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get
+precisely the bound needed for the CHSH inequality. We chose the
+constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function
+also completes a period. Note that
+$\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
 Next, recall that in quantum mechanics, the momentum that's quantized,
 is one that generates infinitesimal translations. Formally, this means
-that $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle =\left|x+\delta L\right\rangle $.
-If we want a finite translation, we can do the following procedure:
-$\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle =e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $.
+that $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle
+=\left|x+\delta L\right\rangle $.  If we want a finite translation, we
+can do the following procedure:
+$\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle
+=e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $.
 This operator is aptly called the displacement operator. We must add
-that $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar ab}e^{i\hat{x}b}e^{i\hat{p}a}$.
-Thus for appropriate choices of $a,b$, the displacement operators
-can be made to commute or anti-commute. In the former case, it means
-one can simultaneously measure modular position and momentum (which
-is striking) and in the latter case, one can define pauli matrix like
-commutation.
+that $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar
+  ab}e^{i\hat{x}b}e^{i\hat{p}a}$.  Thus for appropriate choices of
+$a,b$, the displacement operators can be made to commute or
+anti-commute. In the former case, it means one can simultaneously
+measure modular position and momentum (which is striking) and in the
+latter case, one can define pauli matrix like commutation.
 
-The idea was that the obvious generalization for obtaining an appropriate
-operator for the CHSH inequality is $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$.
+The idea was that the obvious generalization for obtaining an
+appropriate operator for the CHSH inequality is
+$\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$.
 While by construction this is bounded, the action of displacement
-operators will guide us in creating the appropriate states in the
-next sub section.
+operators will guide us in creating the appropriate states in the next
+sub section.
 
 
 \subsection{Violation in Continuous Variable State}

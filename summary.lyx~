@@ -7529,6 +7529,27 @@ reference "fig:The-entangled-state"
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Obtaining the `interference term' for our state: Turns out it is rather
+ complicated! It's something like 
+\begin_inset Formula 
+\[
+\left\langle p_{1}p_{2}|\Psi'\right\rangle =\frac{1}{\sqrt{2}}\varphi(p_{1})\varphi(p_{2})\sum_{n,m}e^{i(np_{1}+mp_{2})}\frac{L}{\hbar}\left[-\cos\frac{\delta}{2}\left((-)^{m}-(-)^{n}\right)+\sin\frac{\delta}{2}\left(1+(-1)^{n+m}\right)\right]
+\]
+
+\end_inset
+
+and trying to simplify this even for 2 slits is not easy where 
+\begin_inset Formula $n,m\in\{-1,0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Tried working out how our measurement scheme is better than measuring parity
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Wrap figure
@@ -7618,6 +7639,10 @@ Gym [double on Sunday]
 \end_deeper
 \begin_layout Section
 July 13-19
+\end_layout
+
+\begin_layout Subsection
+Monday, July 13
 \end_layout
 
 \begin_layout Itemize
@@ -7769,6 +7794,25 @@ Also figured that this can be easily translated to the theory of diffraction
  
 \end_layout
 
+\begin_layout Itemize
+In that setting, creating any aribtrary entangled state is straight forward;
+ the drawback is you can't do the bell test etc.
+ since it's a single particle system now.
+ I think this is interesting, but we'll not pursue it for the moment
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Git - now Ali is also using git, it has become a lot more easier to work
+ in collaboration.
+ The online thing didn't have enough resolution
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+He introduced bibtex
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Standard
@@ -7881,6 +7925,86 @@ Stupidity and subtlety aid in discovery.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Everyone can choose to act according to what's right or according to what's
+ convenient
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+assuming they're not the same act
+\end_layout
+
+\end_inset
+
+.
+ The probability with which you make these choices defines you; decides
+ whether you're predictable or not.
+ I would rather be predictable in this sense; Then the remaining unpredictabilit
+y in me must come from my imagination.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tuesday, July 14
+\end_layout
+
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Added almost (except one) all the links to the papers Ali had referred to
+ in the introduction he'd written
+\end_layout
+
+\begin_layout Itemize
+Fixed the footnotes (now they're really footnotes)
+\end_layout
+
+\begin_layout Itemize
+Not able to fix the URLs in the bibliography
+\end_layout
+
+\begin_layout Itemize
+Reading up on the Wigner Wyel correspondence precisely.
+ I feel Ali has made some mistakes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Figured it thanks to Mukunda's notes
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture 9 [this is interesting, especially/because I haven't done
+ this before!]
+\end_layout
+
+\begin_layout Itemize
+i7s arrived
+\end_layout
+
+\begin_layout Itemize
+Feasable lyx alternative: http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-
+latex-editor/
 \end_layout
 
 \end_deeper
