@@ -304,10 +304,17 @@ These states were constructed with a partial translational symmetry which is app
 \end{eqnarray*}
 just as was with $\hat x$ and $\ket{\pm}$. In general however, the relation doesn't hold. Note that definition of $\left|\psi_{\pm}\right\rangle $ justifies the word `slit' in the definition of $N$, as is clear from the illustration. This construction also preserves the orthogonality relations from the spin case; $\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$. Analogously, we construct the entangled state 
  \[
-\ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_A\ket{\psi_{-}}_B - \ket{\psi_{-}}_A\ket{\psi_{+}}_B }{\sqrt{2}}
+\ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_1\ket{\psi_{-}}_2 - \ket{\psi_{-}}_1\ket{\psi_{+}}_2 }{\sqrt{2}}
 \]
-In the spin case, a violation can be arrived at by measuring along different specific directions in a plane. To measure along different directions, within say the $x-y$ plane, one simply needs to rotate by appropriate angles, say \{$\phi$, $\theta$\}. This can be achieved by operating
-$e^{i\hat{z}\phi/2}\otimes e^{i\hat{z}\theta/2}$ on the state before measurement. Correspondingly, here we define this operator by it's action on the relevant state. $\hat{U}(\phi)$ is defined to be s.t. 
+Explicitly, consider: (a) The first qubit is with Alic and the second with Bob. (b) Alice and Bob apply local unitaries $\hat U(\theta)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\phi)$ respectively and then both measure $\hat X$. (c) Alice can choose $\theta \in \{0,-\pi/2\}$ and Bob can choose $\phi \in \{3\pi/8,5\pi/4\}$.
+
+Effectively, this amounts to defining \begin{align*}
+\hat A_1 &\equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta),
+&\hat A'_1 &\equiv \hat U^{\dagger}(\theta') \hat X \hat U(\theta') \\
+\hat A_2 &\equiv \hat U^{\dagger}(\phi) \hat X \hat U(\phi), 
+&\hat A'_2 &\equiv \hat U^{\dagger}(\phi') \hat X \hat U(\phi')
+\end{align*}
+The unitary $\hat U$ was introduced here to implement measurement along different directions in a plane, as is the case with the spins. To measure along different directions, within say the $x-y$ plane, one simply needs to rotate by appropriate angles using $\hat u(\phi) \equiv e^{i\hat{z}\phi/2}$. Correspondingly, here we define $\hat U$ by it's action on the relevant state. $\hat{U}(\phi)$ is defined to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -322,8 +329,7 @@ in close analogy with the spin case. It is suggestive from this form that $\hat{
 \hat{Z}\equiv Z(\hat{x}_{\text{mod}2L})
 \]
 where $Z$ is some appropriate function, so that $\hat{Z}\left|x\right\rangle =Z(\hat{x}_{\text{mod}2L})\left|x\right\rangle =Z(x_{\text{mod}2L})\left|x\right\rangle $. From the constraints on $\hat{Z}$, we conclude that for consistency,
-we must define%
-\footnote{$\hat{x}_{\text{mod}2L}$ is well defined, see \subref{c6}%
+we must define\footnote{$\hat{x}_{\text{mod}2L}$ is well defined, see \subref{c6}%
 } 
 \[
 Z(x)\equiv\begin{cases}
@@ -335,20 +341,18 @@ Z(x)\equiv\begin{cases}
 
 \begin{figure}
 \includegraphics[width=8cm]{plots/CHSH}\caption{Practically, the number of slits, $N$ will be finite. The plot shows
-$\left\langle \mathcal B \right\rangle $ as a function of $N$. To get a violation,
+$\left\langle \mathcal {\hat B} \right\rangle $ as a function of $N$. To get a violation,
 we need merely $7$ slits, while with $50$ we are almost at $2\sqrt{2}$.\label{chshViolation}}
 \end{figure}
 
 
-To evaluate the CHSH inequality, we again need terms of the form $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle $, where $\theta \in \{0,-\pi/2\}$ and $\phi \in \{3\pi/8,5\pi/4\}$. If we assume $N\to\infty$, these can be evaluated easily to be the same as the spin case; $-\cos(\phi_{i}-\theta_{i})$. Thus, the same analysis as that of the spin case yields the maximum violation, $\left\langle \mathcal B \right\rangle =2\sqrt{2}$ which is the same maximal violation, in a completely different setup. If $N$ is not assumed to be arbitrarily large, then it can be shown that (see \subref{c5})
+To evaluate $\mean{\mathcal {\hat B}}$, we essentially need terms of the form $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle $. If we assume $N\to\infty$, these can be evaluated easily to be the same as the spin case; $-\cos(\phi_{i}-\theta_{i})$ (see \subref{c3}). Substituting the angles as defined, we obtain $\left\langle \mathcal {\hat B} \right\rangle =2\sqrt{2}$; the maximum violation, in a completely different setup. If $N$ is not assumed to be arbitrarily large, then it can be shown that (see \subref{c5})
 
 \begin{eqnarray*}
 \left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle  & =\\
  & -\left(\frac{N-1}{N}\right)^{2} & \cos(\phi_{i}-\theta_{i})
 \end{eqnarray*}
-
-
-Thus obviously then, $\left\langle C\right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$. If we ask for the smallest $N$ s.t. $\left\langle C\right\rangle >2$, we get $N\ge7$; see figure \ref{chshViolation}.
+Thus obviously then, $\left\langle \mathcal {\hat B} \right\rangle =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}$. If we ask for the smallest $N$ s.t. $\left\langle \mathcal {\hat B}\right\rangle >2$, we get $N\ge7$; see figure \ref{chshViolation}.
 
 
 \subsection{Validating phase space behaviour}
