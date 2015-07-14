@@ -196,7 +196,7 @@ It is, however, more tempting to formulate analogous tests for truly spatial deg
 Moreover, phase space is a natural concept in classical theory and it is equivalent to the state space.   The outstanding challenge is to come up with local realism test which verify or disprove quantum mechanics predictions also with most ``classical-like" measurements and operations in phase space.
 
 The paper is organized as follows.
-In Sec. we introduce our framework for Bell nonlocality test aiming to use most classical-like variables and measurements, and thus pave the way towards macroscopic test of local realism. For our purpose we use continuous modular variables, characterized by continuum spectral eigenvalues. These variables can be clearly demonstrated in Multi-slit interfrometric setup. In Sec. We construct the CV Bell operator of CHSH form from modular variables. In Sec. we proceed with identifying the relevant entangled state leading to the violation of the Bell inequality. Finally, in Sec. we propose a possible implementation of the desired entangled states
+In Sec. we introduce our framework for Bell nonlocality test aiming to use most classical-like variables and measurements, and thus pave the way towards macroscopic test of local realism. For our purpose we use continuous modular variables, characterized by continuum spectral eigenvalues. These variables can be clearly demonstrated in Multi-slit interferometric setup. In Sec. We construct the CV Bell operator of CHSH form from modular variables. In Sec. we proceed with identifying the relevant entangled state leading to the violation of the Bell inequality. Finally, in Sec. we propose a possible implementation of the desired entangled states
 
 
 
@@ -206,71 +206,62 @@ The central
 problem here is to construct a suitable Bell-operator expressed in terms of 
 local continuous variable operators $\hat A$.  A general form of CHSH expression of such a 
 Bell-operator would be generally written as
-\begin{align}
+\[
 \label{Bellmodular}
-\hat {\mathcal{B}}= \hat A_1\otimes &(\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
-\end{align}
-In order to apply the CHSH criterion we need to use variables which take on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of continuous variable (CV) systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \begin{equation}
+\hat {\mathcal{B}} \equiv \hat A_1\otimes (\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
+\]
+In order to apply the CHSH criterion we need to use variables which take on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of continuous variable (CV) systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \[
 |a_j|\leq 1
-\end{equation}
-One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence. That is, 
-\begin{equation}
-\mathcal{W}_{\hat A}(q,p)=\dfrac{1}{2\pi\hbar}\int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
-\end{equation} 
+\]
+One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
+\[
+\mathcal{W}_{\hat A}(q,p) \equiv \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
+\] 
 Accordingly, the inequality should hold for any state described by valid (positive) probability distribution.
 
-\begin{align}
-\mathcal{W}_{\hat {\mathcal{B}}}(q,p)=&\mathcal{W}_{A_1}(q,p)[\mathcal{W}_{A_2}(q,p)+\mathcal{W}_{A_2'}(q,p)] \\&+\mathcal{W}_{ A'_1}(q,p)[\mathcal{W}_{A_2}(q,p)-\mathcal{W}_{A_2'}(q,p)]\leq 2 \nonumber
-\end{align}
+\begin{align*}
+\mathcal{W}_{\hat {\mathcal{B}}}(q,p)=&\mathcal{W}_{\hat A_1}(q,p)[\mathcal{W}_{\hat A_2}(q,p)+\mathcal{W}_{\hat A_2'}(q,p)] \\&+\mathcal{W}_{\hat A'_1}(q,p)[\mathcal{W}_{\hat A_2}(q,p)-\mathcal{W}_{\hat A_2'}(q,p)]\leq 2
+\end{align*}
 
 Therefore,
 \begin{equation}
-\mean{\hat{\mathcal{B}}}=\int \mathcal{W}_{\hat\rho}(q,p)\mathcal{W}_{\hat {\mathcal{B}}}(q,p)dq dp\leq 2
+\mean{\hat{\mathcal{B}}}=\int W_{\hat {\rho}}(q,p)\mathcal{W}_{\hat {\mathcal{B}}}(q,p)dq dp\leq 2
 \end{equation}
+where $W_{\hat{\rho}}$ is the wigner function corresponding to $\hat {\rho}$ given by
+\[
+W_{\hat {\rho}} = \frac{\mathcal{W}_{\hat {\rho}}}{2\pi \hbar}
+\]
  We that we ascertain that any state described by positive definite Wigner function, that is compatible with local hidden phase space variable, satisfy above inequality.  leading to the violation of this version of Bell inequality must be characterized by negative Wigner function deviating from proper probability distribution in hidden phase space coordinates. That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
  
-It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
+It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
 
 \subsection{Phase space translation operators and modular variables }
 
-Particular class of bounded observable can be constructed from the
-quantum mechanical phase space translation operator
+One particular class of bounded observable can be constructed from the quantum mechanical phase space translation operator\footnote{Here $-L/\hbar$ causes a displacement by $L$.}, $e^{-i\hat p L/\hbar}$. This observable is not hermitian and therefore it does not correspond to an observable. We define
+\begin{align}
+\begin{split}
+  \label{translation}
+  \hat X \equiv \text{Re}(e^{-i\hat p L/\hbar})&=(e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar})/2 \\ &=\cos(\hat p L/\hbar)
+\end{split}
+\end{align}
+which is not only explicitly hermitian, it's also bounded by $1$. There're three relavent properties. First, from equation \ref{translation}, the action of $\hat X$ is obvious. This entails that spatial symmetry must be harnessed to construct its (approximate) eigenstates. Second, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
+\[
+\hat p_{\text{mod}}\equiv \int dp \, p\text{mod}{h/L} \ket{p}\bra{p}
+\]
+and note that measuring $\hat p_{\text{mod}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}}$, not $\hat p$.
+And finally, we could define an anlogous momentum translation operator and obtain the following relation
+\[
+e^{i\hat{p}a}e^{i\hat{q}b}=e^{i\hbar ab}e^{i\hat{q}b}e^{i\hat{p}a}
+\]
+using $[q,p]=i\hbar$. For appropriate choices of $a,b$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
 
-This observable is not Hermitian therefore it does not directly
-correspond to an observable.
+%The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
-The observables admissible in the CHSH inequality must $\in[-1,1]$.
-If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$,
-then one way of obtaining a bound variable is to use
-$p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for
-dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we
-further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get
-precisely the bound needed for the CHSH inequality. We chose the
-constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function
-also completes a period. Note that
-$\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
+%Next, recall that in quantum mechanics, the momentum that's quantized, is one that generates infinitesimal translations. Formally, this means that $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle=\left|x+\delta L\right\rangle $. If we want a finite translation, we can do the following procedure $\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle=e^{-i\hat{p}L/\hbar}\left|x\right\rangle=\left|x+L\right\rangle $. This operator is aptly called the displacement operator. We must add that $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar ab}e^{i\hat{x}b}e^{i\hat{p}a}$.
+  
+%Thus for appropriate choices of $a,b$, the displacement operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is striking) and in the latter case, one can define pauli matrix like commutation.
 
-Next, recall that in quantum mechanics, the momentum that's quantized,
-is one that generates infinitesimal translations. Formally, this means
-that $\left(1-i\hat{p}\delta L/\hbar\right)\left|x\right\rangle
-=\left|x+\delta L\right\rangle $.  If we want a finite translation, we
-can do the following procedure:
-$\lim_{N\to\infty}\left(1-i\frac{\hat{p}}{\hbar}\frac{L}{N}\right)^{N}\left|x\right\rangle
-=e^{-i\hat{p}L/\hbar}\left|x\right\rangle =\left|x+L\right\rangle $.
-This operator is aptly called the displacement operator. We must add
-that $e^{i\hat{p}a}e^{i\hat{x}b}=e^{i\hbar
-  ab}e^{i\hat{x}b}e^{i\hat{p}a}$.  Thus for appropriate choices of
-$a,b$, the displacement operators can be made to commute or
-anti-commute. In the former case, it means one can simultaneously
-measure modular position and momentum (which is striking) and in the
-latter case, one can define pauli matrix like commutation.
-
-The idea was that the obvious generalization for obtaining an
-appropriate operator for the CHSH inequality is
-$\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$.
-While by construction this is bounded, the action of displacement
-operators will guide us in creating the appropriate states in the next
-sub section.
+%The idea was that the obvious generalization for obtaining an appropriate operator for the CHSH inequality is $\cos(\hat{p}L/\hbar)=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}$. While by construction this is bounded, the action of displacement operators will guide us in creating the appropriate states in the next sub section.
 
 
 \subsection{Violation in Continuous Variable State}

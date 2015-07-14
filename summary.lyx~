@@ -8003,8 +8003,23 @@ i7s arrived
 \end_layout
 
 \begin_layout Itemize
-Feasable lyx alternative: http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-
-latex-editor/
+Feasable lyx alternative: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-latex-editor/
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Idea is to use latex for writing the basic thing, then collaborate with
+ the tex file shared over git :)
 \end_layout
 
 \end_deeper
