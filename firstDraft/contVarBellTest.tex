@@ -435,7 +435,7 @@ We start with noting the triviality of constructing a
 \left|\psi_{-}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
 \]
  state can be similarly constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi\,\implies\, e^{i\pi}=-1$. In \figref{scheme}, if you consider only one particle, and disregard
-everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, just after the grating. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\zeta} = \ket{\gamma}_1 \ket{\gamma}_2$.
+everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, just after the grating. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{\rightarrow}_1\ket{\uparrow}_2 -\ket{\uparrow}_1\ket{\rightarrow}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\zeta} = \ket{\gamma}_1 \ket{\gamma}_2$.
 %Thus the initial state is
  %\[\left|\chi\right\rangle\left|\zeta\right\rangle=\frac{\left|HV\right\rangle-\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle \]
 
@@ -444,12 +444,12 @@ everything after the grating, then the setup is expected to produce a $\left|\ps
 The state $\left|\gamma\right\rangle $ maybe considered to be a Gaussian with $\sigma\gg2NL$ so that after the grating, the spatial state can be written as 
 %\[ \left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\psi_{+}\psi_{+}\right\rangle \]
 \[
-\frac{\ket{H}_1\ket{V}_2 - \ket{V}_1\ket{H}_2}{\sqrt 2} \ket{\psi_+}_1\ket{\psi_+}_2
+\frac{ \ket{\rightarrow}_1\ket{\uparrow}_2 -\ket{\uparrow}_1\ket{\rightarrow}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
 \]
 To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings as shown in \figref{scheme} (in the diagram, they're not alternating though as will be explained shortly). These have width such that the resultant phase it introduces is $\pi$ and the state is 
 %\[\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle\left|\psi_{+}\psi_{-}\right\rangle-\left|VH\right\rangle\left|\psi_{-}\psi_{+}\right\rangle}{\sqrt{2}}\]
 \[
-\frac{\ket{H}_1\ket{V}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{V}_1\ket{H}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
+\frac{\ket{\rightarrow}_1\ket{\uparrow}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\uparrow}_1\ket{\rightarrow}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
 \]
 At this stage, if we were to trace out the polarization state, we'd
 end up with a mixed state. That is useless for our test. Ignoring
@@ -457,9 +457,9 @@ the glass slabs at the moment in \figref{scheme}, we observe the
 action of the polarisers on the state. After the $45^{\circ}$ polariser,
 the state becomes (see \subref{c8}) % \[\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}\right)\]
 \[
-\ket{\chi_{45}}\ket{\Psi} = \ket{H'}_1\ket{H'}_2 \frac{\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2}
+\ket{\chi_{45}}\ket{\Psi} = \ket{\nearrow}_1\ket{\nearrow}_2 \frac{\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2}
 \]
-where $\left|H'\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$.
+where $\left|\nearrow\right\rangle \equiv\left(\left|\rightarrow\right\rangle +\left|\uparrow\right\rangle \right)/\sqrt{2}$.
 Now if we trace out the polarization state, we'd be left with the target entangled state. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
 
 \begin{figure*}
@@ -488,33 +488,17 @@ Therefore it is sufficient to explain how to obtain the joint momentum
 probability distribution from the experiment, for a given measurement
 setting. We start with stating the result that in the far-field approximation,
 \[
-\left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}x{}_{A}}{D},p{}_{B}=\frac{p_{z}x{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}
+\left| \braket{q_A,q_B | \Psi_{f\text{ screen}}} \right|^2 \propto \left| \braket{p_A=\frac{p_zq_A}{D},p_B=\frac{p_zq_B}{D}|\Psi_f} \right|^2
 \]
- where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state
-of the system at the screen, $D$ is the distance between the gratings
-and the screens and $p_{z}$ is the $z$ component of momentum of
-the particle. For a photon, $p_{z}=h/\lambda$ while for an electron,
-$p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen
-from the grating. The idea is simply that the momentum distribution
-at the grating can be recovered by observing the spatial distribution
-at a screen, sufficiently far away.
+%\[\left|\left\langle q{}_{A},q{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}q{}_{A}}{D},p{}_{B}=\frac{p_{z}q{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}\]
+ where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
+and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for an electron, $p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at a screen, sufficiently far away.
 
 In an experiment then, there are two possibilities. \\
-(a) Given $f$, Alice and Bob both note the position at which they
-obtain their particle. After repeating the experiment sufficiently
-many times, they share their list to create a sequence $\{\left(x{}_{A}^{(i)},x_{B}^{(i)}\right)\}$.
-From this sequence, they create a 2D histogram, by simply counting
-how many time they got $(x'_{A},x'_{B})$ to lie inside a given cell.
-The normalized result is essentially $\left|\left\langle x{}_{A},x{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
-from which $\left\langle \hat{X}\otimes\hat{X}\right\rangle $ can
-be computed as discussed. $f$ is changed to evaluate all the 4 terms
-to finally obtain $\left\langle C\right\rangle $ experimentally.
+(a) Given $f$, Alice and Bob both note the position at which they obtain their particle. After repeating the experiment sufficiently many times, they share their list to create a sequence $\{(q{}_{A}^{(i)},q_{B}^{(i)})\}$. From this sequence, they create a 2D histogram, by simply counting how many time they got $(q'_{A},q'_{B})$ to lie inside a given cell. The normalized result is essentially $\left|\left\langle q{}_{A},q{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
+from which $\braket{ \hat{X}\otimes\hat{X} }$ can be computed as discussed. $f$ is changed to evaluate all the 4 terms to finally obtain $\left\langle C\right\rangle $ experimentally.
 \\
-(b) The other simpler, equivalent and direct possibility is that Alice
-and Bob both obtain the position, $\{x_{A}^{(i)},x_{B}^{(i)}\}$ for
-the $i$th repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and
-$\cos(p_{B}^{(i)}L/\hbar)$. After sufficient iterations (for all
-values of $f$), they exchange their observations to simply evaluate
+(b) The other simpler, equivalent and direct possibility is that Alice and Bob both obtain the position, $(q_{A}^{(i)},q_{B}^{(i)})$ for the $i$th repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and $\cos(p_{B}^{(i)}L/\hbar)$. After sufficient iterations (for all values of $f$), they exchange their observations to simply evaluate
 the average, viz. 
 \[
 \frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\left\langle C\right\rangle 
@@ -683,10 +667,10 @@ since the phase difference is spin dependent.
 
 \subsubsection{Action of a polariser\label{sub:c8}}
 
-If we define $\left|H'\right\rangle \equiv\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},$
-$\left|V'\right\rangle \equiv-\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
-and the $45^{\circ}$ projector as $\left|H'\right\rangle \left\langle H'\right|$,
-then both $\left|H\right\rangle \to\left|H'\right\rangle $ and $\left|V\right\rangle \to\left|H'\right\rangle $
+If we define $\left|\nearrow\right\rangle \equiv\frac{\left|\rightarrow\right\rangle +\left|\uparrow\right\rangle }{\sqrt{2}},$
+$\left|\nwarrow\right\rangle \equiv-\frac{\left|\rightarrow\right\rangle -\left|\uparrow\right\rangle }{\sqrt{2}}$
+and the $45^{\circ}$ projector as $\left|\nearrow\right\rangle \left\langle \nearrow\right|$,
+then both $\left|\rightarrow\right\rangle \to\left|\nearrow\right\rangle $ and $\left|\uparrow\right\rangle \to\left|\nearrow\right\rangle$
 where ofcourse with a probability $1/2$, the photon will be lost.
 
 \bibliography{Modular}
