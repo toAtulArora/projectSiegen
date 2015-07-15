@@ -314,4 +314,11 @@ Week 9
 Week 10
 --
 * Monday (Jul 12)
-  * 
+  * Working on draft
+
+* Tuesday (Jul 13)
+  * Working on draft
+
+* Wednesday (Jul 14)
+  * Working on draft
+  * **Weyl mapped $\hat X(\theta)$ found to be a $\cos(p+Z_+(q))$ like function!**
