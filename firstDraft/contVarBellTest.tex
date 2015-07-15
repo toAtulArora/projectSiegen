@@ -162,7 +162,7 @@
 
 \date{May-July 2015}
 \begin{abstract}
-We propose local realism tests demonstrated by correlation measurements of  continuum valued function of position and momentum variables, known as modular variables. These observables are described by bounded function in phase sapce, and therefore,  the associated inequality holds for any state described by positive Wigner function. This conform with Bell conjecture that positive Wigner function serving as a valid probability distribution does not reveal nonlocality. We construct a class of entangled states leading to the violation of the inequality, and thus truly demonstrate nonlocality in phase space. The states can be realized in interferometric setup though grating technique. The nonlocality is verified from spatial correlation data detected from the screens.
+We propose local realism tests demonstrated by correlation measurements of  continuum valued function of position and momentum variables, known as modular variables. These observables are described by bounded function in Wigner representation of phase sapce, and therefore,  the associated inequality holds for any state described by positive Wigner function. This conform with Bell conjecture that positive Wigner function serving as a valid probability distribution does not reveal nonlocality. We construct a class of entangled states leading to the violation of the inequality, and thus truly demonstrate nonlocality in phase space. The states can be realized in interferometric setups though grating techniques. The nonlocality is verified from spatial correlation data detected from the screens.
 \end{abstract}
 \maketitle
 
@@ -183,12 +183,12 @@ then, the results constraining the permissible types of hidden variable
 models of quantum mechanics have attracted much attention and have been 
 reformulated as the problem of contextual measurements by Kochen and 
 Specker~\cite{Kochen} and in terms of temporal correlations by Leggett 
-and Garg~\cite{LG85}. Today, these concepts have mainly been formulated for intrinsic quantum degree of freedom of microscopic particles such as spins ... and tested in various 
+and Garg~\cite{LG85}. Today, these concepts have mainly been formulated for intrinsic quantum degree of freedom of microscopic particles such as spins, and tested in various 
 experiments with photons~\cite{Aspect1999}, ions~\cite{Roos09}, impurity spins~\cite{WaldherrPRL2011,KneeNatComm2012} or superconducting 
 qubits~\cite{Palacios-LaloyNatPhys2010}. All experimental observations confirmed the validity of quantum nonlocality on this level. 
  
-The outstanding challenge is to formulate similar tests with truly spatial degree of freedom and test the nonlocality based on observations taken directly from phase space coordinates. Moreover, phase space is a natural concept in classical theory and it is equivalent to the state space. Therefore, it as a natural extension to macroscopic limt of local realism tests [ ].  This come along with the original EPR argument which uses phase space descriptions to better address the locality problem of quantum mechanics in such manifold. Notebly, the Wigner function associated with theentangled state used in EPR argument, so called EPR state is positive every where. That is why, Bell argued that EPR states  do not lead to violation of the inequalities derived from
-local hidden variable models. Because, positive Wigner functions serve as valid joint probability distributions over local \emph{hidden} positions and momenta. That is, such state are compatible with a model of local hidden variable description. Banaszek and Wodkiewicz, however, showed that using particular measurements, Parity measurements, EPR states can reveal nonlocal feature indicating that not only the state itself but the type of correlation measurements is also important. The problem of constructing a ``macroscopic'' test of local hidden variable models lies in choocing  proper observables whose  Wigner representations satisfy the constraint imposed by the algebraic CHSH expression. Throughout the paper, we will use the term ``macroscopic'' to refer to measurements of particles' phase space coordinates.
+The outstanding challenge is, however, to formulate similar tests with truly spatial degree of freedom and observe the nonlocality directly from the observation of phase space coordinates. This can be considered as a natural extension to macroscopic limit of local realism tests [ ]. Moreover, phase space is a natural concept in classical theory and it is equivalent to the state space. This come along with the original EPR argument which uses phase space descriptions to better address the reality and locality problems of quantum mechanics in such manifold. Notably, the Wigner function associated with the entangled state used in EPR argument, so called EPR state, is positive every where. That is why, Bell argued that EPR states  do not lead to violation of the inequalities derived from
+local hidden variable assumptions. Because, positive Wigner functions serve as valid joint probability distributions over local \emph{hidden} positions and momenta. Thereby, such state are compatible with a model of local hidden variable description. Banaszek and Wodkiewicz, however, showed that using particular measurements, Parity measurements, EPR states can reveal nonlocal feature indicating that not only the state itself but the type of correlation measurements is also important in any local realism tests. This opens the discussion as to   The problem of constructing a ``macroscopic'' test of local hidden variable models lies in choocing  proper observables whose  Wigner representations satisfy the constraint imposed by the algebraic CHSH expression. Throughout the paper, we will use the term ``macroscopic'' to refer to measurements of particles' phase space coordinates.
 
 
 
@@ -201,38 +201,34 @@ In Sec. we introduce our framework for Bell nonlocality test aiming to use most 
 
 \section{Framework for macroscopic Bell test}
 
-In what follow we develop an approach which comply with above statement.
+In what follow we develop an approach of local realism tests which comply with above Bell's argument.
 The central 
-problem here is to construct a Bell-operator expressed in terms of  suitable
-local continuous variable operators $\hat A$.  A general form of CHSH expression of such a 
-Bell-operator reads
+problem here is to construct a Bell-operator of the Clauser-HorneShimony-Holt (CHSH) form
 \[
 \label{Bellmodular}
 \hat {\mathcal{B}} \equiv \hat A_1\otimes (\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
 \]
-In order to apply the CHSH criterion we need to use variables which take on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of continuous variable (CV) systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \[
-|a_j|\leq 1
-\]
-One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
+expressed in terms of suitable local continuous variable (CV) observables $\hat A$ taking on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have $
+|a_j|\leq 1$.
+One obvious example is parity operator which used in Ref [ ]. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
 \[
 \mathcal{W}_{\hat A}(q, p) \equiv \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
 \] 
-Accordingly, the inequality should hold for any state described by valid (positive) probability distribution.
-
+Therefore,
 \begin{align*}
 \mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)&=\mathcal{W}_{\hat A_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)+\mathcal{W}_{\hat A_2'}(q_2,p_2)] \\&+\mathcal{W}_{\hat A'_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)-\mathcal{W}_{\hat A_2'}(q_2,p_2)]\leq 2
 \end{align*}
-where $\bs q=(q_1,q_2)$ and  $\bs p=(p_1, p_2)$.
+where $\bs q=(q_1,q_2)$ and  $\bs p=(p_1, p_2)$. Accordingly, the inequality should hold for any state described by valid (positive) probability distribution over phase space.
 Therefore,
 \begin{equation}
 \mean{\hat{\mathcal{B}}}=\int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p\leq 2
 \end{equation}
-where $W_{\hat{\rho}}$ is the normalized wigner function corresponding to $\hat {\rho}$ given by $
-W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$.
+where $W_{\hat{\rho}}$ is the Wigner quasi-probability distribution corresponding to $\hat {\rho}$ given by $
+W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. Parity operators do not fulfill above requirement. Because the corresponding Wigner representation of them are given by delta functions which are unbounded in phase space. This already voids the above inequality. With this, we ascertain that any state described by positive definite Wigner function, including EPR states, satisfy above class of Bell inequality. Hence, any state  leading to violation must be characterized by negative Wigner function deviating from proper probability distribution in (hidden) phase space coordinates. 
 
-With this, we ascertain that any state described by positive definite Wigner function, that is compatible with local hidden phase space variable, satisfy above inequality.  leading to the violation of this version of Bell inequality must be characterized by negative Wigner function deviating from proper probability distribution in hidden phase space coordinates. That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
+%That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
  
-It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
+It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like'' measurement.
 
 \subsection{Phase space translation operators and modular variables }
 
