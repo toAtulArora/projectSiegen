@@ -341,11 +341,16 @@ We now describe explicitly, how all these fit with the framework laid out earlie
 
 Effectively, this amounts to defining 
 \begin{align*}
-\hat A_1 &\equiv \hat U^{\dagger}(\phi) \hat X \hat U(\phi),
-&\hat A'_1 &\equiv \hat U^{\dagger}(\phi') \hat X \hat U(\phi') \\
-\hat A_2 &\equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta), 
-&\hat A'_2 &\equiv \hat U^{\dagger}(\theta') \hat X \hat U(\theta')
+  \hat A_1 &\equiv \hat X (\phi), &\hat A'_1 &\equiv \hat X (\phi') \\
+  \hat A_2 &\equiv \hat X (\theta), &\hat A_2 &\equiv \hat X (\theta')
 \end{align*}
+where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$.
+%\begin{align*}
+%\hat A_1 &\equiv \hat U^{\dagger}(\phi) \hat X \hat U(\phi),
+%&\hat A'_1 &\equiv \hat U^{\dagger}(\phi') \hat X \hat U(\phi') \\
+%\hat A_2 &\equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta), 
+%&\hat A'_2 &\equiv \hat U^{\dagger}(\theta') \hat X \hat U(\theta')
+%\end{align*}
 
 Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, we are now in a position to evaluate $\mean{\mathcal {\hat B}}$. We essentially need terms like $ \mean{ \hat A_{1} \otimes \hat A_{2}}$. %$\left\langle\hat{U}^{\dagger}(\phi)\hat{X}\hat{U}(\phi)\otimes\hat{U}^{\dagger}(\theta)\hat{X}\hat{U}(\theta)\right\rangle $. 
 
@@ -367,27 +372,19 @@ If we ask for the smallest $N$ s.t. $\mean{ \mathcal {\hat B} } >2$, we get $N\g
 %We care because wigner functions maybe thought of as a specific case of the Wigner-Weyl correspondence, which is a one-one map between classical functions and their corresponding quantum operators. Thus, in a phase-space description of quantum mechanics, it is important to show that it is not necessary to have unboundedness in observables to arrive a violation of the Bell's inequality, and thereby non-locality. 
 
 %In our case, $\left|\Psi\right\rangle $ is manifestly normalized.
-To be consistent with out framework, we must show that the observable in our case, given by $\hat{U}^{\dagger}(\phi)\hat{X}\hat{U}(\phi)$
-is bounded in phase space. To that end, we note that
+To be consistent with out framework, we must show that the real functions $\mathcal W_{\hat A_i}$ and $\mathcal W_{\hat A'_i}$ are $\le 1$. To that end, we note that
 
 %\begin{widetext}
 
 %\end{widetext}
 
 \begin{eqnarray*}
-W_{1}(q,p) & = & \frac{1}{2\pi\hbar}\int dq'e^{ipq'/\hbar}\left\langle q-\frac{q'}{2}\right|e^{-i\hat Z\phi/2}\\
- &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2}\left|q+\frac{q'}{2}\right\rangle \\
- & = & \frac{1}{2\pi\hbar}e^{-iZ_{1}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{2}(q)\phi/2}\\
- & = & \frac{1}{2\pi\hbar}e^{ipL/\hbar}e^{iZ_{2}(q)\phi}
+\mathcal W_{\hat X (\delta)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2}\\
+ &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}}\\
+ & = & \frac{1}{2}\left( e^{-iZ_{1}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{2}(q)\phi/2}\right) + \text{h.c.}\\
+ & = & \cos(pL/\hbar + Z_{2}(q)\phi)
 \end{eqnarray*}
-where $Z_{1/2}(q)=Z[(q\mp\frac{L}{2})\text{mod}2L]$ and we used the
-fact that $Z(x)=-Z(x+L)$ (omitting the $\text{mod}2L$). Similarly
-one can evaluate $W_{2}$ and obtain 
-\[
-W=\left(W_{1}+W_{2}\right)/2=\frac{1}{2\pi\hbar}\cos(pL/\hbar)e^{\pm i\phi}
-\]
- which corresponds to the observable (we used that $Z_{2}=\pm1$).
-Clearly $\left|W\right|\le\left(2\pi\hbar\right)^{-1}$.
+where $Z_{1/2}(q) \equiv Z[(q\mp\frac{L}{2})\text{mod}2L]$ and we used the fact that $Z(x)=-Z(x+L)$ (omitting the $\text{mod}2L$). Manifestly then, $\left| \mathcal W_{\hat A_i}\right|, \left| \mathcal W_{\hat A'_i}\right|  \le 1$ as was required.
 
 
 \subsection{Source of Violation}
