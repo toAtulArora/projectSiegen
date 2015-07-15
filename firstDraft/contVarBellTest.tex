@@ -19,6 +19,9 @@
 
 \makeatletter
 
+%-----------New commands (`Atul's')
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
 %---------- New commands
 
 %\usepackage{multicol}
@@ -265,16 +268,15 @@ We begin with constructing continuous variable kets\footnote{We emphasise that t
 of eigenstates of $p$ or $x$ since these are highly idealized and
 strictly, not even a part of the Hilbert space.%
 } that satisfy the same orthogonality and mutual relations as $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $.\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
-and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $, where $\hat{sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
+and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
 } We then construct the relevant operators and finally evaluate $\mean {\hat{\mathcal{B}}} $ to show the violation. 
 
-To construct the states, consider a sharp state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$some length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{N} \equiv \{-\frac{N}{2},-\frac{N}{2}+1,\dots,\frac{N}{2}-2,\frac{N}{2}-1\}$, defined for even $N$ only (for simplicity); $N\equiv$number of `slits'. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
+To construct the states, consider a sharp state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$some length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
 
 \begin{eqnarray*}
 \left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{M}}\sum_{n\in I_{M}}\left|\varphi_{2n+1}\right\rangle \\
 \left|\psi_{1}\right\rangle  & \equiv & \frac{1}{\sqrt{M}}\sum_{n\in I_{M}}\left|\varphi_{2n}\right\rangle 
 \end{eqnarray*}
-where $M\equiv N/2$.
 \begin{figure}
 \includegraphics[bb=0bp 90bp 359bp 222bp,clip,width=6cm]{plots/zeroOne}\\
 (a) $\left\langle q|\psi_{0}\right\rangle $ (dashed) and $\left\langle q|\psi_{1}\right\rangle $\bigskip{}
@@ -299,9 +301,8 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_+} \hat X \ket{\psi_+} &= \frac{N-1}{N} \\
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
- %\begin{eqnarray*}\hat{X}\left|\psi_{+}\right\rangle  & = & +\left|\psi_{+}\right\rangle \\ \hat{X}\left|\psi_{-}\right\rangle  & = & -\left|\psi_{-}\right\rangle \end{eqnarray*} just as was with $\hat x$ and $\ket{\pm}$. In general however, the relation doesn't hold. 
-Note that the definition of $\left|\psi_{\pm}\right\rangle $ justifies the word `slit' for $N$. %This construction also preserves the orthogonality relations from the spin case;$\left\langle \psi_{0}|\psi_{1}\right\rangle =0,\,\implies\left\langle \psi_{+}|\psi_{-}\right\rangle =0$. 
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement measurement `along different directions'. Typically, to measure along a vector in the $x-y$ plane, one may simply rotate by an appropriate angle using $\hat u(\phi) \equiv e^{i\hat{\sigma}_z\phi/2}$ and then measure $\hat{\sigma}_x$. Correspondingly, here we define $\hat U$ to be s.t. 
+where $N \equiv 2M$ is the number of `slits'.
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement measurement `along different directions'. Typically, to measure along a vector in the $x-y$ plane, one may simply rotate by an appropriate angle using $e^{i\hat{\sigma}_z\phi/2}$ and then measure $\hat{\sigma}_x$. Correspondingly, here we define $\hat U$ to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -421,7 +422,7 @@ for matter waves (see \subref{c7}). The overall setup (see \figref{scheme}) is s
 
 \subsection{Creation of the entangled state}
 
-The desired entangled state is $\ket{\Psi}$, as stated in equation \ref{entangledState}. % $\ket{ \Psi } \equiv \frac{ \ket{\psi_{+}}_1\ket{\psi_{-}}_2 -\ket{\psi_{-}}_1\ket{\psi_{+}}_2}{\sqrt{2}}$. 
+The desired entangled state is $\ket{\Psi}$, as stated in equation \ref{entangledState}. 
 We start with noting the triviality of constructing a 
 \[
 \left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{n}\right\rangle 
@@ -431,31 +432,26 @@ We start with noting the triviality of constructing a
 \left|\psi_{-}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
 \]
  state can be similarly constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi\,\implies\, e^{i\pi}=-1$. In \figref{scheme}, if you consider only one particle, and disregard
-everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, just after the grating. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{\rightarrow}_1\ket{\uparrow}_2 -\ket{\uparrow}_1\ket{\rightarrow}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\zeta} = \ket{\gamma}_1 \ket{\gamma}_2$.
-%Thus the initial state is
- %\[\left|\chi\right\rangle\left|\zeta\right\rangle=\frac{\left|HV\right\rangle-\left|VH\right\rangle }{\sqrt{2}}\left|\gamma\gamma\right\rangle \]
-
-%\[\ket{\chi}\ket{\zeta} = \frac{\ket{H}_1\ket{V}_2 - \ket{V}_1\ket{H}_2}{\sqrt 2}\ket{\gamma}_1\ket{\gamma}_2\]
+everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, just after the grating. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\gamma}_1 \ket{\gamma}_2$.
 
 The state $\left|\gamma\right\rangle $ maybe considered to be a Gaussian with $\sigma\gg2NL$ so that after the grating, the spatial state can be written as 
-%\[ \left|\chi\right\rangle \left|\zeta_{\text{grating}}\right\rangle =\frac{\left|HV\right\rangle -\left|VH\right\rangle }{\sqrt{2}}\left|\psi_{+}\psi_{+}\right\rangle \]
 \[
-\frac{ \ket{\rightarrow}_1\ket{\uparrow}_2 -\ket{\uparrow}_1\ket{\rightarrow}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
+\frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
 \]
-To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings as shown in \figref{scheme} (in the diagram, they're not alternating though as will be explained shortly). These have width such that the resultant phase it introduces is $\pi$ and the state is 
-%\[\left|\chi\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle =\frac{\left|HV\right\rangle\left|\psi_{+}\psi_{-}\right\rangle-\left|VH\right\rangle\left|\psi_{-}\psi_{+}\right\rangle}{\sqrt{2}}\]
+To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). These have width such that the resultant phase it introduces is $\pi$ and the state is 
+
 \[
-\frac{\ket{\rightarrow}_1\ket{\uparrow}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\uparrow}_1\ket{\rightarrow}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
+\frac{\ket{H}_1\ket{V}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{V}_1\ket{H}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
 \]
 At this stage, if we were to trace out the polarization state, we'd
 end up with a mixed state. That is useless for our test. Ignoring
 the glass slabs at the moment in \figref{scheme}, we observe the
 action of the polarisers on the state. After the $45^{\circ}$ polariser,
-the state becomes (see \subref{c8}) % \[\left|\chi_{\text{45}}\right\rangle \left|\zeta_{\text{birefringent}}\right\rangle \propto\left|H'H'\right\rangle \left(\frac{\left|\psi_{+}\psi_{-}\right\rangle -\left|\psi_{-}\psi_{+}\right\rangle }{\sqrt{2}}\right)\]
+the state becomes (see \subref{c8}) 
 \[
 \ket{\chi_{45}}\ket{\Psi} = \ket{\nearrow}_1\ket{\nearrow}_2 \frac{\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2}
 \]
-where $\left|\nearrow\right\rangle \equiv\left(\left|\rightarrow\right\rangle +\left|\uparrow\right\rangle \right)/\sqrt{2}$.
+where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$.
 Now if we trace out the polarization state, we'd be left with the target entangled state. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
 
 \begin{figure*}
@@ -486,18 +482,16 @@ setting. We start with stating the result that in the far-field approximation,
 \[
 \left| \braket{q_A,q_B | \Psi_{f\text{ screen}}} \right|^2 \propto \left| \braket{p_A=\frac{p_zq_A}{D},p_B=\frac{p_zq_B}{D}|\Psi_f} \right|^2
 \]
-%\[\left|\left\langle q{}_{A},q{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}\propto\left|\left\langle p{}_{A}=\frac{p_{z}q{}_{A}}{D},p{}_{B}=\frac{p_{z}q{}_{B}}{D}|\Psi_{f}\right\rangle \right|^{2}\]
  where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
 and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for an electron, $p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at a screen, sufficiently far away.
-
 In an experiment then, there are two possibilities. \\
 (a) Given $f$, Alice and Bob both note the position at which they obtain their particle. After repeating the experiment sufficiently many times, they share their list to create a sequence $\{(q{}_{A}^{(i)},q_{B}^{(i)})\}$. From this sequence, they create a 2D histogram, by simply counting how many time they got $(q'_{A},q'_{B})$ to lie inside a given cell. The normalized result is essentially $\left|\left\langle q{}_{A},q{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
-from which $\braket{ \hat{X}\otimes\hat{X} }$ can be computed as discussed. $f$ is changed to evaluate all the 4 terms to finally obtain $\left\langle C\right\rangle $ experimentally.
+from which $\braket{ \hat{X}\otimes\hat{X} }$ can be computed as discussed. $f$ is changed to evaluate all the 4 terms to finally obtain $\braket{ \hat{\mathcal{B}} }$ experimentally.
 \\
 (b) The other simpler, equivalent and direct possibility is that Alice and Bob both obtain the position, $(q_{A}^{(i)},q_{B}^{(i)})$ for the $i$th repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and $\cos(p_{B}^{(i)}L/\hbar)$. After sufficient iterations (for all values of $f$), they exchange their observations to simply evaluate
 the average, viz. 
 \[
-\frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\left\langle C\right\rangle 
+\frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\braket{ \hat{\mathcal{B}} }
 \]
 
 
@@ -663,11 +657,21 @@ since the phase difference is spin dependent.
 
 \subsubsection{Action of a polariser\label{sub:c8}}
 
-If we define $\left|\nearrow\right\rangle \equiv\frac{\left|\rightarrow\right\rangle +\left|\uparrow\right\rangle }{\sqrt{2}},$
-$\left|\nwarrow\right\rangle \equiv-\frac{\left|\rightarrow\right\rangle -\left|\uparrow\right\rangle }{\sqrt{2}}$
+If we define $\left|\nearrow\right\rangle \equiv\frac{\left|H\right\rangle +\left|V\right\rangle }{\sqrt{2}},$
+$\left|\nwarrow\right\rangle \equiv-\frac{\left|H\right\rangle -\left|V\right\rangle }{\sqrt{2}}$
 and the $45^{\circ}$ projector as $\left|\nearrow\right\rangle \left\langle \nearrow\right|$,
-then both $\left|\rightarrow\right\rangle \to\left|\nearrow\right\rangle $ and $\left|\uparrow\right\rangle \to\left|\nearrow\right\rangle$
+then both $\left|H\right\rangle \to\left|\nearrow\right\rangle $ and $\left|V\right\rangle \to\left|\nearrow\right\rangle$
 where ofcourse with a probability $1/2$, the photon will be lost.
+
+
+\subsubsection{More on measurement}
+The histogram discussed in sec [], will be given by 
+\begin{align*}
+\braket{p_1 p_2 | \Psi_f}&=\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) 
+\sum_{n,m} e^{i(np_1 + mp_2)L/\hbar} \\
+& \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
+\end{align*}
+where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$.
 
 \bibliography{Modular}
 
