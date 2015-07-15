@@ -201,36 +201,34 @@ In Sec. we introduce our framework for Bell nonlocality test aiming to use most 
 
 \section{Framework for macroscopic Bell test}
 
-In what follow we develop an approach of local realism tests which comply with above Bell's conjecture.
+In what follow we develop an approach of local realism tests which comply with above Bell's argument.
 The central 
 problem here is to construct a Bell-operator of the Clauser-HorneShimony-Holt (CHSH) form
 \[
 \label{Bellmodular}
 \hat {\mathcal{B}} \equiv \hat A_1\otimes (\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
 \]
-expressed in terms of suitable local continuous variable (CV) observables $\hat A$ taking on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have \[
-|a_j|\leq 1
-\]
-One obvious example is parity operator $\Pi=(-1)^{a^\dag a}$. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
+expressed in terms of suitable local continuous variable (CV) observables $\hat A$ taking on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have $
+|a_j|\leq 1$.
+One obvious example is parity operator which used in Ref [ ]. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
 \[
 \mathcal{W}_{\hat A}(q, p) \equiv \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
 \] 
-Accordingly, the inequality should hold for any state described by valid (positive) probability distribution.
-
+Therefore,
 \begin{align*}
 \mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)&=\mathcal{W}_{\hat A_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)+\mathcal{W}_{\hat A_2'}(q_2,p_2)] \\&+\mathcal{W}_{\hat A'_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)-\mathcal{W}_{\hat A_2'}(q_2,p_2)]\leq 2
 \end{align*}
-where $\bs q=(q_1,q_2)$ and  $\bs p=(p_1, p_2)$.
+where $\bs q=(q_1,q_2)$ and  $\bs p=(p_1, p_2)$. Accordingly, the inequality should hold for any state described by valid (positive) probability distribution over phase space.
 Therefore,
 \begin{equation}
 \mean{\hat{\mathcal{B}}}=\int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p\leq 2
 \end{equation}
-where $W_{\hat{\rho}}$ is the normalized wigner function corresponding to $\hat {\rho}$ given by $
-W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$.
+where $W_{\hat{\rho}}$ is the Wigner quasi-probability distribution corresponding to $\hat {\rho}$ given by $
+W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. Parity operators do not fulfill above requirement. Because the corresponding Wigner representation of them are given by delta functions which are unbounded in phase space. This already voids the above inequality. With this, we ascertain that any state described by positive definite Wigner function, including EPR states, satisfy above class of Bell inequality. Hence, any state  leading to violation must be characterized by negative Wigner function deviating from proper probability distribution in (hidden) phase space coordinates. 
 
-With this, we ascertain that any state described by positive definite Wigner function, that is compatible with local hidden phase space variable, satisfy above inequality.  leading to the violation of this version of Bell inequality must be characterized by negative Wigner function deviating from proper probability distribution in hidden phase space coordinates. That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
+%That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
  
-It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like" measurement.
+It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like'' measurement.
 
 \subsection{Phase space translation operators and modular variables }
 
