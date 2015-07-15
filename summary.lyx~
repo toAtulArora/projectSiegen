@@ -7996,16 +7996,80 @@ reference "fig:Emacs-natively-running"
 
 \begin_deeper
 \begin_layout Itemize
-C-c C-p C-s (for the preview) [you need some auktex]
+C-c C-p C-s (for the preview) [you need some auktex] and C-c C-p C-c C-s
+ (for disable preview, useful for replace)
 \end_layout
 
 \begin_layout Itemize
 Multiple cursors C-> C-< C-: and C-? (insane stuff): Here's how to initialize
- 
-\begin_inset Newline newline
+ see 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-code"
+
+\end_inset
+
+.
+ Put this in the lisp window (C-
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+ etc.
+ to navigate between buffers) and press C-j to compile
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fixing the nomenclature etc.
+ | man it's annoying but it's also good to see how neatly one can present
+ things! makes things clearer
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc/Health
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Kardar lecture 9 [this is interesting, especially/because I haven't done
+ this before!]
+\end_layout
+
+\begin_layout Itemize
+i7s arrived
+\end_layout
+
+\begin_layout Itemize
+Feasable lyx alternative: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-latex-editor/
+\end_layout
+
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+Idea is to use latex for writing the basic thing, then collaborate with
+ the tex file shared over git :)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Wrap table
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
 \begin_inset listings
 inline false
 status open
@@ -8066,57 +8130,37 @@ status open
 
 \end_inset
 
-Put this in the lisp window (C-
-\begin_inset Formula $\leftarrow$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The code 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-code"
+
 \end_inset
 
- etc.
- to navigate between buffers) and press C-j to compile
+
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Fixing the nomenclature etc.
- | man it's annoying but it's also good to see how neatly one can present
- things! makes things clearer
-\end_layout
+\end_inset
 
-\end_deeper
-\begin_layout Itemize
-Misc/Health
-\end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Kardar lecture 9 [this is interesting, especially/because I haven't done
- this before!]
 \end_layout
-
-\begin_layout Itemize
-i7s arrived
-\end_layout
-
-\begin_layout Itemize
-Feasable lyx alternative: 
-\begin_inset Flex URL
-status collapsed
 
 \begin_layout Plain Layout
 
-http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-latex-editor/
 \end_layout
 
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-Idea is to use latex for writing the basic thing, then collaborate with
- the tex file shared over git :)
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
@@ -8157,6 +8201,14 @@ name "fig:Emacs-natively-running"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsection
+Wednesday, July 15
+\end_layout
+
+\begin_layout Itemize
 
 \end_layout
 
