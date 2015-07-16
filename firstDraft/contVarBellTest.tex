@@ -457,7 +457,9 @@ this is can be done by placing glass slabs right after the birefringent crystals
 
 \subsection{Effective Practical Setup}
 
-Placing glass slabs may not be suitable for fine gratings. Thus practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state $e^{i\hat Z \theta_A}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}}$ for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce a phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
+Placing glass slabs may not be suitable for fine gratings. Thus practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
+ \[ e^{i\hat Z \frac{\theta_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
+for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
 
 \subsection{Measurement}
@@ -505,67 +507,67 @@ is made considerably larger.
 \section{Appendix}
 
 
-\subsubsection*{Illustration (I)}
+% \subsubsection*{Illustration (I)}
 
-This is trival if one uses the Bloch sphere picture. Instead of measuring
-along an arbitrary axis, we rotate the Bloch sphere appropriately,
-and then measure $x$. To illustrate this, consider
-\begin{lyxlist}{a}
-\item [{Questn:}] $\exists\,\text{a}\,\hat{U},\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =\hat{U}\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|\hat{x}\right|\chi\right\rangle =\left\langle \chi'\left|\hat{y}\right|\chi'\right\rangle $?
-\\
-Explicitly, we have 
-\begin{eqnarray*}
-\hat{y} & = & \hat{U}^{\dagger}\hat{x}\hat{U}=e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\\
- & = & \hat{x}e^{i\hat{z}\theta}=\left[\begin{array}{cc}
-0 & 1\\
-1 & 0
-\end{array}\right]\left[\begin{array}{cc}
-e^{i\theta} & 0\\
-0 & e^{-i\theta}
-\end{array}\right]\\
- & = & \left[\begin{array}{cc}
-0 & -i\\
-i & 0
-\end{array}\right]
-\end{eqnarray*}
-for $\theta=\pi/2$ as one would guess geometrically. 
-\end{lyxlist}
+% This is trival if one uses the Bloch sphere picture. Instead of measuring
+% along an arbitrary axis, we rotate the Bloch sphere appropriately,
+% and then measure $x$. To illustrate this, consider
+% \begin{lyxlist}{a}
+% \item [{Questn:}] $\exists\,\text{a}\,\hat{U},\, s.t.\,\text{if}\,\left|\chi\right\rangle \to\left|\chi'\right\rangle =\hat{U}\left|\chi\right\rangle \,\mbox{\text{then}\,}\left\langle \chi\left|\hat{x}\right|\chi\right\rangle =\left\langle \chi'\left|\hat{y}\right|\chi'\right\rangle $?
+% \\
+% Explicitly, we have 
+% \begin{eqnarray*}
+% \hat{y} & = & \hat{U}^{\dagger}\hat{x}\hat{U}=e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\\
+%  & = & \hat{x}e^{i\hat{z}\theta}=\left[\begin{array}{cc}
+% 0 & 1\\
+% 1 & 0
+% \end{array}\right]\left[\begin{array}{cc}
+% e^{i\theta} & 0\\
+% 0 & e^{-i\theta}
+% \end{array}\right]\\
+%  & = & \left[\begin{array}{cc}
+% 0 & -i\\
+% i & 0
+% \end{array}\right]
+% \end{eqnarray*}
+% for $\theta=\pi/2$ as one would guess geometrically. 
+% \end{lyxlist}
 
 \subsection*{Claims}
 
 
-\subsubsection{If $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$,
-then$\left|\psi\right\rangle =\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}$\label{sub:c1}}
+% \subsubsection{If $\left|\psi\right\rangle \equiv\frac{\left|+-\right\rangle -\left|-+\right\rangle }{\sqrt{2}}$,
+% then$\left|\psi\right\rangle =\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}$\label{sub:c1}}
 
 
-\subsubsection{$\left\langle x\otimes x\right\rangle =-1$, for $\left|\psi\right\rangle $
-in Claim(1)\label{sub:c2}}
+% \subsubsection{$\left\langle x\otimes x\right\rangle =-1$, for $\left|\psi\right\rangle $
+% in Claim(1)\label{sub:c2}}
 
 
-\subsubsection{$\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$\label{sub:c3}}
+% \subsubsection{$\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$\label{sub:c3}}
 
-Proof: 
-\begin{eqnarray*}
-\text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
- & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
- & = & \left\langle \psi\right|x\otimes x\\
- &  & \Bigg[\frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
- &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\Bigg]
-\end{eqnarray*}
-We define, $\delta\equiv\phi-\theta$ and using \subref{c1}, it follows
-that only terms like $\left|+-\right\rangle $ or $\left|-+\right\rangle $;
-so
-\begin{eqnarray*}
-\text{LHS} & = & \left\langle \psi\right|x\otimes x\\
- &  & \left[\frac{e^{i\delta}\left(\frac{\left|+-\right\rangle -\left|-+\right\rangle }{2}\right)-e^{-i\delta}\left(\frac{-\left|+-\right\rangle +\left|-+\right\rangle }{2}\right)}{\sqrt{2}}\right]\\
- & = & \left\langle \psi\right|x\otimes x\left[\frac{e^{i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)+e^{-i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\right]\\
- & =- & \frac{e^{i\delta}+e^{-i\delta}}{2}\\
- & =- & \cos(\phi-\theta)
-\end{eqnarray*}
-where we've used \subref{c2}.
+% Proof: 
+% \begin{eqnarray*}
+% \text{LHS} & = & \left\langle xe^{-iz\theta}\otimes xe^{iz\phi}\right\rangle \\
+%  & = & \left[\frac{\left\langle 10\right|-\left\langle 01\right|}{\sqrt{2}}\right]\left[xe^{iz\theta}\otimes xe^{iz\phi}\right]\left[\frac{\left|10\right\rangle -\left|01\right\rangle }{\sqrt{2}}\right]\\
+%  & = & \left\langle \psi\right|x\otimes x\\
+%  &  & \Bigg[\frac{e^{i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\\
+%  &  & -\frac{e^{-i\left(\phi-\theta\right)}\left(\frac{\left|+\right\rangle +\left|-\right\rangle }{\sqrt{2}}\right)\left(\frac{\left|+\right\rangle -\left|-\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\Bigg]
+% \end{eqnarray*}
+% We define, $\delta\equiv\phi-\theta$ and using \subref{c1}, it follows
+% that only terms like $\left|+-\right\rangle $ or $\left|-+\right\rangle $;
+% so
+% \begin{eqnarray*}
+% \text{LHS} & = & \left\langle \psi\right|x\otimes x\\
+%  &  & \left[\frac{e^{i\delta}\left(\frac{\left|+-\right\rangle -\left|-+\right\rangle }{2}\right)-e^{-i\delta}\left(\frac{-\left|+-\right\rangle +\left|-+\right\rangle }{2}\right)}{\sqrt{2}}\right]\\
+%  & = & \left\langle \psi\right|x\otimes x\left[\frac{e^{i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)+e^{-i\delta}\left(\frac{\left|\psi\right\rangle }{\sqrt{2}}\right)}{\sqrt{2}}\right]\\
+%  & =- & \frac{e^{i\delta}+e^{-i\delta}}{2}\\
+%  & =- & \cos(\phi-\theta)
+% \end{eqnarray*}
+% where we've used \subref{c2}.
 
 
-\subsubsection{Without taking the large $N$ limit\label{sub:c4}}
+\subsubsection{Useful Expectation Values\label{sub:c4}}
 
 $\left\langle \psi_{+}\left|\hat{X}\right|\psi_{+}\right\rangle =\frac{N-1}{N}$,
 $\left\langle \psi_{-}\left|\hat{X}\right|\psi_{-}\right\rangle =-\frac{N-1}{N}$\\
@@ -581,7 +583,7 @@ $\left\langle \psi_{-}\left|\hat{X}\right|\psi_{+}\right\rangle =\frac{-\left\la
 
 
 
-\subsubsection{For arbitrary $\theta_{i}$ and $\phi_{i}$ $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$\label{sub:c5}}
+\subsubsection{For Arbitrary $\theta_{i}$ and $\phi_{i}$ $\left\langle \hat{U}^{\dagger}(\phi_{i})\hat{X}\hat{U}(\phi_{i})\otimes\hat{U}^{\dagger}(\theta_{i})\hat{X}\hat{U}(\theta_{i})\right\rangle =-\left(\frac{N-1}{N}\right)^{2}\cos(\phi_{i}-\theta_{i})$\label{sub:c5}}
 
 Proof: We start with defining $\phi\equiv\phi_{i}$ , $\theta\equiv\theta_{i}$,
 $\delta\equiv\phi-\theta$, $\delta'\equiv\delta/2$. Next, we note
@@ -661,15 +663,15 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 \subsubsection{More on measurement\label{sub:c9}}
 It is essential to know what ballpark resolution is required for detecting the violation from the screen. If our measurement can faithfully resolve the following, from our previous discussions it implies that a violation will be obtained.
 \[
-\ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
+\ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
 \]
 with
 \begin{align*}
-F_f(p_1,p_2)&=\sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
+F_f(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
 & \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
 \end{align*}
 
-where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $\frac{1}{10}p_{\text{typ}}=\frac{1}{10}\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is readily measurable.
+where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $0.1p_{\text{typ}}=0.1\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is readily measurable.
 
 \begin{figure}
   \includegraphics[width=6cm]{plots/entangledPsiN8}
