@@ -21,6 +21,7 @@
 
 %-----------New commands (`Atul's')
 \newcommand{\floor}[1]{\lfloor #1 \rfloor}
+\newcommand{\ab}[1]{\left| #1 \right|}
 
 %---------- New commands
 
@@ -665,13 +666,22 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 
 
 \subsubsection{More on measurement}
-The histogram discussed in sec [], will be given by 
+It is essential to know what ballpark resolution is required for detecting the violation from the screen. The histogram discussed in sec [], will be given by $\left| \braket{p_1,p_2|\Psi_f} \right| ^2$. If our measurement can faithfully resolve this, it follows from our previous discussions that a violation will be obtained. This expression may be explicitly evaluated from
+\[
+\braket{p_1, p_2 | \Psi_f}=\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)
+\]
+with
 \begin{align*}
-\braket{p_1 p_2 | \Psi_f}&=\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) 
-\sum_{n,m} e^{i(np_1 + mp_2)L/\hbar} \\
+F_f(p_1,p_2)&=\sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
 & \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
 \end{align*}
-where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$.
+
+where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \phi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\tilde \Psi_f}^2$ will be given by $\ab{F_f}^2$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $p_{\text{res}}=\frac{1}{10}\frac{h}{L}$ should be sufficient to capture the relevant features. This translates to, for a photon with wavelength $\lambda$, to having a spatial resolution of [TODO: Put this from my notes] on the screen.
+
+\begin{figure}
+  \includegraphics[width=6cm]{plots/entangledPsiN8}
+\caption{Represents the expected histogram plotted after converting $(x_1,x_2) \to (p_1,p_2)$, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
+\end{figure}
 
 \bibliography{Modular}
 
