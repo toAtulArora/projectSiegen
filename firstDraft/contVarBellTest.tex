@@ -320,7 +320,7 @@ Z(q)\equiv\begin{cases}
 \begin{figure}
 \includegraphics[width=8cm]{plots/CHSH}\caption{Practically, the number of slits, $N$ will be finite. The plot shows
 $\braket{ \mathcal {\hat B} } $ as a function of $N$. To get a violation,
-we need merely $7$ slits, while with $50$ we are almost at $2\sqrt{2}$.\label{chshViolation}}
+we need merely $8$ slits; with $50$ we almost saturate. \label{chshViolation}}
 \end{figure}
 
 
@@ -340,7 +340,7 @@ Thus for appropriately defiend angles\footnote{Conventionally $\theta=\pi/2,\the
  \[
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-The smallest $N$ s.t. $\ab{\mean{ \mathcal {\hat B} }} >2$, is $N\ge7$; see figure \ref{chshViolation}.
+The constraint $\ab{\mean{ \mathcal {\hat B} }} >2$, yields $N > 6$; see figure \ref{chshViolation}.
 
 
 \subsection{Validating phase space behaviour}
@@ -385,7 +385,7 @@ With all these, it is easy to show that
 \left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
 \left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
 \end{eqnarray*}
-as was necessary. Ofcourse this is not sufficient, however we have shown explicitly the violation. This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{x},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for
+as was necessary. Ofcourse this is not sufficient, however we have shown explicitly the violation. This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for
 showing a violation. 
 
 
@@ -607,22 +607,22 @@ Now using \subref{c4}, we have
 
 
 
-\subsubsection{Action of $\hat{x}_{\text{mod}2L}$ can be defined explicitly\label{sub:c6}}
+\subsubsection{Action of $\hat{q}_{\text{mod}2L}$ can be defined explicitly\label{sub:c6}}
 
-Proof: $\hat{x}_{\text{mod}2L}\equiv\int dxx{}_{mod2L}\left|x\right\rangle \left\langle x\right|$.
-To arrive at this more carefully, consider the operator $e^{i\hat{x}\frac{2\pi}{2L}}$.
-Note that $e^{i\hat{x}\frac{2\pi}{2L}}\left|x\right\rangle =e^{ix\frac{2\pi}{2L}}\left|x\right\rangle =e^{ix{}_{mod2L}\frac{2\pi}{2L}}\left|x\right\rangle $.
-Thus, $\hat{x}_{\text{mod}2L}\left|x\right\rangle =x{}_{mod2L}\left|x\right\rangle $,
-consequently on the most general state $\left|f\right\rangle \equiv\int dxf_{x}\left|x\right\rangle $
-then, we'd have $\hat{x}_{\text{mod}2L}\left|f\right\rangle =\int dxf_{x}x{}_{mod2L}\left|x\right\rangle $. 
+Proof: $\hat{q}_{\text{mod}2L}\equiv\int dqq{}_{\text{mod}2L}\left|q\right\rangle \left\langle q\right|$.
+To arrive at this more carefully, consider the operator $e^{i\hat{q}\frac{2\pi}{2L}}$.
+Note that $e^{i\hat{q}\frac{2\pi}{2L}}\left|q\right\rangle =e^{iq\frac{2\pi}{2L}}\left|q\right\rangle =e^{iq{}_{\text{mod}2L}\frac{2\pi}{2L}}\left|q\right\rangle $.
+Thus, $\hat{q}_{\text{mod}2L}\left|q\right\rangle =q{}_{\text{mod}2L}\left|q\right\rangle $,
+consequently on the most general state $\left|f\right\rangle \equiv\int dqf_{q}\left|q\right\rangle $
+then, we'd have $\hat{q}_{\text{mod}2L}\left|f\right\rangle =\int dqf_{q}q{}_{\text{mod}2L}\left|q\right\rangle $. 
 
-Remark: One needn't necessarily consider eigenstates of $\hat{x}$
-to define the action. Eigenstates of $e^{i\hat{x}\frac{2\pi}{2L}}$
+Remark: One needn't necessarily consider eigenstates of $\hat{q}$
+to define the action. Eigenstates of $e^{i\hat{q}\frac{2\pi}{2L}}$
 maybe considered instead; they can be expressed as (a) $\left|\varphi\right\rangle ,\, s.t.\,\left\langle p+\frac{h}{2L}|\varphi\right\rangle =\left\langle p|\varphi\right\rangle ,\,\forall\, p\in\mathbb{R}$
-or (b) $\left|\bar{x}\right\rangle \propto\sum_{n\in\mathbb{Z}}\left|\bar{x}+n2L\right\rangle $.
-Using the second expression, we have $e^{i\hat{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle =e^{i\bar{x}\frac{2\pi}{2L}}\left|\bar{x}\right\rangle $.
-Thus on a more general state, $\left|c\right\rangle \equiv\int_{0}^{2L}d\bar{x}c_{\bar{x}}\left|\bar{x}\right\rangle $,
-we have $\hat{x}_{\text{mod}2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{x}c_{\bar{x}}\bar{x}\left|\bar{x}\right\rangle $. 
+or (b) $\left|\bar{q}\right\rangle \propto\sum_{n\in\mathbb{Z}}\left|\bar{q}+n2L\right\rangle $.
+Using the second expression, we have $e^{i\hat{q}\frac{2\pi}{2L}}\left|\bar{q}\right\rangle =e^{i\bar{q}\frac{2\pi}{2L}}\left|\bar{q}\right\rangle $.
+Thus on a more general state, $\left|c\right\rangle \equiv\int_{0}^{2L}d\bar{q}c_{\bar{q}}\left|\bar{q}\right\rangle $,
+we have $\hat{q}_{\text{mod}2L}\left|c\right\rangle =\int_{0}^{2L}d\bar{q}c_{\bar{q}}\bar{q}\left|\bar{q}\right\rangle $. 
 
 \smallskip{}
 
@@ -659,20 +659,20 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 
 
 \subsubsection{More on measurement\label{sub:c9}}
-It is essential to know what ballpark resolution is required for detecting the violation from the screen. If our measurement can faithfully resolve the following, from our previous discussions it implies that a violation will be obtained.
+It is essential to know what ballpark resolution is required for detecting the violation from the screen. We note
 \[
 \ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
 \]
-with
+where
 \begin{align*}
 F_f(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
 & \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
 \end{align*}
 
-where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $0.1p_{\text{typ}}=0.1\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is readily measurable.
+$\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of say $0.1p_{\text{typ}}=0.1\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that're readily measurable.
 
 \begin{figure}
-  \includegraphics[width=6cm]{plots/entangledPsiN8}
+  \includegraphics[width=9cm]{plots/entangledPsiN8}
 \caption{Represents the expected histogram plotted after converting $(x_1,x_2) \to (p_1,p_2)$ using eqn \ref{eqn:measure}, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
 \end{figure}
 
