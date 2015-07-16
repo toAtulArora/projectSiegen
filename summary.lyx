@@ -8248,9 +8248,44 @@ Subject GRE choices
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-
+\begin_layout Subsection
+Thursday, July 16
 \end_layout
 
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Added a section for the measurement stuff
+\end_layout
+
+\begin_layout Itemize
+Ali showed that 
+\begin_inset Formula $\cos(pL/\hbar\pm Z_{\pm})$
+\end_inset
+
+ is the 
+\begin_inset Formula $UXU$
+\end_inset
+
+ term! Nice :)
+\end_layout
+
+\begin_layout Itemize
+Put another section for practical implementation
+\end_layout
+
+\begin_layout Itemize
+Other than one section, everything else seems to be atleast 1st iteration
+ through.
+\end_layout
+
+\begin_layout Itemize
+Need to update some diagrams and rewrite that section
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
