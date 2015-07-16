@@ -455,7 +455,7 @@ this is can be done by placing glass slabs right after the birefringent crystals
 
 \subsection{Effective Practical Setup}
 
-Placing glass slabs may not be suitable for fine gratings. Thus practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
+Placing glass slabs may not be suitable for fine gratings, although a similar setup maybe possible\cite{FariasPhysRevA2015}. However, practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
  \[ e^{i\hat Z \frac{\theta_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
 for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
@@ -464,25 +464,21 @@ for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and
 
 The scheme requires us to evaluate the expectation value of $\hat{X}\otimes\hat{X}$
 (after the measurement settings have been applied by the appropriate
-unitaries). If from the experiment, we can obtain the probability
-$\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$,
-then evaluating $\braket{ \hat{X}\otimes\hat{X} } =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
-simply amounts to $\int dp{}_{A}dp{}_{B}\cos(p{}_{A}L/\hbar)\cos(p{}_{B}L/\hbar)\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$. 
+unitaries). Obtaining $\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$ is sufficient for evaluating % $\braket{ \hat{X}\otimes\hat{X} } =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
+ $\braket{ \hat{X}\otimes\hat{X} } = \int dp{}_{A}dp{}_{B}\cos(p{}_{A}L/\hbar)\cos(p{}_{B}L/\hbar)\left|\left\langle p{}_{A},p{}_{B}|\Psi_{f}\right\rangle \right|^{2}$. 
 
-Therefore it is sufficient to explain how to obtain the joint momentum
-probability distribution from the experiment, for a given measurement
-setting. We start with stating the result that in the far-field approximation,
+It is known that in the far-field approximation\cite{GneitingPhysRevA2013},
 \begin{equation}
 \label{eqn:measure}
 \left| \braket{q_A,q_B | \Psi_{f\text{ screen}}} \right|^2 \propto \left| \braket{p_A=\frac{p_zq_A}{D},p_B=\frac{p_zq_B}{D}|\Psi_f} \right|^2
 \end{equation}
  where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
 and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for an electron, $p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at a screen, sufficiently far away.
-In an experiment then, there are two possibilities. \\
+In practice then, there are two possibilities. \\
 (a) Given $f$, Alice and Bob both note the position at which they obtain their particle. After repeating the experiment sufficiently many times, they share their list to create a sequence $\{(q{}_{A}^{(i)},q_{B}^{(i)})\}$. From this sequence, they create a 2D histogram, by simply counting how many time they got $(q'_{A},q'_{B})$ to lie inside a given cell. The normalized result is essentially $\left|\left\langle q{}_{A},q{}_{B}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
 from which $\braket{ \hat{X}\otimes\hat{X} }$ can be computed as discussed. $f$ is changed to evaluate all the 4 terms to finally obtain $\braket{ \hat{\mathcal{B}} }$ experimentally. For details, see section \ref{sub:c9}.
 \\
-(b) The other simpler, equivalent and direct possibility is that Alice and Bob both obtain the position, $(q_{A}^{(i)},q_{B}^{(i)})$ for the $i$th repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and $\cos(p_{B}^{(i)}L/\hbar)$. After sufficient iterations (for all values of $f$), they exchange their observations to simply evaluate
+(b) The other equivalent and direct possibility is that Alice and Bob both obtain the position, $(q_{A}^{(i)},q_{B}^{(i)})$ for the $i$th repetition and evaluate $\cos(p_{A}^{(i)}L/\hbar)$ and $\cos(p_{B}^{(i)}L/\hbar)$. After sufficient iterations (for all values of $f$), they exchange their observations to simply evaluate
 the average, viz. 
 \[
 \frac{\sum_{i}\cos(p_{A}^{(i)}L/\hbar)\cos(p_{B}^{(i)}L/\hbar)}{\sum_{i}}=\braket{ \hat{\mathcal{B}} }
