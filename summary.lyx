@@ -8218,7 +8218,19 @@ Various things | see the git log for details or the document itself :P
 \end_layout
 
 \begin_layout Itemize
-TODO: Fill some details here!
+[
+\emph on
+new
+\emph default
+] Found that the operator for 
+\begin_inset Formula $U^{\dagger}XU$
+\end_inset
+
+ from wigner wyel construct becomes 
+\begin_inset Formula $\cos(pL/\hbar+Z_{+})$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -8236,5 +8248,9 @@ Subject GRE choices
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
