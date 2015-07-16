@@ -300,7 +300,7 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, in analogy with the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by an $\phi$, $e^{i\hat{\sigma}_z\phi/2}$ and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by an $\phi$, $e^{i\hat{\sigma}_z\phi/2}$ and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -457,7 +457,7 @@ this is can be done by placing glass slabs right after the birefringent crystals
 
 \subsection{Effective Practical Setup}
 
-Placing glass slabs may not be suitable for fine gratings. Thus practically we can implement the same scheme using the setup shown in figure []. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state $e^{i\hat Z \theta_A}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}}$ for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce a phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
+Placing glass slabs may not be suitable for fine gratings. Thus practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state $e^{i\hat Z \theta_A}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}}$ for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce a phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
 
 \subsection{Measurement}
@@ -659,9 +659,9 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 
 
 \subsubsection{More on measurement\label{sub:c9}}
-It is essential to know what ballpark resolution is required for detecting the violation from the screen. The histogram discussed in sec [], will be given by $\left| \braket{p_1,p_2|\Psi_f} \right| ^2$. If our measurement can faithfully resolve this, it follows from our previous discussions that a violation will be obtained. This expression may be explicitly evaluated from
+It is essential to know what ballpark resolution is required for detecting the violation from the screen. If our measurement can faithfully resolve the following, from our previous discussions it implies that a violation will be obtained.
 \[
-\braket{p_1, p_2 | \Psi_f}=\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)
+\ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\frac{1}{\sqrt 2} \tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
 \]
 with
 \begin{align*}
@@ -669,7 +669,7 @@ F_f(p_1,p_2)&=\sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
 & \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
 \end{align*}
 
-where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \phi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\tilde \Psi_f}^2$ will be given by $\ab{F_f}^2$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $\frac{1}{10}p_{\text{typ}}=\frac{1}{10}\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is readily measurable.
+where $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of about $\frac{1}{10}p_{\text{typ}}=\frac{1}{10}\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is readily measurable.
 
 \begin{figure}
   \includegraphics[width=6cm]{plots/entangledPsiN8}
