@@ -245,14 +245,9 @@ One particular class of bounded observable can be constructed from the quantum m
 \end{align}
 which is not only explicitly hermitian and $\le 1$, in fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. In addition, there're three relavent properties. First, from equation \ref{translation}, the action of $\hat X$ is obvious. This entails that spatial symmetry must be harnessed to construct the appropriate entangled state. Second, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}}\equiv \int dp \, p\text{mod}{h/L} \ket{p}\bra{p}
+\hat p_{\text{mod}h/L}\equiv \int dp \, p\text{mod}{h/L} \ket{p}\bra{p}
 \]
-and note that measuring $\hat p_{\text{mod}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}}$, not $\hat p$.
-And finally, we could define an anlogous momentum translation operator and obtain the following relation
-\[
-e^{i\hat{p}u}e^{i\hat{q}v}=e^{i\hbar uv}e^{i\hat{q}v}e^{i\hat{p}u}
-\]
-using $[q,p]=i\hbar$. For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
+and note that measuring $\hat p_{\text{mod}h/L}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}h/L}$, not $\hat p$.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
@@ -341,11 +336,11 @@ Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, we are now in a position to e
 \[
 \mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta)
 \]
-Thus for appropriately defiend angles\footnote{One choice is $\theta=0,\theta'=-\pi/2$ and $\phi=3\pi/4,\phi'=3\pi/4 - \pi/2$} we get
+Thus for appropriately defiend angles\footnote{Conventionally $\theta=\pi/2,\theta'=0$ and $\phi=\pi/4,\phi'=3\pi/4$} we get
  \[
-\mean{ \mathcal {\hat B} } =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
+\ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-The smallest $N$ s.t. $\mean{ \mathcal {\hat B} } >2$, is $N\ge7$; see figure \ref{chshViolation}.
+The smallest $N$ s.t. $\ab{\mean{ \mathcal {\hat B} }} >2$, is $N\ge7$; see figure \ref{chshViolation}.
 
 
 \subsection{Validating phase space behaviour}
@@ -371,7 +366,6 @@ where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact 
 
 
 \subsection{Commutations and Violation}
-
 In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. It is known that $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$, when $a_{i},b_{i}\in\{-1,1\}$. To obtain a violation in general (where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the commutations don't vanish. This is indeed true in our case. Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. To arrive at the desired expression we first evaluate some simpler
 commutation and anti-commutation relations explicitly. Let's start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$.
 To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've
@@ -388,7 +382,7 @@ where $\hat{Y}=i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{Y}^{\da
 Further, note that $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$ and that $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$. 
 With all these, it is easy to show that 
 \begin{eqnarray*}
-[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})] & =\\
+\left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
 \left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
 \end{eqnarray*}
 as was necessary. Ofcourse this is not sufficient, however we have shown explicitly the violation. This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{x},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for
@@ -396,7 +390,11 @@ showing a violation.
 
 
 \subsection{Advantage of asymmetry in $\hat{X}$ and $\hat{Z}$}
-
+We could define an anlogous momentum translation operator and obtain the following relation
+\[
+e^{i\hat{p}u}e^{i\hat{q}v}=e^{i\hbar uv}e^{i\hat{q}v}e^{i\hat{p}u}
+\]
+using $[q,p]=i\hbar$. For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
 Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$, defining $\hat{Z}=e^{i\hat{q}2\pi/2L}$ is more natural. They also follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization. The question is why did $\hat{Z}=Z(\hat{q}_{\text{mod}2L})$ appear in the analysis. The cause of this asymmetry hinges on the preferential treatment of position space. We could have constructed states of the form $\left|\psi_{0}\right\rangle =\sum_{n}\left|q+nd\right\rangle $ and used the natural definition of $\hat{Z}$ to obtain the violation. The issue is that this forces us to choose a countable superposition of position eigenkets as our desired state. Such a state is strictly not even in the Hilbert space. In the scheme proposed, this issue is resolved by $Z(\hat{q}_{\text{mod}2L})$ which causes a larger set of physically realizable states to become admissible.
 Thus while our construction is motivated by the spin formalism, it is not just a relabelling of states and operators achieved by a severe restriction of the Hilbert space. 
 
