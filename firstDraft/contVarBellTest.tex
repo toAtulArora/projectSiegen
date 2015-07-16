@@ -265,14 +265,11 @@ using $[q,p]=i\hbar$. For appropriate choices of $u,v$, the translation operator
 
 \subsection{Violation in Continuous Variable State}
 
-We begin with constructing continuous variable kets\footnote{We emphasise that the kets we construct, will not be a countable superposition
-of eigenstates of $p$ or $x$ since these are highly idealized and
-strictly, not even a part of the Hilbert space.%
-} that satisfy the same orthogonality and mutual relations as $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $.\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
+Analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
-} We then construct the relevant operators and finally evaluate $\mean {\hat{\mathcal{B}}} $ to show the violation. 
-
-To construct the states, consider a sharp state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$some length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
+} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.%
+}. The relevant operators can then be constructed to eventually arrive at a violation.
+Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
 
 \begin{eqnarray*}
 \left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{M}}\sum_{n\in I_{M}}\left|\varphi_{2n+1}\right\rangle \\
@@ -303,7 +300,7 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement measurement `along different directions'. Typically, to measure along a vector in the $x-y$ plane, one may simply rotate by an appropriate angle using $e^{i\hat{\sigma}_z\phi/2}$ and then measure $\hat{\sigma}_x$. Correspondingly, here we define $\hat U$ to be s.t. 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, in analogy with the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by an $\phi$, $e^{i\hat{\sigma}_z\phi/2}$ and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -312,11 +309,11 @@ This can achieved in principle using alternate glass slabs for photons, to adjus
 \[
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
-It is suggestive from this form that $\hat{Z}$ must play the role of $\hat{\sigma}_z$. We know that $\hat{X}$ is a function of $\hat{p}_{\text{mod}}$. It is thus natural to expect $\hat{Z}$ to be a function of $\hat{q}_{\text{mod}}$. From it's action, we also note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. Thus the appropriate operator must be $\hat{q}_{\text{mod}2L}$ and not $\hat{q}_{\text{mod}L}$. This is supported by the fact that $[\hat{p}_{\text{mod}},\hat{q}_{\text{mod}L}]=0$. Now since the action of $\hat{Z}$ must work for arbitrary $\left|\varphi\right\rangle $ and $N$, we define
+It is suggestive from this form that $\hat{Z}$ must play the role of $\hat{\sigma}_z$. We know that $\hat{X}$ is a function of $\hat{p}_{\text{mod}h/L}$. It is thus natural to expect $\hat{Z}$ to be a function of $\hat{q}_{\text{mod}L}$. From it's action, we also note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. Thus the appropriate operator must be $\hat{q}_{\text{mod}2L}$ and not $\hat{q}_{\text{mod}L}$. This is supported by the fact that $[\hat{p}_{\text{mod}h/L},\hat{q}_{\text{mod}L}]=0$. Now since the action of $\hat{Z}$ must work for arbitrary $\left|\varphi\right\rangle $ and $N$, we define
  \[
 \hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})
 \]
-where $Z$ is some appropriate function, so that $\hat{Z}\left|q\right\rangle =Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $. From the constraints on $\hat{Z}$, we conclude that for consistency, we must define\footnote{$\hat{x}_{\text{mod}2L}$ is well defined, see \subref{c6}}
+where $Z$ is some appropriate function, so that $\hat{Z}\left|q\right\rangle =Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $. From the constraints on $\hat{Z}$, we conclude that for consistency, we must define\footnote{$\hat{q}_{\text{mod}2L}$ is well defined, see \subref{c6}}
 \[
 Z(q)\equiv\begin{cases}
 1 & 0<q\le L\\
@@ -332,34 +329,23 @@ we need merely $7$ slits, while with $50$ we are almost at $2\sqrt{2}$.\label{ch
 \end{figure}
 
 
-We now describe explicitly, how all these fit with the framework laid out earlier. Consider (a) The first qubit is with Alice and the second with Bob. (b) Alice and Bob apply local unitaries, say $\hat U(\phi)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\theta)$ respectively and then both measure $\hat X$. (c) Alice can choose between $\phi$ and $\phi'$ and Bob can choose between $\theta$ and $\theta'$. %{\theta_1 = 3\pi/8,\theta_2 =5\pi/4\}$. \footnote{Obviously there's a certain freedom in choosing $\phi_i$ and $\theta_i$ but that's irrelevant here}
+We now describe explicitly, how all these fit with the framework laid out earlier. Consider (a) The first qubit is with Alice and the second with Bob. (b) Alice and Bob apply local unitaries, say $\hat U(\phi)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\theta)$ respectively and then both measure $\hat X$. (c) Alice can choose between $\phi$ and $\phi'$ and Bob can choose between $\theta$ and $\theta'$.
 
-%Effectively, this amounts to defining 
-%\begin{align*}   \hat A_1 &\equiv \hat X (\phi), &\hat A'_1 &\equiv \hat X (\phi') \\  \hat A_2 &\equiv \hat X (\theta), &\hat A_2 &\equiv \hat X (\theta')\end{align*}
-
-%\begin{align*}
-%\hat A_1 &\equiv \hat U^{\dagger}(\phi) \hat X \hat U(\phi),
-%&\hat A'_1 &\equiv \hat U^{\dagger}(\phi') \hat X \hat U(\phi') \\
-%\hat A_2 &\equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta), 
-%&\hat A'_2 &\equiv \hat U^{\dagger}(\theta') \hat X \hat U(\theta')
-%\end{align*}
 We claim that the appropriate entangled state which will yield a violation, given the measurement scheme, is
 \begin{equation}
 \label{entangledState}
 \ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_1\ket{\psi_{-}}_2 - \ket{\psi_{-}}_1\ket{\psi_{+}}_2 }{\sqrt{2}}
 \end{equation}
 
-Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, we are now in a position to evaluate $\mean{\mathcal {\hat B}}$. We essentially need terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. %$\left\langle\hat{U}^{\dagger}(\phi)\hat{X}\hat{U}(\phi)\otimes\hat{U}^{\dagger}(\theta)\hat{X}\hat{U}(\theta)\right\rangle $. 
-
-If we assume $N\to\infty$, these can be evaluated easily to be the same as the spin case; $-\cos(\phi-\theta)$ (see \subref{c3}). Substituting for the angles\footnote{One possible definition: $\theta=0,\theta'=-\pi/2;\,\phi=3\pi/8,\phi'=5\pi/4$} we obtain $\mean{\mathcal {\hat B}} =2\sqrt{2}$; the maximum violation, in a completely different setup. If $N$ is not assumed to be arbitrarily large, then it can be shown that (see \subref{c5})
+Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, we are now in a position to evaluate $\mean{\mathcal {\hat B}}$. We essentially need terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. It can be shown that (see \subref{c5})
 \[
 \mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta)
 \]
-which was somewhat expected. Thus obviously,
+Thus for appropriately defiend angles\footnote{One choice is $\theta=0,\theta'=-\pi/2$ and $\phi=3\pi/4,\phi'=3\pi/4 - \pi/2$} we get
  \[
 \mean{ \mathcal {\hat B} } =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-If we ask for the smallest $N$ s.t. $\mean{ \mathcal {\hat B} } >2$, we get $N\ge7$; see figure \ref{chshViolation}.
+The smallest $N$ s.t. $\mean{ \mathcal {\hat B} } >2$, is $N\ge7$; see figure \ref{chshViolation}.
 
 
 \subsection{Validating phase space behaviour}
