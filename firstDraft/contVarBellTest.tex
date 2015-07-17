@@ -1,11 +1,23 @@
 %% LyX 2.0.8.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[10pt,landscape,british,pra,twocolumn,superscriptaddress,nofootinbib,nobibnotes,tightenlines,longbibliography]{revtex4}
+\documentclass[a4paper,british,pra,twocolumn,superscriptaddress,nofootinbib]{revtex4-1}
+%\documentclass[british,preprint,pra,british]{revtex4-1}
+%,longbibliography]{revtex4}
 %\bibliographystyle{aipnum4-1}
 %\bibliographystyle{apsrev4-1}
 %\usepackage{doi}
+\bibliographystyle{apsrev4-1}
+\usepackage{xcolor}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+%\bibliographystyle{plainnat}
 
-\bibliographystyle{plainnat}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \pagestyle{plain}
@@ -262,8 +274,9 @@ and note that measuring $\hat p_{\text{mod}h/L}$ is sufficient for obtaining the
 
 Analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
-} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.%
-}. The relevant operators can then be constructed to eventually arrive at a violation.
+} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
+
+The relevant operators can then be constructed to eventually arrive at a violation.
 Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
 
 \begin{eqnarray*}
@@ -395,8 +408,8 @@ Using an anlogous momentum translation operator, the following can be derived us
 e^{i\hat{p}u}e^{i\hat{q}v}=e^{i\hbar uv}e^{i\hat{q}v}e^{i\hat{p}u}
 \]
 For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
-Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$, defining $\hat{Z}=e^{i\hat{q}2\pi/2L}$ is more natural. They also follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization. The question is why did $\hat{Z}=Z(\hat{q}_{\text{mod}2L})$ appear in the analysis. The cause of this asymmetry hinges on the preferential treatment of position space. We could have constructed states of the form $\left|\psi_{0}\right\rangle =\sum_{n}\left|q+nd\right\rangle $ and used the natural definition of $\hat{Z}$ to obtain the violation. The issue is that this forces us to choose a countable superposition of position eigenkets as our desired state. Such a state is strictly not even in the Hilbert space. In the scheme proposed, this issue is resolved by $Z(\hat{q}_{\text{mod}2L})$ which causes a larger set of physically realizable states to become admissible.
-Thus while our construction is motivated by the spin formalism, it is not just a relabelling of states and operators achieved by a severe restriction of the Hilbert space. 
+Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$, defining $\hat{Z}=e^{i\hat{q}2\pi/2L}$ is more natural. They also follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization. The question is why did $\hat{Z}=Z(\hat{q}_{\text{mod}2L})$ appear in the analysis. The cause of this asymmetry hinges on the preferential treatment of position space. We could have constructed states of the form $\left|\psi_{0}\right\rangle =\sum_{n}\left|q+nd\right\rangle $ and used the natural definition of $\hat{Z}$ to obtain the violation. The issue is that this forces us to choose a countable superposition of position eigenkets as our desired state.\footnote{Such a state is strictly not even in the Hilbert space.} If we start with better defined and broader class of relevant states, $Z(\hat{q}_{\text{mod}2L})$ appears naturally.
+%Thus while our construction is motivated by the spin formalism, it is not just a relabelling of states and operators achieved by a severe restriction of the Hilbert space. 
 
 
 \section{Physical Implementation}
