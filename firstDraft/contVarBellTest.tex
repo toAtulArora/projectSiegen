@@ -295,7 +295,7 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by an $\phi$, $e^{i\hat{\sigma}_z\phi/2}$ and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by $e^{i\hat{\sigma}_z\phi/2}$ with $\phi$ appropriately chosen and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -366,27 +366,25 @@ where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact 
 
 
 \subsection{Commutations and Violation}
-In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. It is known that $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$, when $a_{i},b_{i}\in\{-1,1\}$. To obtain a violation in general (where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the commutations don't vanish. This is indeed true in our case. Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. To arrive at the desired expression we first evaluate some simpler
-commutation and anti-commutation relations explicitly. Let's start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$.
-To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've
-used $Z(\hat{x}_{\text{mod}2L})=-Z(\left(\hat{x}\pm L\right)_{\text{mod}2L})$ and $e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $.
-Thus we have 
+We start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$. To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've used $Z(\hat{x}_{\text{mod}2L})=-Z(\left(\hat{x}\pm L\right)_{\text{mod}2L})$ and $e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $. Thus we have 
 \[
 [\hat{Z},\hat{X}]=2\hat{Z}\hat{X}=-2i\hat{Y}
 \]
-where $\hat{Y}=i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{Y}^{\dagger}=\hat{Y}$, since $\hat{X}^{\dagger}=\hat{X}$ and $\hat{Z}^{\dagger}=\hat{Z}$. Similarly it follows that $\{\hat{Z},\hat{X}\}=0$. From the definition of $Y$ and the anti-commutation, $\{\hat{Y},\hat{X}\}=0$ and $\{\hat{Y},\hat{Z}\}=0$ also follow trivially. We may point out that while $\hat{Z}^{2}=1$, it is not a sum of a 2 state projector and $\hat{X}^{2}\neq1$ in general. This manifests in the following relations 
+where $\hat{Y} \equiv i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{Y}^{\dagger}=\hat{Y}$, since $\hat{X}^{\dagger}=\hat{X}$ and $\hat{Z}^{\dagger}=\hat{Z}$. Similarly  $\{\hat{Z},\hat{X}\}=0$. From the definition of $Y$ and the anti-commutation, $\{\hat{Y},\hat{X}\}=0$ and $\{\hat{Y},\hat{Z}\}=0$ also follow trivially. We may point out that while $\hat{Z}^{2}=1$, it is not a sum of a 2 state projector and $\hat{X}^{2}\neq1$ in general. This manifests in the following relations 
 \begin{eqnarray*}
 [\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
 [\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
-Further, note that $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$ and that $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$. 
-With all these, it is easy to show that 
+As an illustration, we show $[\hat X(\phi),\hat X(\phi')]\neq 0$; %In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. 
+Motivation: $\hat{\mathcal B}^{2}=4\mathbb{I}+[\hat{\mathcal A}_1,\hat{\mathcal A}'_1]\otimes[\hat{\mathcal A}_2,\hat{\mathcal A}'_2]$, when $\hat{\mathcal A}^2_i,\hat{\mathcal A}'^2_i=\mathbb I$. To obtain a violation (even in general, where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the said commutation doesn't vanish. %This is indeed true in our case. %Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. %To arrive at the desired expression we first evaluate some simpler commutation and anti-commutation relations explicitly. 
+
+Using $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$, $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$ and the previous results, it follows that 
 \begin{eqnarray*}
 \left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
 \left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
 \end{eqnarray*}
-as was necessary. Ofcourse this is not sufficient, however we have shown explicitly the violation. This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for
-showing a violation. 
+as was claimed. Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
+%This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
 
 
 \subsection{Advantage of asymmetry in $\hat{X}$ and $\hat{Z}$}
