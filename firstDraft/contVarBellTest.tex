@@ -1,11 +1,23 @@
 %% LyX 2.0.8.1 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[10pt,landscape,british,pra,twocolumn,superscriptaddress,nofootinbib,nobibnotes,tightenlines,longbibliography]{revtex4}
+\documentclass[a4paper,british,pra,twocolumn,superscriptaddress,nofootinbib]{revtex4-1}
+%\documentclass[british,preprint,pra,british]{revtex4-1}
+%,longbibliography]{revtex4}
 %\bibliographystyle{aipnum4-1}
 %\bibliographystyle{apsrev4-1}
 %\usepackage{doi}
+\bibliographystyle{apsrev4-1}
+\usepackage{xcolor}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+%\bibliographystyle{plainnat}
 
-\bibliographystyle{plainnat}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \pagestyle{plain}
@@ -262,8 +274,8 @@ and note that measuring $\hat p_{\text{mod}h/L}$ is sufficient for obtaining the
 
 Analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
-} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.%
-}. 
+} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
+
 The relevant operators can then be constructed to eventually arrive at a violation.
 Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
 
