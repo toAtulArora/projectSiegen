@@ -29,6 +29,8 @@
 \usepackage{graphicx}
 \usepackage{esint}
 
+\graphicspath{{plots/}}
+
 \makeatletter
 
 %-----------New commands (`Atul's')
@@ -282,14 +284,16 @@ Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the
 \end{eqnarray*}
 
 \begin{figure}
-\includegraphics[bb=0bp 90bp 359bp 222bp,clip,width=6cm]{plots/zeroOne}\\
-(a) $\left\langle q|\psi_{0}\right\rangle $ (dashed) and $\left\langle q|\psi_{1}\right\rangle $\bigskip{}
-\\
-\includegraphics[bb=0bp 90bp 359bp 222bp,clip,width=6cm]{plots/plus}\\
-(b) $\left\langle q|\psi_{+}\right\rangle $\bigskip{}
-\\
-\includegraphics[bb=0bp 20bp 359bp 200bp,clip,width=6cm]{plots/minus}\\
-(c) $\left\langle q|\psi_{-}\right\rangle $
+\includegraphics[bb=0bp 70bp 359bp 170bp,clip,width=9cm]{plots/zeroOne}\\
+%(a) $\left\langle q|\psi_{0}\right\rangle $ (dashed) and $\left\langle q|\psi_{1}\right\rangle $\bigskip{}
+%\\
+\vspace{2mm}
+\includegraphics[bb=0bp 70bp 359bp 140bp,clip,width=9cm]{plots/plus}\\
+%(b) $\left\langle q|\psi_{+}\right\rangle $\bigskip{}
+%\\
+\vspace{2mm}
+\includegraphics[bb=0bp 20bp 359bp 140bp,clip,width=9cm]{plots/minus}\\
+%(c) $\left\langle q|\psi_{-}\right\rangle $
 
 \caption{Illustration of $\left|\psi_{\pm}\right\rangle $ and $\left|\psi_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
 states for $N=8,\, L=1$ unit. The $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
@@ -331,7 +335,10 @@ Z(q)\equiv\begin{cases}
 
 
 \begin{figure}
-\includegraphics[width=8cm]{plots/CHSH}\caption{Practically, the number of slits, $N$ will be finite. The plot shows
+%\includegraphics[width=8cm]{plots/CHSH}
+%\resizebox{0.43\paperwidth}{!}{\input{plots/Bell.tex}}
+\input{plots/Bell.tex}
+\caption{Practically, the number of slits, $N$ will be finite. The plot shows
 $\braket{ \mathcal {\hat B} } $ as a function of $N$. To get a violation,
 we need merely $8$ slits; with $50$ we almost saturate. \label{chshViolation}}
 \end{figure}
@@ -662,6 +669,12 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 
 
 \subsubsection{More on measurement\label{sub:c9}}
+
+\begin{figure}
+  \includegraphics[width=8cm]{plots/entangledPsiN8}
+\caption{Represents the expected histogram plotted after converting $(x_1,x_2) \to (p_1,p_2)$ using eqn \ref{eqn:measure}, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
+\end{figure}
+
 It is essential to know what ballpark resolution is required for detecting the violation from the screen. We note
 \[
 \ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
@@ -673,11 +686,6 @@ F_f(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2
 \end{align*}
 
 $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in figure \ref{fig:psiTilde}. Graphically it is clear that a resolution of say $0.1p_{\text{typ}}=0.1\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from equation \ref{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that're readily measurable.
-
-\begin{figure}
-  \includegraphics[width=9cm]{plots/entangledPsiN8}
-\caption{Represents the expected histogram plotted after converting $(x_1,x_2) \to (p_1,p_2)$ using eqn \ref{eqn:measure}, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
-\end{figure}
 
 \bibliography{Modular}
 
