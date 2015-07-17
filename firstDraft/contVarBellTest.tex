@@ -285,10 +285,11 @@ states for $N=8,\, L=1$ unit. The $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{
 states are not normalized.\label{fig:wavefns}}
 \end{figure}
 Using these states, as illustrated in \figref{wavefns}, we construct the analogues of the $\ket + $ and $\ket - $ states
-\[
-\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},\\
+\begin{equation}
+\label{eqn:psipm}
+\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},
 \left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}
-\]
+\end{equation}
 These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. It follows that 
 \begin{align*}
 \bra{\psi_+} \hat X \ket{\psi_+} &= \frac{N-1}{N} \\
@@ -381,7 +382,8 @@ Motivation: $\hat{\mathcal B}^{2}=4\mathbb{I}+[\hat{\mathcal A}_1,\hat{\mathcal 
 Using $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$, $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$ and the previous results, it follows that 
 \begin{eqnarray*}
 \left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
-\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
+%2i\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
+2i\sin(\phi'-\phi) \hat Z \hat X^2 & \neq & 0
 \end{eqnarray*}
 as was claimed. Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
 %This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
@@ -406,15 +408,12 @@ for matter waves (see \subref{c7}). The final setup is given in \figref{scheme}.
 \subsection{Creation of the entangled state}
 
 The desired entangled state is $\ket{\Psi}$, as stated in equation \ref{entangledState}. 
-We start with noting the triviality of constructing a 
-\[
-\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{n}\right\rangle 
-\]
- state. Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). After the grating, we obtain $\ket{\psi_+}$. Similarly the 
-\[
-\left|\psi_{-}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
-\]
- state can be constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi\,\implies\, e^{i\pi}=-1$. In \figref{scheme}, if you consider only one particle, and disregard
+We start with noting the triviality of constructing a $\ket{\psi_{+}}$
+%\[\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left|\varphi_{n}\right\rangle \]
+ state (see equation \ref{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). After the grating, we obtain $\ket{\psi_+}$. Similarly the $\ket{\psi_{-}}$
+%\[\left|\psi_{-}\right\rangle=\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle\]
+ state can be constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi$. %\,\implies\, e^{i\pi}=-1$. 
+In \figref{scheme}, if you consider only one particle, and disregard
 everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, right after it. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\gamma}_1 \ket{\gamma}_2$ so that post grating, the state is
 
 %The state $\left|\gamma\right\rangle $ maybe considered to be a Gaussian with $\sigma\gg2NL$ so that after the grating, the spatial state can be written as 
@@ -422,22 +421,19 @@ everything after the grating, then the setup is expected to produce a $\left|\ps
 \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
 \]
 %To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. 
-If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings. %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
-These have widths such that the resultant phase it introduces is $\pi$ and the state is 
+If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings with appropriate thickness so that %Their widths to cause $\pi$ . %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
+%These also have appropriate widths to introduce a $\pi$ phase. 
+the subsequent state is
 
 \[
 \frac{\ket{H}_1\ket{V}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{V}_1\ket{H}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
 \]
-At this stage, if we were to trace out the polarization state, we'd
-end up with a mixed state. That is useless for our test. Ignoring
-the glass slabs at the moment in \figref{scheme}, we observe the
-action of the polarisers on the state. After the $45^{\circ}$ polariser,
-the state becomes (see \subref{c8}) 
+If polarization state is traced out now, the resultant state is mixed, hence useless. %Ignoring the glass slabs at the moment in \figref{scheme}, we observe the action of the polarisers on the state. 
+Instead, a $45^{\circ}$ polariser is introduced after which (see \subref{c8}) the target entangled state
 \[
 \ket{\chi_{45}}\ket{\Psi} = \ket{\nearrow}_1\ket{\nearrow}_2 \frac{\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2}
 \]
-where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$.
-Now if we trace out the polarization state, we'd be left with the target entangled state. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
+is obtained, where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
 
 \begin{figure*}
 \resizebox{15cm}{!}{\input{diagrams/scheme.pdftex_t}}
