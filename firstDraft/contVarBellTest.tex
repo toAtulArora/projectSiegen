@@ -285,17 +285,18 @@ states for $N=8,\, L=1$ unit. The $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{
 states are not normalized.\label{fig:wavefns}}
 \end{figure}
 Using these states, as illustrated in \figref{wavefns}, we construct the analogues of the $\ket + $ and $\ket - $ states
-\[
-\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},\\
+\begin{equation}
+\label{eqn:psipm}
+\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},
 \left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}
-\]
+\end{equation}
 These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. It follows that 
 \begin{align*}
 \bra{\psi_+} \hat X \ket{\psi_+} &= \frac{N-1}{N} \\
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by an $\phi$, $e^{i\hat{\sigma}_z\phi/2}$ and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by $e^{i\hat{\sigma}_z\phi/2}$ with $\phi$ appropriately chosen and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
 \begin{eqnarray*}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
 \hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
@@ -366,35 +367,34 @@ where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact 
 
 
 \subsection{Commutations and Violation}
-In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. It is known that $C^{2}=4\mathbb{I}+[a_{1},a_{2}]\otimes[b_{1},b_{2}]$, when $a_{i},b_{i}\in\{-1,1\}$. To obtain a violation in general (where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the commutations don't vanish. This is indeed true in our case. Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. To arrive at the desired expression we first evaluate some simpler
-commutation and anti-commutation relations explicitly. Let's start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$.
-To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've
-used $Z(\hat{x}_{\text{mod}2L})=-Z(\left(\hat{x}\pm L\right)_{\text{mod}2L})$ and $e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $.
-Thus we have 
+We start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$. To evaluate it, we multiply the second term with $\int dx\left|x\right\rangle \left\langle x\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've used $Z(\hat{x}_{\text{mod}2L})=-Z(\left(\hat{x}\pm L\right)_{\text{mod}2L})$ and $e^{i\hat{p}L/\hbar}\left|x\right\rangle =\left|x-L\right\rangle $. Thus we have 
 \[
 [\hat{Z},\hat{X}]=2\hat{Z}\hat{X}=-2i\hat{Y}
 \]
-where $\hat{Y}=i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{Y}^{\dagger}=\hat{Y}$, since $\hat{X}^{\dagger}=\hat{X}$ and $\hat{Z}^{\dagger}=\hat{Z}$. Similarly it follows that $\{\hat{Z},\hat{X}\}=0$. From the definition of $Y$ and the anti-commutation, $\{\hat{Y},\hat{X}\}=0$ and $\{\hat{Y},\hat{Z}\}=0$ also follow trivially. We may point out that while $\hat{Z}^{2}=1$, it is not a sum of a 2 state projector and $\hat{X}^{2}\neq1$ in general. This manifests in the following relations 
+where $\hat{Y} \equiv i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{Y}^{\dagger}=\hat{Y}$, since $\hat{X}^{\dagger}=\hat{X}$ and $\hat{Z}^{\dagger}=\hat{Z}$. Similarly  $\{\hat{Z},\hat{X}\}=0$. From the definition of $Y$ and the anti-commutation, $\{\hat{Y},\hat{X}\}=0$ and $\{\hat{Y},\hat{Z}\}=0$ also follow trivially. We may point out that while $\hat{Z}^{2}=1$, it is not a sum of a 2 state projector and $\hat{X}^{2}\neq1$ in general. This manifests in the following relations 
 \begin{eqnarray*}
 [\hat{X},\hat{Y}] & = & -2i\hat{Z}\hat{X}^{2}=-2i\hat{X}^{2}\hat{Z}\\{}
 [\hat{Y},\hat{Z}] & = & -2i\hat{X}
 \end{eqnarray*}
-Further, note that $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$ and that $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$. 
-With all these, it is easy to show that 
+As an illustration, we show $[\hat X(\phi),\hat X(\phi')]\neq 0$; %In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. 
+Motivation: $\hat{\mathcal B}^{2}=4\mathbb{I}+[\hat{\mathcal A}_1,\hat{\mathcal A}'_1]\otimes[\hat{\mathcal A}_2,\hat{\mathcal A}'_2]$, when $\hat{\mathcal A}^2_i,\hat{\mathcal A}'^2_i=\mathbb I$. To obtain a violation (even in general, where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the said commutation doesn't vanish. %This is indeed true in our case. %Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. %To arrive at the desired expression we first evaluate some simpler commutation and anti-commutation relations explicitly. 
+
+Using $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$, $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$ and the previous results, it follows that 
 \begin{eqnarray*}
 \left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
-\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
+%2i\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
+2i\sin(\phi'-\phi) \hat Z \hat X^2 & \neq & 0
 \end{eqnarray*}
-as was necessary. Ofcourse this is not sufficient, however we have shown explicitly the violation. This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for
-showing a violation. 
+as was claimed. Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
+%This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
 
 
 \subsection{Advantage of asymmetry in $\hat{X}$ and $\hat{Z}$}
-We could define an anlogous momentum translation operator and obtain the following relation
+Using an anlogous momentum translation operator, the following can be derived using $[q,p]=i\hbar$.
 \[
 e^{i\hat{p}u}e^{i\hat{q}v}=e^{i\hbar uv}e^{i\hat{q}v}e^{i\hat{p}u}
 \]
-using $[q,p]=i\hbar$. For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
+For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define pauli matrix like commutation.
 Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$, defining $\hat{Z}=e^{i\hat{q}2\pi/2L}$ is more natural. They also follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization. The question is why did $\hat{Z}=Z(\hat{q}_{\text{mod}2L})$ appear in the analysis. The cause of this asymmetry hinges on the preferential treatment of position space. We could have constructed states of the form $\left|\psi_{0}\right\rangle =\sum_{n}\left|q+nd\right\rangle $ and used the natural definition of $\hat{Z}$ to obtain the violation. The issue is that this forces us to choose a countable superposition of position eigenkets as our desired state. Such a state is strictly not even in the Hilbert space. In the scheme proposed, this issue is resolved by $Z(\hat{q}_{\text{mod}2L})$ which causes a larger set of physically realizable states to become admissible.
 Thus while our construction is motivated by the spin formalism, it is not just a relabelling of states and operators achieved by a severe restriction of the Hilbert space. 
 
@@ -402,43 +402,38 @@ Thus while our construction is motivated by the spin formalism, it is not just a
 \section{Physical Implementation}
 
 We show that this scheme can be implemented rather easily using photons. We harness the two degrees of freedom of a photon, it's polarization and it's position to construct the required state. With a slightly modified setup, it is possible to do the same with spin and position
-for matter waves (see \subref{c7}). The overall setup (see \figref{scheme}) is such that we need only consider the quantum mechanical description along the $x$-axis.
+for matter waves (see \subref{c7}). The final setup is given in \figref{scheme}. We need only consider the quantum mechanical description along the $x$-axis.
 
 
 \subsection{Creation of the entangled state}
 
 The desired entangled state is $\ket{\Psi}$, as stated in equation \ref{entangledState}. 
-We start with noting the triviality of constructing a 
-\[
-\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left|\varphi_{n}\right\rangle 
-\]
- state. One simply needs a source and a grating, viz. a screen with $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). The 
-\[
-\left|\psi_{-}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\in I_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle 
-\]
- state can be similarly constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi\,\implies\, e^{i\pi}=-1$. In \figref{scheme}, if you consider only one particle, and disregard
-everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, just after the grating. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\gamma}_1 \ket{\gamma}_2$.
+We start with noting the triviality of constructing a $\ket{\psi_{+}}$
+%\[\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left|\varphi_{n}\right\rangle \]
+ state (see equation \ref{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). After the grating, we obtain $\ket{\psi_+}$. Similarly the $\ket{\psi_{-}}$
+%\[\left|\psi_{-}\right\rangle=\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle\]
+ state can be constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi$. %\,\implies\, e^{i\pi}=-1$. 
+In \figref{scheme}, if you consider only one particle, and disregard
+everything after the grating, then the setup is expected to produce a $\left|\psi_{+}\right\rangle $ state, right after it. To produce the desired entangled state, we start with two entangled photons, such that their polarization state can be expressed as $\ket{\chi} \equiv \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}}$. Their spatial description (along $x$-axis) is initially assumed to be $\ket{\gamma}_1 \ket{\gamma}_2$ so that post grating, the state is
 
-The state $\left|\gamma\right\rangle $ maybe considered to be a Gaussian with $\sigma\gg2NL$ so that after the grating, the spatial state can be written as 
+%The state $\left|\gamma\right\rangle $ maybe considered to be a Gaussian with $\sigma\gg2NL$ so that after the grating, the spatial state can be written as 
 \[
 \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
 \]
-To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
-These have widths such that the resultant phase it introduces is $\pi$ and the state is 
+%To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. 
+If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings with appropriate thickness so that %Their widths to cause $\pi$ . %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
+%These also have appropriate widths to introduce a $\pi$ phase. 
+the subsequent state is
 
 \[
 \frac{\ket{H}_1\ket{V}_2\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{V}_1\ket{H}_2\ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2} 
 \]
-At this stage, if we were to trace out the polarization state, we'd
-end up with a mixed state. That is useless for our test. Ignoring
-the glass slabs at the moment in \figref{scheme}, we observe the
-action of the polarisers on the state. After the $45^{\circ}$ polariser,
-the state becomes (see \subref{c8}) 
+If polarization state is traced out now, the resultant state is mixed, hence useless. %Ignoring the glass slabs at the moment in \figref{scheme}, we observe the action of the polarisers on the state. 
+Instead, a $45^{\circ}$ polariser is introduced after which (see \subref{c8}) the target entangled state
 \[
 \ket{\chi_{45}}\ket{\Psi} = \ket{\nearrow}_1\ket{\nearrow}_2 \frac{\ket{\psi_+}_1\ket{\psi_-}_2 - \ket{\psi_-}_1\ket{\psi_+}_2}{\sqrt 2}
 \]
-where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$.
-Now if we trace out the polarization state, we'd be left with the target entangled state. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
+is obtained, where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle +\left|V\right\rangle \right)/\sqrt{2}$. As a remark, it maybe be stated that although to arrive at this result we assumed that $\eta_{H}=1$, which is unreasonable physically, we can compensate for $\eta_{H}\neq1$ by putting appropriate glass slabs at the alternate empty slits, to produce zero relative phase when the polarization is horizontal.
 
 \begin{figure*}
 \resizebox{15cm}{!}{\input{diagrams/scheme.pdftex_t}}
@@ -455,9 +450,10 @@ this is can be done by placing glass slabs right after the birefringent crystals
 
 \subsection{Effective Practical Setup}
 
-Placing glass slabs may not be suitable for fine gratings, although a similar setup maybe possible\cite{FariasPhysRevA2015}. However, practically we can implement the same scheme using the setup shown in \figref{scheme}. First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
+Placing glass slabs may not be suitable for fine gratings, although a similar setup maybe possible\cite{FariasPhysRevA2015}. Practically we can implement the same scheme using the setup shown in \figref{scheme}. %First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. 
+The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudenal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $t_0,t_1$ for the crystal and slab respectively. The phase difference between a horiztonal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$; note that physically only phase differences are essential. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
  \[ e^{i\hat Z \frac{\theta_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
-for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; it'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
+for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; they'll also depend on the amplitude of the longitudenal wave. From this and the imposed constrain, $d_0,d_1$ and the corresponding amplitude can be determined. However, we haven't the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(t_0-t_1)\equiv \theta_B$. Here, again $t_0,t_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus effectively, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily. Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
 
 \subsection{Measurement}
