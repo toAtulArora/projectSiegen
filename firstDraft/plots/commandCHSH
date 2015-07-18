@@ -1,24 +1,27 @@
-#set terminal pdfcairo font ',18'
-#set terminal eps
-set terminal epslatex color size 9cm,7cm
-#set termoption enhanced 
-set encoding utf8
+set terminal epslatex color size 9cm,6cm
+#set terminal pdf
 set key noautotitle
 set output "Bell.tex"
-set xlabel "Number of slits ($N$)" 
-set ylabel "$\\langle \\hat B \\rangle$" 
-#set title "Violation of CHSH for N>6"
-set xrange [1:50] 
+#set output "Bell.pdf"
+set xlabel "Number of slits=$N$" 
+set ylabel "$\\langle \\hat \{ \\mathcal B \} \\rangle$" offset 2.5
+set parametric
+#set trange[2:100]
+#set sample 50
+set trange[1:100]
+set sample 100
+#set grid
+
 set yrange [0:2*sqrt(2)]
-set sample 50
-set arrow from 1,2 to 50,2 nohead lc 1 lt 0 lw 9
-set arrow from 1,2*sqrt(2) to 50,2*sqrt(2) nohead 
-#set label 1 at -2.2,2*sqrt(2)
-#set label 1 "2√2" at -4.5,2*sqrt(2)
-set label 1 "$2\\sqrt 2$" at -4.5,2*sqrt(2)
-#1.9
-set label 2 "Classical bound" at 20, 2.1 tc lt 1
-#set label 2 "Classical bound"
-#set label 1 "{/Symbol @{\140\140\140\140}\326}m+3"
-#test
-plot ((x-1)/x)**2 * 2 * sqrt(2) w lp pt 7 ps 0.8 lc 0 lt 0
+set arrow from 0,2 to 2,2 nohead lc 1 lt 0 lw 9
+set arrow from 0,2*sqrt(2) to 2,2*sqrt(2) nohead 
+set label 1 "$2\\sqrt 2$" at -0.25,2*sqrt(2)
+
+set format x "$10^{%g}$"
+
+set label 2 "classical bound" at 1, 2.1 tc lt 1
+fy(t)=((t-1)/t)**2 * 2 * sqrt(2) 
+#fx(t)=t
+fx(t)=log10(t)
+plot fx(t),fy(t) w lp pt 7 ps 0.8 lc rgb '#0025ad' lt 0 #lc 0 lt 0 
+#plot ((x-1)/x)**2 * 2 * sqrt(2) w lp pt 7 ps 0.8 lc 0 lt 0
