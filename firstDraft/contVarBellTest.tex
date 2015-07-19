@@ -414,8 +414,8 @@ Considering the operator (non-hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\h
 
 
 \section{Physical Implementation}
-
-We show that this scheme can be implemented rather easily using photons. We harness the two degrees of freedom of a photon, it's polarization and it's position to construct the required state. With a slightly modified setup, it is possible to do the same with spin and position
+The test can be implemented in a quantum interferometric setups using grating technique to create a multicomponent superposition states as is used in matter wave experiments for instance. 
+We show that this scheme can be implemented using photons. We harness the two degrees of freedom of a photon, it's polarization and it's position to construct the required state. With a slightly modified setup, it is possible to do the same with spin and position
 for matter waves (see \subref{c7}). The final setup is given in \figref{scheme}. We need only consider the quantum mechanical description along the $x$-axis.
 
 
@@ -424,7 +424,7 @@ for matter waves (see \subref{c7}). The final setup is given in \figref{scheme}.
 The desired entangled state is $\ket{\Psi}$, as stated in equation \ref{entangledState}. 
 We start with noting the triviality of constructing a $\ket{\psi_{+}}$
 %\[\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left|\varphi_{n}\right\rangle \]
- state (see equation \ref{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). After the grating, we obtain $\ket{\psi_+}$. Similarly the $\ket{\psi_{-}}$
+ state (see equation \ref{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (centre to centre). After the grating, we obtain $\ket{\psi_+}=G\ket{\gamma}$. Similarly the $\ket{\psi_{-}}$
 %\[\left|\psi_{-}\right\rangle=\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle\]
  state can be constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi$. %\,\implies\, e^{i\pi}=-1$. 
 In \figref{scheme}, if you consider only one particle, and disregard
@@ -435,7 +435,7 @@ everything after the grating, then the setup is expected to produce a $\left|\ps
 \frac{ \ket{H}_1\ket{V}_2 -\ket{V}_1\ket{H}_2 }{\sqrt{2}} \ket{\psi_+}_1\ket{\psi_+}_2
 \]
 %To produce a $\left|\psi_{-}\right\rangle $ state, we already know we needed alternate glass slabs. 
-If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings with appropriate thickness so that %Their widths to cause $\pi$ . %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
+If we had glass slabs, whose refractive index (given some orientation) was say $\eta_{H}=1$ for a horizontally polarized beam and $\eta_{V}=\eta\neq1$ for vertical polarization to create the interaction Hamiltonian of the form $\proj{V}\hat Z$, then we could harness the entangled polarization state to create the required spatially entangled state. Birefringent crystals have such polarization dependent refractive indices. Assume that alternating birefringent crystals have been placed after both the gratings with appropriate thickness so that %Their widths to cause $\pi$ . %as shown in \figref{scheme} (in the diagram, they're not alternating for reasons to follow). 
 %These also have appropriate widths to introduce a $\pi$ phase. 
 the subsequent state is
 
@@ -489,7 +489,7 @@ It is known that in the far-field approximation\cite{Gneiting13},
 \left| \braket{q_1,q_2 | \Psi_{f\text{ screen}}} \right|^2 \propto \left| \braket{p_1=\frac{p_zq_1}{D},p_2=\frac{p_zq_2}{D}|\Psi_f} \right|^2
 \end{equation}
  where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
-and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for an electron, $p_{z}=m_{e}D/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at a screen, sufficiently far away.
+and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for a massive particle with mass $m$, $p_{z}=mD/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at the screen, sufficiently far away.
 In practice then, for a given $f$, there are two possibilities. \\
 (a) Alice and Bob both note the position at which they obtain their particle. After repeating the experiment sufficiently many times, they share their list to create a sequence $\{(q{}_{1}^{(i)},q_{2}^{(i)})\}$. From this sequence, they create a 2D histogram, by simply counting how many time they got $(q'_{1},q'_{2})$ to lie inside a given cell. The normalized result is essentially $\left|\left\langle q{}_{1},q{}_{2}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
 from which $\braket{ \hat{X}\otimes\hat{X} }$ can be computed as discussed.
