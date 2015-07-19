@@ -219,10 +219,10 @@ In Sec. we introduce our framework for Bell nonlocality test aiming to use most 
 In what follow we develop a new test of local realism which comply with above Bell's argument.
 The central 
 problem here is to construct a Bell-operator of the Clauser-HorneShimony-Holt (CHSH) form
-\[
-\label{Bellmodular}
+\begin{equation}
+\label{Belloperator}
 \hat {\mathcal{B}} \equiv \hat A_1\otimes (\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
-\]
+\end{equation}
 expressed in terms of suitable local continuous variable (CV) observables $\hat A$ taking on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have $
 |a_j|\leq 1$.
 One obvious example is parity operator which used in Ref [ ]. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
@@ -247,18 +247,17 @@ It is well recognized and it can be shown that .. that there is a tight relation
 
 \subsection{Phase space translation operators and modular variables }
 
-One particular class of bounded observables can be constructed from the quantum mechanical space translation operator\footnote{Here $-L/\hbar$ causes a displacement by $L$.}, $e^{-i\hat p L/\hbar}$. This operator is not an observable, however
+One particular class of bounded observables can be constructed from the quantum mechanical space translation operator\footnote{Here $-L/\hbar$ causes a displacement by $L$.}, $e^{-i\hat p L/\hbar}$. As its name implies, this operator displaces a particle by a finite distance $L$, which in our case will be the distance between two adjacent slits. This operator is not an observable, therefore we define a symmetric combination   
 \begin{align}
-\begin{split}
   \label{translation}
-  \hat X \equiv \text{Re}(e^{-i\hat p L/\hbar})&=(e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar})/2 \\ &=\cos(\hat p L/\hbar)
-\end{split}
+  \hat X \equiv\dfrac{e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar}}{2} =\cos(\hat p L/\hbar),
 \end{align}
-is not only explicitly hermitian and $\le 1$, in fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Note that equation \ref{translation} entails that spatial symmetry must be harnessed to construct the appropriate entangled state. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
+which is obviously a Hermitian operator and bounded by $\pm 1$. 
+In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}h/L}\equiv \int dp \, p\text{mod}{h/L} \ket{p}\bra{p}
+\hat p_{\text{mod}\frac{2\pi\hbar}{L}}\equiv \int_{-\pi\hbar/L}^ {\pi\hbar/L}p \ket{p}\bra{p} dp
 \]
-and note that measuring $\hat p_{\text{mod}h/L}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}h/L}$, not $\hat p$.
+and note that measuring $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$, not $\hat p$. Now, the idea is basically to construct a Bell operator, i.e. Eq. \ref{Belloperator}, in terms of $\hat X$ in which the different measurement settings are chosen by rotating it by suitable unitary operators.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
@@ -271,18 +270,17 @@ and note that measuring $\hat p_{\text{mod}h/L}$ is sufficient for obtaining the
 
 \subsection{Violation in Continuous Variable State}
 
-Analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
+Modular variable observables entail that spatial symmetry must be harnessed to construct the appropriate entangled state.
+Meanwhile, analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $; $\ket{\pm}$ are s.t. $\hat \sigma_x \ket{\pm}=\pm\ket{\pm}$, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
-} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will pluassibly be benificial in constructing the relevant entangled state.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
+} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will presumably be beneficial in constructing the relevant entangled state to achieve violation of the \emph{modular} Bell inequality for suitable choices of measurement settings.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
 
-The relevant operators can then be constructed to eventually arrive at a violation.
 Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale. Further $\varphi_n(q)\equiv \varphi(q-nL)$ and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can define the following analogues of $\ket{0}$ and $\ket{1}$;
 
-\begin{eqnarray*}
-\left|\psi_{0}\right\rangle  & \equiv & \frac{1}{\sqrt{M}}\sum_{n\in I_{M}}\left|\varphi_{2n+1}\right\rangle \\
-\left|\psi_{1}\right\rangle  & \equiv & \frac{1}{\sqrt{M}}\sum_{n\in I_{M}}\left|\varphi_{2n}\right\rangle 
-\end{eqnarray*}
-
+\begin{equation*}
+\left|\psi_{0}\right\rangle  \equiv  \frac{1}{\sqrt{M}}\sum_{n=-\floor{\frac{M}{2}}}^{\floor{\frac{M-1}{2}}}\left|\varphi_{2n+1}\right\rangle \  ,  \ 
+\left|\psi_{1}\right\rangle  \equiv  \frac{1}{\sqrt{M}}\sum_{n=-\floor{\frac{M}{2}}}^{\floor{\frac{M-1}{2}}}\left|\varphi_{2n}\right\rangle.
+\end{equation*}
 \begin{figure}
 \includegraphics[bb=0bp 70bp 359bp 170bp,clip,width=9cm]{plots/zeroOne}\\
 %(a) $\left\langle q|\psi_{0}\right\rangle $ (dashed) and $\left\langle q|\psi_{1}\right\rangle $\bigskip{}
@@ -302,7 +300,7 @@ states are not normalized.\label{fig:wavefns}}
 Using these states, as illustrated in \figref{wavefns}, we construct the analogues of the $\ket + $ and $\ket - $ states
 \begin{equation}
 \label{eqn:psipm}
-\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}},
+\left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}} \ \ , \ \
 \left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}
 \end{equation}
 These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. It follows that 
@@ -310,30 +308,27 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_+} \hat X \ket{\psi_+} &= \frac{N-1}{N} \\
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
-where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by $e^{i\hat{\sigma}_z\phi/2}$ with $\phi$ appropriately chosen and then measuring $\hat{\sigma}_x$} we define $\hat U$ to be s.t. 
+where $N \equiv 2M$ is supposed to be the number of `slits'.
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by $e^{i\hat{\sigma}_z\phi/2}$ with $\phi$ appropriately chosen and then measuring $\hat{\sigma}_x$} we define $\hat U$ with effects 
 \begin{align}
 \label{eqn:U}
-\hat{U}(\phi)\left|\psi_{0}\right\rangle  & = & e^{i\phi/2}\left|\psi_{0}\right\rangle \\
-\hat{U}(\phi)\left|\psi_{1}\right\rangle  & = & e^{-i\phi/2}\left|\psi_{1}\right\rangle 
+\hat{U}(\phi)\left|\psi_{0}\right\rangle   =  e^{i\phi/2}\left|\psi_{0}\right\rangle \ \ \ , \ \ \
+\hat{U}(\phi)\left|\psi_{1}\right\rangle   = e^{-i\phi/2}\left|\psi_{1}\right\rangle 
 \end{align}
-This can achieved in principle using alternate glass slabs for photons, to adjust the relative phase as desired, since $\left|\psi_{0}\right\rangle $ and $\left|\psi_{1}\right\rangle $ are spatially separated. Alternatively, we could also define $\hat{U}(\phi)$ in its analytic form. First we claim that $\exists$ an operator $\hat{Z}$ s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. Before explicitly defining $\hat{Z}$, we observe that given this operator, we can naturally define
+More explicitly this motivates the form
 \[
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
-It is suggestive from this form that $\hat{Z}$ must play the role of $\hat{\sigma}_z$. We know that $\hat{X}$ is a function of $\hat{p}_{\text{mod}h/L}$. It is thus natural to expect $\hat{Z}$ to be a function of $\hat{q}_{\text{mod}L}$. From it's action, we also note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. Thus the appropriate operator must be $\hat{q}_{\text{mod}2L}$ and not $\hat{q}_{\text{mod}L}$. This is supported by the fact that $[\hat{p}_{\text{mod}h/L},\hat{q}_{\text{mod}L}]=0$. Now since the action of $\hat{Z}$ must work for arbitrary $\left|\varphi\right\rangle $ and $N$, we define
- \[
-\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})
-\]
-where $Z$ is some appropriate function, so that $\hat{Z}\left|q\right\rangle =Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $. From the constraints on $\hat{Z}$, we conclude that for consistency, we must define\footnote{$\hat{q}_{\text{mod}2L}$ is well defined, see \subref{c6}}
+claiming that $\exists$ an operator $\hat{Z}$ s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. 
+From its action, we note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
+$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we therefore define
 \[
 Z(q)\equiv\begin{cases}
 1 & 0<q\le L\\
 -1 & L<q\le2L
 \end{cases}
 \]
-
-
+for the first sell.
 \begin{figure}
 %\includegraphics[width=8cm]{plots/CHSH}
 %\resizebox{0.43\paperwidth}{!}{\input{plots/Bell.tex}}
@@ -343,8 +338,7 @@ $\braket{ \mathcal {\hat B} } $ as a function of $N$. To get a violation,
 we need merely $8$ slits; with $50$ we almost saturate. \label{chshViolation}}
 \end{figure}
 
-
-We now describe explicitly, how all these fit with the framework laid out earlier. Consider (a) the first qubit is with Alice and the second with Bob, (b) Alice and Bob apply local unitaries, say $\hat U(\phi)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\theta)$ respectively and then both measure $\hat X$ and (c) Alice can choose between $\phi$ \& $\phi'$ while Bob can choose between $\theta$ \& $\theta'$.
+Now, let us proceed to show how all these fit with the framework laid out earlier. Consider (a) the first qubit is with Alice and the second with Bob, (b) Alice and Bob apply local unitaries, say $\hat U(\phi)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\theta)$ respectively and then both measure $\hat X$ and (c) Alice can choose between $\phi$ \& $\phi'$ while Bob can choose between $\theta$ \& $\theta'$.
 
 We claim that the appropriate entangled state which will yield a violation, given the measurement scheme, is
 \begin{equation}
