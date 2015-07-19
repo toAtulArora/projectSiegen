@@ -478,17 +478,16 @@ Effectively therefore, this scheme allows for both creation of the entangled sta
 
 \subsection{Measurement}
 
-The scheme requires us to evaluate the expectation value of $\hat{X}\otimes\hat{X}$
-(after the measurement settings have been applied by the appropriate
-unitaries). Obtaining $\left|\left\langle p{}_{1},p{}_{2}|\Psi_{f}\right\rangle \right|^{2}$ is sufficient for evaluating % $\braket{ \hat{X}\otimes\hat{X} } =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
- $\braket{ \hat{X}\otimes\hat{X} } = \int dp{}_{1}dp{}_{2}\cos(p{}_{1}L/\hbar)\cos(p{}_{2}L/\hbar)\left|\left\langle p{}_{1},p{}_{2}|\Psi_{f}\right\rangle \right|^{2}$. 
+The scheme requires us to evaluate the correlation functions such as $\mean{\hat{X}(\theta)\otimes\hat{X}(\phi)}$. Equivalently, the measurement settings can be chosen by applying the corresponding local
+unitaries  on the entangled state, that is $\ket{\Psi_{\theta\phi}}=\hat U(\theta)\otimes\hat U(\phi)\ket{\Psi}$. Therefore, obtaining $\left|\left\langle p{}_{1},p{}_{2}|\Psi_{\theta \phi}\right\rangle \right|^{2}$ is sufficient for evaluating % $\braket{ \hat{X}\otimes\hat{X} } =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
+ $\braket{ \hat{X}(\theta)\otimes\hat{X} (\phi)} = \int dp{}_{1}dp{}_{2}\cos(p{}_{1}L/\hbar)\cos(p{}_{2}L/\hbar)\left|\left\langle p{}_{1},p{}_{2}|\Psi_{\theta\phi}\right\rangle \right|^{2}$. 
 
 It is known that in the far-field approximation\cite{Gneiting13},
 \begin{equation}
 \label{eqn:measure}
-\left| \braket{q_1,q_2 | \Psi_{f\text{ screen}}} \right|^2 \propto \left| \braket{p_1=\frac{p_zq_1}{D},p_2=\frac{p_zq_2}{D}|\Psi_f} \right|^2
+\left| \braket{p_1=\frac{p_zq_1}{D},p_2=\frac{p_zq_2}{D}|\Psi_{\theta\phi}} \right|^2=\dfrac{D^2}{p_z^2} \left| \braket{q_1,q_2 | \Psi_{\theta\phi\text{ screen}}} \right|^2
 \end{equation}
- where $\left|\Psi{}_{f\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
+ where $\left|\Psi{}_{\theta\phi\,\text{screen}}\right\rangle $ is the state of the system at the screen, $D$ is the distance between the gratings
 and the screens and $p_{z}$ is the $z$ component of momentum of the particle. For a photon, $p_{z}=h/\lambda$ while for a massive particle with mass $m$, $p_{z}=mD/T$, where $T$ is the time taken to arrive at the screen from the grating. The idea is simply that the momentum distribution at the grating can be recovered by observing the spatial distribution at the screen, sufficiently far away.
 In practice then, for a given $f$, there are two possibilities. \\
 (a) Alice and Bob both note the position at which they obtain their particle. After repeating the experiment sufficiently many times, they share their list to create a sequence $\{(q{}_{1}^{(i)},q_{2}^{(i)})\}$. From this sequence, they create a 2D histogram, by simply counting how many time they got $(q'_{1},q'_{2})$ to lie inside a given cell. The normalized result is essentially $\left|\left\langle q{}_{1},q{}_{2}|\Psi{}_{f\,\text{screen}}\right\rangle \right|^{2}$
@@ -504,7 +503,7 @@ $f$ is changed to evaluate all the 4 terms to finally obtain $\braket{ \hat{\mat
 
 
 \section{Conclusion and outlook}
-In the present work, we constructed a new Bell-operator in terms of phase space measurement via modular variables. In this particular scheme there was no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly demonstrated nonlocality in phase space as apposed to other approaches [ ]. The measurement observables were very simple and closer to the classical limit of measurements. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states through grating with enough number of slits. 
+In the present work, we constructed a new Bell-operator in terms of phase space measurement via modular variables. In this particular scheme there is no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly demonstrate the contradiction with local (hidden) phase space model as apposed to other approaches \cite{Parity98, Chen02} using sharp quantum measurement with no classical analog. The measurement observables in our scheme are very simple with a clear classical limit. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states through grating with enough number of slits. 
 
 It is obvious from the properties of the modular variables used, that the violation is larger for higher number of slits. One can however imagine that those entangled states created with slits fewer than the minimum number needed for obtaining a violation, must also hold nonlocal properties. To reveal the nonlocality in this range one may need more optimal observables than those considered here.
 
