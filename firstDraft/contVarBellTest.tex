@@ -181,7 +181,7 @@
 \date{May-July 2015}
 \begin{abstract}
 %We propose local realism tests demonstrated by correlation measurements of  continuum valued functions of positions and momenta, known as modular variables. 
-We propose a local realism test, demonstrated using correlation measurements of continuum valued functions of positions and momenta, known as modular variables. 
+We propose a local realism test, constructed using correlation measurements of continuum valued functions of positions and momenta, known as modular variables. 
 The Wigner representation of these particular observables are bounded in phase space, and therefore,  the associated inequality holds for any state with non-negative Wigner function. This conforms with Bell's remark that positive Wigner functions, serving as a valid probability distribution over local (hidden) phase space coordinates, don't reveal non-locality. We construct a class of entangled states resulting in the violation of the inequality, and thus truly demonstrate non-locality in phase space. The states can be realized in dual interferometric setups though grating techniques. The non-locality is verified from the spatial correlation data, collected from the screens.
 \end{abstract}
 \maketitle
@@ -220,16 +220,16 @@ In Sec. we introduce our framework for the Bell test, aiming to use most classic
 
 \section{Framework for macroscopic Bell test}
 
-In what follow we develop a new test of local realism which comply with above Bell's argument.
-The central 
-problem here is to construct a Bell-operator of the Clauser-HorneShimony-Holt (CHSH) form
+In what follows we develop a new test of local realism which complies with the aforesaid argument of Bell. The central problem here is to construct a Bell-operator of the Clauser-HorneShimony-Holt (CHSH) form
 \begin{equation}
 \label{Belloperator}
 \hat {\mathcal{B}} \equiv \hat A_1\otimes (\hat A_2+\hat A_2') +\hat A_1'\otimes(\hat A_2-\hat A_2')
 \end{equation}
-expressed in terms of suitable local continuous variable (CV) observables $\hat A$ taking on a limited range of values to be able to determine a well-defined classical bound. We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have $
+expressed in terms of suitable local continuous variable (CV) observables $\hat A$ which take a limited range of values to impose a well-defined classical bound. %be able to determine a well-defined classical bound. 
+We therefore aim to construct a class of bounded observables of CV systems which have the following properties. Using proper rescaling for corresponding quantum eigenvalues of the observable we have 
+$
 |a_j|\leq 1$.
-One obvious example is parity operator which used in Ref [ ]. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand of an extra constraint required for probing Nonlocality in phase space. We impose that the observable $\hat A$ corresponds to a bounded c-number function in phase space using Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$). That is, 
+One example is the parity operator which was used in Ref [ ]. This is enough to construct a valid Bell operator with a well-defined classical bound. We however demand an extra constraint which is necessary for probing non-locality in phase space. We require that the observable $\hat A$ corresponds to a bounded c-number function in phase space obtained from the Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$), viz.
 \[
 \mathcal{W}_{\hat A}(q, p) \equiv \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\leq 1
 \] 
@@ -237,17 +237,21 @@ Therefore,
 \begin{align*}
 \mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)&=\mathcal{W}_{\hat A_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)+\mathcal{W}_{\hat A_2'}(q_2,p_2)] \\&+\mathcal{W}_{\hat A'_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)-\mathcal{W}_{\hat A_2'}(q_2,p_2)]\leq 2
 \end{align*}
-where $\bs q=(q_1,q_2)$ and  $\bs p=(p_1, p_2)$. Accordingly, the inequality should hold for any state described by valid (positive) probability distribution over phase space.
+where $\bs q\equiv(q_1,q_2)$ and  $\bs p\equiv(p_1, p_2)$. Accordingly, the inequality should hold for any state described by valid (positive) probability distribution over phase space.
 Therefore,
 \begin{equation}
 \mean{\hat{\mathcal{B}}}=\int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p\leq 2
 \end{equation}
 where $W_{\hat{\rho}}$ is the Wigner quasi-probability distribution corresponding to $\hat {\rho}$ given by $
-W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. Although formally valid, Bell inequality in terms of parity operators do not satisfy the above extra condition. Because the corresponding Wigner representation of them are given by delta functions which are unbounded in phase space. This already voids the above version of inequality. With this, we ascertain that any state described by positive definite Wigner function, including EPR states, satisfy above class of Bell inequality. Hence, any state  leading to violation must be characterized by negative Wigner function deviating from proper probability distribution for (hidden) phase space coordinates. 
+W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. Although formally valid, Bell inequality in terms of displaced parity operators void the said extra condition; their Wigner representations are given by delta functions which are unbounded in phase space. %This already voids the above version of inequality. 
+
+The added condition ascertains that any state described by non-negative Wigner function, including EPR states, satisfies the stated class of Bell inequalities. Hence, any state  leading to a violation must be characterized by a negative Wigner function deviating from a classical  probability distribution for (hidden) phase space coordinates. 
 
 %That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
  
-It is well recognized and it can be shown that .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observable do not commute. It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we do not consider it as ``classical-like'' measurement.
+It is well recognized and it can be shown .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observables don't commute. Consequently, a framework for the Bell test, where the source of violation can be clearly attributed to $[\hat q,\hat p]=i\hbar$ is interesting.
+%It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. 
+For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we don't consider it a ``classical-like'' measurement.
 
 \subsection{Phase space translation operators and modular variables }
 
@@ -323,16 +327,16 @@ More explicitly this motivates the form
 \[
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
-claiming that $\exists$ an operator $\hat{Z}$ s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. 
+where $\hat{Z}$ is s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. 
 From its action, we note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
-$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we therefore define
+$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that
 \[
 Z(q)\equiv\begin{cases}
 1 & 0<q\le L\\
 -1 & L<q\le2L
 \end{cases}
 \]
-for the first sell.
+
 \begin{figure}
 %\includegraphics[width=8cm]{plots/CHSH}
 %\resizebox{0.43\paperwidth}{!}{\input{plots/Bell.tex}}
@@ -358,29 +362,16 @@ Thus for appropriately defiend angles\footnote{Conventionally $\theta=\pi/2,\the
  \[
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-The constraint $\ab{\mean{ \mathcal {\hat B} }} >2$, yields $N > 6$; see figure \ref{chshViolation}.
-
-
-\subsection{Validating phase space behaviour}
-
-%In the past, it has been shown that one can arrive at the violation of the Bell inequality in continuous variable systems. One issue concerning some of these approaches is that the wavefunction used is highly idealized and not normalizable, such as $\left|p\right\rangle $ and $\left|q\right\rangle $ or their countable superposition. Another issue in certain other approaches, is that the wigner functions corresponding to the observables, are unbounded. An example of this is parity. Note that while the Wigner function for a physical state $\rho$ has an upper bound, here we are simply using the prescription to evaluate the same for hermitian operators.
-
-%We care because wigner functions maybe thought of as a specific case of the Wigner-Weyl correspondence, which is a one-one map between classical functions and their corresponding quantum operators. Thus, in a phase-space description of quantum mechanics, it is important to show that it is not necessary to have unboundedness in observables to arrive a violation of the Bell's inequality, and thereby non-locality. 
-
-%In our case, $\left|\Psi\right\rangle $ is manifestly normalized.
-To satisfy the assumptions of the framework, we must show that the real function $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
-
-%\begin{widetext}
-
-%\end{widetext}
-
+The constraint $\ab{\mean{ \mathcal {\hat B} }} >2$, yields $N > 6$; see figure \ref{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
 \begin{eqnarray*}
 \mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2}\\
  &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}}\\
  & = & \text{Re}\left( e^{-iZ_{-}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{+}(q)\phi/2}\right) \\
  & = & \cos(pL/\hbar \pm Z_{\pm}(q)\phi) \le 1
 \end{eqnarray*}
-where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact that $Z(x)=-Z(x+L)$ (omitting the $\text{mod}2L$). %Manifestly then, $\left| \mathcal W_{\hat A_i}\right|, \left| \mathcal W_{\hat A'_i}\right|  \le 1$ as was claimed.
+where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact that $Z(q)=-Z(q+L)$ (omitting the $\text{mod}2L$).
+
+
 
 
 \subsection{Commutations and Violation}
@@ -507,9 +498,9 @@ $f$ is changed to evaluate all the 4 terms to finally obtain $\braket{ \hat{\mat
 
 
 \section{Conclusion and outlook}
-In the present work, we construct a new Bell-operator in terms of phase space measurement via modular variables. In this particular scheme there is no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, yields violation of the inequality. Therefore,  violation of the inequality is a true demonstration of nonlocality in phase space as apposed to other approaches [ ]. The measurement observables are very simple and closer to a classical limit of measurements. The relevant entangled states used for achieving violation of the inequality however require creation of multi-component superposition states through grating with enough number of slits. 
+In the present work, we constructed a new Bell-operator in terms of phase space measurement via modular variables. In this particular scheme there was no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly demonstrated nonlocality in phase space as apposed to other approaches [ ]. The measurement observables were very simple and closer to the classical limit of measurements. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states through grating with enough number of slits. 
 
-It is obvious from the properties of the used modular variables that the violation is larger for higher number of slits. One can however imagine that those entangled states created with less number of slits that the minimum number needed for obtaining violation should hold nonlocal properties as well. To reveal the nonlocality in this range one may need  more optimal observables than those we used in our construction.
+It is obvious from the properties of the modular variables used, that the violation is larger for higher number of slits. One can however imagine that those entangled states created with slits fewer than the minimum number needed for obtaining a violation, must also hold nonlocal properties. To reveal the nonlocality in this range one may need more optimal observables than those considered here.
 
 \section{Appendix}
 
@@ -671,7 +662,7 @@ where ofcourse with a probability $1/2$, the photon will be lost.
 
 \begin{figure}
   \includegraphics[width=8cm]{plots/entangledPsiN8}
-\caption{Represents the expected histogram plotted after converting $(x_1,x_2) \to (p_1,p_2)$ using eqn \ref{eqn:measure}, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
+\caption{Represents the expected histogram plotted after converting $(q_1,q_2) \to (p_1,p_2)$ using eqn \ref{eqn:measure}, for a fixed $\ket{\Psi_f}$ \label{fig:psiTilde}}
 \end{figure}
 
 It is essential to know what ballpark resolution is required for detecting the violation from the screen. We note
