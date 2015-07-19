@@ -8262,7 +8262,11 @@ Added a section for the measurement stuff
 \end_layout
 
 \begin_layout Itemize
-Ali showed that 
+[
+\emph on
+interesting
+\emph default
+] Ali showed that 
 \begin_inset Formula $\cos(pL/\hbar\pm Z_{\pm})$
 \end_inset
 
@@ -8284,6 +8288,148 @@ Other than one section, everything else seems to be atleast 1st iteration
 
 \begin_layout Itemize
 Need to update some diagrams and rewrite that section
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Friday, July 17
+\end_layout
+
+\begin_layout Itemize
+Draft (essentially recalled from the git log)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Updated the measurement sections
+\end_layout
+
+\begin_layout Itemize
+Fixed the bibliography, now the links appear properly
+\end_layout
+
+\begin_layout Itemize
+Ali did some introduction and references part
+\end_layout
+
+\begin_layout Itemize
+made various minor changes and proof read
+\end_layout
+
+\begin_layout Itemize
+Worked on improving the graphs
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Saturday, July 18
+\end_layout
+
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fixed the plot | now it's base log and latex exported text
+\end_layout
+
+\begin_layout Itemize
+Resolved some git conflict
+\end_layout
+
+\begin_layout Itemize
+Started using inkscape (it's very nicely done now, almost all desirable
+ features were there!) to make the scheme diagram
+\end_layout
+
+\begin_layout Itemize
+fixed some 
+\begin_inset Formula $x\leftrightarrow q$
+\end_inset
+
+ issues
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Misc
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tried to get rid of the coins | worked partly
+\end_layout
+
+\begin_layout Itemize
+Registration (ERP) done
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Sunday, July 19
+\end_layout
+
+\begin_layout Itemize
+Draft
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Looked at Ali's abstract, introduction etc.
+ and fixed various parts of it.
+ Atleast now the language seems ok.
+ Some parts need more attention though
+\end_layout
+
+\begin_layout Itemize
+Improved all the graphs
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Latex like fonts in the mathematica generated graphs
+\end_layout
+
+\begin_layout Itemize
+dimensions, arrows, latex in the scheme part
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Added some small references
+\end_layout
+
+\begin_layout Itemize
+[
+\emph on
+new
+\emph default
+] Figured that 
+\begin_inset Formula $\hat{X}(\theta)$
+\end_inset
+
+ is essentially the measurement operator time evolved.
+ This is not so interesting until you realize this makes a strong case for
+ underpinning the source of the violation.
+ With the form of 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+, you would never expect anything classical to be affected.
+ However, 
+\begin_inset Formula $\dot{X}$
+\end_inset
+
+, does change and therefore 
+\begin_inset Formula $X(\theta_{1})\neq X(\theta_{2})$
+\end_inset
+
+.
+ This means we can translate this problem into that of a classical system
+ and show that the violation can only occur if QM is assumed etc.
+ So then we essentially have AB effect, Modular Variables and The Bell inequalit
+y.
 \end_layout
 
 \end_deeper
