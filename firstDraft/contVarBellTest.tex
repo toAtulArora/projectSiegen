@@ -249,7 +249,6 @@ The added condition ascertains that any state described by non-negative Wigner f
 
 %That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
  
-It is well recognized and it can be shown .. that there is a tight relation between nonlocality and noncommutativity of operators. The violation occurs for choices of settings whose corresponding observables don't commute. Consequently, a framework for the Bell test, where the source of violation can be clearly attributed to $[\hat q,\hat p]=i\hbar$ is interesting.
 %It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. 
 For macroscopic test the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the result in classical limit. The parity operator measurements are defined in terms of resolving the  consecutive eigen values  with no classical analog. Therefore we don't consider it a ``classical-like'' measurement.
 
@@ -345,9 +344,7 @@ Z(q)\equiv\begin{cases}
 $\braket{ \mathcal {\hat B} } $ as a function of $N$. To get a violation,
 we need merely $8$ slits; with $50$ we almost saturate. \label{chshViolation}}
 \end{figure}
-
-Now, let us proceed to show how all these fit with the framework laid out earlier. Consider (a) the first qubit is with Alice and the second with Bob, (b) Alice and Bob apply local unitaries, say $\hat U(\phi)\otimes \mathbb I$ and $\mathbb I \otimes \hat U(\theta)$ respectively and then both measure $\hat X$ and (c) Alice can choose between $\phi$ \& $\phi'$ while Bob can choose between $\theta$ \& $\theta'$.
-
+From above the two different parties, Alice and Bob, can chose their measurement settings performed on their respective particles using local unitaries of above form.
 We claim that the appropriate entangled state which will yield a violation, given the measurement scheme, is
 \begin{equation}
 \label{entangledState}
@@ -374,7 +371,19 @@ where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact 
 
 
 
-\subsection{Commutations and Violation}
+\subsection{Nonlocality and noncommutativity}
+It is well recognized and it can be shown that there is a tight relation between nonlocality and noncommutativity of operators. This can be shown with
+\begin{equation}
+\mean{\hat{\mathcal B}^{2}}\leq 4+\mean{[\hat{A}_1,\hat{ A}'_1]\otimes[\hat{ A}_2,\hat{ A}'_2]}.
+\end{equation}
+The violation therefore occurs for choices of settings whose corresponding observables do not commute. In our construction we can demonstrate that the source of violation can be clearly attributed to the noncommutativity between position and momentum, $[\hat q,\hat p]=i\hbar$. This would be regarded as a further illustration that our approach provides a relevant test in phase space.
+Using $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, and $e^{i\hat{Z}\theta}=\cos\theta+i\hat{Z}\sin\theta$ and the previous results, it follows that 
+\begin{eqnarray*}
+[\hat X(\theta),\hat X(\theta')] =
+2i\sin(\theta'-\theta) \hat Z \hat X^2 
+\end{eqnarray*}
+
+
 We start with $[\hat{Z},e^{i\hat{p}L/\hbar}]=\hat{Z}e^{i\hat{p}L/\hbar}-e^{i\hat{p}L/\hbar}\hat{Z}$. To evaluate it, we multiply the second term with $\int dq\left|q\right\rangle \left\langle q\right|$ and obtain $\hat Ze^{i\hat{p}L/\hbar}+\hat Ze^{i\hat{p}L/\hbar}$ where we've used $Z(\hat{q}_{\text{mod}2L})=-Z(\left(\hat{q}\pm L\right)_{\text{mod}2L})$ and $e^{i\hat{p}L/\hbar}\left|q\right\rangle =\left|q-L\right\rangle $. Thus we have 
 \[
 [\hat{Z},\hat{X}]=2\hat{Z}\hat{X}=-2i\hat{Y}
@@ -387,12 +396,6 @@ where $\hat{Y} \equiv i\hat{Z}\hat{X}$. Here $i$ was introduced to ensure $\hat{
 As an illustration, we show $[\hat X(\phi),\hat X(\phi')]\neq 0$; %In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. 
 Motivation: $\hat{\mathcal B}^{2}=4\mathbb{I}+[\hat{\mathcal A}_1,\hat{\mathcal A}'_1]\otimes[\hat{\mathcal A}_2,\hat{\mathcal A}'_2]$, when $\hat{\mathcal A}^2_i,\hat{\mathcal A}'^2_i=\mathbb I$. To obtain a violation (even in general, where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the said commutation doesn't vanish. %This is indeed true in our case. %Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. %To arrive at the desired expression we first evaluate some simpler commutation and anti-commutation relations explicitly. 
 
-Using $e^{-i\hat{Z}\phi/2}\hat{X}e^{i\hat{Z}\phi/2}=\hat{X}e^{i\hat{Z}\phi}$, $e^{i\hat{Z}\phi}=\cos\phi+i\hat{Z}\sin\phi$ and the previous results, it follows that 
-\begin{eqnarray*}
-\left[\hat{U}^{\dagger}(\frac{\phi}{2})\hat{X}\hat{U}(\frac{\phi}{2}),\hat{U}^{\dagger}(\frac{\phi'}{2})\hat{X}\hat{U}(\frac{\phi'}{2})\right] & =\\
-%2i\left(\cos\phi\sin\phi'-\sin\phi\cos\phi'\right)\hat{Z}\hat{X}^{2} & \neq & 0
-2i\sin(\phi'-\phi) \hat Z \hat X^2 & \neq & 0
-\end{eqnarray*}
 as was claimed. Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
 %This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
 
