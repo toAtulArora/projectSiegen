@@ -272,7 +272,7 @@ One particular class of bounded observables can be constructed from the quantum 
 \end{align}
 which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}\frac{2\pi\hbar}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}= \int (p-\floor{p})\dfrac{2\pi\hbar}{L} \ket{p}\bra{p} dp
+\hat p_{\text{mod}\frac{2\hbar}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
 \]
 and note that measuring $\hat p_{\text{mod}\frac{2\pi \hbar}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$, not $\hat p$. 
 The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by unitarily transforming it using suitable unitary operators.
@@ -340,7 +340,7 @@ More explicitly this motivates the form
 where $\hat{Z}$ is s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
 $\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that $\hat Z$ should have the form of the square wave function
 \[
-Z(\hat q_{{\rm mod} 2L} )\equiv(-1)^{\floor{\dfrac{\hat q}{2L}}}
+Z(\hat q_{{\rm mod} 2L} )\equiv \rm sgn \Big[\sin\dfrac{\pi \hat q}{L}\Big].
 \]
 
 \begin{figure}
@@ -355,9 +355,8 @@ The test is performed by considering two particles and their observers, Alice an
 We claim that the appropriate entangled state which will yield a violation, given this scheme, is
 \begin{equation}
 \label{entangledState}
-\ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_1\ket{\psi_{-}}_2 - \ket{\psi_{-}}_1\ket{\psi_{+}}_2 }{\sqrt{2}}
+\ket{\Psi} \equiv\frac{ \ket{\psi_{+}}_1\ket{\psi_{-}}_2 - \ket{\psi_{-}}_1\ket{\psi_{+}}_2 }{\sqrt{2}}.
 \end{equation}
-
 %Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, w
 We now evaluate $\mean{\mathcal {\hat B}}$. This essentially requires terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. It can be shown that (see \subref{c5})
 \[
