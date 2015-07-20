@@ -272,7 +272,7 @@ One particular class of bounded observables can be constructed from the quantum 
 \end{align}
 which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}\frac{2\pi\hbar}{L}}\equiv(\hat p-\floor{\hat p})\dfrac{2\pi\hbar}{L}= \int (p-\floor{p})\dfrac{2\pi\hbar}{L} \ket{p}\bra{p} dp
+\hat p_{\text{mod}\frac{2\pi\hbar}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}= \int (p-\floor{p})\dfrac{2\pi\hbar}{L} \ket{p}\bra{p} dp
 \]
 and note that measuring $\hat p_{\text{mod}\frac{2\pi \hbar}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$, not $\hat p$. 
 The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by unitarily transforming it using suitable unitary operators.
@@ -289,10 +289,10 @@ The idea is to construct a Bell operator (see equation \ref{Belloperator}) from 
 \section{The construction \label{construction}}
 
 Modular variable observables entail that spatial symmetry must be harnessed to construct the appropriate entangled state.
-Also, an analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
-and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $; $\ket{\pm}$ are s.t. $\hat \sigma_x \ket{\pm}=\pm\ket{\pm}$, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
-} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will presumably be beneficial. % in constructing the relevant entangled state to achieve violation of the \emph{modular} Bell inequality for suitable choices of measurement settings.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
-Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale and $\varphi_n(q)\equiv \varphi(q-nL)$. % and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can 
+Also, the analogy with the spin state properties will presumably be beneficial in anticipating the structure of the desired entangled states. %\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
+%and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $; $\ket{\pm}$ are s.t. $\hat \sigma_x \ket{\pm}=\pm\ket{\pm}$, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
+%} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $,  % in constructing the relevant entangled state to achieve violation of the \emph{modular} Bell inequality for suitable choices of measurement settings.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
+ Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale and $\varphi_n(q)\equiv \varphi(q-nL)$. % and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can 
 Now we define the following as analogues of $\ket{0}$ and $\ket{1}$;
 
 \begin{equation*}
@@ -315,11 +315,11 @@ Now we define the following as analogues of $\ket{0}$ and $\ket{1}$;
 states for $N=8,\, L=1$ unit. The $\left|\psi{}_{0}\right\rangle ,\,\left|\psi_{1}\right\rangle $
 states are not normalized.\label{fig:wavefns}}
 \end{figure}
-Using these states, as illustrated in \figref{wavefns}, we construct the analogues of the $\ket + $ and $\ket - $ states
+Using these states, as illustrated in \figref{wavefns}, we construct the states
 \begin{equation}
 \label{eqn:psipm}
 \left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}} \ \ , \ \
-\left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}
+\left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}.
 \end{equation}
 These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. It follows that 
 \begin{align*}
@@ -327,7 +327,7 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins\footnote{where a measurement along a vector in the $x-y$ plane for example, maybe made by rotating by $e^{i\hat{\sigma}_z\phi/2}$ with $\phi$ appropriately chosen and then measuring $\hat{\sigma}_x$} we define $\hat U$ by its action 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins we define $\hat U$ by its action 
 \begin{align}
 \label{eqn:U}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle   =  e^{i\phi/2}\left|\psi_{0}\right\rangle \ \ \ , \ \ \
@@ -338,12 +338,9 @@ More explicitly this motivates the form
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
 where $\hat{Z}$ is s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
-$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that
+$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that $\hat Z$ should have the form of the square wave function
 \[
-Z(q)\equiv\begin{cases}
-1 & 0<q\le L\\
--1 & L<q\le2L
-\end{cases}
+Z(\hat q_{{\rm mod} 2L} )\equiv(-1)^{\floor{\dfrac{\hat q}{2L}}}
 \]
 
 \begin{figure}
