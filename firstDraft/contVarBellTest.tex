@@ -272,7 +272,7 @@ which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding 
 \hat p_{\text{mod}\frac{h}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
 \]
 and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
-The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by transforming it using suitable unitary operators.
+The idea is to construct a Bell operator (see equation \eq{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by transforming it using suitable unitary operators.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
@@ -285,12 +285,12 @@ The idea is to construct a Bell operator (see equation \ref{Belloperator}) from 
 
 \section{The construction \label{construction}}
 
-Modular variable observables entail that spatial symmetry must be harnessed to construct the appropriate entangled state.
-Also, the analogy with the spin state properties will presumably be beneficial in anticipating the structure of the desired entangled states. %\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
+%Modular variable observables entail that spatial symmetry must be harnessed to construct the appropriate entangled state.
+%Also, the analogy with the spin state properties will presumably be beneficial in anticipating the structure of the desired entangled states. %\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 %and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $; $\ket{\pm}$ are s.t. $\hat \sigma_x \ket{\pm}=\pm\ket{\pm}$, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
 %} states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $,  % in constructing the relevant entangled state to achieve violation of the \emph{modular} Bell inequality for suitable choices of measurement settings.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
  Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale and $\varphi_n(q)\equiv \varphi(q-nL)$. % and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can 
-Now we define the following as analogues of $\ket{0}$ and $\ket{1}$;
+We define %the following as analogues of $\ket{0}$ and $\ket{1}$;
 
 \begin{equation*}
 \left|\psi_{0}\right\rangle  \equiv  \frac{1}{\sqrt{M}}\sum_{n=-\floor{\frac{M}{2}}}^{\floor{\frac{M-1}{2}}}\left|\varphi_{2n+1}\right\rangle \  ,  \ 
@@ -324,20 +324,22 @@ These states were constructed with a partial translational symmetry which is app
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N}
 \end{align*}
 where $N \equiv 2M$ is the number of `slits'.
-Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. Again, motivated by the spins we define $\hat U$ by its action 
+Before proceeding further, we introduce a unitary operator $\hat U$ to implement different measurement settings. %Again, 
+Motivated by the spins we define $\hat U$ by its action 
 \begin{align}
 \label{eqn:U}
 \hat{U}(\phi)\left|\psi_{0}\right\rangle   =  e^{i\phi/2}\left|\psi_{0}\right\rangle \ \ \ , \ \ \
 \hat{U}(\phi)\left|\psi_{1}\right\rangle   = e^{-i\phi/2}\left|\psi_{1}\right\rangle 
 \end{align}
-More explicitly this motivates the form
+More explicitly %this motivates the form
 \[
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2}
 \]
-where $\hat{Z}$ is s.t. it satisfies $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
-$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that $\hat Z$ should have the form of the square wave function
+where $\hat{Z}$ is s.t. $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
+$\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. For consistency then, we conclude that $Z$ must have the form of a square wave and define %From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that $\hat Z$ should have the form of the square wave function
 \[
-Z(\hat q_{{\rm mod} 2L} )\equiv \rm sgn \Big[\sin\dfrac{\pi \hat q}{L}\Big].
+%Z(\hat q_{{\rm mod} 2L} )\equiv \rm sgn \Big[\sin\dfrac{\pi \hat q}{L}\Big].
+\hat Z \equiv \rm sgn \left(\sin\dfrac{\hat q \pi}{L}\right).
 \]
 
 \begin{figure}
@@ -358,11 +360,11 @@ We claim that the appropriate entangled state which will yield a violation, give
 We now evaluate $\mean{\mathcal {\hat B}}$. This essentially requires terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. It can be shown that (see \subref{c5})
 \[
 \mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta).\]
-Thus for particularly chosen angles, i.e., coplanar angles $\theta', \phi, \theta$ and $\phi'$ successively separated by $\pi/4$  we get
+Thus for particular angles, i.e. $\theta',\,\phi,\,\theta$ and $\phi'$ successively separated by $\pi/4$, we get
  \[
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, achieved for $N > 6$; see figure \ref{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
+The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, requires $N > 6$; see figure \ref{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
 \begin{eqnarray*}
 \mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2}\\
  &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}}\\
@@ -412,16 +414,17 @@ To prove that, we use $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, $e^{i\hat{Z}\t
 2i\sin(\theta'-\theta) \hat Z \hat X^2 \\
 &=2i \hat Z \hat X^2 \neq 0
 \end{align*}
-where in the last equality holds when the angles are as defined.  Classically this term not only vanishes, but the there can not be any difference between the two settings
-
-
-For showing (b) let's look at the Heisenberg equation of motion for the displacement operator 
+where the last equality holds when the angles are as defined. Classically this term not only vanishes, the different measurement settings also become identical. %, but even the commutations %the there can not be any difference between the two settings
+The Heisenberg equation of motion for the displacement operator 
 \begin{align*}
 \frac{d\hat X}{dt} &=i\hbar^{-1} [\hat Z,\hat X] \\  %\frac{\hat p^2}{2m} + \hat Z,\hat X]
   &=i\hbar^{-1} \Big( Z((\hat q)_{\text{mod}2L})-Z(\hat q_{\text{mod}2L}\pm L) \Big) \hat X \\
   &=i\hbar^{-1} 2 \hat Z \hat X
 \end{align*}
-where $\hat Z$ is the potential. It follows that $\hat X (\theta)$ is essentially the $\hat X$ at some later time. This is already peculiar, because in our scenario the particle experiences constant potential exerting no force. That means classically the physical variables do not evolve, $X(t)=X(t_0)$ as expected. While for a quantum particle we consider here this is not the case. Modular variable can depend on the potential difference between spatially\emph{ separated} places \cite{PopescuNatPhys2010}. This is essentially nothing else but the scalar Aharonov-Bohm effect being exploited for realizing different settings in our setup. Manifestly, the non-commutativity of $\hat q$ and $\hat p$ results in $\hat X(t)\neq \hat X(t_0)$ (as it follows a non-local equation of motion) which is the source of the violation.
+where $\hat Z$ is the potential, shows that $\hat X (\theta)$ is essentially $\hat X$ at some later time. However, classically, since the particle experiences no force (constant potential), $X(t)=X(t_0)$. This peculiarity is the same as that of the scalar Aharonov-Bohm effect, which is exploited here for realizing different measurement settings.
+%This is already peculiar, because in our scenario the particle experiences constant potential, i.e. no force. That means classically the physical variables do not evolve, $X(t)=X(t_0)$. %While for a quantum particle we consider here this is not the case. Modular variable can depend on the potential difference between spatially\emph{ separated} places \cite{PopescuNatPhys2010}. 
+%This is essentially nothing else but the scalar Aharonov-Bohm effect being exploited for realizing different settings in our setup. 
+Manifestly then, the non-commutativity of $\hat q$ and $\hat p$ results in $\hat X(t)\neq \hat X(t_0)$ (as it follows a non-local equation of motion \cite{PopescuNatPhys2010}) which is essential for the violation.
 %Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
 %This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
 
