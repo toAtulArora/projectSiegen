@@ -265,18 +265,17 @@ For a macroscopic test, the measurement scheme used for evaluating the correlati
 
 \subsection*{Phase space translation and modular variables }
 
-One particular class of bounded observables can be constructed from the quantum mechanical space translation operator\footnote{Here $-L/\hbar$ causes a displacement by $L$.}, $e^{-i\hat p L/\hbar}$. As its name suggests, this operator displaces a particle by a finite distance $L$, which in our case will be the distance between two adjacent slits. This operator is not an observable, therefore we define a symmetric combination   
+One particular class of bounded observables can be constructed from the quantum mechanical space translation operator, $e^{-i\hat p L/\hbar}$. As its name suggests, this operator displaces a particle by a finite distance $L$, which in our case will be the distance between two adjacent slits. This operator is not an observable, therefore we define a symmetric combination   
 \begin{align}
   \label{translation}
   \hat X \equiv\dfrac{e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar}}{2} =\cos(\hat p L/\hbar),
 \end{align}
 which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}\frac{h}{L}}\equiv \int p\text{mod}\frac{h}{L} \ket{p}\bra{p} dp
+\hat p_{\text{mod}\frac{2\pi\hbar}{L}}\equiv(\hat p-\floor{\hat p})\dfrac{2\pi\hbar}{L}= \int (p-\floor{p})\dfrac{2\pi\hbar}{L} \ket{p}\bra{p} dp
 \]
-and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
-
-The idea is to construct a Bell operator (see equation \ref{Belloperator}) in terms of $\hat X$ in which the different measurement settings are chosen by rotating it by suitable unitary operators.
+and note that measuring $\hat p_{\text{mod}\frac{2\pi \hbar}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$, not $\hat p$. 
+The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by unitarily transforming it using suitable unitary operators.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
@@ -293,7 +292,6 @@ Modular variable observables entail that spatial symmetry must be harnessed to c
 Also, an analogy with the spin\footnote{Defn: $\left|0\right\rangle ,\,\left|1\right\rangle $ are s.t. $\hat{\sigma}_z\left|0\right\rangle =\left|0\right\rangle $
 and $\hat{\sigma}_z\left|1\right\rangle =-\left|1\right\rangle $; $\ket{\pm}$ are s.t. $\hat \sigma_x \ket{\pm}=\pm\ket{\pm}$, where $\hat{\sigma}_x, \hat{\sigma}_y, \hat{\sigma}_z$ refer to Pauli matrices.%
 } states, $\left|0\right\rangle ,\left|1\right\rangle ,\left|+\right\rangle ,\left|-\right\rangle $, will presumably be beneficial. % in constructing the relevant entangled state to achieve violation of the \emph{modular} Bell inequality for suitable choices of measurement settings.%\footnote{We emphasise that the kets we construct, will not be a countable superposition of eigenstates of $\hat p$ or $\hat q$ since these are highly idealized and strictly, not even a part of the Hilbert space.}. 
-
 Consider a localized state $\varphi(q) = \braket{q|\varphi}$ symmetric about the position $q=L/2$, where $L\equiv$length scale and $\varphi_n(q)\equiv \varphi(q-nL)$. % and $I_{M} \equiv \{-\floor{\frac{M}{2}},-\floor{\frac{M}{2}}+1,\dots,\floor{\frac{M-1}{2}} \}$ where $M$ is an integer. Now we can 
 Now we define the following as analogues of $\ket{0}$ and $\ket{1}$;
 
