@@ -240,16 +240,16 @@ While this condition is enough to obtain a classical bound, we demand an extra c
 
 (b) The observable $\hat A$ corresponds to a \emph{bounded} c-number function in phase space obtained from the Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$), viz.
 \[
-|\mathcal{W}_{\hat A}(q, p)| \equiv |\int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}|\leq 1
+|\mathcal{W}_{\hat A}(q, p)| \equiv \left| \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\right| \leq 1
 \] 
 This entails,
 \begin{align*}
 |\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)|&=|\mathcal{W}_{\hat A_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)+\mathcal{W}_{\hat A_2'}(q_2,p_2)] \\&+\mathcal{W}_{\hat A'_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)-\mathcal{W}_{\hat A_2'}(q_2,p_2)]|\leq 2
 \end{align*}
-where $\bs q\equiv(q_1,q_2)$ and  $\bs p\equiv(p_1, p_2)$. That is, the Wigner representation of the Bell operator is bounded by 2.
+where $\bs q\equiv(q_1,q_2)$ and  $\bs p\equiv(p_1, p_2)$, i.e. the Wigner representation of the Bell operator is bounded by 2.
 Accordingly, for any state, including the EPR state, described by valid (non-negative) probability distribution over phase space
 \begin{equation}
-|\mean{\hat{\mathcal{B}}}|=|\int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p|\leq 2
+|\mean{\hat{\mathcal{B}}}|=\left| \int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p \right| \leq 2
 \end{equation}
 where $W_{\hat{\rho}}$ is the Wigner quasi-probability distribution corresponding to $\hat {\rho}$ given by $
 W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. A violation therefore must necessarily hinge on the negativity of the Wigner function describing the state.
@@ -258,7 +258,7 @@ Although formally valid, the Bell inequality expressed in terms of displaced par
 %The added condition ascertains that any state described by non-negative Wigner function, including EPR states, satisfies the stated class of Bell inequalities. Hence, any state  leading to a violation must be characterized by a negative Wigner function deviating from a classical  probability distribution for (hidden) phase space coordinates. 
 %That's why,  John Bell remarked that as EPR state described by positive Wigner function is compatible with a local hidden variable model, and thus it does not demonstrate nonlocality. This claim can be justified in the sense of above.
 %It would be interesting the framework for the Bell test clearly demonstrates that the source of the violation directly originates from the noncommutativity  of the phase space quadratures in quantum mechanics, $[q,p]=i\hbar$. 
-For a macroscopic test, the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the description in the classical limit. The parity operator measurements require  resolving the  consecutive eigen values. It has been shown that for sufficiently sharp measurements the system inevitably enter a quantum regime and no classical description is possible \cite{Kofler07}. It is therefore such measurements remotely resemble ``classical-like'' measurements.
+For a macroscopic test, the measurement scheme used for evaluating the correlations should have a classical analog for better understanding the description in the classical limit. The parity operator measurements require resolving the  consecutive eigen values. It has been shown that for sufficiently sharp measurements the system inevitably enters a quantum regime and no classical description is possible \cite{Kofler07}. It is therefore such measurements remotely resemble ``classical-like'' measurements.
 
 \subsection*{Phase space translation and modular variables }
 
@@ -269,10 +269,10 @@ One particular class of bounded observables can be constructed from the quantum 
 \end{align}
 which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \[
-\hat p_{\text{mod}\frac{2\hbar}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
+\hat p_{\text{mod}\frac{h}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
 \]
-and note that measuring $\hat p_{\text{mod}\frac{2\pi \hbar}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{2\pi\hbar}{L}}$, not $\hat p$. 
-The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by unitarily transforming it using suitable unitary operators.
+and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
+The idea is to construct a Bell operator (see equation \ref{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by transforming it using suitable unitary operators.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
 
