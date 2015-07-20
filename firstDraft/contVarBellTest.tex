@@ -348,7 +348,7 @@ Z(\hat q_{{\rm mod} 2L} )\equiv \rm sgn \Big[\sin\dfrac{\pi \hat q}{L}\Big].
 $\braket{ \mathcal {\hat B} } $ as a function of $N$. To get a violation,
 we need merely $8$ slits; with $50$ we almost saturate. \label{chshViolation}}
 \end{figure}
-The test is performed by considering two particles and their observers, Alice and Bob; they apply the aforesaid local unitary to define the setting, and then measure $\hat X$. %From above the two different parties, Alice and Bob, can chose their measurement settings performed on their respective particles using local unitaries of above form.
+The test is performed by considering two particles and their observers, Alice and Bob; they apply the aforesaid local unitaries to define the setting, and then measure $\hat X$. %From above the two different parties, Alice and Bob, can chose their measurement settings performed on their respective particles using local unitaries of above form.
 We claim that the appropriate entangled state which will yield a violation, given this scheme, is
 \begin{equation}
 \label{entangledState}
@@ -357,13 +357,12 @@ We claim that the appropriate entangled state which will yield a violation, give
 %Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, w
 We now evaluate $\mean{\mathcal {\hat B}}$. This essentially requires terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. It can be shown that (see \subref{c5})
 \[
-\mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta)
-\]
-Thus for appropriately defiend angles\footnote{Conventionally $\theta=\pi/2,\theta'=0$ and $\phi=\pi/4,\phi'=3\pi/4$} we get
+\mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta).\]
+Thus for particularly chosen angles, i.e., coplanar angles $\theta', \phi, \theta$ and $\phi'$ successively separated by $\pi/4$  we get
  \[
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}
 \] 
-The constraint $\ab{\mean{ \mathcal {\hat B} }} >2$, yields $N > 6$; see figure \ref{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
+The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, achieved for $N > 6$; see figure \ref{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
 \begin{eqnarray*}
 \mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2}\\
  &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}}\\
@@ -404,30 +403,25 @@ It is well recognized and can be shown that there is a tight relation between no
 \[
 \mean{\hat{\mathcal B}^{2}}\leq 4+\mean{[\hat{A}_1,\hat{ A}'_1]\otimes[\hat{ A}_2,\hat{ A}'_2]}.
 \]
-The violation therefore occurs for choices of settings whose corresponding observables do not commute. In our construction we can demonstrate that the source of violation can be clearly attributed to the noncommutativity between position and momentum, $[\hat q,\hat p]=i\hbar$. This would be regarded as a further illustration that our approach provides a relevant test in phase space. We show that (a) in our case $[\hat X(\theta),\hat X(\theta')]\neq 0$ and that (b) using the relation between commutations and poisson brackets, it follows that classically this term must vanish. 
-
-
+The violation therefore occurs for choices of settings whose corresponding observables do not commute. In our construction we can demonstrate that the source of violation can be clearly attributed to the noncommutativity between position and momentum, $[\hat q,\hat p]=i\hbar$. This would be regarded as a further illustration that our approach provides a relevant test in phase space. We show that in our case $[\hat X(\theta),\hat X(\theta')]\neq 0$.
 %As an illustration, we show $[\hat X(\phi),\hat X(\phi')]\neq 0$; %In the Bell test done with spins, the source of violation hinges on the non-commutativity of the Pauli matrices. 
 %Motivation: $\hat{\mathcal B}^{2}=4\mathbb{I}+[\hat{\mathcal A}_1,\hat{\mathcal A}'_1]\otimes[\hat{\mathcal A}_2,\hat{\mathcal A}'_2]$, when $\hat{\mathcal A}^2_i,\hat{\mathcal A}'^2_i=\mathbb I$. To obtain a violation (even in general, where the first term maybe less than $4\mathbb{I}$), it is therefore necessary that the said commutation doesn't vanish. %This is indeed true in our case. %Explicitly, we must have $[\hat X(\phi),\hat X (\phi')]\neq0$. %To arrive at the desired expression we first evaluate some simpler commutation and anti-commutation relations explicitly. 
-To prove (a), we use $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, $e^{i\hat{Z}\theta}=\cos\theta+i\hat{Z}\sin\theta$ and the previous results, to arrive at 
+To prove that, we use $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, $e^{i\hat{Z}\theta}=\cos\theta+i\hat{Z}\sin\theta$ and the previous results, to arrive at 
 \begin{align*}
 [\hat X(\theta),\hat X(\theta')] &=
 2i\sin(\theta'-\theta) \hat Z \hat X^2 \\
 &=2i \hat Z \hat X^2 \neq 0
 \end{align*}
-where in the last equality holds when the angles are as defined. 
+where in the last equality holds when the angles are as defined.  Classically this term not only vanishes, but the there can not be any difference between the two settings
+
 
 For showing (b) let's look at the Heisenberg equation of motion for the displacement operator 
 \begin{align*}
 \frac{d\hat X}{dt} &=i\hbar^{-1} [\hat Z,\hat X] \\  %\frac{\hat p^2}{2m} + \hat Z,\hat X]
-  &=i\hbar^{-1} \left[ Z((\hat q)_{\text{mod}2L})-Z(\hat q_{\text{mod}2L}\pm L) \right] \hat X \\
+  &=i\hbar^{-1} \Big( Z((\hat q)_{\text{mod}2L})-Z(\hat q_{\text{mod}2L}\pm L) \Big) \hat X \\
   &=i\hbar^{-1} 2 \hat Z \hat X
 \end{align*}
-where $\hat Z$ is the potential. It follows that $\hat X (\theta)$ is essentially the $\hat X$ at some later time. This is already peculiar, that a step potential has any effect, given that the particle is never present at points where the potential is not constant. This is essentially the scalar AB effect. It is further strange that the equation of motion depends on potentials at two spatially distinct points. In the classical case however, we have
-\[
-\frac{dX}{dt} = \{ Z, X \} = -i\hbar^{-1}\frac{\partial Z}{\partial q} \sin(pL/\hbar)
-\]
-and since the slope of the step function is zero (= force), it means that classically $X(t)=X$ as expected. Manifestly, the non-commutativity of $\hat q$ and $\hat p$ results in $\hat X(t)\neq \hat X$ (as it follows a non-local equation of motion) which is the source of the violation.
+where $\hat Z$ is the potential. It follows that $\hat X (\theta)$ is essentially the $\hat X$ at some later time. This is already peculiar, because in our scenario the particle experiences constant potential exerting no force. That means classically the physical variables do not evolve, $X(t)=X(t_0)$ as expected. While for a quantum particle we consider here this is not the case. Modular variable can depend on the potential difference between spatially\emph{ separated} places \cite{PopescuNatPhys2010}. This is essentially nothing else but the scalar Aharonov-Bohm effect being exploited for realizing different settings in our setup. Manifestly, the non-commutativity of $\hat q$ and $\hat p$ results in $\hat X(t)\neq \hat X(t_0)$ (as it follows a non-local equation of motion) which is the source of the violation.
 %Ofcourse this is not sufficient, however we have shown explicitly the violation. We remark that (a) the entire structure hinges on $[\hat q,\hat p]=i\hbar$ and that (b) the exact pauli algebra is not necessary for arriving at a violation.
 %This evaluation was meant to illuminate that the source of violation essentially hinges on $[\hat{q},\hat{p}]=i\hbar$. It is apparent that the complete pauli algebra is unnecessary for showing a violation. 
 
