@@ -490,9 +490,9 @@ The final state just after the polarizer is given by $\left|\Psi_{\theta\phi}\ri
 \subsection{Effective Practical Setup}
 
 Placing glass slabs may not be suitable for fine gratings, although a similar setup maybe possible\cite{Farias15}. Practically we can implement the same scheme using the setup shown in \figref{scheme}. %First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. 
-The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudinal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $l_0,l_1$ for the crystal and slab respectively. The phase difference between a horizontal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \theta_A$; note that physically only phase differences are essential. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\theta_A$, then we would've created\footnote{upto an overall phase} the state
- \[ e^{i\hat Z \frac{\theta_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
-for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; they'll also depend on the amplitude of the longitudinal wave. From this and the imposed constrain, $d_0,d_1$ and the corresponding amplitude can be determined. However, we have not the freedom to change $\theta_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(l_0-l_1)\equiv \theta_B$. Here, again $l_0,l_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus, by changing this amplitude, we can set the relative phase $\theta=\theta_A+\theta_B$ arbitrarily.
+The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudinal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $l_0,l_1$ for the crystal and slab respectively. The phase difference between a horizontal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \phi_A$; note that physically only phase differences are essential. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\phi_A$, then we would've created\footnote{upto an overall phase} the state
+ \[ e^{i\hat Z \frac{\phi_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
+for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; they'll also depend on the amplitude of the longitudinal wave. From this and the imposed constrain, $d_0,d_1$ and the corresponding amplitude can be determined. However, we have not the freedom to change $\phi_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(l_0-l_1)\equiv \phi_B$. Here, again $l_0,l_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus, by changing this amplitude, we can set the relative phase $\phi=\phi_A+\phi_B$ arbitrarily.
 
 Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
@@ -681,15 +681,17 @@ where of course with a probability $1/2$, the photon will be lost.
 
 It is essential to know what ballpark resolution is required for detecting the violation from the screen. We note
 \[
-\ab{\braket{p_1, p_2 | \Psi_f}}=\ab{\tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_f(p_1,p_2)}
+\ab{\braket{p_1, p_2 | \Psi_{\theta \phi}}}=\ab{\tilde{\varphi}(p_1) \tilde{\varphi}(p_2) F_{\theta \phi}(p_1,p_2)}
 \]
 where
 \begin{align*}
-F_f(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{(n,m)\in I_N \otimes I_N} e^{i(np_1 + mp_2)L/\hbar} \\
-& \left[ -\cos(\delta') [(-)^m - (-)^n] + i \sin(\delta') [1 + (-)^{n+m}] \right]
+F_{\theta \phi}(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{n,m = -\floor{\frac{M}{2}} }^{\floor{\frac{M-1}{2}}} e^{i(np_1 + mp_2)L/\hbar} \\
+& \Big[ -\cos(\delta') [(-1)^m - (-1)^n] \\
++ &i \sin(\delta') [1 + (-1)^{n+m}] \Big]
 \end{align*}
 
-$\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_f}}^2$ will be given by $\ab{F_f}$ as shown in \fig{fig:scheme}. Graphically it is clear that a resolution of say $0.1p_{\text{typ}}=0.1\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from \eq{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that are readily measurable.
+$\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. %Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. 
+Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_{\theta \phi}}}^2$ will be given by $\ab{F_{\theta \phi}}$ as shown in \fig{fig:scheme}. Graphically it is clear that resolving at the scale $p_{\text{typ}}=\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from \eq{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that are readily measurable.
 
 \bibliography{Modular}
 
