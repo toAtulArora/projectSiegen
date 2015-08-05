@@ -235,7 +235,7 @@ expressed in terms of suitable local CV observables $\hat A_i$ which take a limi
 We therefore require the observables to satisfy the following properties. 
 
 (a) %Using proper rescaling for corresponding quantum eigenvalues of the observable we have 
-Eigenvalues of $\hat A_i$, $|a_i|\leq 1$ which for bounded observables can be achieved trivially by rescaling. An example of this is the parity operator which was used in \cite{Parity98}.\\
+Eigenvalues of $\hat A_i$, $|a_i|\leq 1$ which for bounded observables can be achieved trivially by re-scaling. An example of this is the parity operator which was used in \cite{Parity98}.\\
 %This is enough to construct a valid Bell operator with a well-defined classical bound. 
 While this condition is enough to obtain a classical bound, we demand an extra constraint which is necessary for probing non-locality in phase space. 
 
@@ -321,7 +321,7 @@ Using these states, as illustrated in \figref{wavefns}, we construct the states
 \left|\psi_{+}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}} \ \ , \ \
 \left|\psi_{-}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle -\left|\psi_{1}\right\rangle }{\sqrt{2}}.
 \end{equation}
-These states were constructed with a partial translational symmetry which is appropriate to the bounded hermitian operator $\hat X$ discussed earlier. It follows that 
+These states were constructed with a partial translational symmetry which is appropriate to the bounded Hermitian operator $\hat X$ discussed earlier. It follows that 
 \begin{align*}
 \bra{\psi_+} \hat X \ket{\psi_+} &= \frac{N-1}{N} \\
 \bra{\psi_-} \hat X \ket{\psi_-} &= -\frac{N-1}{N},
@@ -338,7 +338,7 @@ More explicitly %this motivates the form
 \[
 \hat{U}(\phi)\equiv e^{i\hat{Z}\phi/2},
 \]
-where $\hat{Z}$ is s.t. $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wavefunctions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
+where $\hat{Z}$ is s.t. $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $ and $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $. We note that $\hat{Z}$ must differentiate between spatial wave-functions $\left\langle q|\varphi\right\rangle $ and $\left\langle q-L|\varphi\right\rangle $. It is thus natural to expect $\hat{Z}$ to be a function of  $\hat{q}_{\text{mod} 2L}$, i.e. 
 $\hat{Z}\equiv Z(\hat{q}_{\text{mod}2L})$. For consistency then, we conclude that $Z$ must have the form of a square wave and define %From its action on position eigenstates, $Z(\hat{q}_{\text{mod}2L})\left|q\right\rangle =Z(q_{\text{mod}2L})\left|q\right\rangle $ we conclude that $\hat Z$ should have the form of the square wave function
 \[
 %Z(\hat q_{{\rm mod} 2L} )\equiv \rm sgn \Big[\sin\dfrac{\pi \hat q}{L}\Big].
@@ -492,7 +492,7 @@ The final state just after the polarizer is given by $\left|\Psi_{\theta\phi}\ri
 \subsection{Effective Practical Setup}
 
 Placing glass slabs may not be suitable for fine gratings, although a similar setup maybe possible\cite{Farias15}. Practically we can implement the same scheme using the setup shown in \figref{scheme}. %First we note that only relative phases between $\ket{\psi_0}$ and $\ket{\psi_1}$ are essential. 
-The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudinal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $l_0,l_1$ for the crystal and slab respectively. The phase difference between a horizontal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \phi_A$; note that physically only phase differences are essential. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\phi_A$, then we would've created\footnote{upto an overall phase} the state
+The first large slab is a Birefringent crystal ($\eta_H,\eta_V$) while the adjacent slab is plain glass ($\eta$). We generate longitudinal standing pressure waves so that the effective thickness at alternate grating sites are given by $d_0,d_1$ and $l_0,l_1$ for the crystal and slab respectively. The phase difference between a horizontal $\ket{\psi_0}$ and $\ket{\psi_1}$ will be given by $\eta_H(d_0 - d_1)\equiv \phi_A$; note that physically only phase differences are essential. For the vertical component, it'll be $\eta_V(d_0-d_1)$. If we impose $\eta_V(d_0-d_1)=\pi+\phi_A$, then we would've created\footnote{up to an overall phase} the state
  \[ e^{i\hat Z \frac{\phi_A}{2}}\frac{\ket{\psi_+} + \ket{\psi_-}}{\sqrt{2}} \]
 for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and $d_1$ will be constrained by some relation depending on physical properties of the crystal; they'll also depend on the amplitude of the longitudinal wave. From this and the imposed constrain, $d_0,d_1$ and the corresponding amplitude can be determined. However, we have not the freedom to change $\phi_A$. To remedy this, we use the glass slab. It will introduce an additional relative phase $\eta(l_0-l_1)\equiv \phi_B$. Here, again $l_0,l_1$, may satisfy some constraint, but will depend on the amplitude which is adjustable. Thus, by changing this amplitude, we can set the relative phase $\phi=\phi_A+\phi_B$ arbitrarily.
 
@@ -693,7 +693,7 @@ F_{\theta \phi}(p_1,p_2)&=\frac{1}{\sqrt 2} \sum_{n,m = -\floor{\frac{M}{2}} }^{
 \end{align*}
 
 $\tilde{\varphi}(p) \equiv \braket{p|\varphi}$ and $\delta' = (\phi - \theta)/2$. %Here the information about $\delta'$ is contained in $f$, and $N$ is known from $\ket{\Psi}$. 
-Since the wavefunction $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_{\theta \phi}}}^2$ will be given by $\ab{F_{\theta \phi}}$ as shown in \fig{fig:scheme}. Graphically it is clear that resolving at the scale $p_{\text{typ}}=\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from \eq{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that are readily measurable.
+Since the wave-function $\varphi(q)$ was assumed sharp with respect to $L$, $\ab{ \tilde \varphi(p)}$ will only correspond to a broad envelope, over the range $(-Nh/2L,Nh/2L)$. Thus the main feature of $\ab{\braket{p_1,p_2,\Psi_{\theta \phi}}}^2$ will be given by $\ab{F_{\theta \phi}}$ as shown in \fig{fig:scheme}. Graphically it is clear that resolving at the scale $p_{\text{typ}}=\frac{h}{L}$ should be sufficient to capture the relevant features. On the screen, this translates to a typical length, $q_{\text{typ}}=\lambda D /L$ which follows from \eq{eqn:measure} and $p_z=h/\lambda$ for a photon. This is reminiscent of typical diffraction experiments and is in units that are readily measurable.
 
 \bibliography{Modular}
 
