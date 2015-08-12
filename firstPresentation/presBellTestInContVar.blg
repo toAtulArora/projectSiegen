@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: presBellTestInContVar.aux
+The style file: plain.bst
+Database file #1: Modular.bib
+You're missing a field name---line 11 of file Modular.bib
+ :   
+ :   %note = {Accessed: 2010-09-30}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in car
+Warning--to sort, need author or key in atom
+Warning--to sort, need author or key in einstein
+Warning--to sort, need author or key in johnBell
+You've used 7 entries,
+            2118 wiz_defined-function locations,
+            535 strings with 4779 characters,
+and the built_in function-call counts, 1701 in all, are:
+= -- 168
+> -- 52
+< -- 0
++ -- 23
+- -- 16
+* -- 105
+:= -- 254
+add.period$ -- 17
+call.type$ -- 7
+change.case$ -- 29
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 61
+empty$ -- 171
+format.name$ -- 16
+if$ -- 370
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 3
+newline$ -- 34
+num.names$ -- 6
+pop$ -- 43
+preamble$ -- 1
+purify$ -- 22
+quote$ -- 0
+skip$ -- 53
+stack$ -- 0
+substring$ -- 110
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 4
+while$ -- 12
+width$ -- 8
+write$ -- 63
+(There was 1 error message)

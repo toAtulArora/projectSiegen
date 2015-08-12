@@ -3,6 +3,12 @@
 \begin_document
 \begin_header
 \textclass beamer
+\begin_preamble
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+\newcommand{\ab}[1]{\left| #1 \right|}
+\usepackage{braket}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language british
@@ -77,7 +83,15 @@
 \begin_body
 
 \begin_layout Title
-Bell Test in Continuous Variables
+Bell Test in phase space (q,p)
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Institute
+IISER M, University of Siegen
 \end_layout
 
 \begin_layout Frame
@@ -85,7 +99,7 @@ Bell Test in Continuous Variables
 status open
 
 \begin_layout Plain Layout
-Motivation, why bother
+Introduction
 \end_layout
 
 \end_inset
@@ -95,31 +109,49 @@ Motivation, why bother
 
 \begin_deeper
 \begin_layout Itemize
-Class-room formulation uses spins, an inherently quantum phenomenon 
+Programme: DAAD
 \end_layout
 
-\begin_layout Pause
+\begin_layout Itemize
+Place: University of Siegen, Siegen
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/siegen.jpg
+	lyxscale 10
+	scale 10
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Itemize
-Extenstion to continuous variables seems simple; position measurement
-\end_layout
+People: Prof.
+ Otfried Guehne and Dr.
+ Ali Assadian
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Pause
 
-\end_layout
+\begin_inset Graphics
+	filename images/otfried.jpg
+	width 2cm
 
-\begin_layout Itemize
-Known: EPR state and displaced parity measurement
-\end_layout
+\end_inset
 
-\begin_layout Pause
+ 
+\begin_inset Graphics
+	filename images/asadian.jpg
+	width 2cm
+	BoundingBox 0bp 0bp 126bp 168bp
+	clip
 
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Issue: Parity is unbounded in phase space
+
 \end_layout
 
 \end_deeper
@@ -132,7 +164,56 @@ Issue: Parity is unbounded in phase space
 status open
 
 \begin_layout Plain Layout
-Bell/CHSH Inequality
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Motivation}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Review/Background 
+\end_layout
+
+\begin_layout Frame
+Our Construction 
+\end_layout
+
+\begin_layout Frame
+Interesting Details 
+\end_layout
+
+\begin_layout Frame
+Concluding Remarks
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Mechanics
 \end_layout
 
 \end_inset
@@ -142,7 +223,307 @@ Bell/CHSH Inequality
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset Formula $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle C(a_{i},b_{i})\right\rangle \right|\le2$
+Newton et.
+ al.
+ : `Classical Mechanics' 
+\begin_inset Formula $\mathbf{q},\mathbf{p}$
+\end_inset
+
+ & forces; t
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Graphics
+	filename images/carToAtom.svg
+	lyxscale 50
+	width 5cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{car}
+\backslash
+cite{atom}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Heisenberg, Schrödinger et.
+ al.
+ : `Quantum Mechanics' 
+\begin_inset Formula $[\hat{\mathbf{q}},\hat{\mathbf{p}}]=i\hbar$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Questioning QM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Einstein: not satisfied with QM
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/einstein.jpg
+	lyxscale 10
+	width 4cm
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{einstein}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Beliefs
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Locality
+\end_layout
+
+\begin_layout Itemize
+Reality
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+QM must be incomplete 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{EPR}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Suggestion: Must be a better `locally real' theory that can describe nature
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Asking Nature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+John Bell: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/CCfac8_07_14.jpg
+	lyxscale 10
+	width 3cm
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+cite{johnBell}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Experimental: Can there be a `locally real' theory that conforms with prediction
+s of QM?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{jBell}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+NO!
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Which assumption is false? - open; progress: Contextuality
+\end_layout
+
+\begin_layout Itemize
+Can we still do better than QM? - Assume reality but not locality: DeBroglie
+ Pilot Wave, Bohmian Mechanics
+\end_layout
+
+\begin_layout Itemize
+Does this mean 
+\begin_inset Formula $\mathbf{q},\mathbf{p}$
+\end_inset
+
+ don't have `local reality'? - Reason to believe so
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+Motivation 
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Review/Background}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Our Construction 
+\end_layout
+
+\begin_layout Frame
+Interesting Details 
+\end_layout
+
+\begin_layout Frame
+Concluding Remarks
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bell/CHSH Inequality 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{CHSH69}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left|\left\langle a_{1}(b_{1}+b_{2})+a_{2}(b_{1}-b_{2})\right\rangle \right|\equiv\left|\left\langle \mathcal{B}(a_{i},b_{i})\right\rangle \right|\le2$
 \end_inset
 
 
@@ -178,19 +559,19 @@ In QM
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $z$
+\begin_inset Formula $\hat{z}$
 \end_inset
 
 , 
-\begin_inset Formula $x$
+\begin_inset Formula $\hat{x}$
 \end_inset
 
 , 
-\begin_inset Formula $z'=\frac{-z-x}{\sqrt{2}}$
+\begin_inset Formula $\hat{z}'=\frac{-\hat{z}-\hat{x}}{\sqrt{2}}$
 \end_inset
 
 , 
-\begin_inset Formula $x'=\frac{z-x}{\sqrt{2}}$
+\begin_inset Formula $\hat{x}'=\frac{\hat{z}-\hat{x}}{\sqrt{2}}$
 \end_inset
 
 
@@ -201,7 +582,7 @@ In QM
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\left\langle C((x,z),(x',z'))\right\rangle =2\sqrt{2}\nleq2$
+\begin_inset Formula $\left\langle \mathcal{B}((\hat{x},\hat{z}),(\hat{x}',\hat{z}'))\right\rangle =2\sqrt{2}\nleq2$
 \end_inset
 
 
@@ -213,7 +594,11 @@ In QM
 
 \end_deeper
 \begin_layout Itemize
-\begin_inset Formula $\left\langle e^{-iz\theta/2}xe^{iz\theta/2}\otimes e^{-iz\phi/2}xe^{iz\phi/2}\right\rangle =-\cos(\phi-\theta)$
+\begin_inset Formula 
+\[
+\boxed{\left\langle e^{-i\hat{z}\theta/2}\hat{x}e^{i\hat{z}\theta/2}\otimes e^{-i\hat{z}\phi/2}\hat{x}e^{i\hat{z}\phi/2}\right\rangle =-\cos(\phi-\theta)}
+\]
+
 \end_inset
 
 
@@ -489,9 +874,16 @@ Modular Variables
 \begin_layout Itemize
 \begin_inset Formula 
 \[
-\text{LHS}=\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}
+\boxed{\frac{e^{i\hat{p}L/\hbar}+e^{-i\hat{p}L/\hbar}}{2}\equiv\hat{X}}
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{LHS}=\left|\hat{X}\right|$
 \end_inset
 
 
@@ -547,6 +939,549 @@ CM: Momentum as a generator of infinitesimal translations
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+Motivation 
+\end_layout
+
+\begin_layout Frame
+Review/Background 
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Our Construction}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Interesting Details
+\end_layout
+
+\begin_layout Frame
+Concluding Remarks
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Approximate Eigenstates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Consider a localized state $
+\backslash
+varphi(q) = 
+\backslash
+braket{q|
+\backslash
+varphi}$ symmetric about the position $q=L/2$, where $L
+\backslash
+equiv$length scale and $
+\backslash
+varphi_n(q)
+\backslash
+equiv 
+\backslash
+varphi(q-nL)$.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+begin{equation*} 
+\backslash
+left|
+\backslash
+psi_{0}
+\backslash
+right
+\backslash
+rangle  
+\backslash
+equiv  
+\backslash
+frac{1}{
+\backslash
+sqrt{M}}
+\backslash
+sum_{n=-
+\backslash
+floor{
+\backslash
+frac{M}{2}}}^{
+\backslash
+floor{
+\backslash
+frac{M-1}{2}}}
+\backslash
+left|
+\backslash
+varphi_{2n+1}
+\backslash
+right
+\backslash
+rangle 
+\backslash
+  ,  
+\backslash
+  
+\backslash
+left|
+\backslash
+psi_{1}
+\backslash
+right
+\backslash
+rangle  
+\backslash
+equiv  
+\backslash
+frac{1}{
+\backslash
+sqrt{M}}
+\backslash
+sum_{n=-
+\backslash
+floor{
+\backslash
+frac{M}{2}}}^{
+\backslash
+floor{
+\backslash
+frac{M-1}{2}}}
+\backslash
+left|
+\backslash
+varphi_{2n}
+\backslash
+right
+\backslash
+rangle.
+ 
+\backslash
+end{equation*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename plots/zeroOne.eps
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Approximate Eigenstates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{eqn:psipm} 
+\backslash
+left|
+\backslash
+psi_{+}
+\backslash
+right
+\backslash
+rangle 
+\backslash
+equiv
+\backslash
+frac{
+\backslash
+left|
+\backslash
+psi_{0}
+\backslash
+right
+\backslash
+rangle +
+\backslash
+left|
+\backslash
+psi_{1}
+\backslash
+right
+\backslash
+rangle }{
+\backslash
+sqrt{2}} 
+\backslash
+ 
+\backslash
+ , 
+\backslash
+ 
+\backslash
+ 
+\backslash
+left|
+\backslash
+psi_{-}
+\backslash
+right
+\backslash
+rangle 
+\backslash
+equiv
+\backslash
+frac{
+\backslash
+left|
+\backslash
+psi_{0}
+\backslash
+right
+\backslash
+rangle -
+\backslash
+left|
+\backslash
+psi_{1}
+\backslash
+right
+\backslash
+rangle }{
+\backslash
+sqrt{2}}.
+ 
+\backslash
+end{equation} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename plots/plus.eps
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/minus.eps
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Note
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*} 
+\backslash
+bra{
+\backslash
+psi_+} 
+\backslash
+hat X 
+\backslash
+ket{
+\backslash
+psi_+} &= 
+\backslash
+frac{N-1}{N} 
+\backslash
+
+\backslash
+ 
+\backslash
+bra{
+\backslash
+psi_-} 
+\backslash
+hat X 
+\backslash
+ket{
+\backslash
+psi_-} &= -
+\backslash
+frac{N-1}{N}, 
+\backslash
+end{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+where $N 
+\backslash
+equiv 2M$ is the number of `slits'.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Measurement Settings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+hat{U}(
+\backslash
+phi)
+\backslash
+equiv e^{i
+\backslash
+hat{Z}
+\backslash
+phi/2}, 
+\backslash
+] where $
+\backslash
+hat{Z}$ is s.t.
+ $
+\backslash
+hat{Z}
+\backslash
+left|
+\backslash
+psi_{0}
+\backslash
+right
+\backslash
+rangle =
+\backslash
+left|
+\backslash
+psi_{0}
+\backslash
+right
+\backslash
+rangle $ and $
+\backslash
+hat{Z}
+\backslash
+left|
+\backslash
+psi_{1}
+\backslash
+right
+\backslash
+rangle =-
+\backslash
+left|
+\backslash
+psi_{1}
+\backslash
+right
+\backslash
+rangle $.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ %Z(
+\backslash
+hat q_{{
+\backslash
+rm mod} 2L} )
+\backslash
+equiv 
+\backslash
+rm sgn 
+\backslash
+Big[
+\backslash
+sin
+\backslash
+dfrac{
+\backslash
+pi 
+\backslash
+hat q}{L}
+\backslash
+Big].
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+boxed{ 
+\backslash
+hat Z 
+\backslash
+equiv 
+\backslash
+rm sgn 
+\backslash
+left(
+\backslash
+sin
+\backslash
+dfrac{
+\backslash
+hat q 
+\backslash
+pi}{L}
+\backslash
+right) }
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
 \begin_inset Argument 4
 status open
 
@@ -560,10 +1495,919 @@ Entangled State
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\backslash
+boxed{ 
+\backslash
+label{entangledState} 
+\backslash
+ket{
+\backslash
+Psi} 
+\backslash
+equiv
+\backslash
+frac{ 
+\backslash
+ket{
+\backslash
+psi_{+}}_1
+\backslash
+ket{
+\backslash
+psi_{-}}_2 - 
+\backslash
+ket{
+\backslash
+psi_{-}}_1
+\backslash
+ket{
+\backslash
+psi_{+}}_2 }{
+\backslash
+sqrt{2}} }
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bell Test I
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+We now evaluate $
+\backslash
+mean{
+\backslash
+mathcal {
+\backslash
+hat B}}$.
+ This essentially requires terms like $ 
+\backslash
+mean{ 
+\backslash
+hat X(
+\backslash
+phi) 
+\backslash
+otimes 
+\backslash
+hat X(
+\backslash
+theta)}$, where $
+\backslash
+hat X (
+\backslash
+theta) 
+\backslash
+equiv 
+\backslash
+hat U^{
+\backslash
+dagger}(
+\backslash
+theta) 
+\backslash
+hat X 
+\backslash
+hat U(
+\backslash
+theta)$.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+boxed{
+\backslash
+mean{
+\backslash
+hat X(
+\backslash
+phi) 
+\backslash
+otimes 
+\backslash
+hat X(
+\backslash
+theta)} = -
+\backslash
+left( 
+\backslash
+frac{N-1}{N} 
+\backslash
+right)^2 
+\backslash
+cos(
+\backslash
+phi-
+\backslash
+theta)}
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bell Test II
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+includegraphics[width=8cm]{plots/CHSH} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+resizebox{0.43
+\backslash
+paperwidth}{!}{
+\backslash
+input{plots/Bell.tex}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+input{Bell.tex} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+ab{
+\backslash
+mean{ 
+\backslash
+mathcal {
+\backslash
+hat B} }} =
+\backslash
+left(
+\backslash
+frac{N-1}{N}
+\backslash
+right)^{2}2
+\backslash
+sqrt{2}.
+ 
+\backslash
+] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Motivation
+\end_layout
+
+\begin_layout Frame
+Review/Background 
+\end_layout
+
+\begin_layout Frame
+Our Construction 
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Interesting Details}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Concluding Remarks
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algebra
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Defining 
+\begin_inset Formula $\hat{Y}=i\hat{Z}\hat{X}$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\hat{X},\hat{Y},\hat{Z}$
+\end_inset
+
+ anti commute, from which it follows that
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray*} 
+\end_layout
+
+\begin_layout Plain Layout
+
+[
+\backslash
+hat{Z},
+\backslash
+hat{X}] & = & -2i
+\backslash
+hat{Y}
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+{} [
+\backslash
+hat{X},
+\backslash
+hat{Y}] & = & -2i
+\backslash
+hat{Z}
+\backslash
+hat{X}^{2}=-2i
+\backslash
+hat{X}^{2}
+\backslash
+hat{Z}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{} [
+\backslash
+hat{Y},
+\backslash
+hat{Z}] & = & -2i
+\backslash
+hat{X}.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{eqnarray*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Non-local Equation of Motion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\hat{X}(\phi)=\hat{X}(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula 
+\[
+\frac{d\hat{X}}{dt}=i\hbar^{-1}[\hat{Z},\hat{X}]=i\hbar^{-1}\left(Z(\hat{q})-Z(\hat{q}\pm L)\right)\hat{X}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Classically, 
+\begin_inset Formula $X(t)=X(t_{0})$
+\end_inset
+
+ | step potential, no force
+\end_layout
+
+\begin_layout Itemize
+Scalar AB effect
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Implementation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/scheme.pdf
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Creating the Entangled State
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+frac{ 
+\backslash
+ket{H}_1
+\backslash
+ket{V}_2 -
+\backslash
+ket{V}_1
+\backslash
+ket{H}_2 }{
+\backslash
+sqrt{2}} 
+\backslash
+ket{
+\backslash
+psi_+}_1
+\backslash
+ket{
+\backslash
+psi_+}_2.
+ 
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+frac{
+\backslash
+ket{H}_1
+\backslash
+ket{V}_2
+\backslash
+ket{
+\backslash
+psi_+}_1
+\backslash
+ket{
+\backslash
+psi_-}_2 - 
+\backslash
+ket{V}_1
+\backslash
+ket{H}_2
+\backslash
+ket{
+\backslash
+psi_-}_1
+\backslash
+ket{
+\backslash
+psi_+}_2}{
+\backslash
+sqrt 2}.
+ 
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+[ 
+\backslash
+ket{
+\backslash
+chi_{45}}
+\backslash
+ket{
+\backslash
+Psi} = 
+\backslash
+ket{
+\backslash
+nearrow}_1
+\backslash
+ket{
+\backslash
+nearrow}_2 
+\backslash
+frac{
+\backslash
+ket{
+\backslash
+psi_+}_1
+\backslash
+ket{
+\backslash
+psi_-}_2 - 
+\backslash
+ket{
+\backslash
+psi_-}_1
+\backslash
+ket{
+\backslash
+psi_+}_2}{
+\backslash
+sqrt 2} 
+\backslash
+]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Motivation
+\end_layout
+
+\begin_layout Frame
+Review/Background
+\end_layout
+
+\begin_layout Frame
+Our Construction
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Concluding Remarks}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Large{Showed $q,p$ are not `locally real'}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Remarks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Test
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Parity based Bell Test for EPR states 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{Parity98}
+\end_layout
+
+\end_inset
+
+ | Wigner-Weyl representation (unbounded)
+\end_layout
+
+\begin_layout Itemize
+Direction: Generalize this to 
+\begin_inset Formula $d-$
+\end_inset
+
+dimensional systems.
+\end_layout
+
+\begin_layout Itemize
+On arXiv soon
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tools
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+lyx and emacs with 
+LaTeX.
+\end_layout
+
+\begin_layout Itemize
+inkscape for diagrams
+\end_layout
+
+\begin_layout Itemize
+git for version control
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Felt we're well trained at IISER; was prepared in Germany.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge{Thanks.
+ Questions?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{frame}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[allowframebreaks]{Bibliography}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Modular"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
