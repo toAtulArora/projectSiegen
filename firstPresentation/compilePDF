@@ -1,0 +1,4 @@
+pdflatex presBellTestInContVar
+bibtex presBellTestInContVar
+pdflatex presBellTestInContVar
+pdflatex presBellTestInContVar

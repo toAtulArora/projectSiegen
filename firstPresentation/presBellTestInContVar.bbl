@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{atom}
+Atom text editor (atom).
+\newblock \url{https://atom.io/}.
+
+\bibitem{johnBell}
+Cern courier (john bell).
+\newblock \url{http://cerncourier.com/cws/article/cern/58208/2}.
+
+\bibitem{car}
+Free stock photos (car).
+\newblock \url{http://www.freestockphotos.biz/stockphoto/15685}.
+
+\bibitem{einstein}
+Fusion tantra (einstein).
+\newblock
+  \url{http://fusiontantra.com/wp-content/uploads/2015/05/einstein.jpg}.
+
+\bibitem{Bell}
+John~S. Bell.
+\newblock On the einstein-podolsky-rosen paradox.
+\newblock {\em Physics}, 1:195--200, 1964.
+
+\bibitem{CHSH69}
+John~F. Clauser, Michael~A. Horne, Abner Shimony, and Richard~A. Holt.
+\newblock Proposed experiment to test local hidden-variable theories.
+\newblock {\em Phys. Rev. Lett.}, 23:880--884, Oct 1969.
+
+\bibitem{EPR}
+A.~Einstein, B.~Podolsky, and N.~Rosen.
+\newblock Can quantum-mechanical description of physical reality be considered
+  complete?
+\newblock {\em Phys. Rev.}, 47:777--780, May 1935.
+
+\end{thebibliography}
