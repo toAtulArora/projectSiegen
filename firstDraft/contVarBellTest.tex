@@ -218,7 +218,7 @@ Notably, the Wigner function associated with the entangled state used in the EPR
 
 The paper is organized as follows.
 In section \ref{framework}, we introduce our framework for the Bell test, aiming to use most ``classical-like'' variables and measurements. This motivates a macroscopic test of local realism \cite{Reid}. The observables we use are the so called modular variables \cite{Ahar69}. Recently, such variables have found applications in detecting certain continuous variable (CV) entangled states ~\cite{Gneiting11, Barros, ModularExp} and quantum information \cite{ModularQI}. Furthermore, they have been used for fundamental tests such as macroscopic realism \cite{AsadianLG}, contextuality \cite{Plastino, AsadianPS} and even the GHZ test \cite{Massar01}. This strongly suggests that modular variables can be used for Bell inequality tests of local hidden variable theories as well.  In section \ref{construction} we construct a Bell operator from modular variables, for which the violation is achieved only if the state is described by a negative Wigner function. We then proceed with identification of the relevant entangled state, explicitly showing the violation. % of the Bell inequality. 
-Finally, in section \ref{physicalImplementation} we show how the entire test can be implemented in a double (multi-slit) grating setup \cite{Gneiting13}. Grating techniques have been used to experimentally demonstrate quantum matter waves \cite{GratingExp}. %as a powerful experimental demonstration of the quantum matter wave exhibited by massive particles \cite{GratingExp}.
+Finally, in sections \ref{measurementSchemes} and \ref{physicalImplementation} we show how the entire test can be implemented in a double (multi-slit) grating setup \cite{Gneiting13}. Grating techniques have been used to experimentally demonstrate quantum matter waves \cite{GratingExp}. We summarize by briefly discussing the outlook in section \ref{discussion} and conclude in section \ref{conclusion}. %as a powerful experimental demonstration of the quantum matter wave exhibited by massive particles \cite{GratingExp}.
 
 
 
@@ -240,18 +240,18 @@ Eigenvalues of $\hat A_i$, $|a_i|\leq 1$, which for bounded observables can be a
 While this condition is enough to obtain a classical bound, we demand an extra constraint which is necessary for probing non-locality in phase space. 
 
 (b) The observable $\hat A$ corresponds to a \emph{bounded} c-number function in phase space obtained from the Wigner-Weyl correspondence ($q\leftrightarrow \hat q$, $p\leftrightarrow \hat p$), viz.
-\[
+\beq
 |\mathcal{W}_{\hat A}(q, p)| \equiv \left| \int dq' e^{ipq'}\bra{q-\dfrac{q'}{2}}\hat A \ket{q+\dfrac{q'}{2}}\right| \leq 1.
-\] 
+\eeq 
 This entails,
 \begin{align*}
 |\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)|&=|\mathcal{W}_{\hat A_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)+\mathcal{W}_{\hat A_2'}(q_2,p_2)] \\&+\mathcal{W}_{\hat A'_1}(q_1,p_1)[\mathcal{W}_{\hat A_2}(q_2,p_2)-\mathcal{W}_{\hat A_2'}(q_2,p_2)]|\leq 2,
 \end{align*}
 for the Wigner representation of the Bell operator where $\bs q\equiv(q_1,q_2)$ and  $\bs p\equiv(p_1, p_2)$.
 Accordingly, for any state, including the EPR state, described by a valid (non-negative) probability distribution over phase space, the following inequality holds
-\[ %begin{equation}
+\beq %begin{equation}
 |\mean{\hat{\mathcal{B}}}|=\left| \int W_{\hat {\rho}}(\bs q,\bs p)\mathcal{W}_{\hat {\mathcal{B}}}(\bs q,\bs p)d\bs q d\bs p \right| \leq 2,
-\] %end{equation}
+\eeq %end{equation}
 where $W_{\hat{\rho}}$ is the Wigner quasi-probability distribution corresponding to $\hat {\rho}$ given by $
 W_{\hat {\rho}} = \mathcal{W}_{\hat {\rho}}/2\pi \hbar$. A violation therefore must necessarily arise from the negativity of the Wigner function describing the state.
 
@@ -266,14 +266,14 @@ It has been shown that for sufficiently sharp measurements the system inevitably
 \subsection*{Phase space translation and modular variables }
 
 One particular class of bounded observables can be constructed from the quantum mechanical space translation operator, $e^{-i\hat p L/\hbar}$. As its name suggests, this operator displaces a particle by a finite distance $L$, which in our case will be the distance between two adjacent slits. This operator is not an observable, therefore we define a symmetric combination   
-\begin{align*}
+\begin{align}
   \label{translation}
   \hat X \equiv\dfrac{e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar}}{2} =\cos(\hat p L/\hbar),
-\end{align*}
+\end{align}
 which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
-\[
+\beq
 \hat p_{\text{mod}\frac{h}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
-\]
+\eeq
 and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X\equiv\hat X(\hat p_{\text{mod}\frac{h}{L}})$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
 The idea is to construct a Bell operator (see \eq{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by transforming it using suitable unitary operators.
 
@@ -361,19 +361,20 @@ We claim that the suitable entangled state which will yield a violation, given t
 \end{equation}
 %Having defined $\Psi$, $\hat A_i$ and $\hat A'_i$, w
 We now evaluate $\mean{\mathcal {\hat B}}$. This essentially requires terms like $ \mean{ \hat X(\phi) \otimes \hat X(\theta)}$, where $\hat X (\theta) \equiv \hat U^{\dagger}(\theta) \hat X \hat U(\theta)$. It can be shown that (see \subref{c5})
-\[
-\mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta).\]
+\beq
+\mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta).
+\eeq
 Thus for particular coplanar angles, i.e. $\theta',\,\phi,\,\theta$ and $\phi'$ successively separated by $\pi/4$, we get
- \[
+ \beq
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}.
-\] 
+\eeq 
 The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, requires $N > 6$; see \fig{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
-\begin{eqnarray*}
-\mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2}\\
- &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}}\\
- & = & \text{Re}\left( e^{-iZ_{-}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{+}(q)\phi/2}\right) \\
+\beq
+\mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2} \nonumber \\
+ &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}} \nonumber \\
+ & = & \text{Re}\left( e^{-iZ_{-}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{+}(q)\phi/2}\right) \nonumber \\
  & = & \cos(pL/\hbar \pm Z_{\pm}(q)\phi) \le 1,
-\end{eqnarray*}
+\eeq
 where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact that $Z(q)=-Z(q+L)$ (omitting the $\text{mod}2L$).
 
 
@@ -414,11 +415,11 @@ To prove that, we use $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, $e^{i\hat{Z}\t
 \end{align*}
 where the last equality holds when the angles are as defined. Classically this term not only vanishes, the different measurement settings also become identical. %, but even the commutations %the there can not be any difference between the two settings
 The Heisenberg equation of motion for the displacement operator 
-\begin{align*}
-\frac{d\hat X}{dt} &=i\hbar^{-1} [\hat Z,\hat X] \\  %\frac{\hat p^2}{2m} + \hat Z,\hat X]
-  &=i\hbar^{-1} \Big( Z(\hat q_{\text{mod}2L})-Z(\hat q_{\text{mod}2L}\pm L) \Big) \hat X \\
+\begin{align}
+\frac{d\hat X}{dt} &=i\hbar^{-1} [\hat Z,\hat X] \nonumber \\  %\frac{\hat p^2}{2m} + \hat Z,\hat X]
+  &=i\hbar^{-1} \Big( Z(\hat q_{\text{mod}2L})-Z(\hat q_{\text{mod}2L}\pm L) \Big) \hat X \nonumber \\
   &=i\hbar^{-1} 2 \hat Z \hat X
-\end{align*}
+\end{align}
 where $\hat Z$ is the potential, shows that $\hat X (\theta)$ is essentially $\hat X$ at some later time. However, classically, since the particle experiences no force (constant potential), $X(t)=X(t_0)$. This peculiarity is the same as that of the scalar Aharonov-Bohm effect, which is exploited here for realizing different measurement settings.
 %This is already peculiar, because in our scenario the particle experiences constant potential, i.e. no force. That means classically the physical variables do not evolve, $X(t)=X(t_0)$. %While for a quantum particle we consider here this is not the case. Modular variable can depend on the potential difference between spatially\emph{ separated} places \cite{PopescuNatPhys2010}. 
 %This is essentially nothing else but the scalar Aharonov-Bohm effect being exploited for realizing different settings in our setup. 
@@ -430,13 +431,13 @@ Manifestly then, the non-commutativity of $\hat q$ and $\hat p$ results in $\hat
 %\subsection*{Advantage of asymmetry in $\hat{X}$ and $\hat{Z}$}
 %Thus while our construction is motivated by the spin formalism, it is not just a relabelling of states and operators achieved by a severe restriction of the Hilbert space. 
 
-\section{Measurement schemes}
+\section{Measurement schemes \label{measurementSchemes}}
 
 The scheme requires us to evaluate the correlation functions such as $\mean{\hat{X}(\theta)\otimes\hat{X}(\phi)}$. Equivalently, the measurement settings can be chosen by applying the corresponding local
 unitaries  on the entangled state, that is $\ket{\Psi_{\theta\phi}}=\hat U(\theta)\otimes\hat U(\phi)\ket{\Psi}$. Therefore, obtaining $\left|\left\langle p{}_{1},p{}_{2}|\Psi_{\theta \phi}\right\rangle \right|^{2}$ is sufficient for evaluating % $\braket{ \hat{X}\otimes\hat{X} } =\left\langle \cos(\hat{p}L/\hbar)\otimes\cos(\hat{p}L/\hbar)\right\rangle $
  $\braket{ \hat{X}(\theta)\otimes\hat{X} (\phi)} = \int dp{}_{1}dp{}_{2}\cos(p{}_{1}L/\hbar)\cos(p{}_{2}L/\hbar)\left|\left\langle p{}_{1},p{}_{2}|\Psi_{\theta\phi}\right\rangle \right|^{2}$. 
 
-It is known that in the far-field approximation\cite{Gneiting13}
+It is known that in the far-field approximation \cite{Gneiting13}
 \begin{equation}
 \label{eqn:measure}
 \left| \braket{p_1=\frac{p_zq_1}{D},p_2=\frac{p_zq_2}{D}|\Psi_{\theta\phi}} \right|^2=\dfrac{D^2}{p_z^2} \left| \braket{q_1,q_2 | \Psi_{\theta\phi}^\text{screen}} \right|^2,
@@ -492,7 +493,7 @@ is obtained, where $\left|\nearrow\right\rangle \equiv\left(\left|H\right\rangle
 \subsection{Measurement Settings}
 
 The measurement setting is applied by local unitaries like $\hat U(\theta)\otimes \hat U(\phi)$. A local unitary can be performed by placing alternating glass slabs of widths such that \eq{eqn:U} holds. These slabs may be placed right after the birefringent crystals, before the polarizer. 
-The final state just after the polarizer is given by $\left|\Psi_{\theta\phi}\right\rangle=\hat U(\theta)\otimes \hat U(\phi)\left|\Psi\right\rangle $, where $\theta\phi$ is used to index which of the four possible measurement settings was used.  %$\ket{\psi_0}\to e^{i\theta/2}\ket{\psi_0}$ and $\ket{\psi_1}\to e^{-i\theta/2}\ket{\psi_1}$.
+The final state just after the polarizer is given by $\left|\Psi_{\theta\phi}\right\rangle=\hat U(\theta)\otimes \hat U(\phi)\left|\Psi\right\rangle $, where $\theta\phi$ is one of the four possible measurement settings. %used to index which of the four possible measurement settings was used.  %$\ket{\psi_0}\to e^{i\theta/2}\ket{\psi_0}$ and $\ket{\psi_1}\to e^{-i\theta/2}\ket{\psi_1}$.
 
 %In our scheme, Alice and Bob can choose between $\phi,\phi'$ and $\theta,\theta'$ respectively. To implement this, we recall that the action of $\hat{U}(\theta)$, is to introduce a phase difference between the $\left|\psi_{0}\right\rangle $ and $\left|\psi_{1}\right\rangle $ states. By construction, $\left|\psi_{0}\right\rangle $ and $\left|\psi_{1}\right\rangle $ are spatially disjoint; thus the operation of $\hat{U}(\theta)$ can be implemented by simply placing alternating glass slabs at the slits, with widths such that $\left|\psi_{0}\right\rangle \to e^{i\theta/2}\left|\psi_{0}\right\rangle $ and $\left|\psi_{1}\right\rangle \to e^{-i\theta/2}\left|\psi_{1}\right\rangle $. The same operation maybe done for $\hat{U}(\phi)$ for the second particle. In the overall scheme, %as shown in \figref{scheme}, this is can be done by placing glass slabs right after the birefringent crystals. 
 
@@ -506,7 +507,7 @@ for an incident $\frac{\ket{H}+\ket{V}}{\sqrt{2}}$ polarization state. $d_0$ and
 
 Effectively therefore, this scheme allows for both creation of the entangled state and changing the measurement settings in a practical way.
 
-\section{Discussion}
+\section{Discussion \label{discussion}}
 
 It is worth adding that, one can use an alternative measurement strategy giving the same violation of the inequality. That is, to measure the modular variable with a two-valued POVM elements $E_\pm$ given by
 \begin{equation}
@@ -521,13 +522,13 @@ It is obvious from the properties of the modular variables we use, that the viol
 
 
 
-\section{Conclusion}
+\section{Conclusion \label{conclusion}}
 In the present work, we constructed a new Bell-operator in terms of phase space measurements via modular variables. In this scheme there is no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly contradicts local (hidden) phase space models. From this perspective, our scheme is strongly different from the other approaches reported in Refs. \cite{Parity98, Chen02} where sharp quantum measurements with no classical analog have been used. The measurement observables in our scheme instead are very simple with a clear classical limit. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states characterized by negative Wigner function. Another interesting ingredient involved in our scheme is the scalar Aharonov-Bohm effect, manifesting another type of nonlocality \cite{PopescuNatPhys2010}.
 
  In a broader scope, a rigorous connection between contextuality and Wigner function negativity has been made  \cite{ContextNegativity}. From this point of view, it is tempting to think that our class of Bell inequality is a true test of nonlocality as being a spacial form of the contextual effect.
 
 \section{Acknowledgements}
-Atul acknowledges DAAD, Germany, for financing the stay and travel to University of Siegen, Germany; The KVPY programme, Department of Science and Technology, India, is also acknowledged for financing his graduate study. Prof. Ottfried G{\"u}hne is thanked for the opportunity to visit his group. The author is grateful to the entire group for their support and benificial discussions.
+Atul acknowledges DAAD, Germany, for financing the stay and travel to Universit{\"a}t Siegen, Germany; The KVPY programme, Department of Science and Technology, India, is also acknowledged for financing his graduate study. Prof. Ottfried G{\"u}hne is thanked for the opportunity to visit his group. The author is grateful to the entire group for their support and benificial discussions.
 
 
 Ali acknowledges TODO: Put an agency here.
