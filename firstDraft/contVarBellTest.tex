@@ -195,10 +195,8 @@ In 1935, Einstein, Podolsky, and Rosen (EPR)
 argued using a thought experiment that the quantum-mechanical description of 
 physical reality is not complete, and thus may be superseded by a more 
 complete realistic theory which reproduces the quantum mechanical predictions, and 
-at the same time, obeys the locality condition \cite{EPR}. In his seminal paper in 1964 \cite{Bell}  
-Bell derived an experimentally testable inequality, which
-bounds the correlations between bipartite measurements
-for any such local hidden-variable theory, but is violated
+at the same time, obeys the locality condition \cite{EPR}. Bell derived an experimentally testable inequality, in his seminal 1964 paper \cite{Bell}, which
+bounds the correlations between bipartite measurements for any such local hidden-variable theory, but is violated
 by quantum mechanics. This was a major breakthrough towards empirical 
 tests of quantum mechanics against theories conforming to common sense. Since 
 then, the results constraining the permissible types of hidden variable 
@@ -211,8 +209,8 @@ impurity spins~\cite{WaldherrPRL2011,KneeNatComm2012} or superconducting
 qubits~\cite{Palacios-LaloyNatPhys2010}. All experimental observations confirmed the validity of quantum non-locality at this level. 
  
 %The outstanding challenge is, however, to formulate similar tests with truly phase space measurements and observe the non-locality directly from the observation of spatial degree of freedom. 
-The outstanding challenge is, however, to formulate similar tests with true phase space measurements where non-locality is inferred directly from observing, the spatial degree of freedom, for example. %which maybe inferred directly from observation of only the spatial degree of freedom.
-This can be viewed as a natural extension to the macroscopic limit of local realism tests \cite{Reid}.  This is closer in spirit to the original EPR argument which uses phase space description, as a natural concept in classical world, to better address the reality and locality problems of quantum mechanics in such domain. 
+The outstanding challenge is, however, to formulate similar tests with true phase space measurements, where non-locality is inferred directly from observing, the spatial degree of freedom, for example. %which maybe inferred directly from observation of only the spatial degree of freedom.
+This can be viewed as a natural extension to the macroscopic limit of local realism tests \cite{Reid}.  This is closer in spirit to the original EPR argument which uses phase space description, a natural concept in the classical world, to better address the reality and locality problems of quantum mechanics.% in such domain. 
 Notably, the Wigner function associated with the entangled state used in the EPR argument, the so called EPR state, is non-negative everywhere. That is why, Bell argued that EPR states do not lead to a violation of the inequalities derived from locality and hidden variable assumptions. This was because non-negative Wigner functions serve as valid joint probability distributions over local \emph{hidden} positions and momenta. Thereby, in principle, a model of local hidden variable can be attributed to such states. Banaszek and Wodkiewicz \cite{Parity98}, however, showed that using particular measurements, namely parity, EPR states can reveal non-local features indicating that not only the state itself but the type of correlation measurements is also important in any local realism test. This opens the discussion as to which measurements are good candidates for appropriately testing local hidden variable models in phase space \cite{Revzen, Son}. The problem of constructing a ``macroscopic'' test of local hidden variable models depends on choosing proper observables whose  Wigner representations satisfy the constraint imposed by the algebraic Clauser-Horne-Shimony-Holt (CHSH) \cite{CHSH69} expression. The term ``macroscopic'' henceforth, will be used to refer to the measurement of a particle's phase space coordinates. This class of measurements has a clear description in classical limit and its evaluation does not involve sharp measurements that betray `quantum degrees of freedom'. %individual eigenstates.
 
 The paper is organized as follows.
@@ -269,11 +267,11 @@ One particular class of bounded observables can be constructed from the quantum 
   \label{translation}
   \hat X \equiv\dfrac{e^{-i\hat p L/\hbar}+e^{i\hat p L/\hbar}}{2} =\cos(\hat p L/\hbar),
 \end{align}
-which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding real function $\mathcal W_{\hat X}=\cos(pL/\hbar)$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
+which is explicitly Hermitian and bounded by $\pm 1$. In fact the corresponding function $\ab{\mathcal W_{\hat X}}=\ab{\cos(pL/\hbar)}$ is also manifestly  $\le 1$. Further, when $\hat X$ is operated on $\ket{p}$, then only the modular part of $p$ is relevant to the value of the operator. Thus we may define 
 \beq
 \hat p_{\text{mod}\frac{h}{L}}\equiv(\hat pL/h-\floor{\hat pL/h})\dfrac{h}{L}
 \eeq
-and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X\equiv\hat X(\hat p_{\text{mod}\frac{h}{L}})$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
+and note that measuring $\hat p_{\text{mod}\frac{h}{L}}$ is sufficient for obtaining the value of $\hat X\equiv X(\hat p_{\text{mod}\frac{h}{L}})$. Conversely, measuring $\hat X$ only yields $\hat p_{\text{mod}\frac{h}{L}}$, not $\hat p$. 
 The idea is to construct a Bell operator (see \eq{Belloperator}) from $\hat X$ in which the different measurement settings are chosen by transforming it using suitable unitary operators.
 
 %The observables admissible in the CHSH inequality must $\in[-1,1]$. If we consider the \emph{real} \emph{variable} $p\in(-\infty,\infty)$, then one way of obtaining a bound variable is to use $p_{\text{mod}}\equiv p\mod h/L$, where $h/L$ has been introduced for dimensional reasons. This forces $p_{\text{mod}}\in[0,h/L)$. If we further consider, say $\cos(p_{\text{mod}}L/\hbar)$, then we get precisely the bound needed for the CHSH inequality. We chose the constant factors so that for $p_{\text{mod}}=h/L$, the $\cos$ function also completes a period. Note that $\cos(p_{\text{mod}}L/\hbar)=\cos(pL/\hbar)=\frac{e^{ipL/\hbar}+e^{-ipL/\hbar}}{2}$.
@@ -363,16 +361,16 @@ We now evaluate $\mean{\mathcal {\hat B}}$. This essentially requires terms like
 \beq
 \mean{\hat X(\phi) \otimes \hat X(\theta)} = -\left( \frac{N-1}{N} \right)^2 \cos(\phi-\theta).
 \eeq
-Thus for particular coplanar angles, i.e. $\theta',\,\phi,\,\theta$ and $\phi'$ successively separated by $\pi/4$, we get
+Thus for particular angles, i.e. $\theta',\,\phi,\,\theta$ and $\phi'$ successively separated by $\pi/4$, we get
  \beq
 \ab{\mean{ \mathcal {\hat B} }} =\left(\frac{N-1}{N}\right)^{2}2\sqrt{2}.
 \eeq 
-The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, requires $N > 6$; see \fig{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\mathcal W_{\hat X(\phi)}\le 1$. To that end, we note that
+The violation, i.e.,  $\ab{\mean{ \mathcal {\hat B} }} >2$, requires $N > 6$; see \fig{chshViolation}. To interpret this, we must ensure that the assumptions of the framework are satisfied, viz. $\ab{\mathcal W_{\hat X(\phi)}}\le 1$. To that end, we note that
 \beq
-\mathcal W_{\hat X (\phi)}(q,p) & = & \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2} \nonumber \\
- &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}} \nonumber \\
- & = & \text{Re}\left( e^{-iZ_{-}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{+}(q)\phi/2}\right) \nonumber \\
- & = & \cos(pL/\hbar \pm Z_{\pm}(q)\phi) \le 1,
+\ab{\mathcal W_{\hat X (\phi)}(q,p)} & = & \Big| \frac{1}{2}\int dq'e^{ipq'/\hbar} \bra{q-\frac{q'}{2}}\bigg( e^{-i\hat Z\phi/2} \nonumber \\
+ &  & e^{i\hat{p}\frac{L}{\hbar}}e^{i\hat Z\phi/2} + \text{h.c.} \bigg) \ket{q+\frac{q'}{2}} \Big| \nonumber \\
+ & = & \ab{\text{Re}\left( e^{-iZ_{-}(q)\phi/2}e^{ip\frac{L}{\hbar}}e^{iZ_{+}(q)\phi/2}\right)} \nonumber \\
+ & = & \ab{\cos(pL/\hbar \pm Z_{\pm}(q)\phi)} \le 1,
 \eeq
 where $Z_{\pm}(q) \equiv Z[(q\pm\frac{L}{2})\text{mod}2L]$ and we used the fact that $Z(q)=-Z(q+L)$ (omitting the $\text{mod}2L$).
 
@@ -399,7 +397,7 @@ It is apparent that the exact SU(2) algebra is not necessary to arrive at a viol
 \[
 e^{i\hat{p}u}e^{i\hat{q}v}=e^{i\hbar uv}e^{i\hat{q}v}e^{i\hat{p}u}.
 \]
-For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define Pauli matrix like commutation.
+For appropriate choices of $u,v$, the translation operators can be made to commute or anti-commute. In the former case, it means that one can simultaneously measure modular position and momentum (which is in stark contrast with $\hat x$ and $\hat p$ measurements) and in the latter case, one can define Pauli matrix like commutation.
 Considering the operator (non-Hermitian for simplicity) $\hat{X}=e^{i\hat{p}L/\hbar}$, defining $\hat{Z}=e^{i\hat{q}2\pi/2L}$ is more natural. They also follow the desired anti-commutation $\{\hat{X},\hat{Z}\}=0$ and we could define $\hat{Y}=\hat{iZ}\hat{X}$ to get a more natural generalization. The question is why did $\hat{Z}=Z(\hat{q}_{\text{mod}2L})$ appear in the analysis. The cause of this asymmetry hinges on the preferential treatment of position space. We could have constructed states of the form $\left|\psi_{0}\right\rangle =\sum_{n}\left|q+nd\right\rangle $ and used the natural definition of $\hat{Z}$ to obtain the violation. The issue is that this forces us to choose a countable superposition of position eigenkets as our desired state.\footnote{Such a state is strictly not even in the Hilbert space.} If we start with better defined and broader class of relevant states, $Z(\hat{q}_{\text{mod}2L})$ appears naturally.
 
 3. Commutation and classical limit: It is well recognized and can be shown that there is a tight relation between non-locality and non-commutativity of operators. 
@@ -412,7 +410,7 @@ To prove that, we use $\hat X(\theta)=\hat{X}e^{i\hat{Z}\theta}$, $e^{i\hat{Z}\t
 2i\sin(\theta'-\theta) \hat Z \hat X^2 \\
 &=2i \hat Z \hat X^2 \neq 0,
 \end{align*}
-where the last equality holds when the angles are as defined. Classically this term not only vanishes, the different measurement settings also become identical. %, but even the commutations %the there can not be any difference between the two settings
+where the last equality holds when the angles are as defined earlier. Classically this term not only vanishes, the different measurement settings also become identical. %, but even the commutations %the there can not be any difference between the two settings
 The Heisenberg equation of motion for the displacement operator 
 \begin{align}
 \frac{d\hat X}{dt} &=i\hbar^{-1} [\hat Z,\hat X] \nonumber \\  %\frac{\hat p^2}{2m} + \hat Z,\hat X]
@@ -460,7 +458,7 @@ for matter waves (see \subref{c7}). The final setup is given in \figref{scheme}.
 The desired entangled state is $\ket{\Psi}$, as stated in \eq{entangledState}. 
 We start with noting the triviality of constructing a $\ket{\psi_{+}}$
 %\[\left|\psi_{+}\right\rangle =\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left|\varphi_{n}\right\rangle \]
- state (see \eq{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (center to center). After the grating, we obtain $\ket{\psi_+}=G\ket{\gamma}$. Similarly the $\ket{\psi_{-}}$
+ state (see \eq{eqn:psipm}). Consider a source that produces a state $\ket{\gamma}$ at the grating. $\braket{q | \gamma}$ is assumed to be a real Gaussian with $\sigma\gg 2NL$. The grating has $N$ slits of width $a\ll L$, separated by a distance $L$ (center to center). After the grating, we obtain $\ket{\psi_+}=\hat G\ket{\gamma}$, where $\hat G$ maybe formally defined accordingly. Similarly the $\ket{\psi_{-}}$
 %\[\left|\psi_{-}\right\rangle=\frac{1}{\sqrt{N}}\sum_{n\inI_{N}}\left(-1\right)^{n+1}\left|\varphi_{n}\right\rangle\]
  state can be constructed by using glass slabs at alternate slits, such that the phase introduced is $\pi$. %\,\implies\, e^{i\pi}=-1$. 
 In \figref{scheme}, if you consider only one particle, and disregard
@@ -508,13 +506,14 @@ Effectively therefore, this scheme allows for both creation of the entangled sta
 
 \section{Discussion \label{discussion}}
 
-It is worth adding that, one can use an alternative measurement strategy giving the same violation of the inequality. That is, to measure the modular variable with a two-valued POVM elements $E_\pm$ given by
+It is worth adding that one can use an alternative measurement strategy giving the same violation of the inequality. That is, to measure the modular variable with two-valued POVM elements $E_\pm$, given by
 \begin{equation}
-E_\pm=\dfrac{1}{2}(\mathbb{I}\pm\hat X),
+E_\pm=\dfrac{1}{2}  (\mathbb{I}\pm\hat X),
 \end{equation}
-satisfying $E_++E_-=\mathbb{I}$. In this picture, we measure the observable $A^{\rm two}=E_+-E_-$ which takes on two values $\pm1$ with corresponding probabilities $p_\pm=\mean{E_\pm}$ which are uniquely determined by $\hat p_{\rm mod}$.
+satisfying $E_++E_-=\mathbb{I}$. It follows that $\mean{\hat X}=\pm2p_\pm\mp 1$ where the probabilities of getting $\pm$ outcomes, $p_\pm=\mean{\hat E_\pm}$, can be determined from the observed binary statistics. %In this picture, we measure the observable $A^{\rm two}=E_+-E_-$ which takes on two values $\pm1$ with corresponding probabilities $p_\pm=\mean{E_\pm}$ which are uniquely determined by $\hat p_{\rm mod}$.
 
-An interesting problem is to develop our approach to finite-dimensional systems, qudits. A class of Bell inequalities was proposed by Collins \emph{et al.} \cite{Collins} which is useful for demonstrating nonlocality in high-dimensional entangled states .  For our version of Bell inequality generalized to $d$-dimensional systems can be achieved by using the discrete translation operators known as Heisenberg-Weyl  or Generalized Pauli operators, i.e., $e^{-i2\pi P l/d}$,  with effect $\hat e^{-i2\pi P l/d}\ket{n}=\ket{n+l}$ describing $l$ steps translation in discrete position space with periodic boundary condition. From this we obtain the relevant discrete modular variable $\hat X^l_d=\cos (2\pi Pl/d)$ where $P=\sum_{k=0}^{d-1} k\proj{k}$ is the discrete momentum operator expanded in momentum eigenbasis. We expect \cite{Atul} that the class of $d$-dimensional entangled state demonstrating nonlocality is different from those considered by Collins \emph{et al.}\cite{Collins}.
+An interesting problem is to develop our approach to finite-dimensional systems, qudits. A class of Bell inequalities was proposed by Collins \emph{et al.} \cite{Collins} which is useful for demonstrating nonlocality in high-dimensional entangled states .  For our version of Bell inequality generalized to $d$-dimensional systems can be achieved by using the discrete translation operators known as Heisenberg-Weyl  or Generalized Pauli operators, i.e., $e^{-i2\pi \hat P l/d}$, whose action is $\hat e^{-i2\pi \hat P l/d}\ket{n}=\ket{n+l}$ where $l$ describes the steps translated in discrete position space with periodic boundary conditions and  $\hat P=\sum_{k=0}^{d-1} k\proj{k}$ is the discrete momentum operator. From this we obtain the relevant discrete modular variable $\hat X^l_d=\cos (2\pi \hat P l/d)$. % expanded in momentum eigenbasis. 
+We expect \cite{Atul} that the class of $d$-dimensional entangled states which demonstrate nonlocality here will be different from those considered by Collins \emph{et al.}\cite{Collins}.
 
 It is obvious from the properties of the modular variables we use, that the violation is more pronounced for higher number of slits. One can however imagine that those entangled states created with slits fewer than the minimum number needed for obtaining a violation, must also hold non-local properties. To reveal the non-locality in this range one may need a more optimal set of observables, which involve a suitable combination of different modular variables, as opposed to the set considered here. % than those considered here.
 
@@ -522,13 +521,12 @@ It is obvious from the properties of the modular variables we use, that the viol
 
 
 \section{Conclusion \label{conclusion}}
-In the present work, we constructed a new Bell-operator in terms of phase space measurements via modular variables. In this scheme there is no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly contradicts local (hidden) phase space models. From this perspective, our scheme is strongly different from the other approaches reported in Refs. \cite{Parity98, Chen02} where sharp quantum measurements with no classical analog have been used. The measurement observables in our scheme instead are very simple with a clear classical limit. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states characterized by negative Wigner function. Another interesting ingredient involved in our scheme is the scalar Aharonov-Bohm effect, manifesting another type of nonlocality \cite{PopescuNatPhys2010}.
+In the present work, we constructed a new Bell-operator in terms of phase space measurements via modular variables. In this scheme there is no possibility for bipartite system with  positive definite Wigner function, formally entangled or not, to yield a violation of the inequality. Therefore, a violation of the inequality truly contradicts local (hidden) phase space models. From this perspective, our scheme is strongly different from the other approaches reported in Refs. \cite{Parity98, Chen02} where sharp quantum measurements with no classical analog have been used. The measurement observables in our scheme instead are very simple with a clear classical limit. The relevant entangled states used for achieving a violation of the inequality however required creation of multi-component superposition states characterized by negative Wigner function. Interestingly our scheme involves the scalar Aharonov-Bohm effect, manifesting another type of nonlocality \cite{PopescuNatPhys2010}.
 
  In a broader scope, a rigorous connection between contextuality and Wigner function negativity has been made in Ref. \cite{ContextNegativity}. From this point of view, it is tempting to think that our class of Bell inequality is a true test of nonlocality as being a spacial form of the contextual effect.
 
 \section{Acknowledgements}
-The authors acknowledge discussions with O. G\"uhne, Costantino Budroni and Peter Rabl. A.S.A is grateful of support by O. G\"uhne and the hospitality of his group during the stay in Siegen. The authors acknowledge the financial support from German Academic Exchange Service (DAAD), the FQXi Fund (Silicon Valley Community
-Foundation), and also the KVPY programme, Department of Science and Technology, India, and  Austrian Science Fund (FWF) though Erwin Schr\"odinger Stipendium No. J3653-N27 is also acknowledged.
+The authors acknowledge discussions with O. G\"uhne, Costantino Budroni and Peter Rabl. A. S. A is grateful to O. G\"uhne and his group for their support and hospitality during his visit to University of Siegen. The authors acknowledge the financial support from German Academic Exchange Service (DAAD), the FQXi Fund (Silicon Valley Community Foundation), and also the KVPY programme, Department of Science and Technology, India; The Austrian Science Fund (FWF) through Erwin Schr\"odinger Stipendium No. J3653-N27 is also acknowledged.
 
 %Discussions with Prof. Ottfried G{\"u}hne and his group was helpful.
 \section{Appendix}
