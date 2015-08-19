@@ -1,0 +1,4 @@
+pdflatex contVarBellTest
+bibtex contVarBellTest
+pdflatex contVarBellTest
+pdflatex contVarBellTest
