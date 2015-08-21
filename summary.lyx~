@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -16,13 +16,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -33,15 +33,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -255,7 +264,7 @@ ion to entanglement, how a coherent state would pass through it etc.
 \end_inset
 
  instead of 
-\begin_inset Formula $a,\, a^{\dagger}$
+\begin_inset Formula $a,\,a^{\dagger}$
 \end_inset
 
 .
@@ -754,7 +763,7 @@ Continued fine reading of chapter 5 from Aharnov's book.
 \end_inset
 
  at the back of the mind) is completely uncertain iff (if and only if) 
-\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0\,\forall\, n\in\mathcal{N}$
+\begin_inset Formula $\left\langle e^{in\hat{p}L/\hbar}\right\rangle =0\,\forall\,n\in\mathcal{N}$
 \end_inset
 
 .
@@ -1421,7 +1430,7 @@ He then discussed the Schrodinger and Heisenberg picture in the context
 
  (in finite dimensions, apparently they're same).
  Then 
-\begin_inset Formula $\forall\, N:T\to T,\,\exists\, N^{*}:\mathcal{L}\to\mathcal{L}$
+\begin_inset Formula $\forall\,N:T\to T,\,\exists\,N^{*}:\mathcal{L}\to\mathcal{L}$
 \end_inset
 
  which is defined by 
@@ -1735,7 +1744,7 @@ Essentially you're saying that you can't find a convergent sequence for
 
 , viz.
  
-\begin_inset Formula $\nexists\, a_{n}\, s.t.\, f(x)=a_{0}+a_{1}(x-x_{0})+a_{2}(x-x_{0})^{2}+\dots$
+\begin_inset Formula $\nexists\,a_{n}\,s.t.\,f(x)=a_{0}+a_{1}(x-x_{0})+a_{2}(x-x_{0})^{2}+\dots$
 \end_inset
 
  which essentially means that the taylor expansion doesn't exist for 
@@ -2103,7 +2112,7 @@ I figured there're two directions to think now.
 
 \begin_layout Itemize
 I realized that even when EM fields are absent, 
-\begin_inset Formula $\phi=0,\, A=0$
+\begin_inset Formula $\phi=0,\,A=0$
 \end_inset
 
  we continue to have the gauge freedom in the wavefunction.
@@ -3010,9 +3019,9 @@ And come to think of it, this way
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -3311,7 +3320,7 @@ Sub aim: (a) Plot simultaneous eigenstates of
 
 .
  (b) Are modular 
-\begin_inset Formula $x,\, p$
+\begin_inset Formula $x,\,p$
 \end_inset
 
  complete? Prove or disprove it.
@@ -3350,7 +3359,7 @@ possibly new
 \end_inset
 
  and 
-\begin_inset Formula $N_{x},\, p_{\text{mod}}$
+\begin_inset Formula $N_{x},\,p_{\text{mod}}$
 \end_inset
 
 
@@ -3649,7 +3658,7 @@ where first we have the position representation of
 
 .
  For this plot, I used 
-\begin_inset Formula $\bar{x}=0.7,\,\bar{p}=10,\, L=1.0,\, h=2\pi,\, n_{max}=10$
+\begin_inset Formula $\bar{x}=0.7,\,\bar{p}=10,\,L=1.0,\,h=2\pi,\,n_{max}=10$
 \end_inset
 
 .
@@ -3760,11 +3769,11 @@ Continuous variable bell test
 \begin_layout Itemize
 So basically in the bell test, there're Alice's measurements, which are
  along 
-\begin_inset Formula $z,\, x$
+\begin_inset Formula $z,\,x$
 \end_inset
 
  and then there're Bob's measurements which are along 
-\begin_inset Formula $z',\, x'$
+\begin_inset Formula $z',\,x'$
 \end_inset
 
 .
@@ -5026,7 +5035,7 @@ So I could start with field quantization for the E, B fields.
 I also just started thinking, agreed that the Hamiltonian is the same as
  that for a harmonic oscillator.
  That doesn't mean that the time evolution of 
-\begin_inset Formula $q,\, p$
+\begin_inset Formula $q,\,p$
 \end_inset
 
  should be given by the Heisenberg equation of motion, or does it? Well
@@ -5178,7 +5187,7 @@ On the way back, I figured that if I use unnormalized eigenkets of
 \end_inset
 
  because 
-\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|\left|x\right\rangle =\left|x\right\rangle ,\,\forall\, x\in\mathbb{R}$
+\begin_inset Formula $\int_{0}^{L}d\tilde{x}\left|\tilde{x}\right\rangle \left\langle \tilde{x}\right|\left|x\right\rangle =\left|x\right\rangle ,\,\forall\,x\in\mathbb{R}$
 \end_inset
 
 .
@@ -6124,7 +6133,7 @@ name "layoutOfDraft"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Layout of the draft
@@ -7408,7 +7417,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Wavefunctions
@@ -7571,7 +7580,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset Formula $\left\langle x_{1}x_{2}|\Psi\right\rangle $
@@ -7923,7 +7932,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Entangled 
@@ -8134,7 +8143,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 The code 
@@ -8181,7 +8190,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Emacs natively running latex :)
@@ -8426,9 +8435,20 @@ new
 \end_inset
 
 .
- This 
+ This means we can translate this problem into that of a classical system
+ and show that the violation can only occur if QM is assumed etc.
+ So then we essentially have AB effect, Modular Variables and The Bell inequalit
+y.
 \end_layout
 
 \end_deeper
+\begin_layout Section
+July 20-24
+\end_layout
+
+\begin_layout Standard
+Spent time on finalizing the draft and got it to an almost publishable form.
+\end_layout
+
 \end_body
 \end_document
