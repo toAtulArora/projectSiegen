@@ -125,30 +125,26 @@ Dear Editor(s),
 \end_layout
 
 \begin_layout Standard
-In this paper we have addressed the long standing problem of 
-\emph on
-satisfactorily
-\emph default
- extending the Bell test to phase space.
- As originally formulated, the Bell inequality was setup for a quantum spin
+There's been a growing interest in extending the fundamental Bell test to
+ continuous variable (CV) systems.
+ As originally formulated, the Bell inequality was setup for quantum spins
  which has no classical analogue.
  That it shall possess such peculiarities is therefore, in hindsight, not
  very surprising.
- Antithetically, here we manifest a violation using highly classical observables
-, viz.
- position and momentum.
+ The known extension to CV systems uses displaced parity measurements; again,
+ parity is an inherently quantum phenomenon, and it is pivotal in that scheme.
+ Antithetically, here we construct a test using highly classical observables,
+ viz.
+ modular variables of position and momentum, which are suitable for investigatin
+g quantum non-locality in the macroscopic regime.
 \end_layout
 
 \begin_layout Standard
 Our approach is particularly distinctive as it neither requires restriction
  of the relevant states to a highly idealized and immured subset, nor is
  it effectively, a vicarious reformulation of the spin half case; we have
- bolstered our result with an experimental proposal to emphasise this.
-\end_layout
-
-\begin_layout Standard
-We have been punctilious with the draft and hope that it would make for
- a lucid read and wouldn't elicit much editing.
+ bolstered our result with an experimental proposal, which is based on well
+ established multi-slit diffraction techniques, to emphasise this.
 \end_layout
 
 \begin_layout Standard
